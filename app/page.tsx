@@ -438,6 +438,7 @@ export default function Home() {
                       src="/gambar3.webp"
                       alt="Tampilan mode demo STC AutoTrade menampilkan riwayat order dan statistik profit/loss dengan data pasar nyata"
                       label="Dashboard Trading"
+                      fit="contain"
                     />
                   </FadeUp>
                 </div>

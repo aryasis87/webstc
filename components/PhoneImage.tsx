@@ -5,9 +5,11 @@ interface PhoneImageProps {
   alt: string;
   label?: string;
   priority?: boolean;
+  /** 'cover' (default) memenuhi layar & memotong; 'contain' menampilkan gambar utuh. */
+  fit?: "cover" | "contain";
 }
 
-export default function PhoneImage({ src, alt, label, priority = false }: PhoneImageProps) {
+export default function PhoneImage({ src, alt, label, priority = false, fit = "cover" }: PhoneImageProps) {
   return (
     <div className="relative mx-auto select-none" style={{ width: 280, height: 590 }}>
       {/* Ambient glow */}
@@ -29,7 +31,7 @@ export default function PhoneImage({ src, alt, label, priority = false }: PhoneI
             src={src}
             alt={alt}
             fill
-            className="object-cover object-top"
+            className={fit === "contain" ? "object-contain" : "object-cover object-top"}
             sizes="272px"
             priority={priority}
           />
