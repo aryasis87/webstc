@@ -244,7 +244,6 @@ export default function CaraMenghindariLossStockityPage() {
               </Link>
               <a
                 href="/StcAutoTrade.apk"
-                download
                 className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline"
               >
                 Download APK
@@ -815,7 +814,6 @@ export default function CaraMenghindariLossStockityPage() {
               </h3>
               <a
                 href="/StcAutoTrade.apk"
-                download
                 className="inline-flex items-center gap-2 px-6 py-3 bg-[#3b82f6] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#2563eb] transition-colors"
               >
                 Download APK Gratis

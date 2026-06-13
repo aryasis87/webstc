@@ -203,7 +203,7 @@ export default function CopyTradingStockityPage() {
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
-              <a href="/StcAutoTrade.apk" download className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline">Download APK</a>
+              <a href="/StcAutoTrade.apk" className="px-4 py-2 bg-[#1a1612] text-white text-[12px] font-semibold rounded-lg no-underline">Download APK</a>
             </div>
           </div>
         </nav>
@@ -669,7 +669,7 @@ export default function CopyTradingStockityPage() {
                 Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
-                <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline">Download APK Android</a>
+                <a href="/StcAutoTrade.apk" className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline">Download APK Android</a>
                 <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-xl no-underline">Buka Versi Web</a>
               </div>
             </div>

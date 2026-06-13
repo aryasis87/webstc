@@ -431,7 +431,6 @@ export default function ArtikelPage() {
               </a>
               <a
                 href={APK_PATH}
-                download
                 className="flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm"
               >
                 Download
@@ -599,7 +598,6 @@ export default function ArtikelPage() {
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a
                   href={APK_PATH}
-                  download
                   className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#3b82f6] text-white text-sm font-bold rounded-xl hover:bg-[#2563eb] transition-all hover:-translate-y-0.5 no-underline shadow-xl shadow-[#3b82f6]/20"
                 >
                   Download APK Android

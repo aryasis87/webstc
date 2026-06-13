@@ -7,6 +7,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import ApkComingSoon from "@/components/ApkComingSoon";
 
 export const metadata: Metadata = {
   title: "Download STC AutoTrade APK Android & Versi Web — StockAutoTrade",
@@ -51,10 +52,6 @@ export const metadata: Metadata = {
     images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
-
-/* ── Constants ────────────────────────────────────────────────── */
-
-const APK_PATH = "/StcAutoTrade.apk";
 
 /* ── Structured Data ──────────────────────────────────────────── */
 
@@ -137,6 +134,8 @@ const howToInstallSchema = {
 /* ── Page ─────────────────────────────────────────────────────── */
 
 export default function DownloadPage() {
+  // Waktu rilis APK = saat deploy + 6 jam (di-bake ke HTML statis).
+  const apkTargetMs = Date.now() + 6 * 60 * 60 * 1000;
   return (
     <>
       <script
@@ -201,54 +200,8 @@ export default function DownloadPage() {
           {/* ── Dua pilihan download ──────────────────────── */}
           <div className="grid sm:grid-cols-2 gap-5">
 
-            {/* APK Android */}
-            <div className="bg-white rounded-2xl border border-[rgba(26,22,18,0.08)] p-7 flex flex-col">
-              <div className="flex items-center gap-2.5 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#dbeafe] flex items-center justify-center text-lg">
-                  📱
-                </div>
-                <div>
-                  <p className="text-[13px] font-semibold text-[#1a1612]">APK Android</p>
-                  <p className="text-[11px] text-[#6b6058]">Instal di perangkat Android</p>
-                </div>
-              </div>
-              <h2 className="text-xl font-semibold text-[#1a1612] mb-2 tracking-tight">
-                Download STC AutoTrade APK
-              </h2>
-              <p className="text-[13px] text-[#6b6058] leading-relaxed mb-5 flex-1">
-                File APK Android terbaru. Setelah terinstal, bot berjalan di background
-                dan bisa aktif 24 jam di perangkat Anda.
-              </p>
-              <div className="space-y-2 mb-6">
-                {[
-                  "Android 8.0 (Oreo) ke atas",
-                  "Berjalan di background 24 jam",
-                  "Semua 6 strategi tersedia",
-                  "Update otomatis notifikasi in-app",
-                ].map((f) => (
-                  <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
-                      <circle cx="7" cy="7" r="6.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                      <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    {f}
-                  </div>
-                ))}
-              </div>
-              <a
-                href={APK_PATH}
-                download
-                className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#1a1612] text-white text-sm font-bold rounded-xl hover:bg-[#1a1612]/85 active:scale-[0.98] transition-all no-underline shadow-sm"
-              >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <path d="M8 2v8M5 7l3 3 3-3M3 12h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-                Download APK Android
-              </a>
-              <p className="text-center text-[11px] text-[#1a1612]/30 mt-2.5">
-                Gratis · Perlu izin "sumber tidak dikenal"
-              </p>
-            </div>
+            {/* APK Android — Coming Soon + countdown */}
+            <ApkComingSoon targetMs={apkTargetMs} />
 
             {/* Versi Web */}
             <div className="bg-white rounded-2xl border border-[rgba(26,22,18,0.08)] p-7 flex flex-col">

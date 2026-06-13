@@ -135,7 +135,7 @@ export default function Home() {
               <a href="#fitur"      className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Fitur</a>
               <a href="#cara-kerja" className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Panduan</a>
               <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Versi Web</a>
-              <a href={APK_PATH} download className="ml-2 flex items-center gap-1.5 px-4 py-2 bg-zinc-900 text-white text-sm font-semibold rounded-lg hover:bg-zinc-700 transition-colors no-underline shadow-sm">
+              <a href={APK_PATH} className="ml-2 flex items-center gap-1.5 px-4 py-2 bg-zinc-900 text-white text-sm font-semibold rounded-lg hover:bg-zinc-700 transition-colors no-underline shadow-sm">
                 Download
               </a>
             </div>
@@ -224,7 +224,7 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <a href={APK_PATH} download className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-zinc-900 text-white text-sm font-semibold rounded-xl hover:bg-zinc-700 transition-colors no-underline">
+                    <a href={APK_PATH} className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-zinc-900 text-white text-sm font-semibold rounded-xl hover:bg-zinc-700 transition-colors no-underline">
                       Download APK
                     </a>
                   </div>
@@ -314,7 +314,7 @@ export default function Home() {
                     Sebagian besar trader baru tidak gagal karena kurang modal — mereka gagal karena masalah yang
                     seharusnya bisa dicegah. <strong className="text-zinc-900">STC AutoTrade</strong> hadir sebagai solusinya.
                   </p>
-                  <a href={APK_PATH} download className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors no-underline">
+                  <a href={APK_PATH} className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors no-underline">
                     Download Gratis Sekarang
                   </a>
                 </FadeUp>
@@ -424,7 +424,7 @@ export default function Home() {
                       ))}
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3 bg-white text-zinc-900 text-sm font-bold rounded-xl hover:bg-blue-50 transition-colors no-underline">
+                      <a href={APK_PATH} className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3 bg-white text-zinc-900 text-sm font-bold rounded-xl hover:bg-blue-50 transition-colors no-underline">
                         Download APK Android
                       </a>
                       <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3 bg-white/[0.08] border border-white/[0.12] text-white text-sm font-bold rounded-xl hover:bg-white/[0.14] transition-all no-underline">
@@ -506,7 +506,7 @@ export default function Home() {
                   tanpa risiko, dan rasakan perbedaannya.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
-                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-9 py-4 bg-blue-600 text-white text-sm font-bold rounded-xl hover:bg-blue-500 transition-colors no-underline shadow-2xl shadow-blue-600/20">
+                  <a href={APK_PATH} className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-9 py-4 bg-blue-600 text-white text-sm font-bold rounded-xl hover:bg-blue-500 transition-colors no-underline shadow-2xl shadow-blue-600/20">
                     Download APK Android
                   </a>
                   <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-9 py-4 bg-white/[0.08] border border-white/[0.12] text-white text-sm font-bold rounded-xl hover:bg-white/[0.14] transition-all no-underline">
