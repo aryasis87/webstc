@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/stockity-vs-binomo-vs-olymp-trade/page.tsx
  *
  * Target keyword:
@@ -152,11 +152,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -319,7 +319,7 @@ export default function StockityVsBinomoPage() {
                   {
                     nama: "Stockity",
                     tag: "Fokus artikel ini",
-                    tagColor: "bg-blue-50 text-blue-700 border-blue-200",
+                    tagColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                     deskripsi: "Platform trading binary option yang beroperasi khusus untuk pasar Indonesia (Stockity.id). Kompatibel penuh dengan STC AutoTrade — robot trading gratis dengan 6 mode strategi.",
                     kelebihan: ["Bot trading gratis (STC AutoTrade)", "6 mode strategi otomatis", "Stop loss & profit otomatis", "Akun demo data nyata"],
                     cocokUntuk: "Trader yang ingin trading otomatis 24 jam",
@@ -357,8 +357,8 @@ export default function StockityVsBinomoPage() {
                       {p.kelebihan.map((k) => (
                         <div key={k} className="flex items-center gap-2 text-[12px] text-[#1a1612]/70">
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="flex-shrink-0">
-                            <circle cx="6" cy="6" r="5.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                            <path d="M4 6L5.5 7.5L8.5 4.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="6" cy="6" r="5.5" stroke="#10b981" strokeOpacity="0.3" />
+                            <path d="M4 6L5.5 7.5L8.5 4.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                           {k}
                         </div>
@@ -384,7 +384,7 @@ export default function StockityVsBinomoPage() {
                     <thead>
                       <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
                         <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
-                        <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#1d4ed8] uppercase tracking-wider">Stockity 🇮🇩</th>
+                        <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#047857] uppercase tracking-wider">Stockity 🇮🇩</th>
                         <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#92400e] uppercase tracking-wider">Binomo 🌐</th>
                         <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#166534] uppercase tracking-wider">Olymp Trade 🌍</th>
                       </tr>
@@ -393,7 +393,7 @@ export default function StockityVsBinomoPage() {
                       {COMPARISON_ROWS.map((row) => (
                         <tr key={row.aspek} className="hover:bg-[#f9fafb]">
                           <td className="px-5 py-3.5 font-medium text-[#1a1612]">{row.aspek}</td>
-                          <td className={`px-4 py-3.5 text-center ${row.stockity.highlight ? "font-semibold text-[#1d4ed8] bg-[#eff6ff]" : "text-[#14532d]"}`}>
+                          <td className={`px-4 py-3.5 text-center ${row.stockity.highlight ? "font-semibold text-[#047857] bg-[#ecfdf5]" : "text-[#14532d]"}`}>
                             {row.stockity.val}
                           </td>
                           <td className="px-4 py-3.5 text-center text-[#1a1612]/60">{row.binomo.val}</td>
@@ -430,7 +430,7 @@ export default function StockityVsBinomoPage() {
                   {/* Perbandingan pengalaman */}
                   <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl p-6">
                     <div className="flex items-center gap-2 mb-4">
-                      <div className="w-8 h-8 rounded-xl bg-[#dbeafe] flex items-center justify-center text-sm">🤖</div>
+                      <div className="w-8 h-8 rounded-xl bg-[#d1fae5] flex items-center justify-center text-sm">🤖</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612]">Trading di Stockity + STC AutoTrade</h3>
                     </div>
                     <div className="space-y-2.5">
@@ -444,8 +444,8 @@ export default function StockityVsBinomoPage() {
                       ].map((item, i) => (
                         <div key={i} className="flex items-start gap-2 text-[12px] text-[#1a1612]/70">
                           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-0.5">
-                            <circle cx="7" cy="7" r="6.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                            <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
+                            <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                           {item}
                         </div>
@@ -532,12 +532,12 @@ export default function StockityVsBinomoPage() {
                     highlight: false,
                   },
                 ].map((item, i) => (
-                  <div key={i} className={`border rounded-xl px-5 py-4 ${item.highlight ? "bg-[#eff6ff] border-[#bfdbfe]" : "bg-white border-[rgba(26,22,18,0.08)]"}`}>
+                  <div key={i} className={`border rounded-xl px-5 py-4 ${item.highlight ? "bg-[#ecfdf5] border-[#a7f3d0]" : "bg-white border-[rgba(26,22,18,0.08)]"}`}>
                     <div className="flex items-start gap-3">
                       <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>
                       <div>
                         <p className="text-[12px] text-[#1a1612]/50 mb-1">Jika: {item.kondisi}</p>
-                        <p className={`text-[13px] font-bold mb-1 ${item.highlight ? "text-[#1d4ed8]" : "text-[#1a1612]"}`}>
+                        <p className={`text-[13px] font-bold mb-1 ${item.highlight ? "text-[#047857]" : "text-[#1a1612]"}`}>
                           → {item.pilihan}
                         </p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.alasan}</p>
@@ -583,7 +583,7 @@ export default function StockityVsBinomoPage() {
                   },
                 ].map((s) => (
                   <div key={s.n} className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-                    <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{s.n}</div>
+                    <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{s.n}</div>
                     <div className="pt-0.5">
                       <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{s.title}</p>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
@@ -668,8 +668,8 @@ export default function StockityVsBinomoPage() {
                 { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Stockity Gratis", desc: "Cara dapat akses bot Stockity tanpa biaya" },
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & versi web — gratis" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -681,7 +681,7 @@ export default function StockityVsBinomoPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-1.5">Stockity + STC AutoTrade</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Stockity + STC AutoTrade</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Mulai Trading Otomatis di Stockity — Gratis</p>
               <p className="text-[13px] text-[#6b6058]">Download STC AutoTrade dan mulai dari mode demo tanpa deposit.</p>
             </div>

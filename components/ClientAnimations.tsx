@@ -11,8 +11,8 @@ export const HeroBadge = dynamic(
   {
     ssr: false,
     loading: () => (
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-[11px] font-semibold tracking-widest uppercase mb-8">
-        <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-[11px] font-semibold tracking-widest uppercase mb-8">
+        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
         Android &amp; Web · Stockity.id
       </div>
     ),
@@ -29,7 +29,7 @@ export const HeroHeading = dynamic(
       <>
         <h1 className="font-[family-name:var(--font-dm-serif)] text-5xl sm:text-[56px] lg:text-[64px] font-normal tracking-tight leading-[1.06] mb-6 text-zinc-900">
           STC AutoTrade —<br />
-          <span className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-br from-emerald-700 via-emerald-500 to-emerald-400 bg-clip-text text-transparent">
             Robot Trading<br />Otomatis Stockity
           </span>
         </h1>
@@ -66,7 +66,7 @@ export const HeroStatBar = dynamic(
           { n: "4.9★", l: "Rating Pengguna" },
         ].map((s) => (
           <div key={s.l} className="py-5 px-4 text-center">
-            <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-blue-600 leading-none mb-1.5">{s.n}</div>
+            <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-emerald-600 leading-none mb-1.5">{s.n}</div>
             <div className="text-[11px] text-zinc-400 leading-tight">{s.l}</div>
           </div>
         ))}
@@ -90,7 +90,7 @@ export const HambatanSection = dynamic(
           { t: "Tidak ada disiplin manajemen modal",     d: "Tanpa stop loss tegas, trader membiarkan kerugian membesar dengan harapan harga akan berbalik sendiri." },
         ].map((item) => (
           <div key={item.t} className="flex gap-4 p-5 bg-white border border-zinc-100 rounded-xl">
-            <div className="w-6 h-6 mt-0.5 flex-shrink-0 rounded bg-blue-100" />
+            <div className="w-6 h-6 mt-0.5 flex-shrink-0 rounded bg-emerald-100" />
             <div>
               <p className="text-[15px] font-semibold mb-1.5 text-zinc-900">{item.t}</p>
               <p className="text-[13px] text-zinc-500 leading-relaxed">{item.d}</p>
@@ -118,7 +118,7 @@ export const RiskCards = dynamic(
           { title: "Riwayat Trading Lengkap",     desc: "Setiap order tercatat detail: waktu, aset, nominal, hasil, profit, dan status martingale." },
         ].map((r) => (
           <div key={r.title} className="flex gap-4 p-5 bg-white border border-zinc-100 rounded-xl">
-            <div className="w-6 h-6 mt-0.5 flex-shrink-0 rounded bg-blue-100" />
+            <div className="w-6 h-6 mt-0.5 flex-shrink-0 rounded bg-emerald-100" />
             <div>
               <p className="text-sm font-semibold mb-1 text-zinc-900">{r.title}</p>
               <p className="text-[13px] text-zinc-500 leading-relaxed">{r.desc}</p>

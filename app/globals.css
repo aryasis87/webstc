@@ -2,7 +2,7 @@
 
 /* ── Design Tokens ─────────────────────────────────────────────────────
    Konvensi penamaan:
-   --color-primary-*   : warna aksen utama biru (brand)
+   --color-primary-*   : warna aksen utama hijau (brand)
    --color-surface-*   : latar belakang bertingkat
    --color-ink         : warna teks utama
    --color-border-*    : warna garis tepi
@@ -14,16 +14,16 @@
   --font-sans:  var(--font-dm-sans),  "DM Sans", sans-serif;
   --font-serif: var(--font-dm-serif), "DM Serif Display", serif;
 
-  /* Warna Aksen Utama — biru brand STC AutoTrade */
-  --color-primary:      #3b82f6;   /* blue-500 */
-  --color-primary-deep: #1d4ed8;   /* blue-700 */
-  --color-primary-dim:  #bfdbfe;   /* blue-200 */
-  --color-primary-faint: #eff6ff;  /* blue-50  */
+  /* Warna Aksen Utama — hijau brand STC AutoTrade */
+  --color-primary:      #10b981;   /* emerald-500 */
+  --color-primary-deep: #047857;   /* emerald-700 */
+  --color-primary-dim:  #a7f3d0;   /* emerald-200 */
+  --color-primary-faint: #ecfdf5;  /* emerald-50  */
 
   /* Latar Belakang */
   --color-surface:   #ffffff;
-  --color-surface-2: #f9fafb;  /* gray-50  */
-  --color-surface-3: #f0f9ff;  /* sky-50   */
+  --color-surface-2: #f9fafb;  /* gray-50    */
+  --color-surface-3: #ecfdf5;  /* emerald-50 */
 
   /* Teks */
   --color-ink:     #1a1612;
@@ -91,9 +91,9 @@ body {
 .shimmer-badge {
   background: linear-gradient(
     90deg,
-    rgba(59, 130, 246, 0.07)  0%,
-    rgba(59, 130, 246, 0.16) 40%,
-    rgba(59, 130, 246, 0.07) 80%
+    rgba(16, 185, 129, 0.07)  0%,
+    rgba(16, 185, 129, 0.16) 40%,
+    rgba(16, 185, 129, 0.07) 80%
   );
   background-size: 400px 100%;
   animation: shimmer 2.8s linear infinite;
@@ -102,7 +102,7 @@ body {
 /* ── Selection & Scrollbar ─────────────────────────────────────────── */
 
 ::selection {
-  background: rgba(59, 130, 246, 0.20);
+  background: rgba(16, 185, 129, 0.20);
   color: var(--color-primary-deep);
 }
 

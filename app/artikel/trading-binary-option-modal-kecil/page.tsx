@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/trading-binary-option-modal-kecil/page.tsx
  *
  * Target keyword:
@@ -144,11 +144,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -175,11 +175,11 @@ function WarningBox({ children }: { children: React.ReactNode }) {
 function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{n}</div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -199,7 +199,7 @@ export default function TradingBinaryOptionModalKecilPage() {
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#10b981]">AutoTrade</span></span>
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
@@ -221,7 +221,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                   <li className="text-[#1a1612] font-medium">Trading Modal Kecil</li>
                 </ol>
               </nav>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Strategi & Modal</span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#ecfdf5] text-[#047857] text-[11px] font-semibold mb-4">Strategi & Modal</span>
               <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
                 Trading Binary Option Modal Kecil: Panduan Lengkap dengan STC AutoTrade
               </h1>
@@ -374,7 +374,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                     alasan: "Bot mendeteksi arah secara mandiri via analisis real-time. Punya pilihan timeframe (1m-1h). Cocok untuk modal kecil dengan timeframe lebih panjang (15m atau 30m) agar tidak terlalu sering trading.",
                     tips: "Gunakan timeframe 15m atau 30m untuk frekuensi order lebih terkontrol.",
                     badge: "Cocok",
-                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                    badgeColor: "bg-[#d1fae5] text-[#047857]",
                   },
                   {
                     mode: "Indicator",
@@ -383,7 +383,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                     alasan: "Analisis teknikal menggunakan SMA, EMA, atau RSI. Bisa dikonfigurasi untuk hanya trading saat sinyal kuat — cocok untuk modal kecil yang tidak mau terlalu sering trading.",
                     tips: "Set sensitivity rendah (lebih selektif) untuk mengurangi frekuensi order.",
                     badge: "Cocok",
-                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                    badgeColor: "bg-[#d1fae5] text-[#047857]",
                   },
                   {
                     mode: "Fastrade CTC",
@@ -401,7 +401,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                     alasan: "Input sinyal manual dengan jadwal eksekusi. Karena Anda yang menentukan kapan bot trading, frekuensinya bisa sangat terkontrol. Cocok jika Anda punya sumber sinyal yang dipercaya.",
                     tips: "Pilih hanya sinyal berkualitas tinggi. Jangan trading terlalu sering.",
                     badge: "Terkontrol",
-                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                    badgeColor: "bg-[#d1fae5] text-[#047857]",
                   },
                   {
                     mode: "Momentum",
@@ -410,7 +410,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                     alasan: "Deteksi 4 pola candlestick: CandleSabit, DojiTerjepit, DojiPembatalan, BBSARBreak. Bisa aktifkan hanya pola tertentu yang win rate-nya lebih tinggi. Cocok untuk yang paham pola candlestick.",
                     tips: "Aktifkan hanya pola yang paling Anda percaya — jangan aktifkan semua sekaligus.",
                     badge: "Selektif",
-                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                    badgeColor: "bg-[#d1fae5] text-[#047857]",
                   },
                 ].map((item) => (
                   <div key={item.mode} className={`bg-white border rounded-xl p-4 ${item.cocok ? "border-[rgba(26,22,18,0.07)]" : "border-[#fde68a]"}`}>
@@ -422,7 +422,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                       <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full ${item.badgeColor}`}>{item.badge}</span>
                     </div>
                     <p className="text-[12px] text-[#6b6058] leading-relaxed mb-1.5">{item.alasan}</p>
-                    <p className="text-[11px] text-[#3b82f6] font-medium">Tips: {item.tips}</p>
+                    <p className="text-[11px] text-[#10b981] font-medium">Tips: {item.tips}</p>
                   </div>
                 ))}
               </div>
@@ -592,7 +592,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                   "Sabar dan konsisten lebih penting dari strategi agresif — apalagi saat modal terbatas.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
-                    <span className="text-[#3b82f6] font-bold text-sm flex-shrink-0">✓</span>
+                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
                   </div>
                 ))}
@@ -651,7 +651,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-white border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors"
+                    className="block p-4 bg-white border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

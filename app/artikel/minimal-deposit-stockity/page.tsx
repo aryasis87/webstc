@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/minimal-deposit-stockity/page.tsx
  *
  * Target keyword:
@@ -144,11 +144,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -175,11 +175,11 @@ function WarningBox({ children }: { children: React.ReactNode }) {
 function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{n}</div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -199,7 +199,7 @@ export default function MinimalDepositStockityPage() {
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#10b981]">AutoTrade</span></span>
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
@@ -221,7 +221,7 @@ export default function MinimalDepositStockityPage() {
                   <li className="text-[#1a1612] font-medium">Minimal Deposit Stockity</li>
                 </ol>
               </nav>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Modal & Manajemen Risiko</span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#ecfdf5] text-[#047857] text-[11px] font-semibold mb-4">Modal & Manajemen Risiko</span>
               <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
                 Minimal Deposit Stockity: Minimum Order Rp 14.000 & Modal Aman untuk Bot
               </h1>
@@ -253,10 +253,10 @@ export default function MinimalDepositStockityPage() {
                 Ada dua angka berbeda yang sering dicampur aduk: minimum deposit ke Stockity.id (urusan platform) dan minimum nominal order di STC AutoTrade (urusan bot). Ini penjelasannya:
               </p>
               <div className="grid sm:grid-cols-2 gap-4 mb-5">
-                <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl p-4">
-                  <p className="text-[12px] font-bold text-[#1d4ed8] mb-2">Minimum Deposit Stockity.id</p>
-                  <p className="text-[13px] text-[#1e40af] leading-relaxed mb-2">Ketentuan dari platform Stockity.id tentang berapa minimal saldo yang bisa Anda depositkan ke akun.</p>
-                  <p className="text-[11px] text-[#1d4ed8] font-semibold">→ Ditentukan oleh Stockity.id, cek langsung di platform mereka</p>
+                <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl p-4">
+                  <p className="text-[12px] font-bold text-[#047857] mb-2">Minimum Deposit Stockity.id</p>
+                  <p className="text-[13px] text-[#065f46] leading-relaxed mb-2">Ketentuan dari platform Stockity.id tentang berapa minimal saldo yang bisa Anda depositkan ke akun.</p>
+                  <p className="text-[11px] text-[#047857] font-semibold">→ Ditentukan oleh Stockity.id, cek langsung di platform mereka</p>
                 </div>
                 <div className="bg-[#f0fdf4] border border-[#bbf7d0] rounded-xl p-4">
                   <p className="text-[12px] font-bold text-[#14532d] mb-2">Minimum Order STC AutoTrade</p>
@@ -382,7 +382,7 @@ export default function MinimalDepositStockityPage() {
                       <p className="text-[13px] font-semibold text-[#1a1612]">{item.masalah}</p>
                     </div>
                     <p className="text-[12px] text-[#6b6058] mb-1.5 pl-5">Akibat: {item.akibat}</p>
-                    <p className="text-[11px] text-[#3b82f6] font-medium pl-5">Solusi: {item.solusi}</p>
+                    <p className="text-[11px] text-[#10b981] font-medium pl-5">Solusi: {item.solusi}</p>
                   </div>
                 ))}
               </div>
@@ -448,9 +448,9 @@ export default function MinimalDepositStockityPage() {
                     modal: "Gratis",
                     step: "Tidak relevan",
                     desc: "Mulai di Demo sampai paham cara kerja bot dan menemukan mode yang cocok. Zero risk.",
-                    color: "bg-[#eff6ff] border-[#bfdbfe]",
+                    color: "bg-[#ecfdf5] border-[#a7f3d0]",
                     badge: "Direkomendasikan",
-                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                    badgeColor: "bg-[#d1fae5] text-[#047857]",
                   },
                   {
                     profil: "Konservatif",
@@ -528,7 +528,7 @@ export default function MinimalDepositStockityPage() {
                   "Set Stop Loss harian sebelum aktifkan bot di akun Real — perlindungan modal wajib.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
-                    <span className="text-[#3b82f6] font-bold text-sm flex-shrink-0">✓</span>
+                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
                   </div>
                 ))}
@@ -587,7 +587,7 @@ export default function MinimalDepositStockityPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors"
+                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

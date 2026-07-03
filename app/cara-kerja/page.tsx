@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/cara-kerja/page.tsx
  * Penjelasan lengkap cara kerja STC AutoTrade — Server Component
  * Menarget keyword: "cara kerja stcautotrade", "strategi trading stockity",
@@ -123,8 +123,8 @@ const STRATEGIES = [
   },
   {
     tag: "Schedule",
-    tagColor: "bg-blue-50 text-blue-700 border-blue-200",
-    dotColor: "bg-blue-500",
+    tagColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
+    dotColor: "bg-emerald-500",
     title: "Trading Terjadwal",
     subtitle: "Eksekusi order berdasarkan jadwal waktu",
     desc: "Mode Schedule memungkinkan Anda mengatur bot untuk trading pada waktu-waktu spesifik berdasarkan data historis. Jika Anda memiliki pola atau sesi trading tertentu yang terbukti menguntungkan, bot akan eksekusi secara tepat waktu — bahkan saat Anda tidur.",
@@ -291,7 +291,7 @@ export default function CaraKerjaPage() {
 
         {/* ── Header ────────────────────────────────────────── */}
         <header className="max-w-5xl mx-auto px-5 sm:px-8 pt-10 pb-14">
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-3">
             Panduan Lengkap
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5 max-w-2xl">
@@ -308,7 +308,7 @@ export default function CaraKerjaPage() {
               <a
                 key={i}
                 href={`#${["strategi", "risiko", "mulai"][i]}`}
-                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#3b82f6]/40 hover:text-[#3b82f6] transition-all no-underline"
+                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#10b981]/40 hover:text-[#10b981] transition-all no-underline"
               >
                 {item}
               </a>

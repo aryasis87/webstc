@@ -35,7 +35,7 @@ export default function NotFound() {
 
         <Link
           href="/"
-          className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm"
+          className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-[#1a1612] text-[#ecfdf5] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm"
         >
           Kembali ke Beranda
         </Link>

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/strategi-martingale-stockity/page.tsx
  *
  * Target keyword:
@@ -121,11 +121,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -466,8 +466,8 @@ export default function StrategiMartingaleStockityPage() {
                 { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading Stockity", desc: "Strategi & tips konsisten profit 2026" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -479,7 +479,7 @@ export default function StrategiMartingaleStockityPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-1.5">Coba Martingale Otomatis</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Coba Martingale Otomatis</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">STC AutoTrade — Martingale Dikelola Otomatis oleh Bot</p>
               <p className="text-[13px] text-[#6b6058]">Set sekali, bot yang menjalankan siklus martingale — termasuk stop loss & stop profit otomatis.</p>
             </div>

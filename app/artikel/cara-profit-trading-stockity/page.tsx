@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/cara-profit-trading-stockity/page.tsx
  *
  * Target keyword:
@@ -153,11 +153,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -292,7 +292,7 @@ export default function CaraProfitTradingStockityPage() {
                   ].map((item) => (
                     <div key={item.n} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
                       <div className="text-2xl mb-2">{item.icon}</div>
-                      <p className="text-[10px] font-semibold text-[#3b82f6] uppercase tracking-wider mb-1">Faktor {item.n}</p>
+                      <p className="text-[10px] font-semibold text-[#10b981] uppercase tracking-wider mb-1">Faktor {item.n}</p>
                       <h3 className="text-[13px] font-semibold text-[#1a1612] mb-2">{item.title}</h3>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
                     </div>
@@ -345,7 +345,7 @@ export default function CaraProfitTradingStockityPage() {
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.strategi}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{s.kenapa}</p>
                         <div className="bg-white rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.07)]">
-                          <p className="text-[11px] text-[#3b82f6] font-medium">Setting awal: {s.setting}</p>
+                          <p className="text-[11px] text-[#10b981] font-medium">Setting awal: {s.setting}</p>
                         </div>
                       </div>
                     ))}
@@ -377,7 +377,7 @@ export default function CaraProfitTradingStockityPage() {
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.strategi}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{s.kenapa}</p>
                         <div className="bg-white rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.07)]">
-                          <p className="text-[11px] text-[#3b82f6] font-medium">Setting awal: {s.setting}</p>
+                          <p className="text-[11px] text-[#10b981] font-medium">Setting awal: {s.setting}</p>
                         </div>
                       </div>
                     ))}
@@ -396,7 +396,7 @@ export default function CaraProfitTradingStockityPage() {
                         strategi: "Schedule (Trading Terjadwal)",
                         kenapa: "Jika Anda memiliki data historis sesi trading yang konsisten profitable, jadwalkan bot untuk aktif hanya pada waktu-waktu tersebut. Mengurangi eksposur pada sesi yang tidak produktif.",
                         setting: "Sesuaikan dengan data sesi profitable Anda. Modal: Rp 2 juta+",
-                        color: "border-l-blue-400",
+                        color: "border-l-emerald-400",
                       },
                       {
                         strategi: "Fastrade (Frekuensi Tinggi)",
@@ -409,7 +409,7 @@ export default function CaraProfitTradingStockityPage() {
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.strategi}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{s.kenapa}</p>
                         <div className="bg-white rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.07)]">
-                          <p className="text-[11px] text-[#3b82f6] font-medium">Setting awal: {s.setting}</p>
+                          <p className="text-[11px] text-[#10b981] font-medium">Setting awal: {s.setting}</p>
                         </div>
                       </div>
                     ))}
@@ -456,13 +456,13 @@ export default function CaraProfitTradingStockityPage() {
                         formula: "Min 1:2",
                         contoh: "Risiko Rp 100K → Target Rp 200K",
                         desc: "Dengan R:R 1:2, Anda cukup menang 40% waktu untuk tetap net positif.",
-                        color: "border-blue-200 bg-blue-50",
+                        color: "border-emerald-200 bg-emerald-50",
                       },
                     ].map((f) => (
                       <div key={f.label} className={`border rounded-xl p-4 ${f.color}`}>
                         <p className="text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider mb-1">{f.label}</p>
                         <p className="font-[family-name:var(--font-dm-serif)] text-xl text-[#1a1612] mb-1">{f.formula}</p>
-                        <p className="text-[11px] font-medium text-[#3b82f6] mb-2">{f.contoh}</p>
+                        <p className="text-[11px] font-medium text-[#10b981] mb-2">{f.contoh}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed">{f.desc}</p>
                       </div>
                     ))}
@@ -533,7 +533,7 @@ export default function CaraProfitTradingStockityPage() {
                       sesi: "Sesi Asia",
                       jam: "07.00–12.00 WIB",
                       volatilitas: "Rendah–Menengah",
-                      volColor: "bg-blue-50 text-blue-700",
+                      volColor: "bg-emerald-50 text-emerald-700",
                       karakteristik: "Pergerakan lebih terprediksi, volume lebih rendah. Cocok untuk strategi Schedule pada jam tertentu yang sudah terbukti profitable dari data Anda.",
                       rekomendasiBot: "AI Signal atau CTC",
                       icon: "🌏",
@@ -580,7 +580,7 @@ export default function CaraProfitTradingStockityPage() {
                         <div className="flex items-center gap-2">
                           <span className="text-lg">{sesi.icon}</span>
                           <h3 className="text-[13px] font-semibold text-[#1a1612]">{sesi.sesi}</h3>
-                          <span className="text-[12px] text-[#3b82f6] font-medium">{sesi.jam}</span>
+                          <span className="text-[12px] text-[#10b981] font-medium">{sesi.jam}</span>
                         </div>
                         <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full ${sesi.volColor}`}>
                           Volatilitas: {sesi.volatilitas}
@@ -588,7 +588,7 @@ export default function CaraProfitTradingStockityPage() {
                       </div>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{sesi.karakteristik}</p>
                       <div className="bg-[#f9fafb] rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.06)]">
-                        <p className="text-[11px] text-[#1a1612]/50">Bot rekomendasi: <strong className="text-[#3b82f6]">{sesi.rekomendasiBot}</strong></p>
+                        <p className="text-[11px] text-[#1a1612]/50">Bot rekomendasi: <strong className="text-[#10b981]">{sesi.rekomendasiBot}</strong></p>
                       </div>
                     </div>
                   ))}
@@ -688,7 +688,7 @@ export default function CaraProfitTradingStockityPage() {
                   {
                     periode: "Hari 1–3",
                     badge: "Setup",
-                    badgeColor: "bg-blue-50 text-blue-700",
+                    badgeColor: "bg-emerald-50 text-emerald-700",
                     tasks: [
                       "Download STC AutoTrade APK atau buka versi web",
                       "Daftar akun Stockity.id melalui aplikasi (gratis)",
@@ -750,8 +750,8 @@ export default function CaraProfitTradingStockityPage() {
                       {phase.tasks.map((task, j) => (
                         <div key={j} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
                           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-0.5">
-                            <circle cx="7" cy="7" r="6.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                            <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
+                            <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                           {task}
                         </div>
@@ -837,8 +837,8 @@ export default function CaraProfitTradingStockityPage() {
                 { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Kalkulasi modal aman per profil risiko" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade 2026" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}

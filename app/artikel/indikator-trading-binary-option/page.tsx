@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -145,11 +145,11 @@ function InfoBox({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -186,13 +186,13 @@ function StepCard({
 }) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">
         {n}
       </div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -243,7 +243,7 @@ export default function IndikatorTradingBinaryOptionPage() {
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
               <span className="text-base font-bold text-[#1a1612]">
-                STC <span className="text-[#3b82f6]">AutoTrade</span>
+                STC <span className="text-[#10b981]">AutoTrade</span>
               </span>
             </Link>
             <div className="flex items-center gap-3">
@@ -283,16 +283,16 @@ export default function IndikatorTradingBinaryOptionPage() {
                 <span className="text-[#1a1612]/60">Indikator Trading</span>
               </nav>
 
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#eff6ff] border border-[#bfdbfe] rounded-full mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#3b82f6]" />
-                <span className="text-[11px] font-semibold text-[#1d4ed8] tracking-wide uppercase">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#ecfdf5] border border-[#a7f3d0] rounded-full mb-5">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
+                <span className="text-[11px] font-semibold text-[#047857] tracking-wide uppercase">
                   Mode Indicator
                 </span>
               </div>
 
               <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-tight mb-4">
                 Indikator Trading Binary Option di STC AutoTrade:{" "}
-                <span className="text-[#3b82f6]">SMA, EMA, dan RSI</span>
+                <span className="text-[#10b981]">SMA, EMA, dan RSI</span>
               </h1>
               <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
                 Mode Indicator di STC AutoTrade v4.4 adalah bot trading otomatis berbasis analisis
@@ -368,7 +368,7 @@ export default function IndikatorTradingBinaryOptionPage() {
                 {/* SMA */}
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+                    <span className="w-7 h-7 rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">
                       1
                     </span>
                     <h3 className="text-[15px] font-bold text-[#1a1612]">
@@ -392,7 +392,7 @@ export default function IndikatorTradingBinaryOptionPage() {
                 {/* EMA */}
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+                    <span className="w-7 h-7 rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">
                       2
                     </span>
                     <h3 className="text-[15px] font-bold text-[#1a1612]">
@@ -416,7 +416,7 @@ export default function IndikatorTradingBinaryOptionPage() {
                 {/* RSI */}
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="w-7 h-7 rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">
+                    <span className="w-7 h-7 rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">
                       3
                     </span>
                     <h3 className="text-[15px] font-bold text-[#1a1612]">
@@ -591,7 +591,7 @@ export default function IndikatorTradingBinaryOptionPage() {
                       "Sesi trading yang tenang seperti sesi Asia",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                        <span className="text-[#3b82f6] mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-[#10b981] mt-0.5 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
@@ -611,7 +611,7 @@ export default function IndikatorTradingBinaryOptionPage() {
                       "Sesi London/New York yang aktif dan volatile",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                        <span className="text-[#3b82f6] mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-[#10b981] mt-0.5 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
@@ -791,7 +791,7 @@ export default function IndikatorTradingBinaryOptionPage() {
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="flex items-center gap-2 text-[13px] text-[#3b82f6] hover:text-[#1d4ed8] no-underline transition-colors"
+                      className="flex items-center gap-2 text-[13px] text-[#10b981] hover:text-[#047857] no-underline transition-colors"
                     >
                       <span className="text-[10px]">→</span>
                       {link.label}
@@ -810,7 +810,7 @@ export default function IndikatorTradingBinaryOptionPage() {
               <a
                 href="/StcAutoTrade.apk"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#3b82f6] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#2563eb] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#10b981] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#059669] transition-colors"
               >
                 Download APK Gratis
               </a>

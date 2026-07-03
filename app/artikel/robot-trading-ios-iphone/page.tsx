@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/robot-trading-ios-iphone/page.tsx
  *
  * Target keyword:
@@ -122,8 +122,8 @@ function FeatureCheck({ text }: { text: string }) {
   return (
     <div className="flex items-start gap-2.5 text-[13px] text-[#6b6058] leading-relaxed">
       <svg width="16" height="16" viewBox="0 0 16 16" fill="none" className="flex-shrink-0 mt-0.5">
-        <circle cx="8" cy="8" r="7.5" stroke="#3b82f6" strokeOpacity="0.25" />
-        <path d="M5.5 8L7.5 10L10.5 6" stroke="#3b82f6" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="8" cy="8" r="7.5" stroke="#10b981" strokeOpacity="0.25" />
+        <path d="M5.5 8L7.5 10L10.5 6" stroke="#10b981" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       {text}
     </div>
@@ -132,11 +132,11 @@ function FeatureCheck({ text }: { text: string }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -192,7 +192,7 @@ export default function RobotTradingIphonePage() {
         {/* ── Article Header ────────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Panduan</span>
+            <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Panduan</span>
             <span className="text-[12px] text-[#1a1612]/35">1 Juni 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±6 menit baca</span>
@@ -272,7 +272,7 @@ export default function RobotTradingIphonePage() {
                   { n: "6", title: "Aktifkan bot dan biarkan berjalan", desc: "Klik START. Pastikan tab browser tetap aktif di foreground dan iPhone tersambung ke charger untuk performa optimal." },
                 ].map((s) => (
                   <div key={s.n} className="flex gap-4 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-5 py-4">
-                    <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#eff6ff] flex items-center justify-center text-[12px] font-bold text-[#1d4ed8]">{s.n}</div>
+                    <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#ecfdf5] flex items-center justify-center text-[12px] font-bold text-[#047857]">{s.n}</div>
                     <div className="pt-0.5">
                       <h3 className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.title}</h3>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
@@ -297,7 +297,7 @@ export default function RobotTradingIphonePage() {
                     "Ikon STC AutoTrade sekarang ada di layar utama iPhone Anda",
                   ].map((tip, i) => (
                     <div key={i} className="flex items-start gap-2.5 text-[13px] text-[#6b6058]">
-                      <span className="font-semibold text-[#1d4ed8] text-[12px] mt-0.5 min-w-[16px]">{i + 1}.</span>
+                      <span className="font-semibold text-[#047857] text-[12px] mt-0.5 min-w-[16px]">{i + 1}.</span>
                       {tip}
                     </div>
                   ))}
@@ -345,7 +345,7 @@ export default function RobotTradingIphonePage() {
                     <div key={p.platform} className="p-6">
                       <div className="text-2xl mb-3">{p.icon}</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612] mb-1">{p.platform}</h3>
-                      <p className="text-[12px] text-[#3b82f6] font-medium mb-4">{p.cara}</p>
+                      <p className="text-[12px] text-[#10b981] font-medium mb-4">{p.cara}</p>
                       <div className="space-y-2 mb-4">
                         {p.features.map((f) => <FeatureCheck key={f} text={f} />)}
                       </div>
@@ -428,8 +428,8 @@ export default function RobotTradingIphonePage() {
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Stockity Gratis", desc: "Cara download & akses robot gratis 2026" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -441,7 +441,7 @@ export default function RobotTradingIphonePage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-1.5">Langsung dari Safari iPhone Anda</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Langsung dari Safari iPhone Anda</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Mulai Robot Trading Stockity di iPhone Hari Ini</p>
               <p className="text-[13px] text-[#6b6058]">Buka stcautotradepro.id di Safari — tanpa instalasi, fitur lengkap, gratis untuk member.</p>
             </div>

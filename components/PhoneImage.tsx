@@ -13,7 +13,7 @@ export default function PhoneImage({ src, alt, label, priority = false, fit = "c
   return (
     <div className="relative mx-auto select-none" style={{ width: 280, height: 590 }}>
       {/* Ambient glow */}
-      <div className="absolute inset-10 rounded-[36px] bg-blue-500/15 blur-3xl" />
+      <div className="absolute inset-10 rounded-[36px] bg-emerald-500/15 blur-3xl" />
       {/* Outer shadow ring */}
       <div className="absolute inset-0 rounded-[44px] shadow-2xl shadow-black/12" />
 

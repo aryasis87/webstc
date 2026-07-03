@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/robot-trading-stockity/page.tsx
  * Artikel SEO — "Robot Trading Stockity" & keyword turunan
  *
@@ -200,10 +200,10 @@ function FeatureCheck({ text }: { text: string }) {
         fill="none"
         className="flex-shrink-0 mt-0.5"
       >
-        <circle cx="8" cy="8" r="7.5" stroke="#3b82f6" strokeOpacity="0.25" />
+        <circle cx="8" cy="8" r="7.5" stroke="#10b981" strokeOpacity="0.25" />
         <path
           d="M5.5 8L7.5 10L10.5 6"
-          stroke="#3b82f6"
+          stroke="#10b981"
           strokeWidth="1.3"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -224,11 +224,11 @@ function InfoBox({
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -329,7 +329,7 @@ export default function RobotTradingStockityPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           {/* Meta label */}
           <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">
+            <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">
               Panduan
             </span>
             <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
@@ -448,7 +448,7 @@ export default function RobotTradingStockityPage() {
                       key={s.n}
                       className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5"
                     >
-                      <div className="w-8 h-8 rounded-full bg-[#dbeafe] flex items-center justify-center text-[13px] font-bold text-[#1d4ed8] mb-3">
+                      <div className="w-8 h-8 rounded-full bg-[#d1fae5] flex items-center justify-center text-[13px] font-bold text-[#047857] mb-3">
                         {s.n}
                       </div>
                       <h3 className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{s.title}</h3>
@@ -516,7 +516,7 @@ export default function RobotTradingStockityPage() {
                   },
                   {
                     tag: "Schedule",
-                    color: "bg-blue-50 text-blue-700 border-blue-200",
+                    color: "bg-emerald-50 text-emerald-700 border-emerald-200",
                     title: "Trading Terjadwal Berdasarkan Waktu",
                     desc: "Atur bot untuk trading pada waktu-waktu spesifik yang secara historis menguntungkan. Bot mengeksekusi order sesuai jadwal yang Anda tentukan — bahkan saat Anda tidur. Cocok untuk trader yang sudah memiliki data pola sesi trading.",
                     risk: "Bergantung jadwal",
@@ -556,7 +556,7 @@ export default function RobotTradingStockityPage() {
                   Penjelasan teknis detail setiap strategi →{" "}
                   <Link
                     href="/cara-kerja"
-                    className="text-[#3b82f6] hover:underline no-underline font-medium"
+                    className="text-[#10b981] hover:underline no-underline font-medium"
                   >
                     Halaman Cara Kerja STC AutoTrade
                   </Link>
@@ -673,7 +673,7 @@ export default function RobotTradingStockityPage() {
                     <div key={p.platform} className="p-6">
                       <div className="text-2xl mb-3">{p.icon}</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612] mb-1">{p.platform}</h3>
-                      <p className="text-[12px] text-[#3b82f6] font-medium mb-4">{p.url}</p>
+                      <p className="text-[12px] text-[#10b981] font-medium mb-4">{p.url}</p>
                       <div className="space-y-2 mb-4">
                         {p.features.map((f) => (
                           <FeatureCheck key={f} text={f} />
@@ -691,7 +691,7 @@ export default function RobotTradingStockityPage() {
                 Panduan instalasi langkah demi langkah →{" "}
                 <Link
                   href="/download"
-                  className="text-[#3b82f6] hover:underline no-underline font-medium"
+                  className="text-[#10b981] hover:underline no-underline font-medium"
                 >
                   Halaman Download STC AutoTrade
                 </Link>
@@ -747,7 +747,7 @@ export default function RobotTradingStockityPage() {
                     key={s.n}
                     className="flex gap-4 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-5 py-4"
                   >
-                    <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#eff6ff] flex items-center justify-center text-[12px] font-bold text-[#1d4ed8]">
+                    <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#ecfdf5] flex items-center justify-center text-[12px] font-bold text-[#047857]">
                       {s.n}
                     </div>
                     <div className="pt-0.5">
@@ -870,7 +870,7 @@ export default function RobotTradingStockityPage() {
                 Lebih banyak pertanyaan →{" "}
                 <Link
                   href="/faq"
-                  className="text-[#3b82f6] hover:underline no-underline font-medium"
+                  className="text-[#10b981] hover:underline no-underline font-medium"
                 >
                   Lihat FAQ Lengkap STC AutoTrade
                 </Link>
@@ -936,9 +936,9 @@ export default function RobotTradingStockityPage() {
                 <Link
                   key={l.href}
                   href={l.href}
-                  className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline"
+                  className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline"
                 >
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">
                     {l.title} →
                   </p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
@@ -952,7 +952,7 @@ export default function RobotTradingStockityPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-1.5">
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">
                 Mulai Gratis Sekarang
               </p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">

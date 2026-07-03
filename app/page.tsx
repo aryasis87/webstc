@@ -1,4 +1,4 @@
-﻿import Image from "next/image";
+import Image from "next/image";
 import PhoneImage from "@/components/PhoneImage";
 import { FadeUp, StaggerView, FadeItem, FAQItem, CountUp } from "@/components/AnimatedSections";
 import { HeroBadge, HeroHeading, HeroStatBar, HambatanSection, RiskCards } from "@/components/ClientAnimations";
@@ -26,7 +26,7 @@ const TESTIMONIALS = [
 ];
 
 const MODES = [
-  { tag: "Schedule",  color: "text-blue-700 bg-blue-50 border border-blue-100",          title: "Trading Terjadwal",          desc: "Jadwalkan order berdasarkan pola historis. Bot eksekusi tepat waktu — bahkan saat Anda tidur.",                                                    for: "Trader dengan data historis teratur" },
+  { tag: "Schedule",  color: "text-emerald-700 bg-emerald-50 border border-emerald-100",          title: "Trading Terjadwal",          desc: "Jadwalkan order berdasarkan pola historis. Bot eksekusi tepat waktu — bahkan saat Anda tidur.",                                                    for: "Trader dengan data historis teratur" },
   { tag: "Fastrade",  color: "text-emerald-700 bg-emerald-50 border border-emerald-100", title: "Trading Cepat",              desc: "Bot membaca momentum pasar pada timeframe 1m–1h dan mengeksekusi order mengikuti arah yang terdeteksi.",                                          for: "Trader aktif yang suka banyak order" },
   { tag: "CTC",       color: "text-violet-700 bg-violet-50 border border-violet-100",    title: "Copy Trading",               desc: "Tidak perlu analisis sendiri. Bot mengikuti sinyal sumber terpercaya dan eksekusi real-time di akun Anda.",                                        for: "Pemula yang ingin belajar bertahap" },
   { tag: "AI Signal", color: "text-rose-700 bg-rose-50 border border-rose-100",          title: "Sinyal Kecerdasan Buatan",   desc: "Algoritma AI menganalisis pasar secara real-time, mengidentifikasi pola, dan menghasilkan sinyal UP/DOWN otomatis.",                              for: "Trader yang ingin keputusan berbasis data" },
@@ -149,7 +149,7 @@ export default function Home() {
             {/* Dot grid */}
             <div className="absolute inset-0 [background-image:radial-gradient(circle,#e4e4e7_1px,transparent_1px)] [background-size:32px_32px] opacity-50 pointer-events-none" />
             {/* Blue glow */}
-            <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-blue-500/[0.07] blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-emerald-500/[0.07] blur-[120px] rounded-full pointer-events-none" />
 
             <div className="relative max-w-5xl mx-auto px-5 sm:px-8">
               <div className="grid lg:grid-cols-[1fr_300px] gap-10 lg:gap-24 items-center">
@@ -219,7 +219,7 @@ export default function Home() {
                     <ul className="flex flex-col gap-2">
                       {["Berjalan di background 24 jam", "Notifikasi order real-time", "Performa optimal di Android 10.0+"].map((f) => (
                         <li key={f} className="flex items-center gap-2 text-[13px] text-zinc-500">
-                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="6" fill="#2563eb" fillOpacity=".12"/><path d="M4 6.5l2 2 3-3.5" stroke="#2563eb" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                          <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><circle cx="6.5" cy="6.5" r="6" fill="#059669" fillOpacity=".12"/><path d="M4 6.5l2 2 3-3.5" stroke="#059669" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/></svg>
                           {f}
                         </li>
                       ))}
@@ -232,7 +232,7 @@ export default function Home() {
 
                 {/* Web Card */}
                 <FadeItem>
-                  <div className="flex flex-col gap-4 p-6 bg-blue-600 rounded-2xl hover:bg-blue-700 hover:-translate-y-0.5 transition-all h-full">
+                  <div className="flex flex-col gap-4 p-6 bg-emerald-600 rounded-2xl hover:bg-emerald-700 hover:-translate-y-0.5 transition-all h-full">
                     <div className="flex items-center gap-3">
                       <div className="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center" aria-hidden="true">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256" fill="white"><path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24ZM101.63,168h52.74C149,186.34,140,202.87,128,215.89,116,202.87,107,186.34,101.63,168ZM98,152a145.72,145.72,0,0,1,0-48h60a145.72,145.72,0,0,1,0,48ZM40,128a88.1,88.1,0,0,1,1.68-16.6H81.19a161.79,161.79,0,0,0,0,33.2H41.68A88.1,88.1,0,0,1,40,128ZM154.37,88H101.63C107,69.66,116,53.13,128,40.11,140,53.13,149,69.66,154.37,88Zm19.84,16h39.51A88.11,88.11,0,0,1,215.32,128H174.81a161.79,161.79,0,0,0,0-33.2ZM200.68,88H165.64c-5.56-22.77-15.47-43.28-29.41-60.41A88.35,88.35,0,0,1,200.68,88ZM119.77,27.59C105.83,44.72,95.92,65.23,90.36,88H55.32A88.35,88.35,0,0,1,119.77,27.59ZM55.32,168H90.36c5.56,22.77,15.47,43.28,29.41,60.41A88.35,88.35,0,0,1,55.32,168Zm80.95,60.41c13.94-17.13,23.85-37.64,29.41-60.41h35.04A88.35,88.35,0,0,1,136.27,228.41Z"/></svg>
@@ -250,7 +250,7 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white text-blue-700 text-sm font-semibold rounded-xl hover:bg-blue-50 transition-colors no-underline">
+                    <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="mt-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white text-emerald-700 text-sm font-semibold rounded-xl hover:bg-emerald-50 transition-colors no-underline">
                       Buka Versi Web
                     </a>
                   </div>
@@ -314,7 +314,7 @@ export default function Home() {
                     Sebagian besar trader baru tidak gagal karena kurang modal — mereka gagal karena masalah yang
                     seharusnya bisa dicegah. <strong className="text-zinc-900">STC AutoTrade</strong> hadir sebagai solusinya.
                   </p>
-                  <a href={APK_PATH} download className="inline-flex items-center gap-2 px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors no-underline">
+                  <a href={APK_PATH} download className="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white text-sm font-semibold rounded-xl hover:bg-emerald-700 transition-colors no-underline">
                     Download Gratis Sekarang
                   </a>
                 </FadeUp>
@@ -343,7 +343,7 @@ export default function Home() {
                       <h3 className="text-[15px] font-semibold tracking-tight text-zinc-900">{m.title}</h3>
                       <p className="text-[13px] text-zinc-500 leading-relaxed flex-1">{m.desc}</p>
                       <p className="text-[12px] text-zinc-400 border-t border-zinc-100 pt-3 flex items-center gap-1.5">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6l2.5 2.5 5.5-5" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6l2.5 2.5 5.5-5" stroke="#059669" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                         {m.for}
                       </p>
                     </article>
@@ -377,11 +377,11 @@ export default function Home() {
                     <p className="text-zinc-500 text-[15px] leading-relaxed mb-5">
                       Fitur bawaan memastikan Anda tidak kehilangan lebih dari yang sudah direncanakan — bahkan tanpa memantau layar.
                     </p>
-                    <div className="flex gap-3 p-4 rounded-xl bg-blue-50 border border-blue-100 mb-7">
-                      <div className="w-4 h-4 mt-0.5 shrink-0 rounded-full bg-blue-100 flex items-center justify-center">
-                        <div className="w-1.5 h-1.5 rounded-full bg-blue-600" />
+                    <div className="flex gap-3 p-4 rounded-xl bg-emerald-50 border border-emerald-100 mb-7">
+                      <div className="w-4 h-4 mt-0.5 shrink-0 rounded-full bg-emerald-100 flex items-center justify-center">
+                        <div className="w-1.5 h-1.5 rounded-full bg-emerald-600" />
                       </div>
-                      <p className="text-[13px] text-blue-700 leading-relaxed">
+                      <p className="text-[13px] text-emerald-700 leading-relaxed">
                         STC AutoTrade adalah alat bantu eksekusi strategi, bukan jaminan selalu profit.
                         Hasil trading tetap dipengaruhi kondisi pasar yang tidak dapat diprediksi.
                       </p>
@@ -396,18 +396,18 @@ export default function Home() {
           {/* ── MODE DEMO ──────────────────────────────────────── */}
           <section className="py-20 sm:py-28 border-b border-zinc-100">
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
-              <div className="relative overflow-hidden bg-blue-950 rounded-3xl p-8 sm:p-14">
+              <div className="relative overflow-hidden bg-emerald-950 rounded-3xl p-8 sm:p-14">
                 {/* Inner dot pattern */}
                 <div className="absolute inset-0 [background-image:radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:28px_28px] pointer-events-none" />
-                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent" />
+                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-400/40 to-transparent" />
 
                 <div className="relative grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                   <FadeUp>
-                    <p className="text-[11px] font-semibold tracking-widest uppercase text-blue-300/60 mb-4">Untuk Pemula</p>
+                    <p className="text-[11px] font-semibold tracking-widest uppercase text-emerald-300/60 mb-4">Untuk Pemula</p>
                     <h2 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] mb-5 text-white">
                       Mulai dari Demo.<br />Tanpa Risiko.
                     </h2>
-                    <p className="text-blue-200/60 text-[15px] leading-relaxed mb-8">
+                    <p className="text-emerald-200/60 text-[15px] leading-relaxed mb-8">
                       Semua fitur berjalan penuh menggunakan saldo virtual dengan data pasar nyata.
                       Uji strategi dan hanya pindah ke mode real setelah benar-benar siap.
                     </p>
@@ -419,12 +419,12 @@ export default function Home() {
                       ].map((item) => (
                         <div key={item.t} className="p-3.5 rounded-xl bg-white/[0.06] border border-white/[0.08]">
                           <p className="text-[13px] font-semibold text-white/90 mb-1">{item.t}</p>
-                          <p className="text-[12px] text-blue-300/50 leading-snug">{item.s}</p>
+                          <p className="text-[12px] text-emerald-300/50 leading-snug">{item.s}</p>
                         </div>
                       ))}
                     </div>
                     <div className="flex flex-col sm:flex-row gap-3">
-                      <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3 bg-white text-zinc-900 text-sm font-bold rounded-xl hover:bg-blue-50 transition-colors no-underline">
+                      <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3 bg-white text-zinc-900 text-sm font-bold rounded-xl hover:bg-emerald-50 transition-colors no-underline">
                         Download APK Android
                       </a>
                       <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-7 py-3 bg-white/[0.08] border border-white/[0.12] text-white text-sm font-bold rounded-xl hover:bg-white/[0.14] transition-all no-underline">
@@ -493,11 +493,11 @@ export default function Home() {
           {/* ── CTA ────────────────────────────────────────────── */}
           <section className="relative py-24 sm:py-36 overflow-hidden bg-zinc-950">
             <div className="absolute inset-0 [background-image:radial-gradient(circle,rgba(255,255,255,0.04)_1px,transparent_1px)] [background-size:28px_28px] pointer-events-none" />
-            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-500/25 to-transparent" />
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-emerald-500/25 to-transparent" />
             <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
             <div className="relative max-w-5xl mx-auto px-5 sm:px-8 text-center">
               <FadeUp>
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-blue-400/50 mb-6">Gratis · Android &amp; Web · Mulai Sekarang</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-emerald-400/50 mb-6">Gratis · Android &amp; Web · Mulai Sekarang</p>
                 <h2 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-6xl font-normal tracking-tight leading-[1.1] max-w-2xl mx-auto mb-5 text-white">
                   Mulai Trading Otomatis Sekarang
                 </h2>
@@ -506,7 +506,7 @@ export default function Home() {
                   tanpa risiko, dan rasakan perbedaannya.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
-                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-9 py-4 bg-blue-600 text-white text-sm font-bold rounded-xl hover:bg-blue-500 transition-colors no-underline shadow-2xl shadow-blue-600/20">
+                  <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-9 py-4 bg-emerald-600 text-white text-sm font-bold rounded-xl hover:bg-emerald-500 transition-colors no-underline shadow-2xl shadow-emerald-600/20">
                     Download APK Android
                   </a>
                   <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-9 py-4 bg-white/[0.08] border border-white/[0.12] text-white text-sm font-bold rounded-xl hover:bg-white/[0.14] transition-all no-underline">

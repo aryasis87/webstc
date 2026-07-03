@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/auto-trade-stockity-gratis/page.tsx
  *
  * Target keyword:
@@ -160,11 +160,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -363,8 +363,8 @@ export default function AutoTradeStockityGratisPage() {
                       {cat.items.map((item, i) => (
                         <div key={i} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
                           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-0.5">
-                            <circle cx="7" cy="7" r="6.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                            <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
+                            <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                           {item}
                         </div>
@@ -486,7 +486,7 @@ export default function AutoTradeStockityGratisPage() {
                 {/* Android */}
                 <div className="mb-8">
                   <div className="flex items-center gap-2.5 mb-4">
-                    <div className="w-8 h-8 rounded-xl bg-[#dbeafe] flex items-center justify-center text-sm">📱</div>
+                    <div className="w-8 h-8 rounded-xl bg-[#d1fae5] flex items-center justify-center text-sm">📱</div>
                     <h3 className="text-[15px] font-semibold text-[#1a1612]">Cara 1: APK Android</h3>
                   </div>
                   <div className="space-y-2.5">
@@ -498,7 +498,7 @@ export default function AutoTradeStockityGratisPage() {
                       { n: "5", title: "Login dan akses semua fitur", desc: "Setelah daftar, login menggunakan akun Stockity.id baru. Semua fitur bot langsung bisa digunakan." },
                     ].map((s) => (
                       <div key={s.n} className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-                        <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{s.n}</div>
+                        <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{s.n}</div>
                         <div className="pt-0.5">
                           <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{s.title}</p>
                           <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
@@ -511,7 +511,7 @@ export default function AutoTradeStockityGratisPage() {
                 {/* Web */}
                 <div>
                   <div className="flex items-center gap-2.5 mb-4">
-                    <div className="w-8 h-8 rounded-xl bg-[#eff6ff] flex items-center justify-center text-sm">🌐</div>
+                    <div className="w-8 h-8 rounded-xl bg-[#ecfdf5] flex items-center justify-center text-sm">🌐</div>
                     <h3 className="text-[15px] font-semibold text-[#1a1612]">Cara 2: Versi Web (iPhone, PC, Mac)</h3>
                   </div>
                   <div className="space-y-2.5">
@@ -521,7 +521,7 @@ export default function AutoTradeStockityGratisPage() {
                       { n: "3", title: "Login dan mulai", desc: "Setelah akun aktif, login dan semua 6 strategi beserta fitur manajemen risiko langsung tersedia." },
                     ].map((s) => (
                       <div key={s.n} className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-                        <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#eff6ff] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{s.n}</div>
+                        <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#ecfdf5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{s.n}</div>
                         <div className="pt-0.5">
                           <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{s.title}</p>
                           <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
@@ -550,7 +550,7 @@ export default function AutoTradeStockityGratisPage() {
                     device: "Android (APK)",
                     icon: "📱",
                     badge: "Download APK",
-                    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+                    badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                     req: "Android 8.0+",
                     features: ["Instal native di perangkat", "Berjalan di background 24/7", "Download dari stcautotrade.id", "Tidak perlu Google Play Store"],
                     url: "stcautotrade.id",
@@ -591,13 +591,13 @@ export default function AutoTradeStockityGratisPage() {
                       </div>
                       <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${p.badgeColor}`}>{p.badge}</span>
                     </div>
-                    <p className="text-[11px] text-[#3b82f6] font-medium mb-3">{p.req}</p>
+                    <p className="text-[11px] text-[#10b981] font-medium mb-3">{p.req}</p>
                     <div className="space-y-1.5">
                       {p.features.map((f) => (
                         <div key={f} className="flex items-center gap-2 text-[12px] text-[#6b6058]">
                           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" className="flex-shrink-0">
-                            <circle cx="6" cy="6" r="5.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                            <path d="M4 6L5.5 7.5L8.5 4.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                            <circle cx="6" cy="6" r="5.5" stroke="#10b981" strokeOpacity="0.3" />
+                            <path d="M4 6L5.5 7.5L8.5 4.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                           {f}
                         </div>
@@ -655,7 +655,7 @@ export default function AutoTradeStockityGratisPage() {
 
               <p className="mt-5 text-[13px] text-[#6b6058]">
                 Lebih banyak pertanyaan →{" "}
-                <Link href="/faq" className="text-[#3b82f6] hover:underline no-underline font-medium">
+                <Link href="/faq" className="text-[#10b981] hover:underline no-underline font-medium">
                   Lihat FAQ Lengkap STC AutoTrade
                 </Link>
               </p>
@@ -697,8 +697,8 @@ export default function AutoTradeStockityGratisPage() {
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot Stockity", desc: "Tutorial konfigurasi martingale & manajemen risiko" },
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & panduan instalasi lengkap" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}

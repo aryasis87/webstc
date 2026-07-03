@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/faq/page.tsx
  * Halaman FAQ lengkap STC AutoTrade — Server Component
  * Dioptimalkan untuk SEO: h1, h2 per kategori, breadcrumb, structured data
@@ -232,7 +232,7 @@ export default function FAQPage() {
 
         {/* ── Header ────────────────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-10 pb-12">
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-3">
             FAQ · {totalQuestions} Pertanyaan
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-4">
@@ -250,7 +250,7 @@ export default function FAQPage() {
               <a
                 key={cat.id}
                 href={`#${cat.id}`}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#3b82f6]/40 hover:text-[#3b82f6] transition-all no-underline"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#10b981]/40 hover:text-[#10b981] transition-all no-underline"
               >
                 {cat.title}
                 <span className="text-[10px] text-[#1a1612]/30">{cat.items.length}</span>

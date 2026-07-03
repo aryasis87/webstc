@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/download/page.tsx
  * Halaman download khusus STC AutoTrade — Server Component
  * Menarget keyword: "download stcautotrade apk", "cara instal stockautotrade android", dll.
@@ -184,7 +184,7 @@ export default function DownloadPage() {
 
         {/* ── Header ────────────────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-10 pb-12">
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-3">
             Download Gratis · APK & Web
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-4">
@@ -204,7 +204,7 @@ export default function DownloadPage() {
             {/* APK Android */}
             <div className="bg-white rounded-2xl border border-[rgba(26,22,18,0.08)] p-7 flex flex-col">
               <div className="flex items-center gap-2.5 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#dbeafe] flex items-center justify-center text-lg">
+                <div className="w-10 h-10 rounded-xl bg-[#d1fae5] flex items-center justify-center text-lg">
                   📱
                 </div>
                 <div>
@@ -228,8 +228,8 @@ export default function DownloadPage() {
                 ].map((f) => (
                   <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
-                      <circle cx="7" cy="7" r="6.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                      <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
+                      <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     {f}
                   </div>
@@ -253,7 +253,7 @@ export default function DownloadPage() {
             {/* Versi Web */}
             <div className="bg-white rounded-2xl border border-[rgba(26,22,18,0.08)] p-7 flex flex-col">
               <div className="flex items-center gap-2.5 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#eff6ff] flex items-center justify-center text-lg">
+                <div className="w-10 h-10 rounded-xl bg-[#ecfdf5] flex items-center justify-center text-lg">
                   🌐
                 </div>
                 <div>
@@ -277,8 +277,8 @@ export default function DownloadPage() {
                 ].map((f) => (
                   <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
-                      <circle cx="7" cy="7" r="6.5" stroke="#3b82f6" strokeOpacity="0.3" />
-                      <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#3b82f6" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
+                      <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
+                      <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
                     </svg>
                     {f}
                   </div>
@@ -288,7 +288,7 @@ export default function DownloadPage() {
                 href="https://stcautotradepro.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#3b82f6] text-white text-sm font-bold rounded-xl hover:bg-[#2563eb] active:scale-[0.98] transition-all no-underline shadow-sm shadow-blue-200"
+                className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#10b981] text-white text-sm font-bold rounded-xl hover:bg-[#059669] active:scale-[0.98] transition-all no-underline shadow-sm shadow-emerald-200"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.4" />
@@ -363,7 +363,7 @@ export default function DownloadPage() {
                   req: "Android 8.0 Oreo ke atas",
                   note: "Diinstal sebagai aplikasi native. Berjalan di background.",
                   badge: "APK",
-                  badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+                  badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                 },
                 {
                   platform: "iPhone & iPad (iOS)",
@@ -394,7 +394,7 @@ export default function DownloadPage() {
                       {p.badge}
                     </span>
                   </div>
-                  <p className="text-[12px] text-[#3b82f6] font-medium mb-1">{p.req}</p>
+                  <p className="text-[12px] text-[#10b981] font-medium mb-1">{p.req}</p>
                   <p className="text-[12px] text-[#6b6058] leading-relaxed">{p.note}</p>
                 </div>
               ))}
@@ -434,7 +434,7 @@ export default function DownloadPage() {
             </div>
             <p className="mt-4 text-[12px] text-[#1a1612]/40">
               Punya pertanyaan lain?{" "}
-              <Link href="/faq" className="text-[#3b82f6] hover:underline no-underline">
+              <Link href="/faq" className="text-[#10b981] hover:underline no-underline">
                 Lihat halaman FAQ lengkap →
               </Link>
             </p>

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/cara-setting-robot-stockity/page.tsx
  *
  * Target keyword:
@@ -183,11 +183,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -225,7 +225,7 @@ const MARTINGALE_CONFIGS = [
   },
   {
     label: "Standar",
-    color: "bg-blue-50 text-blue-700 border-blue-200",
+    color: "bg-emerald-50 text-emerald-700 border-emerald-200",
     nominal: 14000,
     multiplier: 2.5,
     steps: 3,
@@ -308,7 +308,7 @@ export default function CaraSettingRobotStockityPage() {
         {/* ── Article Header ──────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Tutorial</span>
+            <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Tutorial</span>
             <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±15 menit baca</span>
@@ -342,7 +342,7 @@ export default function CaraSettingRobotStockityPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#3b82f6]/40 hover:text-[#3b82f6] transition-all no-underline"
+                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#10b981]/40 hover:text-[#10b981] transition-all no-underline"
               >
                 {item.label}
               </a>
@@ -398,7 +398,7 @@ export default function CaraSettingRobotStockityPage() {
                       <div className="space-y-1.5 mb-3">
                         {p.steps.map((s, i) => (
                           <div key={i} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
-                            <span className="w-4 h-4 rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8] flex-shrink-0">{i + 1}</span>
+                            <span className="w-4 h-4 rounded-full bg-[#d1fae5] flex items-center justify-center text-[10px] font-bold text-[#047857] flex-shrink-0">{i + 1}</span>
                             {s}
                           </div>
                         ))}
@@ -473,7 +473,7 @@ export default function CaraSettingRobotStockityPage() {
                       {
                         strategi: "Schedule",
                         level: "⭐⭐⭐ Advanced",
-                        levelColor: "text-blue-600",
+                        levelColor: "text-emerald-600",
                         kapan: "Punya data historis sesi trading yang sudah teruji",
                         kenapa: "Sangat efektif jika Anda tahu jam/arah trading yang profitable secara konsisten",
                         risiko: "Bergantung data",
@@ -551,8 +551,8 @@ export default function CaraSettingRobotStockityPage() {
                       <div className="text-xl mb-2">{p.icon}</div>
                       <h3 className="text-[13px] font-semibold text-[#1a1612] mb-2">{p.param}</h3>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed mb-3">{p.desc}</p>
-                      <div className="bg-[#dbeafe]/40 rounded-lg px-3 py-2 border border-[#bfdbfe]">
-                        <p className="text-[11px] font-semibold text-[#1d4ed8]">{p.rekomendasi}</p>
+                      <div className="bg-[#d1fae5]/40 rounded-lg px-3 py-2 border border-[#a7f3d0]">
+                        <p className="text-[11px] font-semibold text-[#047857]">{p.rekomendasi}</p>
                       </div>
                     </div>
                   ))}
@@ -769,7 +769,7 @@ export default function CaraSettingRobotStockityPage() {
                       <div key={i} className="flex items-start gap-3 text-[13px] text-[#6b6058]">
                         <div className="w-5 h-5 min-w-[20px] rounded border border-[rgba(26,22,18,0.15)] flex items-center justify-center mt-0.5">
                           <svg width="11" height="11" viewBox="0 0 11 11" fill="none">
-                            <path d="M2 5.5L4.5 8L9 3" stroke="#3b82f6" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M2 5.5L4.5 8L9 3" stroke="#10b981" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
                           </svg>
                         </div>
                         {item}
@@ -822,7 +822,7 @@ export default function CaraSettingRobotStockityPage() {
                     },
                   ].map((s) => (
                     <div key={s.n} className="flex gap-4 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-5 py-4">
-                      <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#eff6ff] flex items-center justify-center text-[12px] font-bold text-[#1d4ed8]">
+                      <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#ecfdf5] flex items-center justify-center text-[12px] font-bold text-[#047857]">
                         {s.n}
                       </div>
                       <div className="pt-0.5">
@@ -893,8 +893,8 @@ export default function CaraSettingRobotStockityPage() {
                 { href: "/cara-kerja", title: "Cara Kerja STC AutoTrade", desc: "Penjelasan teknis 6 strategi & manajemen risiko" },
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & panduan instalasi lengkap" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -906,7 +906,7 @@ export default function CaraSettingRobotStockityPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-1.5">Mulai Gratis Sekarang</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Mulai Gratis Sekarang</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Praktikkan Panduan Setting Ini Langsung</p>
               <p className="text-[13px] text-[#6b6058]">Download APK atau buka versi web — mulai dari mode demo gratis tanpa risiko finansial.</p>
             </div>

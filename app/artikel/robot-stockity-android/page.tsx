@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/robot-stockity-android/page.tsx
  *
  * Target keyword:
@@ -177,11 +177,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -247,7 +247,7 @@ export default function RobotStockityAndroidPage() {
         {/* ── Article Header ──────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Android</span>
+            <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Android</span>
             <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±12 menit baca</span>
@@ -304,7 +304,7 @@ export default function RobotStockityAndroidPage() {
                       <thead>
                         <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
                           <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
-                          <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#1d4ed8] uppercase tracking-wider">APK Android ✓</th>
+                          <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#047857] uppercase tracking-wider">APK Android ✓</th>
                           <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Versi Web</th>
                         </tr>
                       </thead>
@@ -370,11 +370,11 @@ export default function RobotStockityAndroidPage() {
                     },
                   ].map((s) => (
                     <div key={s.n} className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-                      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{s.n}</div>
+                      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{s.n}</div>
                       <div className="pt-0.5">
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{s.title}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
-                        {s.detail && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{s.detail}</p>}
+                        {s.detail && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{s.detail}</p>}
                       </div>
                     </div>
                   ))}
@@ -437,7 +437,7 @@ export default function RobotStockityAndroidPage() {
                       },
                     ].map((s) => (
                       <div key={s.n} className="flex gap-4 px-5 py-4">
-                        <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#eff6ff] border border-[#bfdbfe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{s.n}</div>
+                        <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#ecfdf5] border border-[#a7f3d0] flex items-center justify-center text-[11px] font-bold text-[#047857]">{s.n}</div>
                         <div className="pt-0.5">
                           <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{s.title}</p>
                           <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
@@ -568,14 +568,14 @@ export default function RobotStockityAndroidPage() {
                       <div className="flex items-center gap-2.5 mb-3">
                         <span className="text-xl">{f.icon}</span>
                         <div>
-                          <p className="text-[10px] font-semibold text-[#3b82f6] uppercase tracking-wider">{f.fase}</p>
+                          <p className="text-[10px] font-semibold text-[#10b981] uppercase tracking-wider">{f.fase}</p>
                           <h3 className="text-[13px] font-semibold text-[#1a1612]">{f.title}</h3>
                         </div>
                       </div>
                       <div className="space-y-1.5">
                         {f.steps.map((s, i) => (
                           <div key={i} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                            <span className="w-4 h-4 min-w-[16px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[9px] font-bold text-[#1d4ed8] mt-0.5">{i + 1}</span>
+                            <span className="w-4 h-4 min-w-[16px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[9px] font-bold text-[#047857] mt-0.5">{i + 1}</span>
                             {s}
                           </div>
                         ))}
@@ -648,7 +648,7 @@ export default function RobotStockityAndroidPage() {
                           "Pengaturan → Perawatan perangkat → Baterai → Batas penggunaan latar belakang → Aplikasi tidak tidur → tambah STC AutoTrade",
                           "Pengaturan → Aplikasi → STC AutoTrade → Baterai → Tidak ada batasan",
                         ],
-                        color: "border-l-blue-400",
+                        color: "border-l-emerald-400",
                       },
                       {
                         merk: "OPPO / Realme / ColorOS",
@@ -672,7 +672,7 @@ export default function RobotStockityAndroidPage() {
                         <div className="space-y-1.5">
                           {brand.tips.map((tip, i) => (
                             <div key={i} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                              <span className="text-[#3b82f6] mt-0.5 flex-shrink-0">→</span>
+                              <span className="text-[#10b981] mt-0.5 flex-shrink-0">→</span>
                               {tip}
                             </div>
                           ))}
@@ -830,8 +830,8 @@ export default function RobotStockityAndroidPage() {
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot", desc: "Konfigurasi martingale, stop loss & strategi" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -843,7 +843,7 @@ export default function RobotStockityAndroidPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1d4ed8] mb-1.5">Download Gratis · Android 8.0+</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">Download Gratis · Android 8.0+</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Download APK Robot Stockity Android Sekarang</p>
               <p className="text-[13px] text-[#6b6058]">Instal di HP Android Anda — gratis, stabil 24 jam, mulai dari mode demo.</p>
             </div>

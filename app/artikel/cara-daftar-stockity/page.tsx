@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/cara-daftar-stockity/page.tsx
  *
  * Target keyword:
@@ -177,11 +177,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -208,11 +208,11 @@ function WarningBox({ children }: { children: React.ReactNode }) {
 function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{n}</div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -260,7 +260,7 @@ export default function CaraDaftarStockityPage() {
         {/* ── Article Header ──────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
-            <span className="inline-flex items-center px-2.5 py-1 bg-[#dbeafe] text-[#1d4ed8] text-[11px] font-semibold rounded-full">Panduan Pemula</span>
+            <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Panduan Pemula</span>
             <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
             <span className="text-[12px] text-[#1a1612]/35">·</span>
             <span className="text-[12px] text-[#1a1612]/35">±10 menit baca</span>
@@ -318,7 +318,7 @@ export default function CaraDaftarStockityPage() {
                   {/* Via APK */}
                   <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
                     <div className="flex items-center gap-2.5 mb-4">
-                      <div className="w-8 h-8 rounded-xl bg-[#dbeafe] flex items-center justify-center text-sm">📱</div>
+                      <div className="w-8 h-8 rounded-xl bg-[#d1fae5] flex items-center justify-center text-sm">📱</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612]">Via APK Android (Rekomendasi)</h3>
                     </div>
                     <div className="space-y-2.5">
@@ -330,7 +330,7 @@ export default function CaraDaftarStockityPage() {
                         { n: "5", t: "Login & mulai", d: "Login dengan email + password → akses bot langsung aktif." },
                       ].map((s) => (
                         <div key={s.n} className="flex gap-2.5 text-[12px]">
-                          <span className="w-5 h-5 min-w-[20px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8] mt-0.5">{s.n}</span>
+                          <span className="w-5 h-5 min-w-[20px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[10px] font-bold text-[#047857] mt-0.5">{s.n}</span>
                           <div>
                             <span className="font-semibold text-[#1a1612]">{s.t}: </span>
                             <span className="text-[#6b6058]">{s.d}</span>
@@ -343,7 +343,7 @@ export default function CaraDaftarStockityPage() {
                   {/* Via Web */}
                   <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
                     <div className="flex items-center gap-2.5 mb-4">
-                      <div className="w-8 h-8 rounded-xl bg-[#eff6ff] flex items-center justify-center text-sm">🌐</div>
+                      <div className="w-8 h-8 rounded-xl bg-[#ecfdf5] flex items-center justify-center text-sm">🌐</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612]">Via Versi Web (PC, Mac, iPhone)</h3>
                     </div>
                     <div className="space-y-2.5">
@@ -355,7 +355,7 @@ export default function CaraDaftarStockityPage() {
                         { n: "5", t: "Login & trading", d: "Login → semua fitur bot langsung tersedia." },
                       ].map((s) => (
                         <div key={s.n} className="flex gap-2.5 text-[12px]">
-                          <span className="w-5 h-5 min-w-[20px] rounded-full bg-[#eff6ff] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8] mt-0.5">{s.n}</span>
+                          <span className="w-5 h-5 min-w-[20px] rounded-full bg-[#ecfdf5] flex items-center justify-center text-[10px] font-bold text-[#047857] mt-0.5">{s.n}</span>
                           <div>
                             <span className="font-semibold text-[#1a1612]">{s.t}: </span>
                             <span className="text-[#6b6058]">{s.d}</span>
@@ -430,7 +430,7 @@ export default function CaraDaftarStockityPage() {
                         </span>
                       </div>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{item.desc}</p>
-                      <p className="text-[11px] text-[#3b82f6] font-medium">{item.tips}</p>
+                      <p className="text-[11px] text-[#10b981] font-medium">{item.tips}</p>
                     </div>
                   ))}
                 </div>
@@ -506,7 +506,7 @@ export default function CaraDaftarStockityPage() {
                       fase: "Langkah 1",
                       title: "Mulai dari mode demo (WAJIB)",
                       icon: "🎮",
-                      color: "bg-blue-50 text-blue-700",
+                      color: "bg-emerald-50 text-emerald-700",
                       desc: "Sebelum deposit apapun, aktifkan mode demo di STC AutoTrade. Mode demo menggunakan data pasar Stockity yang nyata tanpa risiko uang sungguhan. Ini bukan opsional — ini fondasi keberhasilan Anda.",
                       action: "Aktifkan demo di STC AutoTrade → pilih strategi → jalankan minimal 7 hari.",
                     },
@@ -612,7 +612,7 @@ export default function CaraDaftarStockityPage() {
                     ].map((r) => (
                       <div key={r.profil} className="flex items-center justify-between text-[12px] py-2 border-b border-[rgba(26,22,18,0.05)] last:border-0">
                         <span className="font-semibold text-[#1a1612]">{r.profil}</span>
-                        <span className="text-[#3b82f6] font-semibold">{r.deposit}</span>
+                        <span className="text-[#10b981] font-semibold">{r.deposit}</span>
                         <span className="text-[#6b6058] hidden sm:block">{r.setting}</span>
                       </div>
                     ))}
@@ -742,8 +742,8 @@ export default function CaraDaftarStockityPage() {
                 { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal yang dibutuhkan untuk mulai?" },
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot", desc: "Konfigurasi martingale, stop loss & strategi" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}

@@ -101,9 +101,9 @@ export function HeroBadge() {
       initial={{ opacity: 0, y: 16 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.55 }}
-      className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-blue-700 text-[11px] font-semibold tracking-widest uppercase mb-8"
+      className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-100 text-emerald-700 text-[11px] font-semibold tracking-widest uppercase mb-8"
     >
-      <span className="w-1.5 h-1.5 rounded-full bg-blue-500 animate-pulse-dot" />
+      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse-dot" />
       Android &amp; Web · Stockity.id
     </motion.div>
   );
@@ -119,7 +119,7 @@ export function HeroHeading({ apkPath }: { apkPath: string }) {
         className="font-[family-name:var(--font-dm-serif)] text-5xl sm:text-[56px] lg:text-[64px] font-normal tracking-tight leading-[1.06] mb-6 text-zinc-900"
       >
         STC AutoTrade —<br />
-        <span className="bg-gradient-to-br from-blue-700 via-blue-500 to-blue-400 bg-clip-text text-transparent">
+        <span className="bg-gradient-to-br from-emerald-700 via-emerald-500 to-emerald-400 bg-clip-text text-transparent">
           Robot Trading<br />Otomatis Stockity
         </span>
       </motion.h1>
@@ -188,7 +188,7 @@ export function HeroStatBar() {
     >
       {stats.map((s) => (
         <div key={s.l} className="py-5 px-4 text-center hover:bg-zinc-50 transition-colors">
-          <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-blue-600 leading-none mb-1.5">
+          <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-emerald-600 leading-none mb-1.5">
             {s.n}
           </div>
           <div className="text-[11px] text-zinc-400 leading-tight">{s.l}</div>
@@ -273,7 +273,7 @@ export function HambatanSection({ apkPath: _apkPath }: { apkPath: string }) {
       {HAMBATAN.map((item) => (
         <FadeItem key={item.t}>
           <div className="flex gap-4 p-5 bg-white border border-zinc-100 rounded-xl hover:border-zinc-200 hover:shadow-sm hover:-translate-y-0.5 transition-all">
-            <item.Icon weight="duotone" size={26} className="text-blue-600 mt-0.5 flex-shrink-0" />
+            <item.Icon weight="duotone" size={26} className="text-emerald-600 mt-0.5 flex-shrink-0" />
             <div>
               <p className="text-[15px] font-semibold mb-1.5 text-zinc-900">{item.t}</p>
               <p className="text-[13px] text-zinc-500 leading-relaxed">{item.d}</p>
@@ -349,7 +349,7 @@ export function RiskCards() {
       {RISKS.map((r) => (
         <FadeItem key={r.title}>
           <div className="flex gap-4 p-5 bg-white border border-zinc-100 rounded-xl hover:border-zinc-200 hover:shadow-sm hover:-translate-y-0.5 transition-all">
-            <r.icon weight="duotone" size={26} className="text-blue-600 mt-0.5 flex-shrink-0" />
+            <r.icon weight="duotone" size={26} className="text-emerald-600 mt-0.5 flex-shrink-0" />
             <div>
               <p className="text-sm font-semibold mb-1 text-zinc-900">{r.title}</p>
               <p className="text-[13px] text-zinc-500 leading-relaxed">{r.desc}</p>

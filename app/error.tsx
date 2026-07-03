@@ -61,7 +61,7 @@ export default function ErrorBoundary({ error, reset }: ErrorProps) {
         <div className="flex flex-col sm:flex-row gap-3 justify-center mt-8">
           <button
             onClick={reset}
-            className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 bg-[#1a1612] text-[#ecfdf5] text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px cursor-pointer"
           >
             {/* Reload icon */}
             <svg

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/page.tsx
  *
  * Halaman indeks artikel STC AutoTrade — Server Component murni.
@@ -276,7 +276,7 @@ const ARTIKEL: Artikel[] = [
 ];
 
 const KATEGORI_META: Record<Kategori, { warna: string; bg: string }> = {
-  Panduan:  { warna: "#1d4ed8", bg: "#eff6ff" },
+  Panduan:  { warna: "#047857", bg: "#ecfdf5" },
   Strategi: { warna: "#0f766e", bg: "#f0fdfa" },
   Review:   { warna: "#7c3aed", bg: "#f5f3ff" },
   Edukasi:  { warna: "#b45309", bg: "#fffbeb" },
@@ -336,7 +336,7 @@ function ArtikelCard({ artikel }: { artikel: Artikel }) {
       </div>
 
       {/* Judul */}
-      <h2 className="text-[15px] font-semibold text-[#1a1612] leading-snug mb-2.5 group-hover:text-[#1d4ed8] transition-colors">
+      <h2 className="text-[15px] font-semibold text-[#1a1612] leading-snug mb-2.5 group-hover:text-[#047857] transition-colors">
         {artikel.judul}
       </h2>
 
@@ -348,7 +348,7 @@ function ArtikelCard({ artikel }: { artikel: Artikel }) {
       {/* Footer card */}
       <div className="flex items-center justify-between mt-auto pt-4 border-t border-[rgba(26,22,18,0.07)]">
         <span className="text-[11px] text-[#1a1612]/30">{artikel.tanggal}</span>
-        <span className="text-[12px] font-medium text-[#1d4ed8] flex items-center gap-1">
+        <span className="text-[12px] font-medium text-[#047857] flex items-center gap-1">
           Baca
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 256 256" fill="currentColor" className="transition-transform group-hover:translate-x-0.5" aria-hidden="true">
             <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"/>
@@ -416,7 +416,7 @@ export default function ArtikelPage() {
               </Link>
               <Link
                 href="/artikel"
-                className="hidden sm:flex items-center px-4 py-2 text-sm text-[#1d4ed8] font-semibold no-underline"
+                className="hidden sm:flex items-center px-4 py-2 text-sm text-[#047857] font-semibold no-underline"
                 aria-current="page"
               >
                 Artikel
@@ -425,14 +425,14 @@ export default function ArtikelPage() {
                 href="https://stcautotradepro.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:flex items-center gap-1.5 px-4 py-2 border border-[#3b82f6]/30 text-[#1d4ed8] text-sm font-semibold rounded-lg hover:bg-[#eff6ff] transition-all no-underline"
+                className="hidden sm:flex items-center gap-1.5 px-4 py-2 border border-[#10b981]/30 text-[#047857] text-sm font-semibold rounded-lg hover:bg-[#ecfdf5] transition-all no-underline"
               >
                 Versi Web
               </a>
               <a
                 href={APK_PATH}
                 download
-                className="flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-[#f0f9ff] text-sm font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm"
+                className="flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-[#ecfdf5] text-sm font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-all hover:-translate-y-px no-underline shadow-sm"
               >
                 Download
               </a>
@@ -446,7 +446,7 @@ export default function ArtikelPage() {
           <section className="relative pt-28 pb-14 sm:pt-36 sm:pb-20 border-b border-[rgba(26,22,18,0.07)] bg-white overflow-hidden">
             {/* Grid background */}
             <div className="absolute inset-0 [background-image:linear-gradient(rgba(26,22,18,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(26,22,18,0.025)_1px,transparent_1px)] [background-size:64px_64px] pointer-events-none" />
-            <div className="absolute top-0 right-1/4 w-[400px] h-[300px] rounded-full bg-[#3b82f6]/[0.05] blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-1/4 w-[400px] h-[300px] rounded-full bg-[#10b981]/[0.05] blur-3xl pointer-events-none" />
 
             <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
               {/* Breadcrumb */}
@@ -460,7 +460,7 @@ export default function ArtikelPage() {
 
               <h1 className="font-[family-name:var(--font-dm-serif)] text-[36px] sm:text-[48px] font-normal tracking-[-0.03em] leading-[1.1] mb-4">
                 Panduan &amp; Artikel<br />
-                <span className="text-[#1d4ed8]">Robot Trading Stockity</span>
+                <span className="text-[#047857]">Robot Trading Stockity</span>
               </h1>
               <p className="text-[#6b6058] text-base sm:text-[17px] leading-relaxed max-w-xl mb-8">
                 Kumpulan panduan lengkap, strategi trading, dan review platform — semuanya
@@ -487,7 +487,7 @@ export default function ArtikelPage() {
           <section className="py-14 sm:py-20" aria-labelledby="heading-panduan">
             <div className="max-w-6xl mx-auto px-5 sm:px-8">
               <div className="flex items-center gap-3 mb-8">
-                <div className="w-1 h-6 rounded-full bg-[#1d4ed8]" aria-hidden="true" />
+                <div className="w-1 h-6 rounded-full bg-[#047857]" aria-hidden="true" />
                 <h2
                   id="heading-panduan"
                   className="text-xl font-semibold tracking-tight text-[#1a1612]"
@@ -584,9 +584,9 @@ export default function ArtikelPage() {
           {/* ── CTA ────────────────────────────────────────── */}
           <section className="relative py-20 sm:py-28 overflow-hidden bg-[#1a1612]">
             <div className="absolute inset-0 [background-image:linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] [background-size:64px_64px] pointer-events-none" />
-            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#3b82f6]/25 to-transparent" />
+            <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/25 to-transparent" />
             <div className="relative max-w-xl mx-auto px-5 sm:px-8 text-center">
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6]/50 mb-5">
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981]/50 mb-5">
                 Gratis · Android &amp; Web · Mulai Sekarang
               </p>
               <h2 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-[-0.03em] leading-[1.1] mb-5 text-[#e0f2fe]">
@@ -600,7 +600,7 @@ export default function ArtikelPage() {
                 <a
                   href={APK_PATH}
                   download
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#3b82f6] text-white text-sm font-bold rounded-xl hover:bg-[#2563eb] transition-all hover:-translate-y-0.5 no-underline shadow-xl shadow-[#3b82f6]/20"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#10b981] text-white text-sm font-bold rounded-xl hover:bg-[#059669] transition-all hover:-translate-y-0.5 no-underline shadow-xl shadow-[#10b981]/20"
                 >
                   Download APK Android
                 </a>

@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/cara-deposit-stockity/page.tsx
  *
  * Target keyword:
@@ -147,11 +147,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -178,11 +178,11 @@ function WarningBox({ children }: { children: React.ReactNode }) {
 function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{n}</div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -202,7 +202,7 @@ export default function CaraDepositStockityPage() {
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#10b981]">AutoTrade</span></span>
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
@@ -224,7 +224,7 @@ export default function CaraDepositStockityPage() {
                   <li className="text-[#1a1612] font-medium">Cara Deposit Stockity</li>
                 </ol>
               </nav>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Panduan & Tutorial</span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#ecfdf5] text-[#047857] text-[11px] font-semibold mb-4">Panduan & Tutorial</span>
               <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
                 Cara Deposit Stockity: Isi Saldo via Stockity.id untuk Trading Bot
               </h1>
@@ -270,7 +270,7 @@ export default function CaraDepositStockityPage() {
                       { step: "4", label: "Profit/Loss ke Akun", desc: "Hasil trading langsung masuk ke akun Stockity — bisa dicairkan kapan saja" },
                     ].map((item) => (
                       <div key={item.step} className="flex gap-3 items-start">
-                        <div className="w-6 h-6 min-w-[24px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[10px] font-bold text-[#1d4ed8]">{item.step}</div>
+                        <div className="w-6 h-6 min-w-[24px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[10px] font-bold text-[#047857]">{item.step}</div>
                         <div>
                           <p className="text-[12px] font-semibold text-[#1a1612]">{item.label}</p>
                           <p className="text-[11px] text-[#6b6058]">{item.desc}</p>
@@ -418,7 +418,7 @@ export default function CaraDepositStockityPage() {
                 </div>
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="w-3 h-3 rounded-full bg-[#3b82f6]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#10b981]"></div>
                     <p className="text-[13px] font-bold text-[#1a1612]">Akun Demo</p>
                   </div>
                   <ul className="space-y-2">
@@ -430,7 +430,7 @@ export default function CaraDepositStockityPage() {
                       "Ideal untuk belajar & testing",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                        <span className="text-[#3b82f6] mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-[#10b981] mt-0.5 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
@@ -509,9 +509,9 @@ export default function CaraDepositStockityPage() {
                     level: "Pemula / Coba-coba",
                     modal: "Gunakan Demo dulu",
                     desc: "Tidak perlu deposit. Jalankan bot di mode Demo dengan saldo virtual sampai Anda benar-benar paham cara kerja setiap fitur.",
-                    color: "bg-[#eff6ff] border-[#bfdbfe]",
+                    color: "bg-[#ecfdf5] border-[#a7f3d0]",
                     badge: "Gratis",
-                    badgeColor: "bg-[#dbeafe] text-[#1d4ed8]",
+                    badgeColor: "bg-[#d1fae5] text-[#047857]",
                   },
                   {
                     level: "Mulai Real — Konservatif",
@@ -563,7 +563,7 @@ export default function CaraDepositStockityPage() {
                   "Login STC AutoTrade menggunakan email dan password Stockity.id yang sama — satu akun untuk segalanya.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
-                    <span className="text-[#3b82f6] font-bold text-sm flex-shrink-0">✓</span>
+                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
                   </div>
                 ))}
@@ -622,7 +622,7 @@ export default function CaraDepositStockityPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors"
+                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

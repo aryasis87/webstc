@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/copy-trading-stockity/page.tsx
  *
  * Target keyword:
@@ -144,11 +144,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -175,11 +175,11 @@ function WarningBox({ children }: { children: React.ReactNode }) {
 function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: string; sub?: string }) {
   return (
     <div className="flex gap-3.5 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5">
-      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#dbeafe] flex items-center justify-center text-[11px] font-bold text-[#1d4ed8]">{n}</div>
+      <div className="w-7 h-7 min-w-[28px] rounded-full bg-[#d1fae5] flex items-center justify-center text-[11px] font-bold text-[#047857]">{n}</div>
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#3b82f6] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -199,7 +199,7 @@ export default function CopyTradingStockityPage() {
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#3b82f6]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#10b981]">AutoTrade</span></span>
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
@@ -221,7 +221,7 @@ export default function CopyTradingStockityPage() {
                   <li className="text-[#1a1612] font-medium">Copy Trading Stockity</li>
                 </ol>
               </nav>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#eff6ff] text-[#1d4ed8] text-[11px] font-semibold mb-4">Fitur & Mode Trading</span>
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-[#ecfdf5] text-[#047857] text-[11px] font-semibold mb-4">Fitur & Mode Trading</span>
               <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-[1.2] mb-4">
                 Copy Trading Stockity: Mode Fastrade CTC di STC AutoTrade v4.4
               </h1>
@@ -250,7 +250,7 @@ export default function CopyTradingStockityPage() {
               <SectionLabel>Pengenalan Mode</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Apa Itu Mode Fastrade CTC di STC AutoTrade?</h2>
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                <strong className="text-[#1a1612]">Fastrade CTC</strong> (kode: <code className="bg-[#f1f5f9] px-1.5 py-0.5 rounded text-[12px] font-mono text-[#1d4ed8]">ctc</code>) adalah salah satu dari <strong className="text-[#1a1612]">6 mode strategi</strong> yang tersedia di STC AutoTrade v4.4. CTC adalah mode <em>Copy Trading</em> — bot Anda secara otomatis mengikuti dan meniru order dari master trader yang terhubung ke sistem.
+                <strong className="text-[#1a1612]">Fastrade CTC</strong> (kode: <code className="bg-[#f1f5f9] px-1.5 py-0.5 rounded text-[12px] font-mono text-[#047857]">ctc</code>) adalah salah satu dari <strong className="text-[#1a1612]">6 mode strategi</strong> yang tersedia di STC AutoTrade v4.4. CTC adalah mode <em>Copy Trading</em> — bot Anda secara otomatis mengikuti dan meniru order dari master trader yang terhubung ke sistem.
               </p>
               <InfoBox icon="📋" title="Definisi Tepat Fastrade CTC">
                 CTC bukan aplikasi terpisah atau channel berlangganan. Ini adalah mode strategi yang sudah terintegrasi di dalam dashboard STC AutoTrade — sama seperti mode Signal, AI Signal, Indicator, dan lainnya. Aktifkan dari dashboard, atur parameter, dan bot langsung mulai mirror order master.
@@ -428,7 +428,7 @@ export default function CopyTradingStockityPage() {
                       <p className="text-[13px] font-bold text-[#1a1612]">{item.param}</p>
                     </div>
                     <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{item.desc}</p>
-                    <p className="text-[11px] text-[#3b82f6] font-medium">→ {item.important}</p>
+                    <p className="text-[11px] text-[#10b981] font-medium">→ {item.important}</p>
                   </div>
                 ))}
               </div>
@@ -562,7 +562,7 @@ export default function CopyTradingStockityPage() {
                   },
                 ].map((item) => (
                   <div key={item.tip} className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-4 py-3.5 flex gap-3">
-                    <span className="text-[#3b82f6] font-bold text-sm flex-shrink-0 mt-0.5">✓</span>
+                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0 mt-0.5">✓</span>
                     <div>
                       <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{item.tip}</p>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
@@ -591,7 +591,7 @@ export default function CopyTradingStockityPage() {
                   "Coba di akun Demo gratis terlebih dahulu untuk memahami cara kerjanya tanpa risiko finansial.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
-                    <span className="text-[#3b82f6] font-bold text-sm flex-shrink-0">✓</span>
+                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
                   </div>
                 ))}
@@ -650,7 +650,7 @@ export default function CopyTradingStockityPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#3b82f6]/30 transition-colors"
+                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

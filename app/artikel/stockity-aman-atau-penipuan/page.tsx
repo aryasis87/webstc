@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/stockity-aman-atau-penipuan/page.tsx
  *
  * Target keyword:
@@ -151,11 +151,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -395,7 +395,7 @@ export default function StockityAmanAtauPenipuanPage() {
                       judul: "Ekspektasi profit tidak realistis",
                       detail: "Meyakini bisa 'kaya cepat' dari trading binary option adalah ekspektasi yang sering berujung kekecewaan. Trading yang konsisten menghasilkan profit memerlukan sistem, disiplin, dan waktu — bukan keberuntungan sesaat.",
                       level: "Menengah",
-                      color: "text-blue-600",
+                      color: "text-emerald-600",
                     },
                   ].map((item) => (
                     <div key={item.n} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-5 py-4 flex gap-4">
@@ -403,7 +403,7 @@ export default function StockityAmanAtauPenipuanPage() {
                       <div>
                         <div className="flex items-center gap-2 mb-1.5">
                           <h3 className="text-[13px] font-semibold text-[#1a1612]">{item.judul}</h3>
-                          <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded ${item.color === "text-rose-600" ? "bg-rose-50 text-rose-600" : item.color === "text-amber-600" ? "bg-amber-50 text-amber-600" : "bg-blue-50 text-blue-600"}`}>
+                          <span className={`text-[10px] font-semibold px-1.5 py-0.5 rounded ${item.color === "text-rose-600" ? "bg-rose-50 text-rose-600" : item.color === "text-amber-600" ? "bg-amber-50 text-amber-600" : "bg-emerald-50 text-emerald-600"}`}>
                             Risiko {item.level}
                           </span>
                         </div>
@@ -474,7 +474,7 @@ export default function StockityAmanAtauPenipuanPage() {
                       prinsip: "Mulai Nominal Kecil",
                       icon: "📊",
                       priority: "Disarankan",
-                      priorityColor: "bg-blue-50 text-blue-700 border-blue-200",
+                      priorityColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                       desc: "Mulai dengan nominal terkecil yang diperbolehkan platform. Kenali pola pasar Stockity, pahami perilaku bot Anda, sebelum menaikkan nominal secara bertahap.",
                       action: "Nominal awal: Rp 14.000–25.000. Naikan setelah 30+ hari konsisten.",
                     },
@@ -482,7 +482,7 @@ export default function StockityAmanAtauPenipuanPage() {
                       prinsip: "Tetapkan Target Profit Harian",
                       icon: "🎯",
                       priority: "Disarankan",
-                      priorityColor: "bg-blue-50 text-blue-700 border-blue-200",
+                      priorityColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                       desc: "Stop profit otomatis mencegah overtrading — keserakahan yang mengikis profit yang sudah terkumpul. Setelah target tercapai, berhenti. Bot akan melakukan ini otomatis di STC AutoTrade.",
                       action: "Set stop profit = 2–3× nilai stop loss Anda.",
                     },
@@ -640,8 +640,8 @@ export default function StockityAmanAtauPenipuanPage() {
                 { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal minimum yang dibutuhkan?" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Auto trade dengan manajemen risiko otomatis" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -653,7 +653,7 @@ export default function StockityAmanAtauPenipuanPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#3b82f6] mb-1.5">Trading dengan Manajemen Risiko Otomatis</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Trading dengan Manajemen Risiko Otomatis</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Minimalkan Risiko dengan STC AutoTrade</p>
               <p className="text-[13px] text-[#6b6058]">Stop loss, stop profit, dan 6 strategi — gratis. Mulai dari mode demo tanpa risiko finansial.</p>
             </div>

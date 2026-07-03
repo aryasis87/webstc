@@ -1,4 +1,4 @@
-﻿/**
+/**
  * app/artikel/modal-trading-stockity/page.tsx
  *
  * Target keyword:
@@ -177,8 +177,8 @@ const MODAL_PROFILES: ModalProfile[] = [
   },
   {
     label: "Standar Pemula",
-    color: "border-l-blue-400",
-    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+    color: "border-l-emerald-400",
+    badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
     nominal: 14000,
     multiplier: 2.5,
     steps: 3,
@@ -236,11 +236,11 @@ function SectionLabel({ children }: { children: React.ReactNode }) {
 
 function InfoBox({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
   return (
-    <div className="bg-[#eff6ff] border border-[#bfdbfe] rounded-xl px-5 py-4 flex gap-3">
+    <div className="bg-[#ecfdf5] border border-[#a7f3d0] rounded-xl px-5 py-4 flex gap-3">
       <span className="text-xl flex-shrink-0">{icon}</span>
       <div>
-        <p className="text-[12px] font-semibold text-[#1d4ed8] mb-1">{title}</p>
-        <p className="text-[13px] text-[#1e40af] leading-relaxed">{children}</p>
+        <p className="text-[12px] font-semibold text-[#047857] mb-1">{title}</p>
+        <p className="text-[13px] text-[#065f46] leading-relaxed">{children}</p>
       </div>
     </div>
   );
@@ -382,7 +382,7 @@ export default function ModalTradingStockityPage() {
                   ].map((c) => (
                     <div key={c.n} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
                       <div className="text-2xl mb-2">{c.icon}</div>
-                      <p className="text-[10px] font-semibold text-[#3b82f6] uppercase tracking-wider mb-1">{c.penting}</p>
+                      <p className="text-[10px] font-semibold text-[#10b981] uppercase tracking-wider mb-1">{c.penting}</p>
                       <h3 className="text-[13px] font-semibold text-[#1a1612] mb-2">{c.title}</h3>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed">{c.desc}</p>
                     </div>
@@ -541,7 +541,7 @@ export default function ModalTradingStockityPage() {
                         <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
                           {[
                             { s: "Hari bagus (win rate 65%)", h: "+Rp 80.000", t: "+Rp 560.000", m: "Rp 860.000", color: "text-emerald-600" },
-                            { s: "Hari normal (win rate 55%)", h: "+Rp 40.000", t: "+Rp 280.000", m: "Rp 580.000", color: "text-blue-600" },
+                            { s: "Hari normal (win rate 55%)", h: "+Rp 40.000", t: "+Rp 280.000", m: "Rp 580.000", color: "text-emerald-600" },
                             { s: "Hari buruk (stop loss hit)", h: "–Rp 60.000", t: "–Rp 60.000 (1 hari)", m: "Rp 240.000", color: "text-rose-600" },
                             { s: "Mixed 7 hari (5 profit, 2 loss)", h: "±varies", t: "+Rp 140.000", m: "Rp 440.000", color: "text-amber-600" },
                           ].map((row) => (
@@ -590,7 +590,7 @@ export default function ModalTradingStockityPage() {
                     {
                       kondisi: "Minggu 1–2",
                       status: "Demo Only",
-                      statusColor: "bg-blue-50 text-blue-700",
+                      statusColor: "bg-emerald-50 text-emerald-700",
                       syarat: "Uji strategi di mode demo. Win rate harus di atas 50% selama 7–14 hari berturut-turut.",
                       larangan: "Jangan pernah mulai real sebelum fase ini selesai.",
                     },
@@ -731,8 +731,8 @@ export default function ModalTradingStockityPage() {
                 { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Stockity Gratis", desc: "Akses robot trading Stockity tanpa biaya" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan auto trade Stockity untuk semua level" },
               ].map((l) => (
-                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#3b82f6]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#3b82f6] transition-colors">{l.title} →</p>
+                <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
