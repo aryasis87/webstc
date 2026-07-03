@@ -7,6 +7,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Download STC AutoTrade APK Android & Versi Web — StockAutoTrade",
@@ -174,7 +175,7 @@ export default function DownloadPage() {
         {/* ── Breadcrumb ────────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/55">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li className="text-[#1a1612]/70 font-medium">Download</li>
@@ -245,7 +246,7 @@ export default function DownloadPage() {
                 </svg>
                 Download APK Android
               </a>
-              <p className="text-center text-[11px] text-[#1a1612]/30 mt-2.5">
+              <p className="text-center text-[11px] text-[#1a1612]/50 mt-2.5">
                 Gratis · Perlu izin "sumber tidak dikenal"
               </p>
             </div>
@@ -297,7 +298,7 @@ export default function DownloadPage() {
                 </svg>
                 Buka Versi Web
               </a>
-              <p className="text-center text-[11px] text-[#1a1612]/30 mt-2.5">
+              <p className="text-center text-[11px] text-[#1a1612]/50 mt-2.5">
                 stcautotradepro.id · Gratis
               </p>
             </div>
@@ -305,7 +306,7 @@ export default function DownloadPage() {
 
           {/* ── Panduan Instalasi APK ─────────────────────── */}
           <section>
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-6 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/55 mb-6 flex items-center gap-3">
               Cara Instal APK Android
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -338,7 +339,7 @@ export default function DownloadPage() {
                 },
               ].map((s, i) => (
                 <div key={s.n} className="flex gap-5 px-6 py-5 border-b border-[rgba(26,22,18,0.06)] last:border-0">
-                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f9fafb] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/40">
+                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f9fafb] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/55">
                     {i + 1}
                   </div>
                   <div className="pt-0.5">
@@ -352,7 +353,7 @@ export default function DownloadPage() {
 
           {/* ── Kompatibilitas ────────────────────────────── */}
           <section>
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-6 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/55 mb-6 flex items-center gap-3">
               Kompatibilitas Perangkat
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -403,7 +404,7 @@ export default function DownloadPage() {
 
           {/* ── FAQ singkat ────────────────────────────────── */}
           <section>
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-6 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/55 mb-6 flex items-center gap-3">
               Pertanyaan Seputar Download
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -432,7 +433,7 @@ export default function DownloadPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-[12px] text-[#1a1612]/40">
+            <p className="mt-4 text-[12px] text-[#1a1612]/55">
               Punya pertanyaan lain?{" "}
               <Link href="/faq" className="text-[#10b981] hover:underline no-underline">
                 Lihat halaman FAQ lengkap →
@@ -443,23 +444,7 @@ export default function DownloadPage() {
         </main>
 
         {/* ── Footer ────────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-8 bg-white">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-1.5">
-                <Image src="/logo.webp" alt="STC AutoTrade" width={20} height={20} className="rounded-[4px]" />
-                <span className="text-[12px] font-medium text-[#1a1612]/50">STC AutoTrade</span>
-              </div>
-              <p className="text-[11px] text-[#1a1612]/25">
-                StcAutoTrade · StockAutoTrade · Robot Stockity · stcautotradepro.id
-              </p>
-            </div>
-            <p className="text-[11px] text-[#1a1612]/25 max-w-xs sm:text-right leading-relaxed">
-              Trading mengandung risiko kerugian finansial. STC AutoTrade adalah alat bantu,
-              bukan jaminan profit. Pahami risiko sebelum bertransaksi.
-            </p>
-          </div>
-        </footer>
+        <SiteFooter />
       </div>
     </>
   );

@@ -8,6 +8,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Cara Kerja STC AutoTrade — 6 Strategi & Manajemen Risiko Stockity",
@@ -433,16 +434,7 @@ export default function CaraKerjaPage() {
         </section>
 
         {/* ── Footer ────────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4">
-            <p className="text-[11px] text-[#1a1612]/25">
-              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id · Stockity Auto Trade
-            </p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">
-              ← Beranda
-            </Link>
-          </div>
-        </footer>
+        <SiteFooter />
       </div>
     </>
   );

@@ -67,7 +67,7 @@ export const HeroStatBar = dynamic(
         ].map((s) => (
           <div key={s.l} className="py-5 px-4 text-center">
             <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-emerald-600 leading-none mb-1.5">{s.n}</div>
-            <div className="text-[11px] text-zinc-400 leading-tight">{s.l}</div>
+            <div className="text-[11px] text-zinc-500 leading-tight">{s.l}</div>
           </div>
         ))}
       </div>

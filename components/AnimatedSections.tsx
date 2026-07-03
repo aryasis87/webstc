@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useInView, AnimatePresence, type Variants } from "framer-motion";
+import { motion, useInView, useReducedMotion, AnimatePresence, MotionConfig, type Variants } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
 import {
   Eye,
@@ -45,15 +45,17 @@ export function FadeUp({
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px" });
   return (
-    <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 24 }}
-      animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.65, delay, ease: EASE_OUT }}
-      className={className}
-    >
-      {children}
-    </motion.div>
+    <MotionConfig reducedMotion="user">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 24 }}
+        animate={inView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.65, delay, ease: EASE_OUT }}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    </MotionConfig>
   );
 }
 
@@ -67,15 +69,17 @@ export function StaggerView({
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-70px" });
   return (
-    <motion.div
-      ref={ref}
-      variants={stagger}
-      initial="hidden"
-      animate={inView ? "show" : "hidden"}
-      className={className}
-    >
-      {children}
-    </motion.div>
+    <MotionConfig reducedMotion="user">
+      <motion.div
+        ref={ref}
+        variants={stagger}
+        initial="hidden"
+        animate={inView ? "show" : "hidden"}
+        className={className}
+      >
+        {children}
+      </motion.div>
+    </MotionConfig>
   );
 }
 
@@ -160,7 +164,7 @@ export function HeroHeading({ apkPath }: { apkPath: string }) {
         </div>
         <a
           href="#cara-kerja"
-          className="inline-flex items-center gap-1.5 text-sm text-zinc-400 hover:text-zinc-700 transition-colors no-underline group w-fit"
+          className="inline-flex items-center gap-1.5 text-sm text-zinc-500 hover:text-zinc-800 transition-colors no-underline group w-fit"
         >
           Pelajari Cara Kerja
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor" className="transition-transform group-hover:translate-y-0.5" aria-hidden="true">
@@ -191,7 +195,7 @@ export function HeroStatBar() {
           <div className="font-[family-name:var(--font-dm-serif)] text-3xl text-emerald-600 leading-none mb-1.5">
             {s.n}
           </div>
-          <div className="text-[11px] text-zinc-400 leading-tight">{s.l}</div>
+          <div className="text-[11px] text-zinc-500 leading-tight">{s.l}</div>
         </div>
       ))}
     </motion.div>
@@ -223,38 +227,42 @@ export function FAQItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   const id = `faq-${q.replace(/\s+/g, "-").toLowerCase().slice(0, 30)}`;
   return (
-    <div className="border-b border-zinc-100">
-      <button
-        onClick={() => setOpen(!open)}
-        aria-expanded={open}
-        aria-controls={id}
-        className="w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer"
-      >
-        <span className="text-[15px] font-semibold text-zinc-900">{q}</span>
-        <motion.span
-          animate={{ rotate: open ? 45 : 0 }}
-          transition={{ duration: 0.2, ease: "easeOut" }}
-          className="w-6 h-6 rounded-full border border-zinc-200 flex items-center justify-center flex-shrink-0 text-zinc-400"
-        >
-          <Plus weight="bold" size={13} />
-        </motion.span>
-      </button>
-      <AnimatePresence initial={false}>
-        {open && (
-          <motion.div
-            key="answer"
-            id={id}
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.28, ease: EASE_OUT }}
-            className="overflow-hidden"
+    <MotionConfig reducedMotion="user">
+      <div className="border-b border-zinc-100">
+        <dt>
+          <button
+            onClick={() => setOpen(!open)}
+            aria-expanded={open}
+            aria-controls={id}
+            className="w-full flex items-center justify-between py-5 text-left gap-4 cursor-pointer"
           >
-            <p className="pb-5 text-[14px] text-zinc-500 leading-relaxed">{a}</p>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
+            <span className="text-[15px] font-semibold text-zinc-900">{q}</span>
+            <motion.span
+              animate={{ rotate: open ? 45 : 0 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="w-6 h-6 rounded-full border border-zinc-200 flex items-center justify-center flex-shrink-0 text-zinc-400"
+            >
+              <Plus weight="bold" size={13} />
+            </motion.span>
+          </button>
+        </dt>
+        <AnimatePresence initial={false}>
+          {open && (
+            <motion.dd
+              key="answer"
+              id={id}
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.28, ease: EASE_OUT }}
+              className="overflow-hidden m-0"
+            >
+              <p className="pb-5 text-[14px] text-zinc-500 leading-relaxed">{a}</p>
+            </motion.dd>
+          )}
+        </AnimatePresence>
+      </div>
+    </MotionConfig>
   );
 }
 
@@ -305,9 +313,14 @@ export function CountUp({
   const ref = useRef<HTMLDivElement>(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   const [value, setValue] = useState(0);
+  const reducedMotion = useReducedMotion();
 
   useEffect(() => {
     if (!inView) return;
+    if (reducedMotion) {
+      setValue(to);
+      return;
+    }
     const duration = 1600;
     let startTime: number | null = null;
     const tick = (timestamp: number) => {
@@ -321,7 +334,7 @@ export function CountUp({
       if (progress < 1) requestAnimationFrame(tick);
     };
     requestAnimationFrame(tick);
-  }, [inView, to, decimals]);
+  }, [inView, to, decimals, reducedMotion]);
 
   return (
     <div ref={ref} className={className}>

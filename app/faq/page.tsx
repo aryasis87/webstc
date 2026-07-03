@@ -8,6 +8,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import FAQAccordion from "./FAQAccordion";
+import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
@@ -301,16 +302,7 @@ export default function FAQPage() {
         </section>
 
         {/* ── Footer ────────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
-          <div className="max-w-4xl mx-auto px-5 sm:px-8 flex items-center justify-between gap-4">
-            <p className="text-[11px] text-[#1a1612]/25">
-              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
-            </p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">
-              ← Beranda
-            </Link>
-          </div>
-        </footer>
+        <SiteFooter />
       </div>
     </>
   );

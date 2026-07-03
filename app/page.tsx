@@ -1,5 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import PhoneImage from "@/components/PhoneImage";
+import MobileNav from "@/components/MobileNav";
+import SiteFooter from "@/components/SiteFooter";
 import { FadeUp, StaggerView, FadeItem, FAQItem, CountUp } from "@/components/AnimatedSections";
 import { HeroBadge, HeroHeading, HeroStatBar, HambatanSection, RiskCards } from "@/components/ClientAnimations";
 
@@ -134,10 +137,13 @@ export default function Home() {
             <div className="flex items-center gap-0.5">
               <a href="#fitur"      className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Fitur</a>
               <a href="#cara-kerja" className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Panduan</a>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Versi Web</a>
+              <Link href="/artikel" className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Artikel</Link>
+              <Link href="/faq"     className="hidden sm:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">FAQ</Link>
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center px-3 py-2 text-sm text-zinc-500 hover:text-zinc-900 hover:bg-zinc-50 transition-colors no-underline rounded-lg">Versi Web</a>
               <a href={APK_PATH} download className="ml-2 flex items-center gap-1.5 px-4 py-2 bg-zinc-900 text-white text-sm font-semibold rounded-lg hover:bg-zinc-700 transition-colors no-underline shadow-sm">
                 Download
               </a>
+              <MobileNav />
             </div>
           </div>
         </nav>
@@ -148,7 +154,7 @@ export default function Home() {
           <section className="relative pt-32 pb-20 sm:pt-44 sm:pb-28 overflow-hidden border-b border-zinc-100">
             {/* Dot grid */}
             <div className="absolute inset-0 [background-image:radial-gradient(circle,#e4e4e7_1px,transparent_1px)] [background-size:32px_32px] opacity-50 pointer-events-none" />
-            {/* Blue glow */}
+            {/* Emerald glow */}
             <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-emerald-500/[0.07] blur-[120px] rounded-full pointer-events-none" />
 
             <div className="relative max-w-5xl mx-auto px-5 sm:px-8">
@@ -182,7 +188,7 @@ export default function Home() {
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <FadeUp>
                 <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 justify-center">
-                  <span className="text-[11px] text-zinc-400 font-medium shrink-0">Dikenal juga sebagai:</span>
+                  <span className="text-[11px] text-zinc-500 font-medium shrink-0">Dikenal juga sebagai:</span>
                   {[
                     "StcAutoTrade", "StockAutoTrade", "Stc Auto Trade", "Stock Auto Trade",
                     "Robot Stockity", "Auto Stockity", "Bot Stockity Otomatis", "Stockity Auto Trade",
@@ -198,7 +204,7 @@ export default function Home() {
           <section className="py-20 sm:py-28 border-b border-zinc-100" id="platform">
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <FadeUp className="text-center mb-12">
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">Platform</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">Platform</p>
                 <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">Tersedia di Android &amp; Semua Browser</h2>
                 <p className="text-zinc-500 text-sm mt-3 max-w-md mx-auto leading-relaxed">
                   Pilih yang paling nyaman — instal APK di Android atau langsung buka di browser tanpa instalasi.
@@ -213,7 +219,7 @@ export default function Home() {
                       <div className="w-10 h-10 rounded-xl bg-zinc-900 flex items-center justify-center text-lg" aria-hidden="true">📱</div>
                       <div>
                         <p className="text-sm font-bold text-zinc-900">Aplikasi Android</p>
-                        <p className="text-[11px] text-zinc-400 font-medium">stcautotrade.id · APK</p>
+                        <p className="text-[11px] text-zinc-500 font-medium">stcautotrade.id · APK</p>
                       </div>
                     </div>
                     <ul className="flex flex-col gap-2">
@@ -263,7 +269,7 @@ export default function Home() {
           <section className="py-20 sm:py-28 border-b border-zinc-100 bg-zinc-50">
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <FadeUp className="text-center mb-14">
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">Dipercaya Trader Indonesia</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">Dipercaya Trader Indonesia</p>
                 <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">Angka yang Bicara Sendiri</h2>
               </FadeUp>
 
@@ -292,7 +298,7 @@ export default function Home() {
                       <p className="text-[14px] text-zinc-600 leading-relaxed mb-5 flex-1">"{t.text}"</p>
                       <div>
                         <p className="text-[13px] font-semibold text-zinc-900">{t.name}</p>
-                        <p className="text-[12px] text-zinc-400 mt-0.5">{t.role}</p>
+                        <p className="text-[12px] text-zinc-500 mt-0.5">{t.role}</p>
                       </div>
                     </div>
                   </FadeItem>
@@ -306,7 +312,7 @@ export default function Home() {
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <div className="grid lg:grid-cols-2 gap-14 lg:gap-24 items-start">
                 <FadeUp>
-                  <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">Mengapa STC AutoTrade?</p>
+                  <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">Mengapa STC AutoTrade?</p>
                   <h2 className="text-3xl sm:text-4xl font-medium tracking-tight leading-tight mb-5">
                     Empat Hambatan Terbesar<br className="hidden sm:block" /> Trader Pemula
                   </h2>
@@ -327,7 +333,7 @@ export default function Home() {
           <section className="py-20 sm:py-28 border-b border-zinc-100 bg-zinc-50" id="fitur">
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <FadeUp className="text-center mb-12">
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">6 Mode Strategi</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">6 Mode Strategi</p>
                 <h2 className="text-3xl sm:text-4xl font-medium tracking-tight max-w-lg mx-auto leading-tight">
                   Strategi untuk Setiap Gaya Trading
                 </h2>
@@ -342,7 +348,7 @@ export default function Home() {
                       <span className={`self-start text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-md ${m.color}`}>{m.tag}</span>
                       <h3 className="text-[15px] font-semibold tracking-tight text-zinc-900">{m.title}</h3>
                       <p className="text-[13px] text-zinc-500 leading-relaxed flex-1">{m.desc}</p>
-                      <p className="text-[12px] text-zinc-400 border-t border-zinc-100 pt-3 flex items-center gap-1.5">
+                      <p className="text-[12px] text-zinc-500 border-t border-zinc-100 pt-3 flex items-center gap-1.5">
                         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2 6l2.5 2.5 5.5-5" stroke="#059669" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
                         {m.for}
                       </p>
@@ -370,7 +376,7 @@ export default function Home() {
 
                 <div>
                   <FadeUp>
-                    <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">Manajemen Risiko</p>
+                    <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">Manajemen Risiko</p>
                     <h2 className="text-3xl sm:text-4xl font-medium tracking-tight leading-tight mb-4">
                       Perlindungan Modal Otomatis
                     </h2>
@@ -403,11 +409,11 @@ export default function Home() {
 
                 <div className="relative grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
                   <FadeUp>
-                    <p className="text-[11px] font-semibold tracking-widest uppercase text-emerald-300/60 mb-4">Untuk Pemula</p>
+                    <p className="text-[11px] font-semibold tracking-widest uppercase text-emerald-300 mb-4">Untuk Pemula</p>
                     <h2 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] mb-5 text-white">
                       Mulai dari Demo.<br />Tanpa Risiko.
                     </h2>
-                    <p className="text-emerald-200/60 text-[15px] leading-relaxed mb-8">
+                    <p className="text-emerald-100/80 text-[15px] leading-relaxed mb-8">
                       Semua fitur berjalan penuh menggunakan saldo virtual dengan data pasar nyata.
                       Uji strategi dan hanya pindah ke mode real setelah benar-benar siap.
                     </p>
@@ -419,7 +425,7 @@ export default function Home() {
                       ].map((item) => (
                         <div key={item.t} className="p-3.5 rounded-xl bg-white/[0.06] border border-white/[0.08]">
                           <p className="text-[13px] font-semibold text-white/90 mb-1">{item.t}</p>
-                          <p className="text-[12px] text-emerald-300/50 leading-snug">{item.s}</p>
+                          <p className="text-[12px] text-emerald-200/80 leading-snug">{item.s}</p>
                         </div>
                       ))}
                     </div>
@@ -450,7 +456,7 @@ export default function Home() {
           <section className="py-20 sm:py-28 border-b border-zinc-100 bg-zinc-50" id="cara-kerja">
             <div className="max-w-5xl mx-auto px-5 sm:px-8">
               <FadeUp className="text-center mb-14">
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">Cara Mulai</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">Cara Mulai</p>
                 <h2 className="text-3xl sm:text-4xl font-medium tracking-tight max-w-md mx-auto leading-tight">
                   5 Langkah Memulai STC AutoTrade
                 </h2>
@@ -477,7 +483,7 @@ export default function Home() {
           <section className="py-20 sm:py-28 border-b border-zinc-100">
             <div className="max-w-2xl mx-auto px-5 sm:px-8">
               <FadeUp className="mb-10">
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-400 mb-4">FAQ</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-zinc-500 mb-4">FAQ</p>
                 <h2 className="text-3xl sm:text-4xl font-medium tracking-tight">Pertanyaan tentang STC AutoTrade</h2>
               </FadeUp>
               <FadeUp delay={0.1}>
@@ -497,12 +503,12 @@ export default function Home() {
             <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/5 to-transparent" />
             <div className="relative max-w-5xl mx-auto px-5 sm:px-8 text-center">
               <FadeUp>
-                <p className="text-[11px] font-semibold tracking-widest uppercase text-emerald-400/50 mb-6">Gratis · Android &amp; Web · Mulai Sekarang</p>
+                <p className="text-[11px] font-semibold tracking-widest uppercase text-emerald-400/90 mb-6">Gratis · Android &amp; Web · Mulai Sekarang</p>
                 <h2 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-6xl font-normal tracking-tight leading-[1.1] max-w-2xl mx-auto mb-5 text-white">
                   Mulai Trading Otomatis Sekarang
                 </h2>
-                <p className="text-zinc-500 text-base sm:text-lg leading-relaxed max-w-md mx-auto mb-10">
-                  Download <strong className="text-zinc-300">STC AutoTrade</strong> atau buka versi web — mulai dari mode demo
+                <p className="text-zinc-400 text-base sm:text-lg leading-relaxed max-w-md mx-auto mb-10">
+                  Download <strong className="text-zinc-200">STC AutoTrade</strong> atau buka versi web — mulai dari mode demo
                   tanpa risiko, dan rasakan perbedaannya.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
@@ -513,7 +519,7 @@ export default function Home() {
                     Buka Versi Web
                   </a>
                 </div>
-                <p className="mt-5 text-[12px] text-zinc-600">Android 10.0+ · Versi Web semua perangkat · Gratis</p>
+                <p className="mt-5 text-[12px] text-zinc-400">Android 10.0+ · Versi Web semua perangkat · Gratis</p>
               </FadeUp>
             </div>
           </section>
@@ -521,20 +527,7 @@ export default function Home() {
         </main>
 
         {/* ── FOOTER ─────────────────────────────────────────── */}
-        <footer className="border-t border-zinc-100 py-8 bg-white">
-          <div className="max-w-5xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2 mb-1.5">
-                <Image src="/logo.webp" alt="Logo STC AutoTrade" width={22} height={22} className="rounded-md" />
-                <span className="text-sm font-medium text-zinc-500">STC AutoTrade</span>
-              </div>
-              <p className="text-[11px] text-zinc-400">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
-            </div>
-            <p className="text-[12px] text-zinc-400 max-w-xs sm:text-right leading-relaxed">
-              Trading mengandung risiko kerugian finansial. STC AutoTrade adalah alat bantu, bukan jaminan selalu profit.
-            </p>
-          </div>
-        </footer>
+        <SiteFooter />
 
       </div>
     </>

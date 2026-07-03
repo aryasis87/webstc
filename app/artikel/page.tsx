@@ -14,6 +14,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SiteFooter from "@/components/SiteFooter";
 
 /* ── Constants ─────────────────────────────────────────────────── */
 
@@ -619,29 +620,7 @@ export default function ArtikelPage() {
         </main>
 
         {/* ── FOOTER ─────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.09)] py-8 bg-white">
-          <div className="max-w-6xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <div>
-              <div className="flex items-center gap-2.5 mb-1.5">
-                <Image
-                  src="/logo.webp"
-                  alt="Logo STC AutoTrade"
-                  width={24}
-                  height={24}
-                  className="rounded-[5px] shadow-sm"
-                />
-                <span className="text-sm font-medium text-[#1a1612]/60">STC AutoTrade</span>
-              </div>
-              <p className="text-[11px] text-[#1a1612]/25 leading-snug">
-                © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
-              </p>
-            </div>
-            <p className="text-[12px] text-[#1a1612]/30 max-w-sm sm:text-right leading-relaxed">
-              Trading mengandung risiko kerugian finansial. STC AutoTrade adalah alat bantu,
-              bukan jaminan selalu profit. Pastikan Anda memahami risiko sebelum bertransaksi.
-            </p>
-          </div>
-        </footer>
+        <SiteFooter />
 
       </div>
     </>
