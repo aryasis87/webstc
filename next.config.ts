@@ -145,13 +145,6 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
-      // APK belum dirilis → semua tautan unduhan diarahkan ke halaman /download
-      // (Coming Soon + countdown). permanent:false agar mudah dicabut saat rilis.
-      {
-        source: "/StcAutoTrade.apk",
-        destination: "/download",
-        permanent: false,
-      },
     ];
   },
 };
