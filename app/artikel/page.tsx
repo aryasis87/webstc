@@ -80,6 +80,38 @@ interface Artikel {
 
 const ARTIKEL: Artikel[] = [
   {
+    slug:      "cara-main-stockity-pemula",
+    judul:     "Cara Main Stockity untuk Pemula: Panduan Lengkap dari Nol 2026",
+    ringkasan: "Panduan lengkap bermain Stockity untuk pemula — daftar akun, memahami antarmuka trading, order pertama di mode demo, kesalahan umum, hingga trading otomatis dengan robot.",
+    kategori:  "Panduan",
+    tanggal:   "3 Juli 2026",
+    menit:     9,
+  },
+  {
+    slug:      "akun-demo-stockity",
+    judul:     "Akun Demo Stockity: Cara Daftar & Latihan Gratis Tanpa Modal 2026",
+    ringkasan: "Cara mengaktifkan akun demo Stockity dengan saldo virtual gratis, perbedaan demo vs real, dan program latihan 7 hari terstruktur sebelum pindah ke akun real.",
+    kategori:  "Panduan",
+    tanggal:   "3 Juli 2026",
+    menit:     7,
+  },
+  {
+    slug:      "jam-trading-terbaik-stockity",
+    judul:     "Jam Trading Terbaik Stockity: Waktu Paling Profit (WIB) 2026",
+    ringkasan: "Pembagian sesi pasar Asia, Eropa, dan Amerika dalam WIB — jam paling likuid untuk trading di Stockity, waktu yang harus dihindari, dan cara mengotomatiskan jadwal.",
+    kategori:  "Strategi",
+    tanggal:   "3 Juli 2026",
+    menit:     8,
+  },
+  {
+    slug:      "ai-trading-stockity",
+    judul:     "AI Trading Stockity: Cara Kerja Robot AI untuk Binary Option 2026",
+    ringkasan: "Bagaimana sinyal AI dihasilkan, kapan AI unggul dibanding analisis manual, batasan yang wajib dipahami, dan panduan menggunakan mode AI Signal di STC AutoTrade.",
+    kategori:  "Edukasi",
+    tanggal:   "3 Juli 2026",
+    menit:     8,
+  },
+  {
     slug:      "robot-trading-stockity",
     judul:     "Robot Trading Stockity: Panduan Lengkap Auto Trade 2026",
     ringkasan: "Panduan lengkap cara kerja robot trading Stockity, 6 mode strategi yang tersedia, manajemen risiko otomatis, dan cara mengaktifkan bot di akun Stockity.id.",

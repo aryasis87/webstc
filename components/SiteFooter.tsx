@@ -8,6 +8,7 @@ const PAGES = [
   { href: "/cara-kerja", label: "Cara Kerja" },
   { href: "/faq", label: "FAQ" },
   { href: "/artikel", label: "Artikel" },
+  { href: "/kamus-trading", label: "Kamus Trading" },
 ];
 
 /** Footer terpadu untuk semua halaman utama — brand, navigasi, platform, disclaimer. */

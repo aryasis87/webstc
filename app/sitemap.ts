@@ -39,6 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
 
+    // ── Kamus Istilah ─────────────────────────────────────────────
+    {
+      url: `${BASE_URL}/kamus-trading`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+
     // ── Artikel: High Priority ────────────────────────────────────
     {
       url: `${BASE_URL}/artikel/robot-trading-stockity`,
@@ -187,6 +195,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.84,
+    },
+
+    // ── Artikel Baru (Juli 2026) ──────────────────────────────────
+    {
+      url: `${BASE_URL}/artikel/cara-main-stockity-pemula`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${BASE_URL}/artikel/akun-demo-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/jam-trading-terbaik-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/ai-trading-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.86,
     },
   ];
 }
