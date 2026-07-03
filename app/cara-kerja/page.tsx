@@ -259,13 +259,13 @@ export default function CaraKerjaPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-5xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
               <Link
                 href="/faq"
-                className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline"
+                className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline"
               >
                 FAQ
               </Link>
@@ -282,7 +282,7 @@ export default function CaraKerjaPage() {
         {/* ── Breadcrumb ────────────────────────────────────── */}
         <div className="max-w-5xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li className="text-[#1a1612]/70 font-medium">Cara Kerja</li>
@@ -292,7 +292,7 @@ export default function CaraKerjaPage() {
 
         {/* ── Header ────────────────────────────────────────── */}
         <header className="max-w-5xl mx-auto px-5 sm:px-8 pt-10 pb-14">
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-3">
             Panduan Lengkap
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5 max-w-2xl">
@@ -309,7 +309,7 @@ export default function CaraKerjaPage() {
               <a
                 key={i}
                 href={`#${["strategi", "risiko", "mulai"][i]}`}
-                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#10b981]/40 hover:text-[#10b981] transition-all no-underline"
+                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/65 hover:border-[#10b981]/40 hover:text-[#047857] transition-all no-underline"
               >
                 {item}
               </a>
@@ -321,7 +321,7 @@ export default function CaraKerjaPage() {
 
           {/* ── Section: 6 Strategi ───────────────────────── */}
           <section id="strategi">
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-8 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-8 flex items-center gap-3">
               6 Mode Strategi Trading
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -344,15 +344,15 @@ export default function CaraKerjaPage() {
                   <p className="text-[13px] text-[#6b6058] leading-relaxed mb-4">{s.desc}</p>
                   <div className="space-y-1.5 mb-4">
                     {s.howItWorks.map((step, i) => (
-                      <div key={i} className="flex items-start gap-2 text-[12px] text-[#1a1612]/60">
+                      <div key={i} className="flex items-start gap-2 text-[12px] text-[#1a1612]/65">
                         <span className={`mt-1.5 w-1.5 h-1.5 rounded-full flex-shrink-0 ${s.dotColor}`} />
                         {step}
                       </div>
                     ))}
                   </div>
                   <div className="pt-3 border-t border-[rgba(26,22,18,0.06)]">
-                    <p className="text-[11px] text-[#1a1612]/35">
-                      <span className="font-semibold text-[#1a1612]/50">Cocok untuk:</span> {s.bestFor}
+                    <p className="text-[11px] text-[#1a1612]/65">
+                      <span className="font-semibold text-[#1a1612]/65">Cocok untuk:</span> {s.bestFor}
                     </p>
                   </div>
                 </article>
@@ -362,7 +362,7 @@ export default function CaraKerjaPage() {
 
           {/* ── Section: Manajemen Risiko ─────────────────── */}
           <section id="risiko">
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-8 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-8 flex items-center gap-3">
               Manajemen Risiko Otomatis
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -377,7 +377,7 @@ export default function CaraKerjaPage() {
                   <h3 className="text-base font-semibold text-[#1a1612] mb-2">{f.title}</h3>
                   <p className="text-[13px] text-[#6b6058] leading-relaxed mb-3">{f.desc}</p>
                   <div className="bg-[#f6f4ef] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.06)]">
-                    <p className="text-[11px] text-[#1a1612]/50 leading-relaxed">{f.example}</p>
+                    <p className="text-[11px] text-[#1a1612]/65 leading-relaxed">{f.example}</p>
                   </div>
                 </div>
               ))}
@@ -386,14 +386,14 @@ export default function CaraKerjaPage() {
 
           {/* ── Section: Cara Mulai ───────────────────────── */}
           <section id="mulai">
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-8 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-8 flex items-center gap-3">
               Cara Memulai STC AutoTrade
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
             <div className="max-w-2xl divide-y divide-[rgba(26,22,18,0.07)] border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden bg-white">
               {STEPS.map((s, i) => (
                 <div key={s.n} className="flex gap-5 px-6 py-5">
-                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f6f4ef] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/40">
+                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f6f4ef] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/65">
                     {i + 1}
                   </div>
                   <div className="pt-1">

@@ -168,7 +168,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -220,12 +220,12 @@ export default function RobotStockityAndroidPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
-              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
-              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
+              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
+              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
               <Link href="/download" className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-white text-xs font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-colors no-underline">Download</Link>
             </div>
           </div>
@@ -234,7 +234,7 @@ export default function RobotStockityAndroidPage() {
         {/* ── Breadcrumb ──────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 flex-wrap">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li><Link href="/artikel" className="hover:text-[#1a1612]/70 transition-colors no-underline">Artikel</Link></li>
@@ -248,9 +248,9 @@ export default function RobotStockityAndroidPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Android</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
-            <span className="text-[12px] text-[#1a1612]/35">·</span>
-            <span className="text-[12px] text-[#1a1612]/35">±12 menit baca</span>
+            <span className="text-[12px] text-[#1a1612]/65">21 Mei 2026</span>
+            <span className="text-[12px] text-[#1a1612]/65">·</span>
+            <span className="text-[12px] text-[#1a1612]/65">±12 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
@@ -275,7 +275,7 @@ export default function RobotStockityAndroidPage() {
             ].map((s, i) => (
               <div key={i} className="bg-white py-4 px-4 text-center border-r border-[rgba(26,22,18,0.07)] last:border-0">
                 <p className="font-[family-name:var(--font-dm-serif)] text-xl text-[#1a1612] mb-0.5">{s.v}</p>
-                <p className="text-[11px] text-[#1a1612]/40">{s.l}</p>
+                <p className="text-[11px] text-[#1a1612]/65">{s.l}</p>
               </div>
             ))}
           </div>
@@ -303,9 +303,9 @@ export default function RobotStockityAndroidPage() {
                     <table className="w-full text-[12px]">
                       <thead>
                         <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
-                          <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
+                          <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Aspek</th>
                           <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#047857] uppercase tracking-wider">APK Android ✓</th>
-                          <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Versi Web</th>
+                          <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Versi Web</th>
                         </tr>
                       </thead>
                       <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
@@ -320,7 +320,7 @@ export default function RobotStockityAndroidPage() {
                           <tr key={row.aspek} className="hover:bg-[#f6f4ef]">
                             <td className="px-5 py-3.5 font-medium text-[#1a1612]">{row.aspek}</td>
                             <td className="px-4 py-3.5 text-center text-[#14532d] font-medium">{row.apk}</td>
-                            <td className="px-5 py-3.5 text-center text-[#1a1612]/50">{row.web}</td>
+                            <td className="px-5 py-3.5 text-center text-[#1a1612]/65">{row.web}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -374,7 +374,7 @@ export default function RobotStockityAndroidPage() {
                       <div className="pt-0.5">
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{s.title}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed">{s.desc}</p>
-                        {s.detail && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{s.detail}</p>}
+                        {s.detail && <p className="text-[11px] text-[#047857] mt-1 font-medium">{s.detail}</p>}
                       </div>
                     </div>
                   ))}
@@ -568,7 +568,7 @@ export default function RobotStockityAndroidPage() {
                       <div className="flex items-center gap-2.5 mb-3">
                         <span className="text-xl">{f.icon}</span>
                         <div>
-                          <p className="text-[10px] font-semibold text-[#10b981] uppercase tracking-wider">{f.fase}</p>
+                          <p className="text-[10px] font-semibold text-[#047857] uppercase tracking-wider">{f.fase}</p>
                           <h3 className="text-[13px] font-semibold text-[#1a1612]">{f.title}</h3>
                         </div>
                       </div>
@@ -672,7 +672,7 @@ export default function RobotStockityAndroidPage() {
                         <div className="space-y-1.5">
                           {brand.tips.map((tip, i) => (
                             <div key={i} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                              <span className="text-[#10b981] mt-0.5 flex-shrink-0">→</span>
+                              <span className="text-[#047857] mt-0.5 flex-shrink-0">→</span>
                               {tip}
                             </div>
                           ))}
@@ -741,7 +741,7 @@ export default function RobotStockityAndroidPage() {
                       <div>
                         <h3 className="text-[13px] font-semibold text-[#1a1612] mb-1.5">{item.masalah}</h3>
                         <p className="text-[11px] text-[#6b6058] mb-2">
-                          <span className="font-semibold text-[#1a1612]/60">Penyebab:</span> {item.penyebab}
+                          <span className="font-semibold text-[#1a1612]/65">Penyebab:</span> {item.penyebab}
                         </p>
                         <p className="text-[12px] text-[#14532d] bg-[#f0fdf4] border border-[#bbf7d0] rounded-lg px-3 py-2">
                           <span className="font-semibold">Solusi:</span> {item.solusi}
@@ -823,7 +823,7 @@ export default function RobotStockityAndroidPage() {
 
           {/* ── Internal Links ────────────────────────────── */}
           <div className="mt-14 pt-10 border-t border-[rgba(26,22,18,0.08)]">
-            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/download", title: "Download STC AutoTrade", desc: "Halaman download resmi APK Android terbaru" },
@@ -831,7 +831,7 @@ export default function RobotStockityAndroidPage() {
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot", desc: "Konfigurasi martingale, stop loss & strategi" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -861,10 +861,10 @@ export default function RobotStockityAndroidPage() {
         {/* ── Footer ──────────────────────────────────────── */}
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-[11px] text-[#1a1612]/25">
+            <p className="text-[11px] text-[#1a1612]/65">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
+            <Link href="/" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612]/65 transition-colors no-underline">← Beranda</Link>
           </div>
         </footer>
       </div>

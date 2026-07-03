@@ -183,7 +183,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -268,7 +268,7 @@ export default function RobotTradingStockityPage() {
             <Link href="/" className="flex items-center gap-2.5 no-underline">
               <Image
                 src="/logo.webp"
-                alt="STC AutoTrade"
+                alt="Logo STC AutoTrade"
                 width={28}
                 height={28}
                 className="rounded-[6px]"
@@ -278,13 +278,13 @@ export default function RobotTradingStockityPage() {
             <div className="flex items-center gap-2">
               <Link
                 href="/cara-kerja"
-                className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline"
+                className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline"
               >
                 Cara Kerja
               </Link>
               <Link
                 href="/faq"
-                className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline"
+                className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline"
               >
                 FAQ
               </Link>
@@ -301,7 +301,7 @@ export default function RobotTradingStockityPage() {
         {/* ── Breadcrumb ────────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 flex-wrap">
               <li>
                 <Link
                   href="/"
@@ -332,9 +332,9 @@ export default function RobotTradingStockityPage() {
             <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">
               Panduan
             </span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
-            <span className="text-[12px] text-[#1a1612]/35">·</span>
-            <span className="text-[12px] text-[#1a1612]/35">±12 menit baca</span>
+            <span className="text-[12px] text-[#1a1612]/65">21 Mei 2026</span>
+            <span className="text-[12px] text-[#1a1612]/65">·</span>
+            <span className="text-[12px] text-[#1a1612]/65">±12 menit baca</span>
           </div>
 
           {/* H1 */}
@@ -368,7 +368,7 @@ export default function RobotTradingStockityPage() {
                 <p className="font-[family-name:var(--font-dm-serif)] text-2xl text-[#1a1612] mb-0.5">
                   {s.v}
                 </p>
-                <p className="text-[11px] text-[#1a1612]/40">{s.l}</p>
+                <p className="text-[11px] text-[#1a1612]/65">{s.l}</p>
               </div>
             ))}
           </div>
@@ -542,8 +542,8 @@ export default function RobotTradingStockityPage() {
                         {s.tag}
                       </span>
                       <span className="text-[11px] text-[#6b6058]">Risiko: {s.risk}</span>
-                      <span className="text-[11px] text-[#1a1612]/30">·</span>
-                      <span className="text-[11px] text-[#1a1612]/50">{s.for}</span>
+                      <span className="text-[11px] text-[#1a1612]/65">·</span>
+                      <span className="text-[11px] text-[#1a1612]/65">{s.for}</span>
                     </div>
                     <h3 className="text-[14px] font-semibold text-[#1a1612] mb-2">{s.title}</h3>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{s.desc}</p>
@@ -556,7 +556,7 @@ export default function RobotTradingStockityPage() {
                   Penjelasan teknis detail setiap strategi →{" "}
                   <Link
                     href="/cara-kerja"
-                    className="text-[#10b981] hover:underline no-underline font-medium"
+                    className="text-[#047857] hover:underline no-underline font-medium"
                   >
                     Halaman Cara Kerja STC AutoTrade
                   </Link>
@@ -613,7 +613,7 @@ export default function RobotTradingStockityPage() {
                       <h3 className="text-[14px] font-semibold text-[#1a1612] mb-2">{f.title}</h3>
                       <p className="text-[13px] text-[#6b6058] leading-relaxed mb-3">{f.desc}</p>
                       <div className="bg-[#f6f4ef] rounded-lg px-3.5 py-2.5 border border-[rgba(26,22,18,0.06)]">
-                        <p className="text-[11px] text-[#1a1612]/45 leading-relaxed">{f.example}</p>
+                        <p className="text-[11px] text-[#1a1612]/65 leading-relaxed">{f.example}</p>
                       </div>
                     </div>
                   ))}
@@ -673,14 +673,14 @@ export default function RobotTradingStockityPage() {
                     <div key={p.platform} className="p-6">
                       <div className="text-2xl mb-3">{p.icon}</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612] mb-1">{p.platform}</h3>
-                      <p className="text-[12px] text-[#10b981] font-medium mb-4">{p.url}</p>
+                      <p className="text-[12px] text-[#047857] font-medium mb-4">{p.url}</p>
                       <div className="space-y-2 mb-4">
                         {p.features.map((f) => (
                           <FeatureCheck key={f} text={f} />
                         ))}
                       </div>
                       <div className="bg-[#f6f4ef] rounded-lg px-3.5 py-3 border border-[rgba(26,22,18,0.06)]">
-                        <p className="text-[11px] text-[#1a1612]/45 leading-relaxed">{p.note}</p>
+                        <p className="text-[11px] text-[#1a1612]/65 leading-relaxed">{p.note}</p>
                       </div>
                     </div>
                   ))}
@@ -691,7 +691,7 @@ export default function RobotTradingStockityPage() {
                 Panduan instalasi langkah demi langkah →{" "}
                 <Link
                   href="/download"
-                  className="text-[#10b981] hover:underline no-underline font-medium"
+                  className="text-[#047857] hover:underline no-underline font-medium"
                 >
                   Halaman Download STC AutoTrade
                 </Link>
@@ -870,7 +870,7 @@ export default function RobotTradingStockityPage() {
                 Lebih banyak pertanyaan →{" "}
                 <Link
                   href="/faq"
-                  className="text-[#10b981] hover:underline no-underline font-medium"
+                  className="text-[#047857] hover:underline no-underline font-medium"
                 >
                   Lihat FAQ Lengkap STC AutoTrade
                 </Link>
@@ -909,7 +909,7 @@ export default function RobotTradingStockityPage() {
 
           {/* ── Internal Links Section ────────────────────── */}
           <div className="mt-14 pt-10 border-t border-[rgba(26,22,18,0.08)]">
-            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5">
               Artikel Terkait
             </p>
             <div className="grid sm:grid-cols-3 gap-3">
@@ -938,7 +938,7 @@ export default function RobotTradingStockityPage() {
                   href={l.href}
                   className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline"
                 >
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">
                     {l.title} →
                   </p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
@@ -952,7 +952,7 @@ export default function RobotTradingStockityPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">
                 Mulai Gratis Sekarang
               </p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">
@@ -984,12 +984,12 @@ export default function RobotTradingStockityPage() {
         {/* ── Footer ────────────────────────────────────────── */}
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-[11px] text-[#1a1612]/25">
+            <p className="text-[11px] text-[#1a1612]/65">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id · Auto Trade Stockity
             </p>
             <Link
               href="/"
-              className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline"
+              className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612]/65 transition-colors no-underline"
             >
               ← Beranda
             </Link>

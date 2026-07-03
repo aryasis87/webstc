@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://stcautotrade.id";
-const LAST_MODIFIED = new Date("2026-06-07");
+const LAST_MODIFIED = new Date("2026-07-03");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

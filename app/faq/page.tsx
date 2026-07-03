@@ -208,7 +208,7 @@ export default function FAQPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <Link
@@ -223,7 +223,7 @@ export default function FAQPage() {
         {/* ── Breadcrumb ────────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li className="text-[#1a1612]/70 font-medium">FAQ</li>
@@ -233,7 +233,7 @@ export default function FAQPage() {
 
         {/* ── Header ────────────────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-10 pb-12">
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-3">
             FAQ · {totalQuestions} Pertanyaan
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-4">
@@ -251,10 +251,10 @@ export default function FAQPage() {
               <a
                 key={cat.id}
                 href={`#${cat.id}`}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#10b981]/40 hover:text-[#10b981] transition-all no-underline"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/65 hover:border-[#10b981]/40 hover:text-[#047857] transition-all no-underline"
               >
                 {cat.title}
-                <span className="text-[10px] text-[#1a1612]/30">{cat.items.length}</span>
+                <span className="text-[10px] text-[#1a1612]/65">{cat.items.length}</span>
               </a>
             ))}
           </div>
@@ -264,7 +264,7 @@ export default function FAQPage() {
         <main className="max-w-4xl mx-auto px-5 sm:px-8 pb-24 space-y-14">
           {FAQ_CATEGORIES.map((cat) => (
             <section key={cat.id} id={cat.id}>
-              <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+              <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
                 {cat.title}
                 <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
               </h2>

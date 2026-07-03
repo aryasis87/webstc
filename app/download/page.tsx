@@ -158,14 +158,14 @@ export default function DownloadPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
-              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">
+              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">
                 Cara Kerja
               </Link>
-              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">
+              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">
                 FAQ
               </Link>
             </div>
@@ -175,7 +175,7 @@ export default function DownloadPage() {
         {/* ── Breadcrumb ────────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/55">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li className="text-[#1a1612]/70 font-medium">Download</li>
@@ -185,7 +185,7 @@ export default function DownloadPage() {
 
         {/* ── Header ────────────────────────────────────────── */}
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-10 pb-12">
-          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-3">
+          <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-3">
             Download Gratis · APK & Web
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-4">
@@ -227,7 +227,7 @@ export default function DownloadPage() {
                   "Semua 6 strategi tersedia",
                   "Update otomatis notifikasi in-app",
                 ].map((f) => (
-                  <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
+                  <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/65">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
                       <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
                       <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -246,7 +246,7 @@ export default function DownloadPage() {
                 </svg>
                 Download APK Android
               </a>
-              <p className="text-center text-[11px] text-[#1a1612]/50 mt-2.5">
+              <p className="text-center text-[11px] text-[#1a1612]/65 mt-2.5">
                 Gratis · Perlu izin "sumber tidak dikenal"
               </p>
             </div>
@@ -276,7 +276,7 @@ export default function DownloadPage() {
                   "Fitur identik dengan APK Android",
                   "Buka di Chrome, Safari, Firefox",
                 ].map((f) => (
-                  <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
+                  <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/65">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
                       <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
                       <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -289,7 +289,7 @@ export default function DownloadPage() {
                 href="https://stcautotradepro.id"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#10b981] text-white text-sm font-bold rounded-xl hover:bg-[#059669] active:scale-[0.98] transition-all no-underline shadow-sm shadow-emerald-200"
+                className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#047857] text-white text-sm font-bold rounded-xl hover:bg-[#065f46] active:scale-[0.98] transition-all no-underline shadow-sm shadow-emerald-200"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
                   <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.4" />
@@ -298,7 +298,7 @@ export default function DownloadPage() {
                 </svg>
                 Buka Versi Web
               </a>
-              <p className="text-center text-[11px] text-[#1a1612]/50 mt-2.5">
+              <p className="text-center text-[11px] text-[#1a1612]/65 mt-2.5">
                 stcautotradepro.id · Gratis
               </p>
             </div>
@@ -306,7 +306,7 @@ export default function DownloadPage() {
 
           {/* ── Panduan Instalasi APK ─────────────────────── */}
           <section>
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/55 mb-6 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-6 flex items-center gap-3">
               Cara Instal APK Android
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -339,7 +339,7 @@ export default function DownloadPage() {
                 },
               ].map((s, i) => (
                 <div key={s.n} className="flex gap-5 px-6 py-5 border-b border-[rgba(26,22,18,0.06)] last:border-0">
-                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f6f4ef] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/55">
+                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f6f4ef] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/65">
                     {i + 1}
                   </div>
                   <div className="pt-0.5">
@@ -353,7 +353,7 @@ export default function DownloadPage() {
 
           {/* ── Kompatibilitas ────────────────────────────── */}
           <section>
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/55 mb-6 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-6 flex items-center gap-3">
               Kompatibilitas Perangkat
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -395,7 +395,7 @@ export default function DownloadPage() {
                       {p.badge}
                     </span>
                   </div>
-                  <p className="text-[12px] text-[#10b981] font-medium mb-1">{p.req}</p>
+                  <p className="text-[12px] text-[#047857] font-medium mb-1">{p.req}</p>
                   <p className="text-[12px] text-[#6b6058] leading-relaxed">{p.note}</p>
                 </div>
               ))}
@@ -404,7 +404,7 @@ export default function DownloadPage() {
 
           {/* ── FAQ singkat ────────────────────────────────── */}
           <section>
-            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/55 mb-6 flex items-center gap-3">
+            <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-6 flex items-center gap-3">
               Pertanyaan Seputar Download
               <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
             </h2>
@@ -433,9 +433,9 @@ export default function DownloadPage() {
                 </div>
               ))}
             </div>
-            <p className="mt-4 text-[12px] text-[#1a1612]/55">
+            <p className="mt-4 text-[12px] text-[#1a1612]/65">
               Punya pertanyaan lain?{" "}
-              <Link href="/faq" className="text-[#10b981] hover:underline no-underline">
+              <Link href="/faq" className="text-[#047857] hover:underline no-underline">
                 Lihat halaman FAQ lengkap →
               </Link>
             </p>

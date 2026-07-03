@@ -138,7 +138,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -182,7 +182,7 @@ function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: str
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#047857] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -202,7 +202,7 @@ export default function CaraDepositStockityPage() {
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#10b981]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#047857]">AutoTrade</span></span>
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
@@ -398,7 +398,7 @@ export default function CaraDepositStockityPage() {
               <div className="grid sm:grid-cols-2 gap-4 mb-5">
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="w-3 h-3 rounded-full bg-[#10b981]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#047857]"></div>
                     <p className="text-[13px] font-bold text-[#1a1612]">Akun Real</p>
                   </div>
                   <ul className="space-y-2">
@@ -410,7 +410,7 @@ export default function CaraDepositStockityPage() {
                       "Risiko nyata",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                        <span className="text-[#10b981] mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-[#047857] mt-0.5 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
@@ -418,7 +418,7 @@ export default function CaraDepositStockityPage() {
                 </div>
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4">
                   <div className="flex items-center gap-2 mb-3">
-                    <div className="w-3 h-3 rounded-full bg-[#10b981]"></div>
+                    <div className="w-3 h-3 rounded-full bg-[#047857]"></div>
                     <p className="text-[13px] font-bold text-[#1a1612]">Akun Demo</p>
                   </div>
                   <ul className="space-y-2">
@@ -430,7 +430,7 @@ export default function CaraDepositStockityPage() {
                       "Ideal untuk belajar & testing",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                        <span className="text-[#10b981] mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-[#047857] mt-0.5 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
@@ -563,7 +563,7 @@ export default function CaraDepositStockityPage() {
                   "Login STC AutoTrade menggunakan email dan password Stockity.id yang sama — satu akun untuk segalanya.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
-                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
+                    <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
                   </div>
                 ))}

@@ -137,7 +137,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -181,7 +181,7 @@ function StepCard({ n, title, desc, sub }: { n: string; title: string; desc: str
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#047857] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -201,7 +201,7 @@ export default function RobotTradingPcLaptopPage() {
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
-              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#10b981]">AutoTrade</span></span>
+              <span className="text-base font-bold text-[#1a1612]">STC <span className="text-[#047857]">AutoTrade</span></span>
             </Link>
             <div className="flex items-center gap-3">
               <Link href="/artikel" className="text-[13px] text-[#6b6058] hover:text-[#1a1612] transition-colors no-underline">Semua Artikel</Link>
@@ -341,7 +341,7 @@ export default function RobotTradingPcLaptopPage() {
                       { mode: "Momentum", kode: "momentum", desc: "Deteksi 4 pola candlestick" },
                     ].map((item) => (
                       <div key={item.mode} className="flex items-start gap-2 py-1">
-                        <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
+                        <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
                         <div>
                           <span className="text-[12px] font-semibold text-[#1a1612]">{item.mode}</span>
                           <span className="text-[11px] text-[#6b6058] ml-1">({item.kode})</span>
@@ -367,7 +367,7 @@ export default function RobotTradingPcLaptopPage() {
                       "Real-time saldo dari Stockity API",
                     ].map((item) => (
                       <div key={item} className="flex items-start gap-2">
-                        <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
+                        <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
                         <p className="text-[12px] text-[#6b6058]">{item}</p>
                       </div>
                     ))}
@@ -540,7 +540,7 @@ export default function RobotTradingPcLaptopPage() {
                   ].map((c) => (
                     <div key={c.item} className="flex items-start gap-2">
                       <div className="w-4 h-4 rounded border border-[rgba(26,22,18,0.15)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                        {c.done && <span className="text-[#10b981] text-[10px] font-bold">✓</span>}
+                        {c.done && <span className="text-[#047857] text-[10px] font-bold">✓</span>}
                       </div>
                       <p className="text-[12px] text-[#6b6058]">{c.item}</p>
                     </div>
@@ -571,7 +571,7 @@ export default function RobotTradingPcLaptopPage() {
                   "Cocok untuk trader yang lebih nyaman monitoring di layar besar.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
-                    <span className="text-[#10b981] font-bold text-sm flex-shrink-0">✓</span>
+                    <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
                     <p className="text-[13px] text-[#6b6058] leading-relaxed">{point}</p>
                   </div>
                 ))}

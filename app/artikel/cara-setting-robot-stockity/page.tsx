@@ -174,7 +174,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -281,12 +281,12 @@ export default function CaraSettingRobotStockityPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
-              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
-              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
+              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
+              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
               <Link href="/download" className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-white text-xs font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-colors no-underline">Download</Link>
             </div>
           </div>
@@ -295,7 +295,7 @@ export default function CaraSettingRobotStockityPage() {
         {/* ── Breadcrumb ──────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 flex-wrap">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li><Link href="/artikel" className="hover:text-[#1a1612]/70 transition-colors no-underline">Artikel</Link></li>
@@ -309,9 +309,9 @@ export default function CaraSettingRobotStockityPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Tutorial</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
-            <span className="text-[12px] text-[#1a1612]/35">·</span>
-            <span className="text-[12px] text-[#1a1612]/35">±15 menit baca</span>
+            <span className="text-[12px] text-[#1a1612]/65">21 Mei 2026</span>
+            <span className="text-[12px] text-[#1a1612]/65">·</span>
+            <span className="text-[12px] text-[#1a1612]/65">±15 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
@@ -342,7 +342,7 @@ export default function CaraSettingRobotStockityPage() {
               <a
                 key={item.href}
                 href={item.href}
-                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/60 hover:border-[#10b981]/40 hover:text-[#10b981] transition-all no-underline"
+                className="inline-flex items-center px-3 py-1.5 bg-white border border-[rgba(26,22,18,0.12)] rounded-lg text-[12px] font-medium text-[#1a1612]/65 hover:border-[#10b981]/40 hover:text-[#047857] transition-all no-underline"
               >
                 {item.label}
               </a>
@@ -397,14 +397,14 @@ export default function CaraSettingRobotStockityPage() {
                       <h3 className="text-[13px] font-semibold text-[#1a1612] mb-3">{p.title}</h3>
                       <div className="space-y-1.5 mb-3">
                         {p.steps.map((s, i) => (
-                          <div key={i} className="flex items-center gap-2 text-[12px] text-[#1a1612]/60">
+                          <div key={i} className="flex items-center gap-2 text-[12px] text-[#1a1612]/65">
                             <span className="w-4 h-4 rounded-full bg-[#d1fae5] flex items-center justify-center text-[10px] font-bold text-[#047857] flex-shrink-0">{i + 1}</span>
                             {s}
                           </div>
                         ))}
                       </div>
                       <div className="bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
-                        <p className="text-[11px] text-[#1a1612]/40">{p.note}</p>
+                        <p className="text-[11px] text-[#1a1612]/65">{p.note}</p>
                       </div>
                     </div>
                   ))}
@@ -434,7 +434,7 @@ export default function CaraSettingRobotStockityPage() {
                 {/* Tabel rekomendasi strategi */}
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">
                   <div className="px-5 py-3.5 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
-                    <p className="text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Panduan Pemilihan Strategi</p>
+                    <p className="text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Panduan Pemilihan Strategi</p>
                   </div>
                   <div className="divide-y divide-[rgba(26,22,18,0.06)]">
                     {[
@@ -495,7 +495,7 @@ export default function CaraSettingRobotStockityPage() {
                         <p className="text-[12px] text-[#6b6058]">{s.kapan}</p>
                         <p className="text-[12px] text-[#6b6058]">{s.kenapa}</p>
                         <div className="flex items-start">
-                          <span className="text-[11px] text-[#1a1612]/40 bg-[#f6f4ef] px-2 py-0.5 rounded-full border border-[rgba(26,22,18,0.08)]">
+                          <span className="text-[11px] text-[#1a1612]/65 bg-[#f6f4ef] px-2 py-0.5 rounded-full border border-[rgba(26,22,18,0.08)]">
                             {s.risiko}
                           </span>
                         </div>
@@ -568,13 +568,13 @@ export default function CaraSettingRobotStockityPage() {
                       <table className="w-full text-[12px]">
                         <thead>
                           <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
-                            <th className="text-left px-5 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Profil</th>
-                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Nominal</th>
-                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Multiplier</th>
-                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">K1</th>
-                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">K2</th>
-                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">K3</th>
-                            <th className="text-right px-5 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Modal Min</th>
+                            <th className="text-left px-5 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Profil</th>
+                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Nominal</th>
+                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Multiplier</th>
+                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">K1</th>
+                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">K2</th>
+                            <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">K3</th>
+                            <th className="text-right px-5 py-3 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Modal Min</th>
                           </tr>
                         </thead>
                         <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
@@ -588,7 +588,7 @@ export default function CaraSettingRobotStockityPage() {
                                       {cfg.label}
                                     </span>
                                   </div>
-                                  <p className="text-[10px] text-[#1a1612]/35 mt-0.5">{cfg.for}</p>
+                                  <p className="text-[10px] text-[#1a1612]/65 mt-0.5">{cfg.for}</p>
                                 </td>
                                 <td className="px-4 py-3.5 text-right text-[#1a1612]/70">
                                   Rp {cfg.nominal.toLocaleString("id")}
@@ -610,7 +610,7 @@ export default function CaraSettingRobotStockityPage() {
                       </table>
                     </div>
                     <div className="px-5 py-3 bg-[#f6f4ef] border-t border-[rgba(26,22,18,0.06)]">
-                      <p className="text-[11px] text-[#1a1612]/35">
+                      <p className="text-[11px] text-[#1a1612]/65">
                         K1–K3 = nominal order kompensasi pada setiap step loss. Modal Min = buffer aman yang disarankan.
                       </p>
                     </div>
@@ -665,7 +665,7 @@ export default function CaraSettingRobotStockityPage() {
                         { modal: "Rp 2.000.000", sl: "Rp 400.000–600.000" },
                       ].map((r) => (
                         <div key={r.modal} className="flex items-center justify-between text-[12px] py-1.5 border-b border-[rgba(26,22,18,0.05)] last:border-0">
-                          <span className="text-[#1a1612]/50">Modal {r.modal}</span>
+                          <span className="text-[#1a1612]/65">Modal {r.modal}</span>
                           <span className="font-semibold text-[#1a1612]">{r.sl}</span>
                         </div>
                       ))}
@@ -697,7 +697,7 @@ export default function CaraSettingRobotStockityPage() {
                         { sl: "SL Rp 400.000", sp: "Rp 800.000–1.200.000" },
                       ].map((r) => (
                         <div key={r.sl} className="flex items-center justify-between text-[12px] py-1.5 border-b border-[rgba(26,22,18,0.05)] last:border-0">
-                          <span className="text-[#1a1612]/50">{r.sl}</span>
+                          <span className="text-[#1a1612]/65">{r.sl}</span>
                           <span className="font-semibold text-[#1a1612]">{r.sp}</span>
                         </div>
                       ))}
@@ -886,7 +886,7 @@ export default function CaraSettingRobotStockityPage() {
 
           {/* ── Internal Links ────────────────────────────── */}
           <div className="mt-14 pt-10 border-t border-[rgba(26,22,18,0.08)]">
-            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
@@ -894,7 +894,7 @@ export default function CaraSettingRobotStockityPage() {
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & panduan instalasi lengkap" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -906,7 +906,7 @@ export default function CaraSettingRobotStockityPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Mulai Gratis Sekarang</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">Mulai Gratis Sekarang</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Praktikkan Panduan Setting Ini Langsung</p>
               <p className="text-[13px] text-[#6b6058]">Download APK atau buka versi web — mulai dari mode demo gratis tanpa risiko finansial.</p>
             </div>
@@ -924,10 +924,10 @@ export default function CaraSettingRobotStockityPage() {
         {/* ── Footer ──────────────────────────────────────── */}
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-[11px] text-[#1a1612]/25">
+            <p className="text-[11px] text-[#1a1612]/65">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
+            <Link href="/" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612]/65 transition-colors no-underline">← Beranda</Link>
           </div>
         </footer>
       </div>

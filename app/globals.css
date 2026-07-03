@@ -42,9 +42,11 @@
 
 /* ── Keyframes ─────────────────────────────────────────────────────── */
 
+/* Mulai dari 0.01 (bukan 0) agar elemen tetap dihitung sebagai kandidat
+   LCP oleh browser — opacity:0 membuat paint hero diabaikan. */
 @keyframes fade-up {
-  from { opacity: 0; transform: translateY(22px); }
-  to   { opacity: 1; transform: translateY(0);    }
+  from { opacity: 0.01; transform: translateY(22px); }
+  to   { opacity: 1;    transform: translateY(0);    }
 }
 
 @keyframes fade-in {
@@ -142,7 +144,8 @@ body {
 /* ── Focus Visible — aksesibilitas keyboard ────────────────────────── */
 
 :focus-visible {
-  outline: 2px solid var(--color-primary);
+  /* primary-deep: kontras >=3:1 terhadap paper & putih (syarat WCAG non-teks) */
+  outline: 2px solid var(--color-primary-deep);
   outline-offset: 2px;
   border-radius: 4px;
 }

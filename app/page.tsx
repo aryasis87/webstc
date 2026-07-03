@@ -299,9 +299,9 @@ export default function Home() {
               {[0, 1].map((copy) => (
                 <div key={copy} className="flex items-center shrink-0">
                   {ALIASES.map((a) => (
-                    <span key={a} className="flex items-center gap-7 px-7 text-[11px] font-semibold tracking-[0.2em] uppercase text-[#17140f]/45 whitespace-nowrap">
+                    <span key={a} className="flex items-center gap-7 px-7 text-[11px] font-semibold tracking-[0.2em] uppercase text-[#17140f]/60 whitespace-nowrap">
                       {a}
-                      <span className="text-emerald-600/60 text-[9px]">✦</span>
+                      <span className="text-emerald-700/80 text-[9px]">✦</span>
                     </span>
                   ))}
                 </div>

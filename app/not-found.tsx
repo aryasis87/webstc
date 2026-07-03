@@ -40,7 +40,7 @@ export default function NotFound() {
           Kembali ke Beranda
         </Link>
 
-        <p className="mt-8 text-[12px] text-[#1a1612]/25">
+        <p className="mt-8 text-[12px] text-[#1a1612]/65">
           STC AutoTrade · stcautotrade.id
         </p>
       </div>

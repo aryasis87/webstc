@@ -143,7 +143,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -250,12 +250,12 @@ export default function StockityVsBinomoPage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
-              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
-              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
+              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
+              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
               <Link href="/download" className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-white text-xs font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-colors no-underline">Download</Link>
             </div>
           </div>
@@ -264,7 +264,7 @@ export default function StockityVsBinomoPage() {
         {/* ── Breadcrumb ──────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 flex-wrap">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li><Link href="/artikel" className="hover:text-[#1a1612]/70 transition-colors no-underline">Artikel</Link></li>
@@ -278,9 +278,9 @@ export default function StockityVsBinomoPage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#fef3c7] text-[#92400e] text-[11px] font-semibold rounded-full">Perbandingan</span>
-            <span className="text-[12px] text-[#1a1612]/35">21 Mei 2026</span>
-            <span className="text-[12px] text-[#1a1612]/35">·</span>
-            <span className="text-[12px] text-[#1a1612]/35">±13 menit baca</span>
+            <span className="text-[12px] text-[#1a1612]/65">21 Mei 2026</span>
+            <span className="text-[12px] text-[#1a1612]/65">·</span>
+            <span className="text-[12px] text-[#1a1612]/65">±13 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
@@ -365,7 +365,7 @@ export default function StockityVsBinomoPage() {
                       ))}
                     </div>
                     <div className="bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
-                      <p className="text-[11px] text-[#1a1612]/40">Cocok untuk: {p.cocokUntuk}</p>
+                      <p className="text-[11px] text-[#1a1612]/65">Cocok untuk: {p.cocokUntuk}</p>
                     </div>
                   </div>
                 ))}
@@ -383,7 +383,7 @@ export default function StockityVsBinomoPage() {
                   <table className="w-full text-[12px]">
                     <thead>
                       <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
-                        <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
+                        <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/65 uppercase tracking-wider">Aspek</th>
                         <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#047857] uppercase tracking-wider">Stockity 🇮🇩</th>
                         <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#92400e] uppercase tracking-wider">Binomo 🌐</th>
                         <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#166534] uppercase tracking-wider">Olymp Trade 🌍</th>
@@ -396,15 +396,15 @@ export default function StockityVsBinomoPage() {
                           <td className={`px-4 py-3.5 text-center ${row.stockity.highlight ? "font-semibold text-[#047857] bg-[#ecfdf5]" : "text-[#14532d]"}`}>
                             {row.stockity.val}
                           </td>
-                          <td className="px-4 py-3.5 text-center text-[#1a1612]/60">{row.binomo.val}</td>
-                          <td className="px-5 py-3.5 text-center text-[#1a1612]/60">{row.olymp.val}</td>
+                          <td className="px-4 py-3.5 text-center text-[#1a1612]/65">{row.binomo.val}</td>
+                          <td className="px-5 py-3.5 text-center text-[#1a1612]/65">{row.olymp.val}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
                 <div className="px-5 py-3 bg-[#f6f4ef] border-t border-[rgba(26,22,18,0.06)]">
-                  <p className="text-[11px] text-[#1a1612]/35">
+                  <p className="text-[11px] text-[#1a1612]/65">
                     Perbandingan berfokus pada fitur yang relevan untuk pengguna STC AutoTrade. Data dapat berubah — verifikasi langsung di platform masing-masing.
                   </p>
                 </div>
@@ -467,7 +467,7 @@ export default function StockityVsBinomoPage() {
                         "Tidak bisa trading saat sibuk atau tidur",
                         "Disiplin manajemen risiko sepenuhnya bergantung trader",
                       ].map((item, i) => (
-                        <div key={i} className="flex items-start gap-2 text-[12px] text-[#1a1612]/60">
+                        <div key={i} className="flex items-start gap-2 text-[12px] text-[#1a1612]/65">
                           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0 mt-0.5">
                             <circle cx="7" cy="7" r="6.5" stroke="rgba(26,22,18,0.2)" />
                             <path d="M5 5l4 4M9 5l-4 4" stroke="rgba(26,22,18,0.4)" strokeWidth="1.2" strokeLinecap="round" />
@@ -536,7 +536,7 @@ export default function StockityVsBinomoPage() {
                     <div className="flex items-start gap-3">
                       <span className="text-xl flex-shrink-0 mt-0.5">{item.icon}</span>
                       <div>
-                        <p className="text-[12px] text-[#1a1612]/50 mb-1">Jika: {item.kondisi}</p>
+                        <p className="text-[12px] text-[#1a1612]/65 mb-1">Jika: {item.kondisi}</p>
                         <p className={`text-[13px] font-bold mb-1 ${item.highlight ? "text-[#047857]" : "text-[#1a1612]"}`}>
                           → {item.pilihan}
                         </p>
@@ -661,7 +661,7 @@ export default function StockityVsBinomoPage() {
 
           {/* ── Internal Links ────────────────────────────── */}
           <div className="mt-14 pt-10 border-t border-[rgba(26,22,18,0.08)]">
-            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
@@ -669,7 +669,7 @@ export default function StockityVsBinomoPage() {
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & versi web — gratis" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -681,7 +681,7 @@ export default function StockityVsBinomoPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Stockity + STC AutoTrade</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">Stockity + STC AutoTrade</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Mulai Trading Otomatis di Stockity — Gratis</p>
               <p className="text-[13px] text-[#6b6058]">Download STC AutoTrade dan mulai dari mode demo tanpa deposit.</p>
             </div>
@@ -699,10 +699,10 @@ export default function StockityVsBinomoPage() {
         {/* ── Footer ──────────────────────────────────────── */}
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-[11px] text-[#1a1612]/25">
+            <p className="text-[11px] text-[#1a1612]/65">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
             </p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
+            <Link href="/" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612]/65 transition-colors no-underline">← Beranda</Link>
           </div>
         </footer>
       </div>

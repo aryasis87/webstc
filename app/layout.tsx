@@ -2,17 +2,24 @@
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
+/*
+ * display:"optional" — font dipakai jika tiba dalam ~100ms (selalu terjadi
+ * pada koneksi normal karena self-hosted + preload); pada koneksi sangat
+ * lambat browser memakai fallback yang metriknya sudah disamakan next/font
+ * (adjustFontFallback), sehingga tidak ada late-swap repaint yang merusak
+ * LCP/CLS. display:"swap" sebelumnya membuat LCP mundur ~2 detik di 4G.
+ */
 const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  display: "optional",
 });
 const dmSerif = DM_Serif_Display({
   variable: "--font-dm-serif",
   subsets: ["latin"],
   weight: "400",
-  display: "swap",
+  display: "optional",
 });
 
 const BASE_URL = "https://stcautotrade.id";
@@ -309,11 +316,15 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#f6f4ef" />
         {/*
-          Preconnect untuk Google Fonts sudah ditambahkan Next.js secara otomatis
-          saat menggunakan next/font/google. Tag di bawah adalah pengaman eksplisit.
+          next/font/google meng-hosting font secara lokal saat build — tidak ada
+          request ke fonts.googleapis.com, sehingga preconnect tidak diperlukan.
+
+          Fallback tanpa-JS: framer-motion me-render section dengan opacity:0
+          inline sebelum hydration. Jika JS mati, paksa konten tetap terlihat.
         */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <noscript>
+          <style>{`[style*="opacity:0"],[style*="opacity: 0"]{opacity:1!important;transform:none!important}`}</style>
+        </noscript>
       </head>
       <body className="min-h-screen antialiased">{children}</body>
     </html>

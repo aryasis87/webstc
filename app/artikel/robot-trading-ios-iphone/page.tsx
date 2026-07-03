@@ -111,7 +111,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -165,12 +165,12 @@ export default function RobotTradingIphonePage() {
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 no-underline">
-              <Image src="/logo.webp" alt="STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
+              <Image src="/logo.webp" alt="Logo STC AutoTrade" width={28} height={28} className="rounded-[6px]" />
               <span className="text-sm font-semibold text-[#1a1612]">STC AutoTrade</span>
             </Link>
             <div className="flex items-center gap-2">
-              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
-              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/60 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
+              <Link href="/cara-kerja" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Cara Kerja</Link>
+              <Link href="/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
               <Link href="/download" className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#1a1612] text-white text-xs font-semibold rounded-lg hover:bg-[#1a1612]/85 transition-colors no-underline">Download</Link>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function RobotTradingIphonePage() {
         {/* ── Breadcrumb ────────────────────────────────────── */}
         <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
           <nav aria-label="Breadcrumb">
-            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/40 flex-wrap">
+            <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 flex-wrap">
               <li><Link href="/" className="hover:text-[#1a1612]/70 transition-colors no-underline">Beranda</Link></li>
               <li aria-hidden="true">›</li>
               <li><Link href="/artikel" className="hover:text-[#1a1612]/70 transition-colors no-underline">Artikel</Link></li>
@@ -193,9 +193,9 @@ export default function RobotTradingIphonePage() {
         <header className="max-w-4xl mx-auto px-5 sm:px-8 pt-8 pb-10">
           <div className="flex items-center gap-3 mb-4 flex-wrap">
             <span className="inline-flex items-center px-2.5 py-1 bg-[#d1fae5] text-[#047857] text-[11px] font-semibold rounded-full">Panduan</span>
-            <span className="text-[12px] text-[#1a1612]/35">1 Juni 2026</span>
-            <span className="text-[12px] text-[#1a1612]/35">·</span>
-            <span className="text-[12px] text-[#1a1612]/35">±6 menit baca</span>
+            <span className="text-[12px] text-[#1a1612]/65">1 Juni 2026</span>
+            <span className="text-[12px] text-[#1a1612]/65">·</span>
+            <span className="text-[12px] text-[#1a1612]/65">±6 menit baca</span>
           </div>
 
           <h1 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5">
@@ -220,7 +220,7 @@ export default function RobotTradingIphonePage() {
             ].map((s, i) => (
               <div key={i} className="bg-white py-4 px-4 text-center border-r border-[rgba(26,22,18,0.07)] last:border-0">
                 <p className="font-[family-name:var(--font-dm-serif)] text-xl text-[#1a1612] mb-0.5">{s.v}</p>
-                <p className="text-[11px] text-[#1a1612]/40">{s.l}</p>
+                <p className="text-[11px] text-[#1a1612]/65">{s.l}</p>
               </div>
             ))}
           </div>
@@ -345,12 +345,12 @@ export default function RobotTradingIphonePage() {
                     <div key={p.platform} className="p-6">
                       <div className="text-2xl mb-3">{p.icon}</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612] mb-1">{p.platform}</h3>
-                      <p className="text-[12px] text-[#10b981] font-medium mb-4">{p.cara}</p>
+                      <p className="text-[12px] text-[#047857] font-medium mb-4">{p.cara}</p>
                       <div className="space-y-2 mb-4">
                         {p.features.map((f) => <FeatureCheck key={f} text={f} />)}
                       </div>
                       <div className="bg-[#f6f4ef] rounded-lg px-3.5 py-3 border border-[rgba(26,22,18,0.06)]">
-                        <p className="text-[11px] text-[#1a1612]/45 leading-relaxed"><strong className="text-[#1a1612]/60">Tips:</strong> {p.tips}</p>
+                        <p className="text-[11px] text-[#1a1612]/65 leading-relaxed"><strong className="text-[#1a1612]/65">Tips:</strong> {p.tips}</p>
                       </div>
                     </div>
                   ))}
@@ -421,7 +421,7 @@ export default function RobotTradingIphonePage() {
 
           {/* ── Internal Links ────────────────────────────── */}
           <div className="mt-14 pt-10 border-t border-[rgba(26,22,18,0.08)]">
-            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5">Artikel Terkait</p>
+            <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/robot-stockity-android", title: "Robot Stockity Android", desc: "Download APK & panduan instalasi lengkap" },
@@ -429,7 +429,7 @@ export default function RobotTradingIphonePage() {
                 { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Stockity Gratis", desc: "Cara download & akses robot gratis 2026" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#10b981] transition-colors">{l.title} →</p>
+                  <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>
                   <p className="text-[12px] text-[#6b6058]">{l.desc}</p>
                 </Link>
               ))}
@@ -441,7 +441,7 @@ export default function RobotTradingIphonePage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981] mb-1.5">Langsung dari Safari iPhone Anda</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">Langsung dari Safari iPhone Anda</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Mulai Robot Trading Stockity di iPhone Hari Ini</p>
               <p className="text-[13px] text-[#6b6058]">Buka stcautotradepro.id di Safari — tanpa instalasi, fitur lengkap, gratis untuk member.</p>
             </div>
@@ -455,8 +455,8 @@ export default function RobotTradingIphonePage() {
         {/* ── Footer ────────────────────────────────────────── */}
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-            <p className="text-[11px] text-[#1a1612]/25">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
-            <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>
+            <p className="text-[11px] text-[#1a1612]/65">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
+            <Link href="/" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612]/65 transition-colors no-underline">← Beranda</Link>
           </div>
         </footer>
       </div>

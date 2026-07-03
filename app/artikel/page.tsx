@@ -333,7 +333,7 @@ function ArtikelCard({ artikel }: { artikel: Artikel }) {
       {/* Kategori + menit baca */}
       <div className="flex items-center justify-between mb-3.5">
         <BadgeKategori k={artikel.kategori} />
-        <span className="text-[11px] text-[#1a1612]/30">{artikel.menit} mnt baca</span>
+        <span className="text-[11px] text-[#1a1612]/65">{artikel.menit} mnt baca</span>
       </div>
 
       {/* Judul */}
@@ -348,7 +348,7 @@ function ArtikelCard({ artikel }: { artikel: Artikel }) {
 
       {/* Footer card */}
       <div className="flex items-center justify-between mt-auto pt-4 border-t border-[rgba(26,22,18,0.07)]">
-        <span className="text-[11px] text-[#1a1612]/30">{artikel.tanggal}</span>
+        <span className="text-[11px] text-[#1a1612]/65">{artikel.tanggal}</span>
         <span className="text-[12px] font-medium text-[#047857] flex items-center gap-1">
           Baca
           <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 256 256" fill="currentColor" className="transition-transform group-hover:translate-x-0.5" aria-hidden="true">
@@ -411,7 +411,7 @@ export default function ArtikelPage() {
             <div className="flex items-center gap-2">
               <Link
                 href="/#fitur"
-                className="hidden sm:flex items-center px-4 py-2 text-sm text-[#1a1612]/45 hover:text-[#1a1612] transition-colors no-underline"
+                className="hidden sm:flex items-center px-4 py-2 text-sm text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline"
               >
                 Fitur
               </Link>
@@ -447,15 +447,15 @@ export default function ArtikelPage() {
           <section className="relative pt-28 pb-14 sm:pt-36 sm:pb-20 border-b border-[rgba(26,22,18,0.07)] bg-white overflow-hidden">
             {/* Grid background */}
             <div className="absolute inset-0 [background-image:linear-gradient(rgba(26,22,18,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(26,22,18,0.025)_1px,transparent_1px)] [background-size:64px_64px] pointer-events-none" />
-            <div className="absolute top-0 right-1/4 w-[400px] h-[300px] rounded-full bg-[#10b981]/[0.05] blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-1/4 w-[400px] h-[300px] rounded-full bg-[#047857]/[0.05] blur-3xl pointer-events-none" />
 
             <div className="relative max-w-6xl mx-auto px-5 sm:px-8">
               {/* Breadcrumb */}
               <nav aria-label="Breadcrumb" className="mb-6">
-                <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/35 list-none p-0 m-0">
-                  <li><Link href="/" className="hover:text-[#1a1612]/60 transition-colors no-underline">Beranda</Link></li>
+                <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 list-none p-0 m-0">
+                  <li><Link href="/" className="hover:text-[#1a1612]/65 transition-colors no-underline">Beranda</Link></li>
                   <li aria-hidden="true">/</li>
-                  <li className="text-[#1a1612]/60 font-medium" aria-current="page">Artikel</li>
+                  <li className="text-[#1a1612]/65 font-medium" aria-current="page">Artikel</li>
                 </ol>
               </nav>
 
@@ -470,7 +470,7 @@ export default function ArtikelPage() {
               </p>
 
               {/* Stats */}
-              <div className="flex flex-wrap items-center gap-4 text-[13px] text-[#1a1612]/40">
+              <div className="flex flex-wrap items-center gap-4 text-[13px] text-[#1a1612]/65">
                 <span className="flex items-center gap-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 256 256" fill="currentColor" aria-hidden="true"><path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"/></svg>
                   {ARTIKEL.length} artikel
@@ -495,7 +495,7 @@ export default function ArtikelPage() {
                 >
                   Panduan &amp; Tutorial
                 </h2>
-                <span className="text-[12px] text-[#1a1612]/30 ml-1">
+                <span className="text-[12px] text-[#1a1612]/65 ml-1">
                   {panduan.length} artikel
                 </span>
               </div>
@@ -521,7 +521,7 @@ export default function ArtikelPage() {
                 >
                   Strategi &amp; Modal
                 </h2>
-                <span className="text-[12px] text-[#1a1612]/30 ml-1">
+                <span className="text-[12px] text-[#1a1612]/65 ml-1">
                   {strategi.length} artikel
                 </span>
               </div>
@@ -544,7 +544,7 @@ export default function ArtikelPage() {
                 >
                   Edukasi Trading
                 </h2>
-                <span className="text-[12px] text-[#1a1612]/30 ml-1">
+                <span className="text-[12px] text-[#1a1612]/65 ml-1">
                   {edukasi.length} artikel
                 </span>
               </div>
@@ -570,7 +570,7 @@ export default function ArtikelPage() {
                 >
                   Review &amp; Perbandingan
                 </h2>
-                <span className="text-[12px] text-[#1a1612]/30 ml-1">
+                <span className="text-[12px] text-[#1a1612]/65 ml-1">
                   {review.length} artikel
                 </span>
               </div>
@@ -587,7 +587,7 @@ export default function ArtikelPage() {
             <div className="absolute inset-0 [background-image:linear-gradient(rgba(255,255,255,0.025)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.025)_1px,transparent_1px)] [background-size:64px_64px] pointer-events-none" />
             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#10b981]/25 to-transparent" />
             <div className="relative max-w-xl mx-auto px-5 sm:px-8 text-center">
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#10b981]/50 mb-5">
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857]/50 mb-5">
                 Gratis · Android &amp; Web · Mulai Sekarang
               </p>
               <h2 className="font-[family-name:var(--font-dm-serif)] text-3xl sm:text-5xl font-normal tracking-[-0.03em] leading-[1.1] mb-5 text-[#e0f2fe]">
@@ -601,7 +601,7 @@ export default function ArtikelPage() {
                 <a
                   href={APK_PATH}
                   download
-                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#10b981] text-white text-sm font-bold rounded-xl hover:bg-[#059669] transition-all hover:-translate-y-0.5 no-underline shadow-xl shadow-[#10b981]/20"
+                  className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-[#047857] text-white text-sm font-bold rounded-xl hover:bg-[#065f46] transition-all hover:-translate-y-0.5 no-underline shadow-xl shadow-[#047857]/20"
                 >
                   Download APK Android
                 </a>

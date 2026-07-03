@@ -79,7 +79,7 @@ export default function ErrorBoundary({ error, reset }: ErrorProps) {
 
           <a
             href="/"
-            className="inline-flex items-center justify-center gap-2 px-7 py-3 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/60 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline"
+            className="inline-flex items-center justify-center gap-2 px-7 py-3 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/65 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline"
           >
             Ke Halaman Utama
           </a>
@@ -87,7 +87,7 @@ export default function ErrorBoundary({ error, reset }: ErrorProps) {
 
         {/* Digest (Next.js error ID untuk debugging) */}
         {error.digest && (
-          <p className="mt-6 text-[11px] text-[#1a1612]/20">
+          <p className="mt-6 text-[11px] text-[#1a1612]/65">
             Error ID: {error.digest}
           </p>
         )}

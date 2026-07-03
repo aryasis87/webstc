@@ -48,7 +48,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
                 </span>
                 {/* Ikon + (45° saat open) */}
                 <span
-                  className="flex-shrink-0 w-5 h-5 rounded-full border border-[rgba(26,22,18,0.12)] flex items-center justify-center text-[#1a1612]/40 transition-transform duration-200"
+                  className="flex-shrink-0 w-5 h-5 rounded-full border border-[rgba(26,22,18,0.12)] flex items-center justify-center text-[#1a1612]/65 transition-transform duration-200"
                   style={{ transform: isOpen ? "rotate(45deg)" : "rotate(0deg)" }}
                   aria-hidden="true"
                 >

@@ -121,7 +121,7 @@ const faqSchema = {
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/35 mb-5 flex items-center gap-3">
+    <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5 flex items-center gap-3">
       {children}
       <span className="flex-1 h-px bg-[rgba(26,22,18,0.08)]" />
     </p>
@@ -185,7 +185,7 @@ function StepCard({
       <div className="pt-0.5">
         <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{title}</p>
         <p className="text-[12px] text-[#6b6058] leading-relaxed">{desc}</p>
-        {sub && <p className="text-[11px] text-[#10b981] mt-1 font-medium">{sub}</p>}
+        {sub && <p className="text-[11px] text-[#047857] mt-1 font-medium">{sub}</p>}
       </div>
     </div>
   );
@@ -232,7 +232,7 @@ export default function CaraMenghindariLossStockityPage() {
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
             <Link href="/" className="flex items-center gap-2 no-underline">
               <span className="text-base font-bold text-[#1a1612]">
-                STC <span className="text-[#10b981]">AutoTrade</span>
+                STC <span className="text-[#047857]">AutoTrade</span>
               </span>
             </Link>
             <div className="flex items-center gap-3">
@@ -261,19 +261,19 @@ export default function CaraMenghindariLossStockityPage() {
                 <Link href="/" className="hover:text-[#1a1612] no-underline transition-colors">
                   Beranda
                 </Link>
-                <span className="text-[#1a1612]/20">/</span>
+                <span className="text-[#1a1612]/65">/</span>
                 <Link
                   href="/artikel"
                   className="hover:text-[#1a1612] no-underline transition-colors"
                 >
                   Artikel
                 </Link>
-                <span className="text-[#1a1612]/20">/</span>
-                <span className="text-[#1a1612]/60">Cara Menghindari Loss Stockity</span>
+                <span className="text-[#1a1612]/65">/</span>
+                <span className="text-[#1a1612]/65">Cara Menghindari Loss Stockity</span>
               </nav>
 
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#ecfdf5] border border-[#a7f3d0] rounded-full mb-5">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
+                <span className="w-1.5 h-1.5 rounded-full bg-[#047857]" />
                 <span className="text-[11px] font-semibold text-[#047857] tracking-wide uppercase">
                   Manajemen Risiko
                 </span>
@@ -281,7 +281,7 @@ export default function CaraMenghindariLossStockityPage() {
 
               <h1 className="text-[28px] sm:text-[34px] font-bold text-[#1a1612] leading-tight mb-4">
                 Cara Menghindari Loss di Stockity:{" "}
-                <span className="text-[#10b981]">SL, TP, Demo, dan Fitur Proteksi STC AutoTrade</span>
+                <span className="text-[#047857]">SL, TP, Demo, dan Fitur Proteksi STC AutoTrade</span>
               </h1>
               <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
                 Tidak ada bot yang 100% profit — loss adalah bagian dari trading. Yang membedakan
@@ -331,7 +331,7 @@ export default function CaraMenghindariLossStockityPage() {
 
               <div className="grid sm:grid-cols-3 gap-4 mb-5">
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center">
-                  <p className="text-[20px] font-bold text-[#10b981] mb-1">55-65%</p>
+                  <p className="text-[20px] font-bold text-[#047857] mb-1">55-65%</p>
                   <p className="text-[11px] text-[#6b6058]">Win rate wajar untuk bot binary option</p>
                 </div>
                 <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 text-center">
@@ -591,7 +591,7 @@ export default function CaraMenghindariLossStockityPage() {
                       "Praktikkan setting SL dan TP yang tepat sebelum implementasi di Real",
                     ].map((item) => (
                       <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                        <span className="text-[#10b981] mt-0.5 flex-shrink-0">•</span>
+                        <span className="text-[#047857] mt-0.5 flex-shrink-0">•</span>
                         {item}
                       </li>
                     ))}
@@ -663,7 +663,7 @@ export default function CaraMenghindariLossStockityPage() {
                     "Apakah martingale sering sampai step tertinggi? Max steps mungkin perlu dikurangi.",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2 text-[12px] text-[#6b6058]">
-                      <span className="text-[#10b981] mt-0.5 flex-shrink-0">→</span>
+                      <span className="text-[#047857] mt-0.5 flex-shrink-0">→</span>
                       {item}
                     </li>
                   ))}
@@ -795,7 +795,7 @@ export default function CaraMenghindariLossStockityPage() {
                     <Link
                       key={link.href}
                       href={link.href}
-                      className="flex items-center gap-2 text-[13px] text-[#10b981] hover:text-[#047857] no-underline transition-colors"
+                      className="flex items-center gap-2 text-[13px] text-[#047857] hover:text-[#047857] no-underline transition-colors"
                     >
                       <span className="text-[10px]">→</span>
                       {link.label}
@@ -816,7 +816,7 @@ export default function CaraMenghindariLossStockityPage() {
               <a
                 href="/StcAutoTrade.apk"
                 download
-                className="inline-flex items-center gap-2 px-6 py-3 bg-[#10b981] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#059669] transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-[#047857] text-white text-[13px] font-semibold rounded-xl no-underline hover:bg-[#065f46] transition-colors"
               >
                 Download APK Gratis
               </a>
