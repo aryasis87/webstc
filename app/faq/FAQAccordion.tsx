@@ -39,7 +39,7 @@ export default function FAQAccordion({ items }: { items: FAQItem[] }) {
               <button
                 id={btnId}
                 onClick={() => setOpen(isOpen ? null : i)}
-                className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#f9fafb] transition-colors cursor-pointer"
+                className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#f6f4ef] transition-colors cursor-pointer"
                 aria-expanded={isOpen}
                 aria-controls={panelId}
               >

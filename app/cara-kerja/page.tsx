@@ -254,7 +254,7 @@ export default function CaraKerjaPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
       />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ───────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-5xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -376,7 +376,7 @@ export default function CaraKerjaPage() {
                   <div className="text-2xl mb-3">{f.icon}</div>
                   <h3 className="text-base font-semibold text-[#1a1612] mb-2">{f.title}</h3>
                   <p className="text-[13px] text-[#6b6058] leading-relaxed mb-3">{f.desc}</p>
-                  <div className="bg-[#f9fafb] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.06)]">
+                  <div className="bg-[#f6f4ef] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.06)]">
                     <p className="text-[11px] text-[#1a1612]/50 leading-relaxed">{f.example}</p>
                   </div>
                 </div>
@@ -393,7 +393,7 @@ export default function CaraKerjaPage() {
             <div className="max-w-2xl divide-y divide-[rgba(26,22,18,0.07)] border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden bg-white">
               {STEPS.map((s, i) => (
                 <div key={s.n} className="flex gap-5 px-6 py-5">
-                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f9fafb] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/40">
+                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f6f4ef] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/40">
                     {i + 1}
                   </div>
                   <div className="pt-1">

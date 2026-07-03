@@ -261,7 +261,7 @@ export default function RobotTradingStockityPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ───────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -612,7 +612,7 @@ export default function RobotTradingStockityPage() {
                       <div className="text-xl mb-2.5">{f.icon}</div>
                       <h3 className="text-[14px] font-semibold text-[#1a1612] mb-2">{f.title}</h3>
                       <p className="text-[13px] text-[#6b6058] leading-relaxed mb-3">{f.desc}</p>
-                      <div className="bg-[#f9fafb] rounded-lg px-3.5 py-2.5 border border-[rgba(26,22,18,0.06)]">
+                      <div className="bg-[#f6f4ef] rounded-lg px-3.5 py-2.5 border border-[rgba(26,22,18,0.06)]">
                         <p className="text-[11px] text-[#1a1612]/45 leading-relaxed">{f.example}</p>
                       </div>
                     </div>
@@ -679,7 +679,7 @@ export default function RobotTradingStockityPage() {
                           <FeatureCheck key={f} text={f} />
                         ))}
                       </div>
-                      <div className="bg-[#f9fafb] rounded-lg px-3.5 py-3 border border-[rgba(26,22,18,0.06)]">
+                      <div className="bg-[#f6f4ef] rounded-lg px-3.5 py-3 border border-[rgba(26,22,18,0.06)]">
                         <p className="text-[11px] text-[#1a1612]/45 leading-relaxed">{p.note}</p>
                       </div>
                     </div>
@@ -982,7 +982,7 @@ export default function RobotTradingStockityPage() {
         </section>
 
         {/* ── Footer ────────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id · Auto Trade Stockity

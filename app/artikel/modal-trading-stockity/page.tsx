@@ -264,7 +264,7 @@ export default function ModalTradingStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -461,7 +461,7 @@ export default function ModalTradingStockityPage() {
                                 </span>
                               </div>
                             ))}
-                            <div className="flex items-center justify-between text-[12px] py-2 bg-[#f9fafb] rounded-lg px-3 mt-2">
+                            <div className="flex items-center justify-between text-[12px] py-2 bg-[#f6f4ef] rounded-lg px-3 mt-2">
                               <span className="font-semibold text-[#1a1612]/60">Total Eksposur Maksimal</span>
                               <span className="font-bold text-[#1a1612]">Rp {totalEksposur.toLocaleString("id")}</span>
                             </div>
@@ -513,7 +513,7 @@ export default function ModalTradingStockityPage() {
                     </div>
                     <div>
                       <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Mengapa multiplier 2,0× bukan 2,5×?</p>
-                      <div className="bg-[#f9fafb] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.07)] text-[12px] text-[#6b6058] leading-relaxed space-y-2">
+                      <div className="bg-[#f6f4ef] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.07)] text-[12px] text-[#6b6058] leading-relaxed space-y-2">
                         <p>Dengan multiplier 2,0×, total eksposur 3 step = Rp 28K + Rp 56K + Rp 112K = Rp 196.000.</p>
                         <p>Ditambah nominal awal Rp 14.000 + stop loss buffer Rp 60.000 = <strong className="text-[#1a1612]">total Rp 270.000</strong> — masih di bawah modal Rp 300.000.</p>
                         <p>Dengan multiplier 2,5×, total eksposur sudah Rp 341.000 — melebihi modal Rp 300.000.</p>
@@ -531,7 +531,7 @@ export default function ModalTradingStockityPage() {
                     <div className="overflow-x-auto">
                       <table className="w-full text-[12px]">
                         <thead>
-                          <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                          <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                             <th className="text-left px-5 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Skenario</th>
                             <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Hasil/Hari</th>
                             <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">7 Hari</th>
@@ -545,7 +545,7 @@ export default function ModalTradingStockityPage() {
                             { s: "Hari buruk (stop loss hit)", h: "–Rp 60.000", t: "–Rp 60.000 (1 hari)", m: "Rp 240.000", color: "text-rose-600" },
                             { s: "Mixed 7 hari (5 profit, 2 loss)", h: "±varies", t: "+Rp 140.000", m: "Rp 440.000", color: "text-amber-600" },
                           ].map((row) => (
-                            <tr key={row.s} className="hover:bg-[#f9fafb]">
+                            <tr key={row.s} className="hover:bg-[#f6f4ef]">
                               <td className="px-5 py-3.5 text-[#1a1612]/70">{row.s}</td>
                               <td className={`px-4 py-3.5 text-right font-semibold ${row.color}`}>{row.h}</td>
                               <td className={`px-4 py-3.5 text-right font-semibold ${row.color}`}>{row.t}</td>
@@ -555,7 +555,7 @@ export default function ModalTradingStockityPage() {
                         </tbody>
                       </table>
                     </div>
-                    <div className="px-5 py-3 bg-[#f9fafb] border-t border-[rgba(26,22,18,0.06)]">
+                    <div className="px-5 py-3 bg-[#f6f4ef] border-t border-[rgba(26,22,18,0.06)]">
                       <p className="text-[11px] text-[#1a1612]/35">
                         Simulasi berdasarkan target profit harian Rp 120.000 dan stop loss Rp 60.000. Hasil nyata bervariasi tergantung kondisi pasar.
                       </p>
@@ -760,7 +760,7 @@ export default function ModalTradingStockityPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

@@ -22,7 +22,7 @@ export default function MobileNav() {
         onClick={() => setOpen(!open)}
         aria-expanded={open}
         aria-label={open ? "Tutup menu navigasi" : "Buka menu navigasi"}
-        className="ml-1 flex items-center justify-center w-10 h-10 rounded-lg text-zinc-600 hover:bg-zinc-50 transition-colors cursor-pointer"
+        className="ml-1 flex items-center justify-center w-10 h-10 rounded-xl text-[#17140f]/70 hover:bg-[#17140f]/5 transition-colors cursor-pointer"
       >
         {open ? (
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
@@ -38,19 +38,19 @@ export default function MobileNav() {
       {open && (
         <>
           {/* Overlay penutup saat tap di luar menu */}
-          <div className="fixed inset-0 top-14 z-40 bg-zinc-950/20" onClick={close} aria-hidden="true" />
+          <div className="fixed inset-0 z-40 bg-[#17140f]/25" onClick={close} aria-hidden="true" />
           <nav
             aria-label="Menu navigasi mobile"
-            className="fixed top-14 inset-x-0 z-50 bg-white border-b border-zinc-100 shadow-lg shadow-black/[0.06]"
+            className="fixed top-[4.75rem] inset-x-3 z-50 rounded-2xl bg-white border border-[rgba(23,20,15,0.09)] shadow-xl shadow-[rgba(23,20,15,0.12)] overflow-hidden"
           >
-            <div className="px-5 py-3 flex flex-col">
+            <div className="px-5 py-2 flex flex-col">
               {LINKS.map((l) =>
                 l.href.startsWith("#") ? (
                   <a
                     key={l.href}
                     href={l.href}
                     onClick={close}
-                    className="py-3 text-[15px] font-medium text-zinc-700 border-b border-zinc-50 last:border-0 no-underline"
+                    className="py-3.5 text-[15px] font-medium text-[#17140f]/80 border-b border-[rgba(23,20,15,0.06)] no-underline"
                   >
                     {l.label}
                   </a>
@@ -59,7 +59,7 @@ export default function MobileNav() {
                     key={l.href}
                     href={l.href}
                     onClick={close}
-                    className="py-3 text-[15px] font-medium text-zinc-700 border-b border-zinc-50 last:border-0 no-underline"
+                    className="py-3.5 text-[15px] font-medium text-[#17140f]/80 border-b border-[rgba(23,20,15,0.06)] no-underline"
                   >
                     {l.label}
                   </Link>
@@ -70,7 +70,7 @@ export default function MobileNav() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={close}
-                className="py-3 text-[15px] font-medium text-zinc-700 no-underline"
+                className="py-3.5 text-[15px] font-medium text-[#17140f]/80 no-underline"
               >
                 Versi Web ↗
               </a>

@@ -7,7 +7,7 @@
 export default function Loading() {
   return (
     <div
-      className="min-h-screen bg-[#f9fafb] animate-pulse"
+      className="min-h-screen bg-[#f6f4ef] animate-pulse"
       aria-busy="true"
       aria-label="Memuat halaman STC AutoTrade…"
     >

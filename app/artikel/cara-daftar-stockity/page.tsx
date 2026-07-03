@@ -228,7 +228,7 @@ export default function CaraDaftarStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -363,7 +363,7 @@ export default function CaraDaftarStockityPage() {
                         </div>
                       ))}
                     </div>
-                    <div className="mt-3 bg-[#f9fafb] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
+                    <div className="mt-3 bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
                       <p className="text-[11px] text-[#1a1612]/40">Tidak perlu download apapun — cocok untuk iPhone dan PC.</p>
                     </div>
                   </div>
@@ -544,7 +544,7 @@ export default function CaraDaftarStockityPage() {
                         </div>
                       </div>
                       <p className="text-[13px] text-[#6b6058] leading-relaxed mb-2">{item.desc}</p>
-                      <div className="bg-[#f9fafb] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
+                      <div className="bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
                         <p className="text-[11px] text-[#1a1612]/50">→ {item.action}</p>
                       </div>
                     </div>
@@ -771,7 +771,7 @@ export default function CaraDaftarStockityPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

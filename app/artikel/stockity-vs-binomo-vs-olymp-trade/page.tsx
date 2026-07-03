@@ -245,7 +245,7 @@ export default function StockityVsBinomoPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -364,7 +364,7 @@ export default function StockityVsBinomoPage() {
                         </div>
                       ))}
                     </div>
-                    <div className="bg-[#f9fafb] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
+                    <div className="bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
                       <p className="text-[11px] text-[#1a1612]/40">Cocok untuk: {p.cocokUntuk}</p>
                     </div>
                   </div>
@@ -382,7 +382,7 @@ export default function StockityVsBinomoPage() {
                 <div className="overflow-x-auto">
                   <table className="w-full text-[12px]">
                     <thead>
-                      <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                      <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                         <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
                         <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#047857] uppercase tracking-wider">Stockity 🇮🇩</th>
                         <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#92400e] uppercase tracking-wider">Binomo 🌐</th>
@@ -391,7 +391,7 @@ export default function StockityVsBinomoPage() {
                     </thead>
                     <tbody className="divide-y divide-[rgba(26,22,18,0.05)]">
                       {COMPARISON_ROWS.map((row) => (
-                        <tr key={row.aspek} className="hover:bg-[#f9fafb]">
+                        <tr key={row.aspek} className="hover:bg-[#f6f4ef]">
                           <td className="px-5 py-3.5 font-medium text-[#1a1612]">{row.aspek}</td>
                           <td className={`px-4 py-3.5 text-center ${row.stockity.highlight ? "font-semibold text-[#047857] bg-[#ecfdf5]" : "text-[#14532d]"}`}>
                             {row.stockity.val}
@@ -403,7 +403,7 @@ export default function StockityVsBinomoPage() {
                     </tbody>
                   </table>
                 </div>
-                <div className="px-5 py-3 bg-[#f9fafb] border-t border-[rgba(26,22,18,0.06)]">
+                <div className="px-5 py-3 bg-[#f6f4ef] border-t border-[rgba(26,22,18,0.06)]">
                   <p className="text-[11px] text-[#1a1612]/35">
                     Perbandingan berfokus pada fitur yang relevan untuk pengguna STC AutoTrade. Data dapat berubah — verifikasi langsung di platform masing-masing.
                   </p>
@@ -697,7 +697,7 @@ export default function StockityVsBinomoPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

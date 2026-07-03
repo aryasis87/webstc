@@ -226,7 +226,7 @@ export default function CaraMenghindariLossStockityPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
         {/* Navbar */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
@@ -299,7 +299,7 @@ export default function CaraMenghindariLossStockityPage() {
                 ].map((s) => (
                   <div
                     key={s.l}
-                    className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center"
+                    className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center"
                   >
                     <p className="text-[16px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
                     <p className="text-[11px] text-[#6b6058]">{s.l}</p>
@@ -516,7 +516,7 @@ export default function CaraMenghindariLossStockityPage() {
                           ? "bg-[#f0fdf4] border border-[#bbf7d0]"
                           : i < 2
                           ? "bg-[#fef2f2] border border-[#fecaca]"
-                          : "bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] opacity-50"
+                          : "bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] opacity-50"
                       }`}
                     >
                       <span className="font-semibold text-[#1a1612]">{row.step}</span>
@@ -691,7 +691,7 @@ export default function CaraMenghindariLossStockityPage() {
               </p>
 
               <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl overflow-hidden mb-5">
-                <div className="grid grid-cols-4 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.06)] px-4 py-2.5">
+                <div className="grid grid-cols-4 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.06)] px-4 py-2.5">
                   {["Max Steps", "Multiplier 1.5x", "Multiplier 2x", "Profil Risiko"].map((h) => (
                     <p
                       key={h}

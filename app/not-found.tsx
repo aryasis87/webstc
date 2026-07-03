@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-[#f9fafb] flex items-center justify-center px-5">
+    <div className="min-h-screen bg-[#f6f4ef] flex items-center justify-center px-5">
       <div className="max-w-md w-full text-center">
         {/* Angka 404 */}
         <div

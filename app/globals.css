@@ -20,18 +20,24 @@
   --color-primary-dim:  #a7f3d0;   /* emerald-200 */
   --color-primary-faint: #ecfdf5;  /* emerald-50  */
 
-  /* Latar Belakang */
+  /* Latar Belakang — "paper" hangat, khas editorial */
   --color-surface:   #ffffff;
-  --color-surface-2: #f9fafb;  /* gray-50    */
+  --color-paper:     #f6f4ef;  /* latar utama hangat */
+  --color-paper-2:   #efece4;  /* latar sekunder */
+  --color-surface-2: #f6f4ef;
   --color-surface-3: #ecfdf5;  /* emerald-50 */
 
+  /* Panel gelap */
+  --color-pine:      #05261c;  /* emerald hampir hitam — panel dramatis */
+  --color-ink-950:   #131108;
+
   /* Teks */
-  --color-ink:     #1a1612;
-  --color-ink-dim: #6b6058;
+  --color-ink:     #17140f;
+  --color-ink-dim: #6b6459;
 
   /* Garis Tepi */
-  --color-border:    rgba(26, 22, 18, 0.07);
-  --color-border-md: rgba(26, 22, 18, 0.13);
+  --color-border:    rgba(23, 20, 15, 0.08);
+  --color-border-md: rgba(23, 20, 15, 0.14);
 }
 
 /* ── Keyframes ─────────────────────────────────────────────────────── */
@@ -61,17 +67,22 @@
   50%       { transform: translateY(-10px); }
 }
 
+@keyframes marquee {
+  from { transform: translateX(0);    }
+  to   { transform: translateX(-50%); }
+}
+
 /* ── Base ──────────────────────────────────────────────────────────── */
 
 html {
   scroll-behavior: smooth;
-  /* Offset anchor agar heading section tidak tertutup navbar fixed (h-14). */
-  scroll-padding-top: 4.5rem;
+  /* Offset anchor agar heading section tidak tertutup navbar floating. */
+  scroll-padding-top: 5.5rem;
 }
 
 body {
-  background:  #ffffff;
-  color:       #09090b;
+  background:  var(--color-paper);
+  color:       var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -90,6 +101,20 @@ body {
 .animate-delay-500 { animation-delay: 0.5s; }
 
 .animate-pulse-dot { animation: pulse-dot 1.5s ease-in-out infinite; }
+
+/* Ticker berjalan — konten harus diduplikasi 2x di dalam track w-max */
+.animate-marquee { animation: marquee 36s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
+
+/* Grain halus untuk panel gelap — SVG feTurbulence inline, tanpa request */
+.bg-noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
 
 /* Badge berkilau dengan warna primary */
 .shimmer-badge {

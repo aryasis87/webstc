@@ -215,7 +215,7 @@ export default function RobotStockityAndroidPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -302,7 +302,7 @@ export default function RobotStockityAndroidPage() {
                   <div className="overflow-x-auto">
                     <table className="w-full text-[12px]">
                       <thead>
-                        <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                        <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                           <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
                           <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#047857] uppercase tracking-wider">APK Android ✓</th>
                           <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Versi Web</th>
@@ -317,7 +317,7 @@ export default function RobotStockityAndroidPage() {
                           { aspek: "Stabilitas koneksi", apk: "✅ Reconnect otomatis", web: "⚠️ Tergantung tab aktif" },
                           { aspek: "Update aplikasi", apk: "✅ Notifikasi in-app", web: "✅ Otomatis di browser" },
                         ].map((row) => (
-                          <tr key={row.aspek} className="hover:bg-[#f9fafb]">
+                          <tr key={row.aspek} className="hover:bg-[#f6f4ef]">
                             <td className="px-5 py-3.5 font-medium text-[#1a1612]">{row.aspek}</td>
                             <td className="px-4 py-3.5 text-center text-[#14532d] font-medium">{row.apk}</td>
                             <td className="px-5 py-3.5 text-center text-[#1a1612]/50">{row.web}</td>
@@ -403,7 +403,7 @@ export default function RobotStockityAndroidPage() {
               {/* Langkah instalasi per brand HP */}
               <div className="space-y-4">
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">
-                  <div className="px-5 py-4 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                  <div className="px-5 py-4 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                     <h3 className="text-[13px] font-semibold text-[#1a1612]">
                       Langkah Instalasi APK (Berlaku Semua Merk Android)
                     </h3>
@@ -487,7 +487,7 @@ export default function RobotStockityAndroidPage() {
                     ].map((hp) => (
                       <div key={hp.merk} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-4 py-3.5">
                         <p className="text-[12px] font-semibold text-[#1a1612] mb-1.5">{hp.ikon} {hp.merk}</p>
-                        <p className="text-[11px] text-[#6b6058] leading-relaxed font-mono bg-[#f9fafb] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">{hp.path}</p>
+                        <p className="text-[11px] text-[#6b6058] leading-relaxed font-mono bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">{hp.path}</p>
                       </div>
                     ))}
                   </div>
@@ -859,7 +859,7 @@ export default function RobotStockityAndroidPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

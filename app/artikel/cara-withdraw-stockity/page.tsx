@@ -199,7 +199,7 @@ export default function CaraWithdrawStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ───────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -369,7 +369,7 @@ export default function CaraWithdrawStockityPage() {
                     <div className="space-y-2 mb-4">
                       {m.items.map((item) => <FeatureCheck key={item} text={item} />)}
                     </div>
-                    <div className="bg-[#f9fafb] rounded-lg px-3.5 py-2.5 border border-[rgba(26,22,18,0.06)]">
+                    <div className="bg-[#f6f4ef] rounded-lg px-3.5 py-2.5 border border-[rgba(26,22,18,0.06)]">
                       <p className="text-[11px] text-[#1a1612]/45 leading-relaxed">{m.note}</p>
                     </div>
                   </div>
@@ -488,7 +488,7 @@ export default function CaraWithdrawStockityPage() {
         </section>
 
         {/* ── Footer ────────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
             <Link href="/" className="text-[11px] text-[#1a1612]/35 hover:text-[#1a1612]/60 transition-colors no-underline">← Beranda</Link>

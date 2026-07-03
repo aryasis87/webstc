@@ -188,7 +188,7 @@ export default function AutoTradeStockityGratisPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -355,7 +355,7 @@ export default function AutoTradeStockityGratisPage() {
                   },
                 ].map((cat) => (
                   <div key={cat.kategori} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl overflow-hidden">
-                    <div className="px-5 py-3.5 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.06)] flex items-center gap-2.5">
+                    <div className="px-5 py-3.5 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.06)] flex items-center gap-2.5">
                       <span className="text-base">{cat.icon}</span>
                       <h3 className="text-[13px] font-semibold text-[#1a1612]">{cat.kategori}</h3>
                     </div>
@@ -390,7 +390,7 @@ export default function AutoTradeStockityGratisPage() {
                 <div className="overflow-x-auto">
                   <table className="w-full text-[12px]">
                     <thead>
-                      <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                      <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                         <th className="text-left px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Aspek</th>
                         <th className="text-center px-4 py-3.5 text-[11px] font-semibold text-[#15803d] uppercase tracking-wider">STC AutoTrade (Gratis)</th>
                         <th className="text-center px-5 py-3.5 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Bot Berbayar Umumnya</th>
@@ -453,7 +453,7 @@ export default function AutoTradeStockityGratisPage() {
                           highlight: false,
                         },
                       ].map((row) => (
-                        <tr key={row.aspek} className={row.highlight ? "bg-[#f0fdf4]" : "hover:bg-[#f9fafb]"}>
+                        <tr key={row.aspek} className={row.highlight ? "bg-[#f0fdf4]" : "hover:bg-[#f6f4ef]"}>
                           <td className="px-5 py-3.5 font-medium text-[#1a1612]">{row.aspek}</td>
                           <td className="px-4 py-3.5 text-center text-[#14532d] font-medium">{row.stc}</td>
                           <td className="px-5 py-3.5 text-center text-[#1a1612]/50">{row.lain}</td>
@@ -726,7 +726,7 @@ export default function AutoTradeStockityGratisPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

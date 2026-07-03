@@ -194,7 +194,7 @@ export default function CopyTradingStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
         {/* NAV */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
@@ -235,7 +235,7 @@ export default function CopyTradingStockityPage() {
                   { v: "Real-time", l: "Mirror Order" },
                   { v: "Ungu/Violet", l: "Warna UI" },
                 ].map((s) => (
-                  <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
+                  <div key={s.l} className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
                     <p className="text-[15px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
                     <p className="text-[11px] text-[#6b6058]">{s.l}</p>
                   </div>
@@ -255,7 +255,7 @@ export default function CopyTradingStockityPage() {
               <InfoBox icon="📋" title="Definisi Tepat Fastrade CTC">
                 CTC bukan aplikasi terpisah atau channel berlangganan. Ini adalah mode strategi yang sudah terintegrasi di dalam dashboard STC AutoTrade — sama seperti mode Signal, AI Signal, Indicator, dan lainnya. Aktifkan dari dashboard, atur parameter, dan bot langsung mulai mirror order master.
               </InfoBox>
-              <div className="mt-5 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
+              <div className="mt-5 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
                 <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Identifikasi Fastrade CTC di Aplikasi:</p>
                 <div className="grid sm:grid-cols-2 gap-3">
                   {[
@@ -277,7 +277,7 @@ export default function CopyTradingStockityPage() {
           </section>
 
           {/* SECTION 2 — Cara Kerja */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Cara Kerja</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Kerja Copy Trading di Mode CTC</h2>
@@ -382,7 +382,7 @@ export default function CopyTradingStockityPage() {
           </section>
 
           {/* SECTION 4 — Setting Penting */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Konfigurasi Bot</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Setting Penting Sebelum Aktifkan CTC</h2>
@@ -527,7 +527,7 @@ export default function CopyTradingStockityPage() {
           </section>
 
           {/* SECTION 6 — Tips */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Tips & Strategi</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Tips Memaksimalkan Performa Mode CTC</h2>
@@ -600,7 +600,7 @@ export default function CopyTradingStockityPage() {
           </section>
 
           {/* FAQ */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>FAQ</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Pertanyaan yang Sering Ditanyakan</h2>
@@ -650,7 +650,7 @@ export default function CopyTradingStockityPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
+                    className="block p-4 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

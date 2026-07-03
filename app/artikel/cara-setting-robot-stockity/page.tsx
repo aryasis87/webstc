@@ -276,7 +276,7 @@ export default function CaraSettingRobotStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -403,7 +403,7 @@ export default function CaraSettingRobotStockityPage() {
                           </div>
                         ))}
                       </div>
-                      <div className="bg-[#f9fafb] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
+                      <div className="bg-[#f6f4ef] rounded-lg px-3 py-2 border border-[rgba(26,22,18,0.06)]">
                         <p className="text-[11px] text-[#1a1612]/40">{p.note}</p>
                       </div>
                     </div>
@@ -433,7 +433,7 @@ export default function CaraSettingRobotStockityPage() {
 
                 {/* Tabel rekomendasi strategi */}
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">
-                  <div className="px-5 py-3.5 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                  <div className="px-5 py-3.5 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                     <p className="text-[11px] font-semibold text-[#1a1612]/50 uppercase tracking-wider">Panduan Pemilihan Strategi</p>
                   </div>
                   <div className="divide-y divide-[rgba(26,22,18,0.06)]">
@@ -495,7 +495,7 @@ export default function CaraSettingRobotStockityPage() {
                         <p className="text-[12px] text-[#6b6058]">{s.kapan}</p>
                         <p className="text-[12px] text-[#6b6058]">{s.kenapa}</p>
                         <div className="flex items-start">
-                          <span className="text-[11px] text-[#1a1612]/40 bg-[#f9fafb] px-2 py-0.5 rounded-full border border-[rgba(26,22,18,0.08)]">
+                          <span className="text-[11px] text-[#1a1612]/40 bg-[#f6f4ef] px-2 py-0.5 rounded-full border border-[rgba(26,22,18,0.08)]">
                             {s.risiko}
                           </span>
                         </div>
@@ -567,7 +567,7 @@ export default function CaraSettingRobotStockityPage() {
                     <div className="overflow-x-auto">
                       <table className="w-full text-[12px]">
                         <thead>
-                          <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                          <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                             <th className="text-left px-5 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Profil</th>
                             <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Nominal</th>
                             <th className="text-right px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase tracking-wider">Multiplier</th>
@@ -581,7 +581,7 @@ export default function CaraSettingRobotStockityPage() {
                           {MARTINGALE_CONFIGS.map((cfg) => {
                             const steps = calcSteps(cfg.nominal, cfg.multiplier, cfg.steps);
                             return (
-                              <tr key={cfg.label} className="hover:bg-[#f9fafb] transition-colors">
+                              <tr key={cfg.label} className="hover:bg-[#f6f4ef] transition-colors">
                                 <td className="px-5 py-3.5">
                                   <div className="flex items-center gap-2">
                                     <span className={`text-[10px] font-semibold px-2 py-0.5 rounded-full border ${cfg.color}`}>
@@ -609,7 +609,7 @@ export default function CaraSettingRobotStockityPage() {
                         </tbody>
                       </table>
                     </div>
-                    <div className="px-5 py-3 bg-[#f9fafb] border-t border-[rgba(26,22,18,0.06)]">
+                    <div className="px-5 py-3 bg-[#f6f4ef] border-t border-[rgba(26,22,18,0.06)]">
                       <p className="text-[11px] text-[#1a1612]/35">
                         K1–K3 = nominal order kompensasi pada setiap step loss. Modal Min = buffer aman yang disarankan.
                       </p>
@@ -652,7 +652,7 @@ export default function CaraSettingRobotStockityPage() {
                       </p>
                       <div className="space-y-2">
                         <p className="text-[12px] font-semibold text-[#1a1612]">Formula rekomendasi:</p>
-                        <div className="bg-[#f9fafb] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.07)] font-mono">
+                        <div className="bg-[#f6f4ef] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.07)] font-mono">
                           <p className="text-[13px] text-[#1a1612]">Stop Loss = Modal × 20%–30%</p>
                         </div>
                       </div>
@@ -684,7 +684,7 @@ export default function CaraSettingRobotStockityPage() {
                       </p>
                       <div className="space-y-2">
                         <p className="text-[12px] font-semibold text-[#1a1612]">Formula rekomendasi:</p>
-                        <div className="bg-[#f9fafb] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.07)] font-mono">
+                        <div className="bg-[#f6f4ef] rounded-xl px-4 py-3 border border-[rgba(26,22,18,0.07)] font-mono">
                           <p className="text-[13px] text-[#1a1612]">Stop Profit = Stop Loss × 2–3×</p>
                         </div>
                       </div>
@@ -922,7 +922,7 @@ export default function CaraSettingRobotStockityPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

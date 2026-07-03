@@ -196,7 +196,7 @@ export default function RobotTradingPcLaptopPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
         {/* NAV */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
@@ -237,7 +237,7 @@ export default function RobotTradingPcLaptopPage() {
                   { v: "Fitur Sama", l: "6 Mode Trading" },
                   { v: "Tanpa Install", l: "Langsung Akses" },
                 ].map((s) => (
-                  <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
+                  <div key={s.l} className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
                     <p className="text-[14px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
                     <p className="text-[11px] text-[#6b6058]">{s.l}</p>
                   </div>
@@ -257,7 +257,7 @@ export default function RobotTradingPcLaptopPage() {
               <InfoBox icon="🌐" title="Akses Versi Web di stcautotradepro.id">
                 Buka browser apapun di PC atau laptop Anda, ketik <strong>stcautotradepro.id</strong>, dan login dengan email serta password akun Stockity.id Anda. Bot langsung siap dijalankan — tidak perlu download, install, atau konfigurasi apapun.
               </InfoBox>
-              <div className="mt-5 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
+              <div className="mt-5 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
                 <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Informasi Versi Web:</p>
                 <div className="space-y-2">
                   {[
@@ -279,7 +279,7 @@ export default function RobotTradingPcLaptopPage() {
           </section>
 
           {/* SECTION 2 — Cara Akses */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Panduan Akses</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Akses STC AutoTrade di PC/Laptop</h2>
@@ -329,7 +329,7 @@ export default function RobotTradingPcLaptopPage() {
                 Tidak ada fitur yang &ldquo;dikurangi&rdquo; di versi web. Berikut konfirmasi fitur yang tersedia:
               </p>
               <div className="space-y-3 mb-5">
-                <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
+                <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
                   <p className="text-[12px] font-semibold text-[#1a1612] mb-3">6 Mode Trading (semua tersedia):</p>
                   <div className="grid sm:grid-cols-2 gap-2">
                     {[
@@ -351,7 +351,7 @@ export default function RobotTradingPcLaptopPage() {
                     ))}
                   </div>
                 </div>
-                <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
+                <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
                   <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Fitur Lainnya (semua tersedia):</p>
                   <div className="grid sm:grid-cols-2 gap-1.5">
                     {[
@@ -381,7 +381,7 @@ export default function RobotTradingPcLaptopPage() {
           </section>
 
           {/* SECTION 4 — Perbandingan APK vs Web */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Perbandingan</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Perbandingan APK Android vs Versi Web</h2>
@@ -503,7 +503,7 @@ export default function RobotTradingPcLaptopPage() {
                     icon: "🔖",
                   },
                 ].map((item) => (
-                  <div key={item.tip} className="flex gap-3 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3.5">
+                  <div key={item.tip} className="flex gap-3 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3.5">
                     <span className="text-lg flex-shrink-0">{item.icon}</span>
                     <div>
                       <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{item.tip}</p>
@@ -516,7 +516,7 @@ export default function RobotTradingPcLaptopPage() {
           </section>
 
           {/* SECTION 6 — Cara Setting Bot di PC */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Setting Bot</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Setting Bot di PC agar Tetap Jalan</h2>
@@ -580,7 +580,7 @@ export default function RobotTradingPcLaptopPage() {
           </section>
 
           {/* FAQ */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>FAQ</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Pertanyaan yang Sering Ditanyakan</h2>
@@ -630,7 +630,7 @@ export default function RobotTradingPcLaptopPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
+                    className="block p-4 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

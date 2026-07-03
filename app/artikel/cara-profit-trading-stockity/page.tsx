@@ -190,7 +190,7 @@ export default function CaraProfitTradingStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ─────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -322,7 +322,7 @@ export default function CaraProfitTradingStockityPage() {
 
                 {/* Level Pemula */}
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">
-                  <div className="px-5 py-3.5 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)] flex items-center gap-2">
+                  <div className="px-5 py-3.5 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)] flex items-center gap-2">
                     <span className="text-sm">⭐</span>
                     <h3 className="text-[13px] font-semibold text-[#1a1612]">Pemula: Prioritaskan Kemudahan & Keamanan</h3>
                   </div>
@@ -341,7 +341,7 @@ export default function CaraProfitTradingStockityPage() {
                         color: "border-l-rose-400",
                       },
                     ].map((s) => (
-                      <div key={s.strategi} className={`border-l-4 ${s.color} bg-[#f9fafb] rounded-r-xl pl-4 py-3 pr-3`}>
+                      <div key={s.strategi} className={`border-l-4 ${s.color} bg-[#f6f4ef] rounded-r-xl pl-4 py-3 pr-3`}>
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.strategi}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{s.kenapa}</p>
                         <div className="bg-white rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.07)]">
@@ -354,7 +354,7 @@ export default function CaraProfitTradingStockityPage() {
 
                 {/* Level Intermediate */}
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">
-                  <div className="px-5 py-3.5 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)] flex items-center gap-2">
+                  <div className="px-5 py-3.5 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)] flex items-center gap-2">
                     <span className="text-sm">⭐⭐</span>
                     <h3 className="text-[13px] font-semibold text-[#1a1612]">Intermediate: Tambahkan Analisis Teknikal</h3>
                   </div>
@@ -373,7 +373,7 @@ export default function CaraProfitTradingStockityPage() {
                         color: "border-l-orange-400",
                       },
                     ].map((s) => (
-                      <div key={s.strategi} className={`border-l-4 ${s.color} bg-[#f9fafb] rounded-r-xl pl-4 py-3 pr-3`}>
+                      <div key={s.strategi} className={`border-l-4 ${s.color} bg-[#f6f4ef] rounded-r-xl pl-4 py-3 pr-3`}>
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.strategi}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{s.kenapa}</p>
                         <div className="bg-white rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.07)]">
@@ -386,7 +386,7 @@ export default function CaraProfitTradingStockityPage() {
 
                 {/* Level Advanced */}
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">
-                  <div className="px-5 py-3.5 bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)] flex items-center gap-2">
+                  <div className="px-5 py-3.5 bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)] flex items-center gap-2">
                     <span className="text-sm">⭐⭐⭐</span>
                     <h3 className="text-[13px] font-semibold text-[#1a1612]">Advanced: Optimalkan dengan Data Historis</h3>
                   </div>
@@ -405,7 +405,7 @@ export default function CaraProfitTradingStockityPage() {
                         color: "border-l-emerald-400",
                       },
                     ].map((s) => (
-                      <div key={s.strategi} className={`border-l-4 ${s.color} bg-[#f9fafb] rounded-r-xl pl-4 py-3 pr-3`}>
+                      <div key={s.strategi} className={`border-l-4 ${s.color} bg-[#f6f4ef] rounded-r-xl pl-4 py-3 pr-3`}>
                         <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{s.strategi}</p>
                         <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{s.kenapa}</p>
                         <div className="bg-white rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.07)]">
@@ -482,7 +482,7 @@ export default function CaraProfitTradingStockityPage() {
                   <div className="overflow-x-auto">
                     <table className="w-full text-[12px]">
                       <thead>
-                        <tr className="bg-[#f9fafb] border-b border-[rgba(26,22,18,0.07)]">
+                        <tr className="bg-[#f6f4ef] border-b border-[rgba(26,22,18,0.07)]">
                           <th className="text-left px-4 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase">Profil</th>
                           <th className="text-right px-3 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase">Nominal</th>
                           <th className="text-right px-3 py-3 text-[11px] font-semibold text-[#1a1612]/40 uppercase">Multiplier</th>
@@ -498,7 +498,7 @@ export default function CaraProfitTradingStockityPage() {
                           { profil: "Intermediate", nominal: "Rp 25.000", mult: "2,5×", step: "3", modal: "Rp 1.000.000", untuk: "Trader 30+ hari" },
                           { profil: "Advanced", nominal: "Rp 50.000", mult: "3,0×", step: "3", modal: "Rp 3.000.000", untuk: "Trader berpengalaman" },
                         ].map((r) => (
-                          <tr key={r.profil} className="hover:bg-[#f9fafb]">
+                          <tr key={r.profil} className="hover:bg-[#f6f4ef]">
                             <td className="px-4 py-3 font-medium text-[#1a1612]">{r.profil}</td>
                             <td className="px-3 py-3 text-right text-[#6b6058]">{r.nominal}</td>
                             <td className="px-3 py-3 text-right text-[#6b6058]">{r.mult}</td>
@@ -587,7 +587,7 @@ export default function CaraProfitTradingStockityPage() {
                         </span>
                       </div>
                       <p className="text-[12px] text-[#6b6058] leading-relaxed mb-2">{sesi.karakteristik}</p>
-                      <div className="bg-[#f9fafb] rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.06)]">
+                      <div className="bg-[#f6f4ef] rounded-lg px-3 py-1.5 border border-[rgba(26,22,18,0.06)]">
                         <p className="text-[11px] text-[#1a1612]/50">Bot rekomendasi: <strong className="text-[#10b981]">{sesi.rekomendasiBot}</strong></p>
                       </div>
                     </div>
@@ -866,7 +866,7 @@ export default function CaraProfitTradingStockityPage() {
         </section>
 
         {/* ── Footer ──────────────────────────────────────── */}
-        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f9fafb]">
+        <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/25">
               © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id

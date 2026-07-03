@@ -194,7 +194,7 @@ export default function TradingBinaryOptionModalKecilPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
         {/* NAV */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
@@ -235,7 +235,7 @@ export default function TradingBinaryOptionModalKecilPage() {
                   { v: "SL Otomatis", l: "Proteksi Saldo" },
                   { v: "6 Mode", l: "Pilih Sesuai Modal" },
                 ].map((s) => (
-                  <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
+                  <div key={s.l} className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
                     <p className="text-[15px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
                     <p className="text-[11px] text-[#6b6058]">{s.l}</p>
                   </div>
@@ -252,7 +252,7 @@ export default function TradingBinaryOptionModalKecilPage() {
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
                 Pertanyaan yang paling sering ditanyakan trader pemula. Jawabannya simpel — tapi ada nuansanya:
               </p>
-              <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4 mb-5">
+              <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4 mb-5">
                 <div className="text-center py-4">
                   <p className="text-[13px] text-[#6b6058] mb-1">Minimum nominal order per trade</p>
                   <p className="text-[42px] font-bold text-[#1a1612]">Rp 14.000</p>
@@ -269,7 +269,7 @@ export default function TradingBinaryOptionModalKecilPage() {
           </section>
 
           {/* SECTION 2 — Simulasi Base Rp 14.000 */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Simulasi Martingale</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Simulasi Trading Base Rp 14.000 dengan Martingale</h2>
@@ -318,7 +318,7 @@ export default function TradingBinaryOptionModalKecilPage() {
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
                 Base amount Rp 70.000 adalah pilihan yang lebih seimbang — profit per trade lebih berarti, tapi masih terjangkau untuk pemula yang mau mulai dengan modal sedang:
               </p>
-              <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden mb-5">
+              <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden mb-5">
                 <div className="grid grid-cols-4 gap-0 bg-[#1a1612] px-4 py-2.5 text-[11px] font-semibold text-white">
                   <span>Step</span>
                   <span>Nominal</span>
@@ -349,7 +349,7 @@ export default function TradingBinaryOptionModalKecilPage() {
           </section>
 
           {/* SECTION 4 — Mode yang Cocok untuk Modal Kecil */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Pilih Mode</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Mode yang Cocok untuk Modal Kecil</h2>
@@ -475,7 +475,7 @@ export default function TradingBinaryOptionModalKecilPage() {
           </section>
 
           {/* SECTION 6 — Demo Account */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Latihan Gratis</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Akun Demo: Latihan Gratis Sebelum Pakai Modal Nyata</h2>
@@ -575,7 +575,7 @@ export default function TradingBinaryOptionModalKecilPage() {
           </section>
 
           {/* SECTION 8 — Kesimpulan */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Ringkasan</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kesimpulan</h2>
@@ -638,7 +638,7 @@ export default function TradingBinaryOptionModalKecilPage() {
           </section>
 
           {/* INTERNAL LINKS */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Artikel Terkait</SectionLabel>
               <h2 className="text-[18px] font-bold text-[#1a1612] mb-4">Baca Juga</h2>

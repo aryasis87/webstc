@@ -194,7 +194,7 @@ export default function MinimalDepositStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
         {/* NAV */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
@@ -235,7 +235,7 @@ export default function MinimalDepositStockityPage() {
                   { v: "10–20×", l: "Buffer Aman" },
                   { v: "Otomatis", l: "Kalkulasi Bot" },
                 ].map((s) => (
-                  <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
+                  <div key={s.l} className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
                     <p className="text-[15px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
                     <p className="text-[11px] text-[#6b6058]">{s.l}</p>
                   </div>
@@ -271,7 +271,7 @@ export default function MinimalDepositStockityPage() {
           </section>
 
           {/* SECTION 2 — Quick Amounts */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Nominal Order</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Minimum Nominal Order di STC AutoTrade: Rp 14.000</h2>
@@ -290,7 +290,7 @@ export default function MinimalDepositStockityPage() {
                     { amount: "Rp 1.400.000", note: "100× minimum" },
                     { amount: "Rp 2.800.000", note: "200× minimum" },
                   ].map((item) => (
-                    <div key={item.amount} className="col-span-2 sm:col-span-1 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-lg px-3 py-2.5 text-center">
+                    <div key={item.amount} className="col-span-2 sm:col-span-1 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-lg px-3 py-2.5 text-center">
                       <p className="text-[12px] font-bold text-[#1a1612]">{item.amount}</p>
                       <p className="text-[10px] text-[#6b6058]">{item.note}</p>
                     </div>
@@ -311,7 +311,7 @@ export default function MinimalDepositStockityPage() {
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
                 Berikut simulasi modal yang dibutuhkan jika semua step martingale loss (worst case scenario), dengan multiplier 2× dari base Rp 14.000:
               </p>
-              <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden mb-5">
+              <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden mb-5">
                 <div className="grid grid-cols-4 gap-0 bg-[#1a1612] px-4 py-2.5 text-[11px] font-semibold text-white">
                   <span>Step</span>
                   <span>Nominal</span>
@@ -346,7 +346,7 @@ export default function MinimalDepositStockityPage() {
           </section>
 
           {/* SECTION 4 — Kenapa Jangan Modal Kecil Tanpa Persiapan */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Manajemen Risiko</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kenapa Jangan Langsung Pakai Modal Kecil Tanpa Persiapan</h2>
@@ -433,7 +433,7 @@ export default function MinimalDepositStockityPage() {
           </section>
 
           {/* SECTION 6 — Rekomendasi Modal */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Panduan Modal</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Rekomendasi Modal Awal Berdasarkan Profil Risiko</h2>
@@ -537,7 +537,7 @@ export default function MinimalDepositStockityPage() {
           </section>
 
           {/* FAQ */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>FAQ</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Pertanyaan yang Sering Ditanyakan</h2>
@@ -587,7 +587,7 @@ export default function MinimalDepositStockityPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
+                    className="block p-4 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

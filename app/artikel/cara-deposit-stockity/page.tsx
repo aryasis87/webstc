@@ -197,7 +197,7 @@ export default function CaraDepositStockityPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
         {/* NAV */}
         <nav className="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-md border-b border-[rgba(26,22,18,0.06)]">
           <div className="max-w-3xl mx-auto px-5 h-14 flex items-center justify-between gap-4">
@@ -238,7 +238,7 @@ export default function CaraDepositStockityPage() {
                   { v: "Demo Gratis", l: "Tanpa Deposit" },
                   { v: "Real + Demo", l: "2 Akun Tersedia" },
                 ].map((s) => (
-                  <div key={s.l} className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
+                  <div key={s.l} className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3 text-center">
                     <p className="text-[15px] font-bold text-[#1a1612] mb-0.5">{s.v}</p>
                     <p className="text-[11px] text-[#6b6058]">{s.l}</p>
                   </div>
@@ -260,7 +260,7 @@ export default function CaraDepositStockityPage() {
               </InfoBox>
               <div className="mt-5 space-y-3">
                 <p className="text-[14px] text-[#6b6058] leading-relaxed">Analoginya seperti ini: Stockity.id adalah rekening bank Anda, sedangkan STC AutoTrade adalah manajer investasi yang mengelola uang di rekening tersebut secara otomatis. Untuk menambah saldo, Anda tetap harus ke &ldquo;rekening bank&rdquo; — yaitu Stockity.id.</p>
-                <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
+                <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
                   <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Alur Keuangan STC AutoTrade:</p>
                   <div className="space-y-2">
                     {[
@@ -289,7 +289,7 @@ export default function CaraDepositStockityPage() {
           </section>
 
           {/* SECTION 2 — Cara Akses Halaman Deposit via Webview */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Akses Deposit</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Akses Halaman Deposit dari STC AutoTrade</h2>
@@ -388,7 +388,7 @@ export default function CaraDepositStockityPage() {
           </section>
 
           {/* SECTION 4 — Akun Demo */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Demo Account</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Akun Demo: Cara Latihan Tanpa Deposit Nyata</h2>
@@ -470,7 +470,7 @@ export default function CaraDepositStockityPage() {
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
                 Setelah deposit dikonfirmasi di Stockity.id, Anda tidak perlu melakukan apapun di STC AutoTrade. Saldo diambil langsung dari API Stockity secara real-time.
               </p>
-              <div className="bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl p-5 mb-5">
+              <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-5 mb-5">
                 <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Cara Kerja Sinkronisasi:</p>
                 <div className="space-y-3">
                   {[
@@ -496,7 +496,7 @@ export default function CaraDepositStockityPage() {
           </section>
 
           {/* SECTION 6 — Rekomendasi Nominal */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>Rekomendasi Modal</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Rekomendasi Nominal Awal untuk Trading dengan Bot STC AutoTrade</h2>
@@ -572,7 +572,7 @@ export default function CaraDepositStockityPage() {
           </section>
 
           {/* FAQ */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f9fafb]">
+          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
             <div className="max-w-3xl mx-auto px-5">
               <SectionLabel>FAQ</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Pertanyaan yang Sering Ditanyakan</h2>
@@ -622,7 +622,7 @@ export default function CaraDepositStockityPage() {
                   <Link
                     key={r.href}
                     href={r.href}
-                    className="block p-4 bg-[#f9fafb] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
+                    className="block p-4 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl no-underline hover:border-[#10b981]/30 transition-colors"
                   >
                     <p className="text-[13px] font-semibold text-[#1a1612] mb-1">{r.title}</p>
                     <p className="text-[11px] text-[#6b6058]">{r.desc}</p>

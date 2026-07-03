@@ -4,12 +4,14 @@ interface PhoneImageProps {
   src: string;
   alt: string;
   label?: string;
+  /** Warna label terang — untuk pemakaian di atas panel gelap. */
+  labelLight?: boolean;
   priority?: boolean;
   /** 'cover' (default) memenuhi layar & memotong; 'contain' menampilkan gambar utuh. */
   fit?: "cover" | "contain";
 }
 
-export default function PhoneImage({ src, alt, label, priority = false, fit = "cover" }: PhoneImageProps) {
+export default function PhoneImage({ src, alt, label, labelLight = false, priority = false, fit = "cover" }: PhoneImageProps) {
   return (
     <div className="relative mx-auto select-none" style={{ width: 280, height: 590 }}>
       {/* Ambient glow */}
@@ -49,7 +51,7 @@ export default function PhoneImage({ src, alt, label, priority = false, fit = "c
       </div>
 
       {label && (
-        <p className="text-center text-[11px] text-zinc-400 mt-4 font-medium tracking-wide">{label}</p>
+        <p className={`text-center text-[11px] mt-4 font-medium tracking-wide ${labelLight ? "text-emerald-200/70" : "text-[#6b6459]"}`}>{label}</p>
       )}
     </div>
   );

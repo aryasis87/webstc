@@ -153,7 +153,7 @@ export default function DownloadPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(howToInstallSchema) }}
       />
 
-      <div className="min-h-screen bg-[#f9fafb]">
+      <div className="min-h-screen bg-[#f6f4ef]">
         {/* ── Nav ───────────────────────────────────────────── */}
         <nav className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-[rgba(26,22,18,0.08)]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 h-14 flex items-center justify-between">
@@ -339,7 +339,7 @@ export default function DownloadPage() {
                 },
               ].map((s, i) => (
                 <div key={s.n} className="flex gap-5 px-6 py-5 border-b border-[rgba(26,22,18,0.06)] last:border-0">
-                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f9fafb] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/55">
+                  <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#f6f4ef] flex items-center justify-center text-[12px] font-semibold text-[#1a1612]/55">
                     {i + 1}
                   </div>
                   <div className="pt-0.5">

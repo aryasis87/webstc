@@ -307,7 +307,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebSite) }}
         />
-        <meta name="theme-color" content="#f9fafb" />
+        <meta name="theme-color" content="#f6f4ef" />
         {/*
           Preconnect untuk Google Fonts sudah ditambahkan Next.js secara otomatis
           saat menggunakan next/font/google. Tag di bawah adalah pengaman eksplisit.

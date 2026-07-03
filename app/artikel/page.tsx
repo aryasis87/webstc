@@ -380,7 +380,7 @@ export default function ArtikelPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaItemList) }}
       />
 
-      <div className="bg-[#f9fafb] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
+      <div className="bg-[#f6f4ef] text-[#1a1612] font-[family-name:var(--font-dm-sans)]">
 
         {/* ── SKIP NAV ───────────────────────────────────── */}
         <a
