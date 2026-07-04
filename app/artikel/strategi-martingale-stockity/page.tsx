@@ -462,7 +462,7 @@ export default function StrategiMartingaleStockityPage() {
             <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-5">Artikel Terkait</p>
             <div className="grid sm:grid-cols-3 gap-3">
               {[
-                { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal minimum & cara mulai modal kecil" },
+                { href: "/artikel/manajemen-modal-trading-binary-option", title: "Manajemen Modal Trading", desc: "Aturan 1–5% & hitungan risiko siklus martingale" },
                 { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading Stockity", desc: "Strategi & tips konsisten profit 2026" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
               ].map((l) => (

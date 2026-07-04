@@ -665,7 +665,7 @@ export default function StockityVsBinomoPage() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
-                { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Stockity Gratis", desc: "Cara dapat akses bot Stockity tanpa biaya" },
+                { href: "/artikel/stockity-vs-quotex", title: "Stockity vs Quotex", desc: "Perbandingan dengan kompetitor yang paling banyak dicari" },
                 { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & versi web — gratis" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">

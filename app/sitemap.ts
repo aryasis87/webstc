@@ -197,6 +197,68 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.84,
     },
 
+    // ── Batch 10 Artikel — 4 Juli 2026 ───────────────────────────
+    {
+      url: `${BASE_URL}/artikel/stockity-vs-quotex`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.86,
+    },
+    {
+      url: `${BASE_URL}/artikel/bonus-deposit-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/turnamen-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/robot-trading-terbaik-indonesia`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/stc-autotrade-vs-trading-manual`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/manajemen-modal-trading-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+    {
+      url: `${BASE_URL}/artikel/psikologi-trading-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+    {
+      url: `${BASE_URL}/artikel/support-resistance-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${BASE_URL}/artikel/kalender-ekonomi-binary-option`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.82,
+    },
+    {
+      url: `${BASE_URL}/artikel/trading-otc-stockity-akhir-pekan`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.81,
+    },
+
     // ── Artikel Baru — 4 Juli 2026 ────────────────────────────────
     {
       url: `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`,

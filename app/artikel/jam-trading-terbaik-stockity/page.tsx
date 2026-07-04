@@ -369,7 +369,7 @@ export default function JamTradingTerbaikStockityPage() {
               {[
                 { href: "/artikel/timeframe-trading-binary-option", title: "Timeframe Trading Binary Option", desc: "Memilih durasi yang tepat untuk strategi Anda" },
                 { href: "/artikel/aset-terbaik-trading-stockity", title: "Aset Terbaik Trading Stockity", desc: "Pasangan mata uang & aset paling ramah trader" },
-                { href: "/artikel/ai-trading-stockity", title: "AI Trading Stockity", desc: "Biarkan AI memilih momen entry terbaik" },
+                { href: "/artikel/kalender-ekonomi-binary-option", title: "Kalender Ekonomi", desc: "Jam-jam berita besar yang wajib dihindari (WIB)" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
                   <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>
