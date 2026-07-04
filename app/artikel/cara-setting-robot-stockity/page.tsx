@@ -39,6 +39,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-setting-robot-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/cara-setting-robot-stockity",
+      en: "https://stcautotrade.id/en/articles/how-to-set-up-stockity-robot",
+      "x-default": "https://stcautotrade.id/artikel/cara-setting-robot-stockity",
+    },
   },
   openGraph: {
     title: "Cara Setting Robot Trading Stockity: Panduan Konfigurasi Bot 2026",

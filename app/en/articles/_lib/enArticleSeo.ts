@@ -1,39 +1,42 @@
 /**
- * app/artikel/_lib/artikelSeo.ts
- *
- * Helper SEO bersama untuk halaman artikel — membangun Metadata Next.js
- * dan JSON-LD (Article + BreadcrumbList + FAQPage) dari satu definisi,
- * sehingga setiap artikel dijamin punya canonical + schema lengkap tanpa
- * boilerplate manual. Folder _lib tidak menjadi route (konvensi App Router).
+ * app/en/articles/_lib/enArticleSeo.ts
+ * SEO helper for English articles — mirrors artikel/_lib/artikelSeo.ts and
+ * wires hreflang pairs to the Indonesian twin (x-default = ID, main market).
  */
 
 import type { Metadata } from "next";
 
 const BASE_URL = "https://stcautotrade.id";
 
-export interface ArtikelFaq {
+export interface EnArticleFaq {
   q: string;
   a: string;
 }
 
-export interface ArtikelSeoDef {
+export interface EnArticleSeoDef {
+  /** slug under /en/articles/ */
   slug: string;
-  /** Title tag lengkap (tanpa suffix template) */
+  /** slug of the Indonesian twin under /artikel/ */
+  idSlug: string;
   title: string;
   description: string;
   keywords: string[];
-  /** Nama pendek untuk breadcrumb (≤ 40 char) */
   breadcrumbName: string;
-  /** ISO date yyyy-mm-dd */
   datePublished: string;
   dateModified?: string;
-  /** slug twin bahasa Inggris di /en/articles/ (opsional) → hreflang otomatis */
-  enSlug?: string;
-  faq: ArtikelFaq[];
+  faq: EnArticleFaq[];
 }
 
-export function buildMetadata(def: ArtikelSeoDef): Metadata {
-  const url = `${BASE_URL}/artikel/${def.slug}`;
+export function enUrl(def: EnArticleSeoDef) {
+  return `${BASE_URL}/en/articles/${def.slug}`;
+}
+export function idUrl(def: EnArticleSeoDef) {
+  return `${BASE_URL}/artikel/${def.idSlug}`;
+}
+
+export function buildEnMetadata(def: EnArticleSeoDef): Metadata {
+  const url = enUrl(def);
+  const twin = idUrl(def);
   const mod = def.dateModified ?? def.datePublished;
   return {
     title: def.title,
@@ -41,21 +44,14 @@ export function buildMetadata(def: ArtikelSeoDef): Metadata {
     keywords: def.keywords,
     alternates: {
       canonical: url,
-      ...(def.enSlug
-        ? {
-            languages: {
-              "id-ID": url,
-              en: `${BASE_URL}/en/articles/${def.enSlug}`,
-              "x-default": url,
-            },
-          }
-        : {}),
+      languages: { "id-ID": twin, en: url, "x-default": twin },
     },
     openGraph: {
       title: def.title,
       description: def.description,
       url,
       type: "article",
+      locale: "en_US",
       publishedTime: `${def.datePublished}T00:00:00.000Z`,
       modifiedTime: `${mod}T00:00:00.000Z`,
       authors: ["STC AutoTrade"],
@@ -64,9 +60,8 @@ export function buildMetadata(def: ArtikelSeoDef): Metadata {
   };
 }
 
-/** Mengembalikan array object schema — render dengan satu .map() di page */
-export function buildSchemas(def: ArtikelSeoDef): object[] {
-  const url = `${BASE_URL}/artikel/${def.slug}`;
+export function buildEnSchemas(def: EnArticleSeoDef): object[] {
+  const url = enUrl(def);
   const mod = def.dateModified ?? def.datePublished;
   return [
     {
@@ -74,6 +69,7 @@ export function buildSchemas(def: ArtikelSeoDef): object[] {
       "@type": "Article",
       headline: def.title,
       description: def.description,
+      inLanguage: "en",
       author: { "@type": "Organization", name: "STC AutoTrade", url: BASE_URL },
       publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.webp` } },
       datePublished: def.datePublished,
@@ -86,8 +82,8 @@ export function buildSchemas(def: ArtikelSeoDef): object[] {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: BASE_URL },
-        { "@type": "ListItem", position: 2, name: "Artikel", item: `${BASE_URL}/artikel` },
+        { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: `${BASE_URL}/en` },
+        { "@type": "ListItem", position: 2, name: "Articles", item: `${BASE_URL}/en/articles` },
         { "@type": "ListItem", position: 3, name: def.breadcrumbName, item: url },
       ],
     },

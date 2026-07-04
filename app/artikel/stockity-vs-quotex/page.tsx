@@ -24,6 +24,7 @@ const seo: ArtikelSeoDef = {
   ],
   breadcrumbName: "Stockity vs Quotex",
   datePublished: "2026-07-04",
+  enSlug: "stockity-vs-quotex",
   faq: [
     { q: "Stockity atau Quotex, mana yang lebih baik untuk pemula?", a: "Keduanya ramah pemula dengan akun demo gratis dan deposit awal rendah. Stockity unggul dalam kemudahan pembayaran lokal Indonesia dan antarmuka berbahasa Indonesia yang matang; Quotex unggul dalam variasi aset. Untuk pemula Indonesia, alur deposit-withdraw yang lancar biasanya jadi faktor penentu." },
     { q: "Apakah bisa punya akun di Stockity dan Quotex sekaligus?", a: "Bisa — keduanya platform terpisah dan tidak saling melarang. Sebagian trader menguji keduanya lewat akun demo lalu fokus di platform yang eksekusi dan withdraw-nya paling lancar dari pengalaman mereka sendiri." },

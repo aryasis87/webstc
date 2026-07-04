@@ -30,6 +30,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-verifikasi-akun-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/cara-verifikasi-akun-stockity",
+      en: "https://stcautotrade.id/en/articles/stockity-account-verification",
+      "x-default": "https://stcautotrade.id/artikel/cara-verifikasi-akun-stockity",
+    },
   },
   openGraph: {
     title: "Cara Verifikasi Akun Stockity (KYC): Panduan Lengkap & Syarat 2026",

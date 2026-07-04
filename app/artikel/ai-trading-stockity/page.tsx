@@ -32,6 +32,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/ai-trading-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/ai-trading-stockity",
+      en: "https://stcautotrade.id/en/articles/ai-trading-stockity",
+      "x-default": "https://stcautotrade.id/artikel/ai-trading-stockity",
+    },
   },
   openGraph: {
     title: "AI Trading Stockity: Cara Kerja Robot AI untuk Binary Option 2026",

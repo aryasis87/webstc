@@ -36,6 +36,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-withdraw-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/cara-withdraw-stockity",
+      en: "https://stcautotrade.id/en/articles/how-to-withdraw-from-stockity",
+      "x-default": "https://stcautotrade.id/artikel/cara-withdraw-stockity",
+    },
   },
   openGraph: {
     title: "Cara Withdraw Stockity: Panduan Tarik Dana 2026",

@@ -40,7 +40,10 @@ export const metadata: Metadata = {
     "strategi profit stockity",
     "stockity vs binomo vs olymp trade",
   ],
-  alternates: { canonical: PAGE_URL },
+  alternates: {
+    canonical: PAGE_URL,
+    languages: { "id-ID": PAGE_URL, en: `${BASE_URL}/en/articles`, "x-default": PAGE_URL },
+  },
   openGraph: {
     title: "Artikel STC AutoTrade — Panduan & Tips Robot Trading Stockity",
     description:

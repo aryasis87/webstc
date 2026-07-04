@@ -40,6 +40,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/robot-trading-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/robot-trading-stockity",
+      en: "https://stcautotrade.id/en/articles/stockity-trading-robot",
+      "x-default": "https://stcautotrade.id/artikel/robot-trading-stockity",
+    },
   },
   openGraph: {
     title: "Robot Trading Stockity: Panduan Lengkap Auto Trade 2026",
