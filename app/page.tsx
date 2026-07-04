@@ -137,7 +137,7 @@ const schemaSoftwareApp = {
   },
   author: { "@type": "Organization", name: "STC AutoTrade", url: BASE_URL },
   downloadUrl: `${BASE_URL}/StcAutoTrade.apk`,
-  softwareVersion: "4.4",
+  softwareVersion: "3.0",
   screenshot: `${BASE_URL}/og-image.webp`,
 };
 
