@@ -71,7 +71,9 @@ const breadcrumbSchema = {
 const softwareDownloadSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "@id": "https://stcautotrade.id/#app-download",
+  // @id disamakan dengan schema global (#app) agar tidak tercipta entitas
+  // SoftwareApplication kedua di halaman ini — Google merge node ber-@id sama.
+  "@id": "https://stcautotrade.id/#app",
   name: "STC AutoTrade",
   alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Trading Stockity"],
   operatingSystem: ["Android 8.0+", "Web Browser (iOS, Windows, macOS, Linux)"],

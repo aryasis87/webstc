@@ -112,6 +112,10 @@ const schemaBreadcrumb = {
 const schemaSoftwareApp = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  // @id sama dengan schema global di layout.tsx — kedua node di-merge Google
+  // menjadi SATU entitas aplikasi (aggregateRating menempel ke #app, bukan
+  // membentuk entitas duplikat anonim).
+  "@id": `${BASE_URL}/#app`,
   name: "STC AutoTrade",
   alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Stockity", "Auto Stockity"],
   description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android dan versi web. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
