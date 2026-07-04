@@ -30,6 +30,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/cara-kerja",
+    // hreflang: pasangan ID ↔ EN; x-default = ID (pasar utama)
+    languages: {
+      "id-ID": "https://stcautotrade.id/cara-kerja",
+      en: "https://stcautotrade.id/en/how-it-works",
+      "x-default": "https://stcautotrade.id/cara-kerja",
+    },
   },
   openGraph: {
     title: "Cara Kerja STC AutoTrade — 6 Strategi & Manajemen Risiko Stockity",

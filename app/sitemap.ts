@@ -5,30 +5,64 @@ const LAST_MODIFIED = new Date("2026-07-04");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
-    // ── Halaman Utama ─────────────────────────────────────────────
+    // ── Halaman Utama (ID ↔ EN via anotasi hreflang) ─────────────
     {
       url: BASE_URL,
       lastModified: LAST_MODIFIED,
       changeFrequency: "weekly",
       priority: 1.0,
+      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, "x-default": BASE_URL } },
     },
     {
       url: `${BASE_URL}/download`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.95,
+      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, "x-default": `${BASE_URL}/download` } },
     },
     {
       url: `${BASE_URL}/cara-kerja`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.9,
+      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
     },
     {
       url: `${BASE_URL}/faq`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.85,
+      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, "x-default": `${BASE_URL}/faq` } },
+    },
+
+    // ── Versi Bahasa Inggris ─────────────────────────────────────
+    {
+      url: `${BASE_URL}/en`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "weekly",
+      priority: 0.9,
+      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, "x-default": BASE_URL } },
+    },
+    {
+      url: `${BASE_URL}/en/download`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
+      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, "x-default": `${BASE_URL}/download` } },
+    },
+    {
+      url: `${BASE_URL}/en/how-it-works`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
+    },
+    {
+      url: `${BASE_URL}/en/faq`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, "x-default": `${BASE_URL}/faq` } },
     },
 
     // ── Indeks Artikel ────────────────────────────────────────────

@@ -73,7 +73,12 @@ export const metadata: Metadata = {
 
   alternates: {
     canonical: BASE_URL,
-    languages: { "id-ID": BASE_URL },
+    // hreflang: pasangan ID ↔ EN; x-default = ID (pasar utama)
+    languages: {
+      "id-ID": BASE_URL,
+      en: `${BASE_URL}/en`,
+      "x-default": BASE_URL,
+    },
   },
 
   robots: {

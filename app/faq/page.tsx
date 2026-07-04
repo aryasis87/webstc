@@ -26,6 +26,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/faq",
+    // hreflang: pasangan ID ↔ EN; x-default = ID (pasar utama)
+    languages: {
+      "id-ID": "https://stcautotrade.id/faq",
+      en: "https://stcautotrade.id/en/faq",
+      "x-default": "https://stcautotrade.id/faq",
+    },
   },
   openGraph: {
     title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",

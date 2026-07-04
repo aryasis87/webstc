@@ -28,6 +28,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/download",
+    // hreflang: pasangan ID ↔ EN; x-default = ID (pasar utama)
+    languages: {
+      "id-ID": "https://stcautotrade.id/download",
+      en: "https://stcautotrade.id/en/download",
+      "x-default": "https://stcautotrade.id/download",
+    },
   },
   openGraph: {
     title: "Download STC AutoTrade APK & Versi Web — Robot Trading Stockity Gratis",
