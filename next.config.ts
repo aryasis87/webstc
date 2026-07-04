@@ -139,6 +139,14 @@ const nextConfig: NextConfig = {
   // ── Redirect ─────────────────────────────────────────────────────────
   async redirects() {
     return [
+      // www → apex (308 permanent, path & query dipertahankan) — mencegah
+      // Google melihat dua salinan penuh situs di www dan non-www.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "www.stcautotrade.id" }],
+        destination: "https://stcautotrade.id/:path*",
+        permanent: true,
+      },
       // Pastikan trailing slash dihilangkan (konsistensi canonical URL)
       {
         source: "/index",
