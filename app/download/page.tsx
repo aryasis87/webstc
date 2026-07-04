@@ -32,6 +32,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": "https://stcautotrade.id/download",
       en: "https://stcautotrade.id/en/download",
+      ru: "https://stcautotrade.id/ru/download",
       "x-default": "https://stcautotrade.id/download",
     },
   },

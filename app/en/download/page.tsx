@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": `${BASE_URL}/download`,
       en: `${BASE_URL}/en/download`,
+      ru: `${BASE_URL}/ru/download`,
       "x-default": `${BASE_URL}/download`,
     },
   },

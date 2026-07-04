@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": BASE_URL,
       en: `${BASE_URL}/en`,
+      ru: `${BASE_URL}/ru`,
       "x-default": BASE_URL,
     },
   },

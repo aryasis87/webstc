@@ -11,28 +11,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "weekly",
       priority: 1.0,
-      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, "x-default": BASE_URL } },
+      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, ru: `${BASE_URL}/ru`, "x-default": BASE_URL } },
     },
     {
       url: `${BASE_URL}/download`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.95,
-      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, "x-default": `${BASE_URL}/download` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, ru: `${BASE_URL}/ru/download`, "x-default": `${BASE_URL}/download` } },
     },
     {
       url: `${BASE_URL}/cara-kerja`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.9,
-      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, ru: `${BASE_URL}/ru/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
     },
     {
       url: `${BASE_URL}/faq`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.85,
-      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, "x-default": `${BASE_URL}/faq` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, ru: `${BASE_URL}/ru/faq`, "x-default": `${BASE_URL}/faq` } },
     },
 
     // ── Versi Bahasa Inggris ─────────────────────────────────────
@@ -41,28 +41,59 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "weekly",
       priority: 0.9,
-      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, "x-default": BASE_URL } },
+      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, ru: `${BASE_URL}/ru`, "x-default": BASE_URL } },
     },
     {
       url: `${BASE_URL}/en/download`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.85,
-      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, "x-default": `${BASE_URL}/download` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, ru: `${BASE_URL}/ru/download`, "x-default": `${BASE_URL}/download` } },
     },
     {
       url: `${BASE_URL}/en/how-it-works`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.8,
-      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, ru: `${BASE_URL}/ru/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
     },
     {
       url: `${BASE_URL}/en/faq`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.75,
-      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, "x-default": `${BASE_URL}/faq` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, ru: `${BASE_URL}/ru/faq`, "x-default": `${BASE_URL}/faq` } },
+    },
+
+
+    // ── Versi Bahasa Rusia ───────────────────────────────────────
+    {
+      url: `${BASE_URL}/ru`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "weekly",
+      priority: 0.85,
+      alternates: { languages: { "id-ID": BASE_URL, en: `${BASE_URL}/en`, ru: `${BASE_URL}/ru`, "x-default": BASE_URL } },
+    },
+    {
+      url: `${BASE_URL}/ru/download`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: { "id-ID": `${BASE_URL}/download`, en: `${BASE_URL}/en/download`, ru: `${BASE_URL}/ru/download`, "x-default": `${BASE_URL}/download` } },
+    },
+    {
+      url: `${BASE_URL}/ru/how-it-works`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.75,
+      alternates: { languages: { "id-ID": `${BASE_URL}/cara-kerja`, en: `${BASE_URL}/en/how-it-works`, ru: `${BASE_URL}/ru/how-it-works`, "x-default": `${BASE_URL}/cara-kerja` } },
+    },
+    {
+      url: `${BASE_URL}/ru/faq`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: { languages: { "id-ID": `${BASE_URL}/faq`, en: `${BASE_URL}/en/faq`, ru: `${BASE_URL}/ru/faq`, "x-default": `${BASE_URL}/faq` } },
     },
 
     // ── Indeks Artikel ────────────────────────────────────────────

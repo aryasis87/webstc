@@ -34,6 +34,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": "https://stcautotrade.id/cara-kerja",
       en: "https://stcautotrade.id/en/how-it-works",
+      ru: "https://stcautotrade.id/ru/how-it-works",
       "x-default": "https://stcautotrade.id/cara-kerja",
     },
   },
