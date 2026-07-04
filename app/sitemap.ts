@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://stcautotrade.id";
-const LAST_MODIFIED = new Date("2026-07-03");
+const LAST_MODIFIED = new Date("2026-07-04");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -195,6 +195,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.84,
+    },
+
+    // ── Artikel Baru — 4 Juli 2026 ────────────────────────────────
+    {
+      url: `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.86,
+    },
+    {
+      url: `${BASE_URL}/artikel/stockity-tidak-bisa-login`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.85,
     },
 
     // ── Artikel Baru (Juli 2026) ──────────────────────────────────

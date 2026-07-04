@@ -414,7 +414,7 @@ export default function CaraMainStockityPemulaPage() {
               {[
                 { href: "/artikel/akun-demo-stockity", title: "Akun Demo Stockity", desc: "Cara latihan gratis tanpa modal sebelum ke real" },
                 { href: "/artikel/cara-daftar-stockity", title: "Cara Daftar Stockity", desc: "Panduan registrasi akun langkah demi langkah" },
-                { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
+                { href: "/artikel/stockity-tidak-bisa-login", title: "Stockity Tidak Bisa Login?", desc: "7 penyebab gagal masuk & cara mengatasinya" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
                   <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>

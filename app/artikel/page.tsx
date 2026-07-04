@@ -80,6 +80,22 @@ interface Artikel {
 
 const ARTIKEL: Artikel[] = [
   {
+    slug:      "cara-verifikasi-akun-stockity",
+    judul:     "Cara Verifikasi Akun Stockity (KYC): Panduan Lengkap & Syarat 2026",
+    ringkasan: "Dokumen yang dibutuhkan, langkah upload yang benar, berapa lama prosesnya, penyebab verifikasi ditolak, dan kenapa KYC wajib diselesaikan sebelum withdraw.",
+    kategori:  "Panduan",
+    tanggal:   "4 Juli 2026",
+    menit:     6,
+  },
+  {
+    slug:      "stockity-tidak-bisa-login",
+    judul:     "Stockity Tidak Bisa Login? 7 Penyebab & Cara Mengatasinya 2026",
+    ringkasan: "Checklist troubleshooting gagal login Stockity: password & metode login, gangguan jaringan/ISP, server down, cache aplikasi, hingga akun diblokir — beserta solusi tiap kasus.",
+    kategori:  "Panduan",
+    tanggal:   "4 Juli 2026",
+    menit:     7,
+  },
+  {
     slug:      "cara-main-stockity-pemula",
     judul:     "Cara Main Stockity untuk Pemula: Panduan Lengkap dari Nol 2026",
     ringkasan: "Panduan lengkap bermain Stockity untuk pemula — daftar akun, memahami antarmuka trading, order pertama di mode demo, kesalahan umum, hingga trading otomatis dengan robot.",
