@@ -69,7 +69,18 @@ export default function SiteFooter() {
         </div>
 
         <div className="pt-6 border-t border-[rgba(23,20,15,0.08)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <p className="text-[12px] text-[#6b6459]">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
+          <div>
+            <p className="text-[12px] text-[#6b6459]">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
+            {/* Link bahasa — jalur crawl dari sisi ID ke versi EN/RU */}
+            <p className="text-[12px] text-[#6b6459] mt-1.5">
+              <span className="font-medium">Bahasa:</span>{" "}
+              <span className="text-[#17140f]">Indonesia</span>
+              {" · "}
+              <Link href="/en" className="hover:text-[#17140f] transition-colors underline decoration-[rgba(23,20,15,0.2)] underline-offset-2">English</Link>
+              {" · "}
+              <Link href="/ru" className="hover:text-[#17140f] transition-colors underline decoration-[rgba(23,20,15,0.2)] underline-offset-2">Русский</Link>
+            </p>
+          </div>
           <p className="text-[12px] text-[#6b6459] max-w-sm sm:text-right leading-relaxed">
             Trading mengandung risiko kerugian finansial. STC AutoTrade adalah alat bantu, bukan
             jaminan selalu profit.

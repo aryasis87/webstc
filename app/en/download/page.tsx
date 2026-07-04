@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     description: "Free APK for Android + web version for every other device. Guide included.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "Download STC AutoTrade" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 /** @id #app — merges with the global SoftwareApplication entity (layout.tsx) */

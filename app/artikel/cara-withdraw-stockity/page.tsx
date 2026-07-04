@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": "https://stcautotrade.id/artikel/cara-withdraw-stockity",
       en: "https://stcautotrade.id/en/articles/how-to-withdraw-from-stockity",
+      ru: "https://stcautotrade.id/ru/articles/how-to-withdraw-from-stockity",
       "x-default": "https://stcautotrade.id/artikel/cara-withdraw-stockity",
     },
   },

@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     description: "6 режимов, AI-сигналы, копитрейдинг, автоматический стоп-лосс. Бесплатно для участников.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "STC AutoTrade — торговый робот для Stockity" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 const faq = [

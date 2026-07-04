@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": `${BASE_URL}/artikel`,
       en: `${BASE_URL}/en/articles`,
+      ru: `${BASE_URL}/ru/articles`,
       "x-default": `${BASE_URL}/artikel`,
     },
   },
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     description: "Robot handbook, setup, verification, withdrawals, AI trading, comparisons.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "STC AutoTrade Articles" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 const ARTICLES = [

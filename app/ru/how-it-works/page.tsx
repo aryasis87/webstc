@@ -36,6 +36,7 @@ export const metadata: Metadata = {
     description: "Серверные сессии, 6 торговых режимов и ограничители, защищающие баланс.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "Как работает STC AutoTrade" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 const howToSchema = {

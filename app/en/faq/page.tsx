@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     description: "Pricing, safety, modes, demo vs real, withdrawals, devices, troubleshooting.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "STC AutoTrade FAQ" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 const groups: { label: string; items: { q: string; a: string }[] }[] = [

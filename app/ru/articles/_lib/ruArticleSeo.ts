@@ -1,22 +1,24 @@
 /**
- * app/en/articles/_lib/enArticleSeo.ts
- * SEO helper for English articles — mirrors artikel/_lib/artikelSeo.ts and
- * wires hreflang pairs to the Indonesian twin (x-default = ID, main market).
+ * app/ru/articles/_lib/ruArticleSeo.ts
+ * SEO-хелпер русских статей. Слаги статей RU совпадают со слагами EN
+ * (/ru/articles/<slug> ↔ /en/articles/<slug>); idSlug указывает на
+ * индонезийского близнеца. hreflang всегда 4 записи: id-ID, en, ru,
+ * x-default = ID (основной рынок).
  */
 
 import type { Metadata } from "next";
 
 const BASE_URL = "https://stcautotrade.id";
 
-export interface EnArticleFaq {
+export interface RuArticleFaq {
   q: string;
   a: string;
 }
 
-export interface EnArticleSeoDef {
-  /** slug under /en/articles/ */
+export interface RuArticleSeoDef {
+  /** slug под /ru/articles/ — совпадает со слагом EN-близнеца */
   slug: string;
-  /** slug of the Indonesian twin under /artikel/ */
+  /** slug индонезийского близнеца под /artikel/ */
   idSlug: string;
   title: string;
   description: string;
@@ -24,34 +26,32 @@ export interface EnArticleSeoDef {
   breadcrumbName: string;
   datePublished: string;
   dateModified?: string;
-  faq: EnArticleFaq[];
+  faq: RuArticleFaq[];
 }
 
-export function enUrl(def: EnArticleSeoDef) {
-  return `${BASE_URL}/en/articles/${def.slug}`;
-}
-export function idUrl(def: EnArticleSeoDef) {
-  return `${BASE_URL}/artikel/${def.idSlug}`;
+export function ruLangs(def: RuArticleSeoDef) {
+  return {
+    "id-ID": `${BASE_URL}/artikel/${def.idSlug}`,
+    en: `${BASE_URL}/en/articles/${def.slug}`,
+    ru: `${BASE_URL}/ru/articles/${def.slug}`,
+    "x-default": `${BASE_URL}/artikel/${def.idSlug}`,
+  };
 }
 
-export function buildEnMetadata(def: EnArticleSeoDef): Metadata {
-  const url = enUrl(def);
-  const twin = idUrl(def);
+export function buildRuMetadata(def: RuArticleSeoDef): Metadata {
+  const url = `${BASE_URL}/ru/articles/${def.slug}`;
   const mod = def.dateModified ?? def.datePublished;
   return {
     title: def.title,
     description: def.description,
     keywords: def.keywords,
-    alternates: {
-      canonical: url,
-      languages: { "id-ID": twin, en: url, ru: `${BASE_URL}/ru/articles/${def.slug}`, "x-default": twin },
-    },
+    alternates: { canonical: url, languages: ruLangs(def) },
     openGraph: {
       title: def.title,
       description: def.description,
       url,
       type: "article",
-      locale: "en_US",
+      locale: "ru_RU",
       publishedTime: `${def.datePublished}T00:00:00.000Z`,
       modifiedTime: `${mod}T00:00:00.000Z`,
       authors: ["STC AutoTrade"],
@@ -61,8 +61,8 @@ export function buildEnMetadata(def: EnArticleSeoDef): Metadata {
   };
 }
 
-export function buildEnSchemas(def: EnArticleSeoDef): object[] {
-  const url = enUrl(def);
+export function buildRuSchemas(def: RuArticleSeoDef): object[] {
+  const url = `${BASE_URL}/ru/articles/${def.slug}`;
   const mod = def.dateModified ?? def.datePublished;
   return [
     {
@@ -70,7 +70,7 @@ export function buildEnSchemas(def: EnArticleSeoDef): object[] {
       "@type": "Article",
       headline: def.title,
       description: def.description,
-      inLanguage: "en",
+      inLanguage: "ru",
       author: { "@type": "Organization", name: "STC AutoTrade", url: BASE_URL },
       publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.webp` } },
       datePublished: def.datePublished,
@@ -83,8 +83,8 @@ export function buildEnSchemas(def: EnArticleSeoDef): object[] {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: `${BASE_URL}/en` },
-        { "@type": "ListItem", position: 2, name: "Articles", item: `${BASE_URL}/en/articles` },
+        { "@type": "ListItem", position: 1, name: "STC AutoTrade", item: `${BASE_URL}/ru` },
+        { "@type": "ListItem", position: 2, name: "Статьи", item: `${BASE_URL}/ru/articles` },
         { "@type": "ListItem", position: 3, name: def.breadcrumbName, item: url },
       ],
     },

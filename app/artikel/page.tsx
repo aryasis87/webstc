@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: PAGE_URL,
-    languages: { "id-ID": PAGE_URL, en: `${BASE_URL}/en/articles`, "x-default": PAGE_URL },
+    languages: { "id-ID": PAGE_URL, en: `${BASE_URL}/en/articles`, ru: `${BASE_URL}/ru/articles`, "x-default": PAGE_URL },
   },
   openGraph: {
     title: "Artikel STC AutoTrade — Panduan & Tips Robot Trading Stockity",

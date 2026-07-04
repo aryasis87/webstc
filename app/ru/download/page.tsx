@@ -37,6 +37,7 @@ export const metadata: Metadata = {
     description: "Бесплатный APK для Android + веб-версия для остальных устройств. Инструкция внутри.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "Скачать STC AutoTrade" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 /** @id #app — сливается с глобальной сущностью SoftwareApplication */

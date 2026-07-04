@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     description: "Server-side sessions, 6 strategy modes, and the risk controls that guard your balance.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "How STC AutoTrade Works" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 const howToSchema = {

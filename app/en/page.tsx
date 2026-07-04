@@ -41,6 +41,7 @@ export const metadata: Metadata = {
       "6 strategy modes, AI signals, copy trading, automatic stop loss. Android APK & web version. Free for members.",
     images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: "STC AutoTrade — Automated Trading Bot for Stockity" }],
   },
+  twitter: { card: "summary_large_image" },
 };
 
 const faq = [

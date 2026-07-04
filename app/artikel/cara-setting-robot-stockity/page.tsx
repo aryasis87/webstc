@@ -42,6 +42,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": "https://stcautotrade.id/artikel/cara-setting-robot-stockity",
       en: "https://stcautotrade.id/en/articles/how-to-set-up-stockity-robot",
+      ru: "https://stcautotrade.id/ru/articles/how-to-set-up-stockity-robot",
       "x-default": "https://stcautotrade.id/artikel/cara-setting-robot-stockity",
     },
   },

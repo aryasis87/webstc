@@ -17,6 +17,7 @@ export function RuNav({ idHref, enHref }: { idHref: string; enHref: string }) {
         </Link>
         <div className="flex items-center gap-2">
           <Link href="/ru/how-it-works" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Как это работает</Link>
+          <Link href="/ru/articles" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Статьи</Link>
           <Link href="/ru/faq" className="hidden sm:inline-flex items-center px-3 py-1.5 text-xs font-medium text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">FAQ</Link>
           <Link href={enHref} className="inline-flex items-center px-2.5 py-1.5 text-xs font-semibold text-[#1a1612]/70 border border-[rgba(26,22,18,0.14)] rounded-lg hover:border-[rgba(26,22,18,0.3)] transition-colors no-underline" title="Read in English">EN</Link>
           <Link href={idHref} className="inline-flex items-center px-2.5 py-1.5 text-xs font-semibold text-[#1a1612]/70 border border-[rgba(26,22,18,0.14)] rounded-lg hover:border-[rgba(26,22,18,0.3)] transition-colors no-underline" title="Baca dalam Bahasa Indonesia">ID</Link>

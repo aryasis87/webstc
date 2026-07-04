@@ -102,7 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "weekly",
       priority: 0.8,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel`, en: `${BASE_URL}/en/articles`, "x-default": `${BASE_URL}/artikel` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel`, en: `${BASE_URL}/en/articles`, ru: `${BASE_URL}/ru/articles`, "x-default": `${BASE_URL}/artikel` } },
     },
 
     // ── Kamus Istilah ─────────────────────────────────────────────
@@ -119,7 +119,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.9,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-trading-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-robot`, "x-default": `${BASE_URL}/artikel/robot-trading-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-trading-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-robot`, ru: `${BASE_URL}/ru/articles/stockity-trading-robot`, "x-default": `${BASE_URL}/artikel/robot-trading-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/auto-trade-stockity-gratis`,
@@ -132,7 +132,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.87,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-setting-robot-stockity`, en: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`, "x-default": `${BASE_URL}/artikel/cara-setting-robot-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-setting-robot-stockity`, en: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`, ru: `${BASE_URL}/ru/articles/how-to-set-up-stockity-robot`, "x-default": `${BASE_URL}/artikel/cara-setting-robot-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/robot-stockity-android`,
@@ -183,7 +183,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.86,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-withdraw-stockity`, en: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`, "x-default": `${BASE_URL}/artikel/cara-withdraw-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-withdraw-stockity`, en: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`, ru: `${BASE_URL}/ru/articles/how-to-withdraw-from-stockity`, "x-default": `${BASE_URL}/artikel/cara-withdraw-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/strategi-martingale-stockity`,
@@ -267,55 +267,107 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
 
 
+
+    // ── Artikel Bahasa Rusia ─────────────────────────────────────
+    {
+      url: `${BASE_URL}/ru/articles`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.72,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel`, en: `${BASE_URL}/en/articles`, ru: `${BASE_URL}/ru/articles`, "x-default": `${BASE_URL}/artikel` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-trading-robot`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.72,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-trading-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-robot`, ru: `${BASE_URL}/ru/articles/stockity-trading-robot`, "x-default": `${BASE_URL}/artikel/robot-trading-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/how-to-set-up-stockity-robot`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.68,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-setting-robot-stockity`, en: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`, ru: `${BASE_URL}/ru/articles/how-to-set-up-stockity-robot`, "x-default": `${BASE_URL}/artikel/cara-setting-robot-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-account-verification`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.65,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`, en: `${BASE_URL}/en/articles/stockity-account-verification`, ru: `${BASE_URL}/ru/articles/stockity-account-verification`, "x-default": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-vs-quotex`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.68,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-quotex`, en: `${BASE_URL}/en/articles/stockity-vs-quotex`, ru: `${BASE_URL}/ru/articles/stockity-vs-quotex`, "x-default": `${BASE_URL}/artikel/stockity-vs-quotex` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/ai-trading-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.65,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/ai-trading-stockity`, en: `${BASE_URL}/en/articles/ai-trading-stockity`, ru: `${BASE_URL}/ru/articles/ai-trading-stockity`, "x-default": `${BASE_URL}/artikel/ai-trading-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/how-to-withdraw-from-stockity`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority: 0.65,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-withdraw-stockity`, en: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`, ru: `${BASE_URL}/ru/articles/how-to-withdraw-from-stockity`, "x-default": `${BASE_URL}/artikel/cara-withdraw-stockity` } },
+    },
+
     // ── Artikel Bahasa Inggris (Fase 2) ──────────────────────────
     {
       url: `${BASE_URL}/en/articles`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.8,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel`, en: `${BASE_URL}/en/articles`, "x-default": `${BASE_URL}/artikel` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel`, en: `${BASE_URL}/en/articles`, ru: `${BASE_URL}/ru/articles`, "x-default": `${BASE_URL}/artikel` } },
     },
     {
       url: `${BASE_URL}/en/articles/stockity-trading-robot`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.8,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-trading-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-robot`, "x-default": `${BASE_URL}/artikel/robot-trading-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-trading-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-robot`, ru: `${BASE_URL}/ru/articles/stockity-trading-robot`, "x-default": `${BASE_URL}/artikel/robot-trading-stockity` } },
     },
     {
       url: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.75,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-setting-robot-stockity`, en: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`, "x-default": `${BASE_URL}/artikel/cara-setting-robot-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-setting-robot-stockity`, en: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`, ru: `${BASE_URL}/ru/articles/how-to-set-up-stockity-robot`, "x-default": `${BASE_URL}/artikel/cara-setting-robot-stockity` } },
     },
     {
       url: `${BASE_URL}/en/articles/stockity-account-verification`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.72,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`, en: `${BASE_URL}/en/articles/stockity-account-verification`, "x-default": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`, en: `${BASE_URL}/en/articles/stockity-account-verification`, ru: `${BASE_URL}/ru/articles/stockity-account-verification`, "x-default": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity` } },
     },
     {
       url: `${BASE_URL}/en/articles/stockity-vs-quotex`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.75,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-quotex`, en: `${BASE_URL}/en/articles/stockity-vs-quotex`, "x-default": `${BASE_URL}/artikel/stockity-vs-quotex` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-quotex`, en: `${BASE_URL}/en/articles/stockity-vs-quotex`, ru: `${BASE_URL}/ru/articles/stockity-vs-quotex`, "x-default": `${BASE_URL}/artikel/stockity-vs-quotex` } },
     },
     {
       url: `${BASE_URL}/en/articles/ai-trading-stockity`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.72,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/ai-trading-stockity`, en: `${BASE_URL}/en/articles/ai-trading-stockity`, "x-default": `${BASE_URL}/artikel/ai-trading-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/ai-trading-stockity`, en: `${BASE_URL}/en/articles/ai-trading-stockity`, ru: `${BASE_URL}/ru/articles/ai-trading-stockity`, "x-default": `${BASE_URL}/artikel/ai-trading-stockity` } },
     },
     {
       url: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`,
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.72,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-withdraw-stockity`, en: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`, "x-default": `${BASE_URL}/artikel/cara-withdraw-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-withdraw-stockity`, en: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`, ru: `${BASE_URL}/ru/articles/how-to-withdraw-from-stockity`, "x-default": `${BASE_URL}/artikel/cara-withdraw-stockity` } },
     },
 
     // ── Batch 10 Artikel — 4 Juli 2026 ───────────────────────────
@@ -324,7 +376,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.86,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-quotex`, en: `${BASE_URL}/en/articles/stockity-vs-quotex`, "x-default": `${BASE_URL}/artikel/stockity-vs-quotex` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-quotex`, en: `${BASE_URL}/en/articles/stockity-vs-quotex`, ru: `${BASE_URL}/ru/articles/stockity-vs-quotex`, "x-default": `${BASE_URL}/artikel/stockity-vs-quotex` } },
     },
     {
       url: `${BASE_URL}/artikel/bonus-deposit-stockity`,
@@ -387,7 +439,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.86,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`, en: `${BASE_URL}/en/articles/stockity-account-verification`, "x-default": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity`, en: `${BASE_URL}/en/articles/stockity-account-verification`, ru: `${BASE_URL}/ru/articles/stockity-account-verification`, "x-default": `${BASE_URL}/artikel/cara-verifikasi-akun-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/stockity-tidak-bisa-login`,
@@ -420,7 +472,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.86,
-      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/ai-trading-stockity`, en: `${BASE_URL}/en/articles/ai-trading-stockity`, "x-default": `${BASE_URL}/artikel/ai-trading-stockity` } },
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/ai-trading-stockity`, en: `${BASE_URL}/en/articles/ai-trading-stockity`, ru: `${BASE_URL}/ru/articles/ai-trading-stockity`, "x-default": `${BASE_URL}/artikel/ai-trading-stockity` } },
     },
   ];
 }

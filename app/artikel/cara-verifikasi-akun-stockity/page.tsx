@@ -33,6 +33,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": "https://stcautotrade.id/artikel/cara-verifikasi-akun-stockity",
       en: "https://stcautotrade.id/en/articles/stockity-account-verification",
+      ru: "https://stcautotrade.id/ru/articles/stockity-account-verification",
       "x-default": "https://stcautotrade.id/artikel/cara-verifikasi-akun-stockity",
     },
   },

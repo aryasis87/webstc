@@ -29,6 +29,8 @@ export interface ArtikelSeoDef {
   dateModified?: string;
   /** slug twin bahasa Inggris di /en/articles/ (opsional) → hreflang otomatis */
   enSlug?: string;
+  /** slug twin bahasa Rusia di /ru/articles/ (opsional; biasanya = enSlug) */
+  ruSlug?: string;
   faq: ArtikelFaq[];
 }
 
@@ -46,6 +48,7 @@ export function buildMetadata(def: ArtikelSeoDef): Metadata {
             languages: {
               "id-ID": url,
               en: `${BASE_URL}/en/articles/${def.enSlug}`,
+              ...(def.ruSlug ? { ru: `${BASE_URL}/ru/articles/${def.ruSlug}` } : {}),
               "x-default": url,
             },
           }
@@ -61,6 +64,7 @@ export function buildMetadata(def: ArtikelSeoDef): Metadata {
       authors: ["STC AutoTrade"],
       images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: `${def.breadcrumbName} — STC AutoTrade` }],
     },
+    twitter: { card: "summary_large_image" },
   };
 }
 

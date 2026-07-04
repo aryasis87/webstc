@@ -35,6 +35,7 @@ export const metadata: Metadata = {
     languages: {
       "id-ID": "https://stcautotrade.id/artikel/ai-trading-stockity",
       en: "https://stcautotrade.id/en/articles/ai-trading-stockity",
+      ru: "https://stcautotrade.id/ru/articles/ai-trading-stockity",
       "x-default": "https://stcautotrade.id/artikel/ai-trading-stockity",
     },
   },
