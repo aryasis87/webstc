@@ -70,7 +70,7 @@ export default function SiteFooter() {
 
         <div className="pt-6 border-t border-[rgba(23,20,15,0.08)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
           <div>
-            <p className="text-[12px] text-[#6b6459]">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
+            <p className="text-[12px] text-[#6b6459]">© 2026 STC AutoTrade (TechnoAutoTrade) · stcautotrade.id</p>
             {/* Link bahasa — jalur crawl dari sisi ID ke versi EN/RU */}
             <p className="text-[12px] text-[#6b6459] mt-1.5">
               <span className="font-medium">Bahasa:</span>{" "}

@@ -1,7 +1,7 @@
 /**
  * app/download/page.tsx
  * Halaman download khusus STC AutoTrade — Server Component
- * Menarget keyword: "download stcautotrade apk", "cara instal stockautotrade android", dll.
+ * Menarget keyword: "download stcautotrade apk", "cara instal technoautotrade android", dll.
  */
 
 import type { Metadata } from "next";
@@ -10,16 +10,16 @@ import Image from "next/image";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Download STC AutoTrade APK Android & Versi Web — StockAutoTrade",
+  title: "Download STC AutoTrade APK Android & Versi Web — TechnoAutoTrade",
   description:
     "Download STC AutoTrade APK Android terbaru atau akses langsung versi web di stcautotradepro.id. Gratis untuk member. Panduan instalasi lengkap tersedia. Mendukung Android 8.0+, PC, Mac, iPhone.",
   keywords: [
     "download stcautotrade apk",
-    "download stockautotrade",
+    "download technoautotrade",
     "download robot stockity",
     "cara instal stcautotrade android",
     "stcautotrade apk terbaru",
-    "stockautotrade apk download gratis",
+    "technoautotrade apk download gratis",
     "stcautotrade versi web",
     "robot stockity download",
     "cara download bot stockity",
@@ -82,7 +82,7 @@ const softwareDownloadSchema = {
   // SoftwareApplication kedua di halaman ini — Google merge node ber-@id sama.
   "@id": "https://stcautotrade.id/#app",
   name: "STC AutoTrade",
-  alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Trading Stockity"],
+  alternateName: ["StcAutoTrade", "TechnoAutoTrade", "Robot Trading Stockity"],
   operatingSystem: ["Android 8.0+", "Web Browser (iOS, Windows, macOS, Linux)"],
   applicationCategory: "FinanceApplication",
   applicationSubCategory: "Trading Automation",
@@ -134,7 +134,7 @@ const howToInstallSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
   name: "Cara Menginstal STC AutoTrade APK di Android",
-  description: "Panduan lengkap instalasi STC AutoTrade (StockAutoTrade) di perangkat Android.",
+  description: "Panduan lengkap instalasi STC AutoTrade (TechnoAutoTrade) di perangkat Android.",
   step: [
     { "@type": "HowToStep", name: "Download APK", text: "Klik tombol Download APK Android di halaman ini untuk mengunduh file STC AutoTrade APK terbaru." },
     { "@type": "HowToStep", name: "Aktifkan izin instalasi", text: "Buka Pengaturan Android → Keamanan / Privasi → aktifkan 'Instal dari sumber tidak dikenal' untuk browser atau file manager yang Anda gunakan." },
@@ -201,7 +201,7 @@ export default function DownloadPage() {
             Download STC AutoTrade
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
-            Tersedia dua cara mengakses STC AutoTrade (StockAutoTrade) — APK Android untuk
+            Tersedia dua cara mengakses STC AutoTrade (TechnoAutoTrade) — APK Android untuk
             yang ingin aplikasi native, atau versi web tanpa instalasi untuk semua perangkat.
           </p>
         </header>

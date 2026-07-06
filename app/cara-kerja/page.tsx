@@ -306,7 +306,7 @@ export default function CaraKerjaPage() {
             Cara Kerja STC AutoTrade — 6 Strategi Trading Otomatis
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-2xl mb-6">
-            STC AutoTrade (StcAutoTrade / StockAutoTrade) adalah robot trading otomatis untuk Stockity.id
+            STC AutoTrade (StcAutoTrade / TechnoAutoTrade) adalah robot trading otomatis untuk Stockity.id
             yang dilengkapi 6 mode strategi, manajemen risiko otomatis, dan sistem martingale terkelola.
             Halaman ini menjelaskan cara kerja setiap fitur secara detail.
           </p>

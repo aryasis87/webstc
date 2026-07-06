@@ -49,7 +49,7 @@ export const metadata: Metadata = {
    * kehilangan ~94 karakter di SERP — artinya CTA "Gratis" tidak pernah terlihat.
    */
   description:
-    "Robot trading otomatis Stockity.id — STC AutoTrade (StockAutoTrade). APK Android & versi web. AI signal, copy trading, stop loss otomatis. Gratis.",
+    "Robot trading otomatis Stockity.id — STC AutoTrade (TechnoAutoTrade). APK Android & versi web. AI signal, copy trading, stop loss otomatis. Gratis.",
 
   /**
    * FIX #4 — Keywords dipangkas drastis
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   keywords: [
     "stc autotrade",
     "stcautotrade",
-    "stockautotrade",
+    "technoautotrade",
     "robot trading stockity",
     "bot trading stockity gratis",
     "auto trade stockity",
@@ -105,7 +105,7 @@ export const metadata: Metadata = {
      * Sebelumnya 193 karakter; dipotong oleh platform sosial.
      */
     description:
-      "STC AutoTrade (StockAutoTrade) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. APK Android & versi web. Gratis untuk member.",
+      "STC AutoTrade (TechnoAutoTrade) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. APK Android & versi web. Gratis untuk member.",
     images: [
       {
         url: `${BASE_URL}/og-image.webp`,
@@ -175,8 +175,8 @@ const schemaApp = {
   alternateName: [
     "StcAutoTrade",
     "Stc Auto Trade",
-    "StockAutoTrade",
-    "Stock Auto Trade",
+    "TechnoAutoTrade",
+    "Techno Auto Trade",
     "Stockity Auto Trade",
     "Robot Stockity",
     "Auto Stockity",
@@ -196,7 +196,7 @@ const schemaApp = {
   downloadUrl: `${BASE_URL}/StcAutoTrade.apk`,
   inLanguage: "id",
   description:
-    "STC AutoTrade (juga dikenal sebagai StockAutoTrade, Robot Stockity, atau Auto Stockity) adalah aplikasi bot trading otomatis untuk platform Stockity.id. Dilengkapi 6 mode strategi (AI Signal, Copy Trading, Indikator Teknikal, Candlestick, Fastrade, Schedule), manajemen risiko otomatis dengan stop loss & stop profit, serta sistem martingale terkelola. Gratis untuk member.",
+    "STC AutoTrade (juga dikenal sebagai TechnoAutoTrade, Robot Stockity, atau Auto Stockity) adalah aplikasi bot trading otomatis untuk platform Stockity.id. Dilengkapi 6 mode strategi (AI Signal, Copy Trading, Indikator Teknikal, Candlestick, Fastrade, Schedule), manajemen risiko otomatis dengan stop loss & stop profit, serta sistem martingale terkelola. Gratis untuk member.",
   featureList: [
     /** FIX #8b — URL konsisten di featureList */
     `Versi Web — akses langsung di browser tanpa instalasi (${WEB_APP})`,
@@ -240,7 +240,7 @@ const schemaOrg = {
   name: "STC AutoTrade",
   alternateName: [
     "StcAutoTrade",
-    "StockAutoTrade",
+    "TechnoAutoTrade",
     "Stockity Auto Trade",
     "Robot Stockity",
     "Auto Stockity",
@@ -254,7 +254,7 @@ const schemaOrg = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "daftar@stockautotrade.id",
+    email: "daftar@stcautotrade.id",
     contactType: "customer support",
     areaServed: "ID",
     availableLanguage: "Indonesian",
@@ -287,7 +287,7 @@ const schemaWebSite = {
   name: "STC AutoTrade",
   alternateName: [
     "StcAutoTrade",
-    "StockAutoTrade",
+    "TechnoAutoTrade",
     "Robot Stockity",
     "Auto Stockity",
     "Bot Trading Stockity",
@@ -295,7 +295,7 @@ const schemaWebSite = {
   ],
   url: BASE_URL,
   /** FIX #8d — URL web app diperbarui */
-  description: `Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (StockAutoTrade) tersedia sebagai APK Android (stcautotrade.id) dan versi web (${WEB_APP}). Gratis untuk member.`,
+  description: `Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (TechnoAutoTrade) tersedia sebagai APK Android (stcautotrade.id) dan versi web (${WEB_APP}). Gratis untuk member.`,
   inLanguage: "id-ID",
   publisher: {
     "@id": `${BASE_URL}/#organization`,

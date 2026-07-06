@@ -109,7 +109,7 @@ const faqSchema = {
       name: "Apakah benar ada robot trading Stockity yang gratis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. STC AutoTrade (StcAutoTrade / StockAutoTrade) adalah bot trading Stockity yang gratis untuk semua member terdaftar — baik versi APK Android maupun versi web di stcautotradepro.id. Tidak ada biaya langganan atau biaya tersembunyi.",
+        text: "Ya. STC AutoTrade (StcAutoTrade / TechnoAutoTrade) adalah bot trading Stockity yang gratis untuk semua member terdaftar — baik versi APK Android maupun versi web di stcautotradepro.id. Tidak ada biaya langganan atau biaya tersembunyi.",
       },
     },
     {
@@ -729,7 +729,7 @@ export default function AutoTradeStockityGratisPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/65">
-              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id
+              © 2026 STC AutoTrade (TechnoAutoTrade) · stcautotrade.id
             </p>
             <Link href="/" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612]/65 transition-colors no-underline">← Beranda</Link>
           </div>

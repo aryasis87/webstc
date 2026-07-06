@@ -61,7 +61,7 @@ export function EnFooter() {
   return (
     <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
       <div className="max-w-5xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-        <p className="text-[11px] text-[#1a1612]/65">© 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id</p>
+        <p className="text-[11px] text-[#1a1612]/65">© 2026 STC AutoTrade (TechnoAutoTrade) · stcautotrade.id</p>
         <div className="flex items-center gap-4">
           <Link href="/" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">Bahasa Indonesia</Link>
           <Link href="/en" className="text-[11px] text-[#1a1612]/65 hover:text-[#1a1612] transition-colors no-underline">← Home</Link>

@@ -67,15 +67,15 @@ const FAQ_CATEGORIES = [
     items: [
       {
         q: "Apa itu STC AutoTrade / StcAutoTrade?",
-        a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, StockAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id yang bisa diakses dari browser tanpa instalasi.",
+        a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id yang bisa diakses dari browser tanpa instalasi.",
       },
       {
-        q: "Apa perbedaan STC AutoTrade, StcAutoTrade, dan StockAutoTrade?",
-        a: "Ketiganya merujuk pada produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'StockAutoTrade', dan 'Stock Auto Trade' adalah variasi penulisan nama brand yang sama — yaitu bot trading otomatis untuk Stockity.id di stcautotrade.id.",
+        q: "Apa perbedaan STC AutoTrade, StcAutoTrade, dan TechnoAutoTrade?",
+        a: "Ketiganya merujuk pada produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'TechnoAutoTrade', dan 'Techno Auto Trade' adalah variasi penulisan nama brand yang sama — yaitu bot trading otomatis untuk Stockity.id di stcautotrade.id.",
       },
       {
         q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?",
-        a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (StockAutoTrade), tersedia via APK Android (stcautotrade.id) maupun versi web (stcautotradepro.id).",
+        a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia via APK Android (stcautotrade.id) maupun versi web (stcautotradepro.id).",
       },
       {
         q: "Apakah STC AutoTrade gratis?",
@@ -247,7 +247,7 @@ export default function FAQPage() {
             Pertanyaan Umum<br />STC AutoTrade
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
-            Jawaban lengkap seputar STC AutoTrade (StcAutoTrade / StockAutoTrade) —
+            Jawaban lengkap seputar STC AutoTrade (StcAutoTrade / TechnoAutoTrade) —
             robot trading otomatis untuk Stockity.id, tersedia sebagai APK Android dan
             versi web di stcautotradepro.id.
           </p>

@@ -19,7 +19,7 @@ const BTN_GHOST   = "inline-flex items-center justify-center gap-2 px-7 py-3.5 r
 /* ── Data ─────────────────────────────────────────────────────────── */
 
 const ALIASES = [
-  "StcAutoTrade", "StockAutoTrade", "Stc Auto Trade", "Stock Auto Trade",
+  "StcAutoTrade", "TechnoAutoTrade", "Stc Auto Trade", "Techno Auto Trade",
   "Robot Stockity", "Auto Stockity", "Bot Stockity Otomatis", "Stockity Auto Trade",
 ];
 
@@ -75,11 +75,11 @@ const STEPS = [
 ];
 
 const FAQS = [
-  { q: "Apa itu STC AutoTrade / StcAutoTrade?",                          a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, StockAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id." },
+  { q: "Apa itu STC AutoTrade / StcAutoTrade?",                          a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id." },
   { q: "Apa bedanya versi APK Android dan versi web?",                    a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (stcautotradepro.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, dan iPhone. Semua fitur tersedia di kedua versi." },
   { q: "Bagaimana cara menggunakan versi web STC AutoTrade?",             a: "Buka browser dan kunjungi stcautotradepro.id. Jika belum punya akun, daftar dulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun berhasil terbuat, login menggunakan akun Stockity.id." },
-  { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan StockAutoTrade?",    a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'StockAutoTrade', dan 'Stock Auto Trade' adalah variasi penulisan brand yang sama." },
-  { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (StockAutoTrade), tersedia via APK Android maupun versi web." },
+  { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan TechnoAutoTrade?",    a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'TechnoAutoTrade', dan 'Techno Auto Trade' adalah variasi penulisan brand yang sama." },
+  { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia via APK Android maupun versi web." },
   { q: "Bagaimana cara menginstal STC AutoTrade di Android?",             a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan versi web di stcautotradepro.id tanpa instalasi." },
   { q: "Apakah perlu pengalaman trading?",                                a: "Tidak. STC AutoTrade dirancang agar bisa digunakan pemula sekalipun. Mode demo tersedia di versi APK maupun versi web untuk belajar tanpa risiko finansial." },
   { q: "Modal minimum yang disarankan?",                                  a: "Tidak ada ketentuan minimum, namun kami sarankan minimal Rp500.000 sebagai buffer aman untuk siklus martingale konservatif (nominal awal Rp14.000, multiplier 2,5x, 3 step)." },
@@ -117,7 +117,7 @@ const schemaSoftwareApp = {
   // membentuk entitas duplikat anonim).
   "@id": `${BASE_URL}/#app`,
   name: "STC AutoTrade",
-  alternateName: ["StcAutoTrade", "StockAutoTrade", "Robot Stockity", "Auto Stockity"],
+  alternateName: ["StcAutoTrade", "TechnoAutoTrade", "Robot Stockity", "Auto Stockity"],
   description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android dan versi web. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
   url: BASE_URL,
   applicationCategory: "FinanceApplication",
@@ -225,7 +225,7 @@ export default function Home() {
 
                   <h1 className={`animate-fade-up animate-delay-100 ${SERIF} text-[44px] sm:text-[64px] lg:text-[74px] font-normal tracking-tight leading-[1.02] mb-7`}>
                     <span className="block font-[family-name:var(--font-dm-sans)] text-[12px] sm:text-[13px] font-semibold tracking-[0.24em] uppercase text-emerald-700 mb-5">
-                      STC AutoTrade · StockAutoTrade
+                      STC AutoTrade · TechnoAutoTrade
                     </span>
                     Robot Trading{" "}
                     <em className="text-emerald-600">Otomatis</em>

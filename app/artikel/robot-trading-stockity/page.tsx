@@ -405,7 +405,7 @@ export default function RobotTradingStockityPage() {
                 </p>
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
                   <strong className="text-[#1a1612]">STC AutoTrade</strong> (StcAutoTrade /
-                  StockAutoTrade) adalah aplikasi robot trading Stockity yang paling banyak
+                  TechnoAutoTrade) adalah aplikasi robot trading Stockity yang paling banyak
                   digunakan oleh trader Indonesia. Tersedia sebagai APK Android (diunduh dari
                   stcautotrade.id) dan versi web (stcautotradepro.id) yang bisa diakses dari
                   browser tanpa instalasi.
@@ -991,7 +991,7 @@ export default function RobotTradingStockityPage() {
         <footer className="border-t border-[rgba(26,22,18,0.07)] py-6 bg-[#f6f4ef]">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
             <p className="text-[11px] text-[#1a1612]/65">
-              © 2026 STC AutoTrade (StockAutoTrade) · stcautotrade.id · Auto Trade Stockity
+              © 2026 STC AutoTrade (TechnoAutoTrade) · stcautotrade.id · Auto Trade Stockity
             </p>
             <Link
               href="/"
