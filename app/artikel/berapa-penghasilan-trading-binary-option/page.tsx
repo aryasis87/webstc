@@ -57,7 +57,7 @@ export default function Page() {
           { v: "6–12 bln", l: "Uji Konsistensi Minimal" },
         ]}
         related={[
-          { href: "/artikel/pajak-trading-binary-option", title: "Pajak Trading Binary Option", desc: "Profit konsisten? Ini cara lapor pajaknya" },
+          { href: "/kalkulator-compounding", title: "Kalkulator Compounding", desc: "Proyeksikan angka artikel ini dengan modal Anda" },
           { href: "/artikel/manajemen-modal-trading-binary-option", title: "Manajemen Modal", desc: "Fondasi yang menentukan bertahan atau tidak" },
           { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading Stockity", desc: "Strategi & tips konsisten di Stockity" },
         ]}

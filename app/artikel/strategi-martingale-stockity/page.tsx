@@ -36,6 +36,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/strategi-martingale-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/strategi-martingale-stockity",
+      en: "https://stcautotrade.id/en/articles/stockity-martingale-strategy",
+      ru: "https://stcautotrade.id/ru/articles/stockity-martingale-strategy",
+      "x-default": "https://stcautotrade.id/artikel/strategi-martingale-stockity",
+    },
   },
   openGraph: {
     title: "Strategi Martingale Stockity: Setting Aman & Efektif 2026",
@@ -463,7 +469,7 @@ export default function StrategiMartingaleStockityPage() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/manajemen-modal-trading-binary-option", title: "Manajemen Modal Trading", desc: "Aturan 1–5% & hitungan risiko siklus martingale" },
-                { href: "/artikel/cara-profit-trading-stockity", title: "Cara Profit Trading Stockity", desc: "Strategi & tips konsisten profit 2026" },
+                { href: "/kalkulator-martingale", title: "Kalkulator Martingale", desc: "Hitung modal per step & total risiko siklus Anda" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">

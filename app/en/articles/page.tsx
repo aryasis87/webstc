@@ -43,6 +43,9 @@ const ARTICLES = [
   { slug: "how-to-withdraw-from-stockity", badge: "Guide", title: "How to Withdraw from Stockity: Steps, Timing & Common Issues", desc: "Requirements, the payout flow, realistic timing, and fixes for pending or rejected withdrawals.", mins: 7 },
   { slug: "how-to-register-stockity", badge: "Guide", title: "How to Register on Stockity: From Sign-Up to First Trade", desc: "The sign-up flow, why demo comes first, and the safe first deposit most beginners skip.", mins: 6 },
   { slug: "is-stockity-legit", badge: "Review", title: "Is Stockity Legit? An Honest, Evidence-Based Review", desc: "What checks out (payouts, KYC, demo), what to verify yourself, and the risks nobody should hide.", mins: 8 },
+  { slug: "stockity-minimum-deposit", badge: "Guide", title: "Stockity Minimum Deposit: The Real Numbers", desc: "The minimum vs a workable balance — with the math that separates them and safe buffer sizes.", mins: 6 },
+  { slug: "stockity-martingale-strategy", badge: "Strategy", title: "Martingale on Stockity: The Math Before the Money", desc: "Step math, why 2–2.5× with max 3 steps is the baseline, and how to automate it with hard limits.", mins: 8 },
+  { slug: "stockity-demo-account", badge: "Guide", title: "Stockity Demo Account: Practice Like It's Real", desc: "Free practice on real market data, a structured 7-day plan, and when you're ready to go live.", mins: 6 },
 ];
 
 const BADGE_STYLES: Record<string, string> = {

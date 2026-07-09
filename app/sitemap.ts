@@ -147,6 +147,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
 
+    // ── Tool / Kalkulator (linkable assets) ───────────────────────
+    {
+      url: `${BASE_URL}/kalkulator-martingale`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "yearly",
+      priority: 0.75,
+    },
+    {
+      url: `${BASE_URL}/kalkulator-compounding`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "yearly",
+      priority: 0.75,
+    },
+
     // ── Artikel: High Priority ────────────────────────────────────
     {
       url: `${BASE_URL}/artikel/robot-trading-stockity`,
@@ -226,6 +240,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-06-07"),
       changeFrequency: "monthly",
       priority: 0.85,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/strategi-martingale-stockity`, en: `${BASE_URL}/en/articles/stockity-martingale-strategy`, ru: `${BASE_URL}/ru/articles/stockity-martingale-strategy`, "x-default": `${BASE_URL}/artikel/strategi-martingale-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/sinyal-trading-stockity-gratis`,
@@ -258,6 +273,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-06-07"),
       changeFrequency: "monthly",
       priority: 0.84,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/minimal-deposit-stockity`, en: `${BASE_URL}/en/articles/stockity-minimum-deposit`, ru: `${BASE_URL}/ru/articles/stockity-minimum-deposit`, "x-default": `${BASE_URL}/artikel/minimal-deposit-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/robot-trading-pc-laptop`,
@@ -436,6 +452,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-aman-atau-penipuan`, en: `${BASE_URL}/en/articles/is-stockity-legit`, ru: `${BASE_URL}/ru/articles/is-stockity-legit`, "x-default": `${BASE_URL}/artikel/stockity-aman-atau-penipuan` } },
     },
 
+    // ── Twin EN/RU Batch 2 — 9 Juli 2026 ─────────────────────────
+    {
+      url: `${BASE_URL}/en/articles/stockity-minimum-deposit`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.73,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/minimal-deposit-stockity`, en: `${BASE_URL}/en/articles/stockity-minimum-deposit`, ru: `${BASE_URL}/ru/articles/stockity-minimum-deposit`, "x-default": `${BASE_URL}/artikel/minimal-deposit-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/en/articles/stockity-martingale-strategy`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.74,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/strategi-martingale-stockity`, en: `${BASE_URL}/en/articles/stockity-martingale-strategy`, ru: `${BASE_URL}/ru/articles/stockity-martingale-strategy`, "x-default": `${BASE_URL}/artikel/strategi-martingale-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/en/articles/stockity-demo-account`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.73,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/akun-demo-stockity`, en: `${BASE_URL}/en/articles/stockity-demo-account`, ru: `${BASE_URL}/ru/articles/stockity-demo-account`, "x-default": `${BASE_URL}/artikel/akun-demo-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-minimum-deposit`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.66,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/minimal-deposit-stockity`, en: `${BASE_URL}/en/articles/stockity-minimum-deposit`, ru: `${BASE_URL}/ru/articles/stockity-minimum-deposit`, "x-default": `${BASE_URL}/artikel/minimal-deposit-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-martingale-strategy`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.67,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/strategi-martingale-stockity`, en: `${BASE_URL}/en/articles/stockity-martingale-strategy`, ru: `${BASE_URL}/ru/articles/stockity-martingale-strategy`, "x-default": `${BASE_URL}/artikel/strategi-martingale-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-demo-account`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.66,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/akun-demo-stockity`, en: `${BASE_URL}/en/articles/stockity-demo-account`, ru: `${BASE_URL}/ru/articles/stockity-demo-account`, "x-default": `${BASE_URL}/artikel/akun-demo-stockity` } },
+    },
+
     // ── Batch 10 Artikel — 4 Juli 2026 ───────────────────────────
     {
       url: `${BASE_URL}/artikel/stockity-vs-quotex`,
@@ -564,6 +624,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-07-03"),
       changeFrequency: "monthly",
       priority: 0.84,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/akun-demo-stockity`, en: `${BASE_URL}/en/articles/stockity-demo-account`, ru: `${BASE_URL}/ru/articles/stockity-demo-account`, "x-default": `${BASE_URL}/artikel/akun-demo-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/jam-trading-terbaik-stockity`,

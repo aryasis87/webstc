@@ -9,6 +9,8 @@ const PAGES = [
   { href: "/faq", label: "FAQ" },
   { href: "/artikel", label: "Artikel" },
   { href: "/kamus-trading", label: "Kamus Trading" },
+  { href: "/kalkulator-martingale", label: "Kalkulator Martingale" },
+  { href: "/kalkulator-compounding", label: "Kalkulator Compounding" },
 ];
 
 // Halaman trust/E-E-A-T — tautan footer memastikan Google meng-crawl-nya

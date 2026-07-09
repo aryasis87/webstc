@@ -31,6 +31,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/akun-demo-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/akun-demo-stockity",
+      en: "https://stcautotrade.id/en/articles/stockity-demo-account",
+      ru: "https://stcautotrade.id/ru/articles/stockity-demo-account",
+      "x-default": "https://stcautotrade.id/artikel/akun-demo-stockity",
+    },
   },
   openGraph: {
     title: "Akun Demo Stockity: Cara Daftar & Latihan Gratis Tanpa Modal 2026",

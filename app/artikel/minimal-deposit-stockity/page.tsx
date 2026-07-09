@@ -31,6 +31,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/minimal-deposit-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/minimal-deposit-stockity",
+      en: "https://stcautotrade.id/en/articles/stockity-minimum-deposit",
+      ru: "https://stcautotrade.id/ru/articles/stockity-minimum-deposit",
+      "x-default": "https://stcautotrade.id/artikel/minimal-deposit-stockity",
+    },
   },
   openGraph: {
     title: "Minimal Deposit Stockity: Minimum Order & Modal Aman Trading Bot 2026",
