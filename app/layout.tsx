@@ -277,7 +277,8 @@ const schemaOrg = {
    */
   sameAs: [
     WEB_APP,
-    // "https://www.youtube.com/@stcautotrade",  // tambahkan jika ada
+    "https://www.youtube.com/@Smart_autocklick",
+    "https://www.tiktok.com/@stc_autotradeofficial",
     // "https://www.instagram.com/stcautotrade", // tambahkan jika ada
     // "https://t.me/stcautotrade",              // tambahkan jika ada
   ],

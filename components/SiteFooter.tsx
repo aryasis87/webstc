@@ -72,6 +72,26 @@ export default function SiteFooter() {
                   Versi Web ↗
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/@Smart_autocklick"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] text-[#6b6459] hover:text-[#17140f] transition-colors no-underline"
+                >
+                  YouTube ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@stc_autotradeofficial"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] text-[#6b6459] hover:text-[#17140f] transition-colors no-underline"
+                >
+                  TikTok ↗
+                </a>
+              </li>
             </ul>
           </div>
 
