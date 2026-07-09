@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Robot%20Trading%20PC%20%26%20Laptop%3A%20STC%20AutoTrade%20Versi%20Web%20di%20stcautotradepro.id%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Robot Trading PC Laptop — STC AutoTrade Versi Web",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Robot Trading PC & Laptop: STC AutoTrade Versi Web 2026",
     description: "Akses bot trading STC AutoTrade di PC/laptop via stcautotradepro.id — tanpa install.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Robot%20Trading%20PC%20%26%20Laptop%3A%20STC%20AutoTrade%20Versi%20Web%20di%20stcautotradepro.id%202026&l=id"],
   },
 };
 
@@ -68,7 +68,7 @@ const articleSchema = {
   headline: "Robot Trading PC & Laptop: STC AutoTrade Versi Web di stcautotradepro.id 2026",
   description:
     "Panduan menggunakan bot trading STC AutoTrade di PC dan laptop melalui versi web — fitur lengkap, semua browser, tanpa install.",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Robot%20Trading%20PC%20%26%20Laptop%3A%20STC%20AutoTrade%20Versi%20Web%20di%20stcautotradepro.id%202026&l=id",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },

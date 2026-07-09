@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     publishedTime: "2025-06-01T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Robot Trading iPhone Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Robot%20Trading%20iPhone%20Stockity%3A%20Auto%20Trade%20di%20iOS%20Tanpa%20Instalasi%202026&l=id", width: 1200, height: 630, alt: "Robot Trading iPhone Stockity — STC AutoTrade" }],
   },
 };
 
@@ -60,7 +60,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2025-06-01",
   dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Robot%20Trading%20iPhone%20Stockity%3A%20Auto%20Trade%20di%20iOS%20Tanpa%20Instalasi%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/robot-trading-ios-iphone" },
   keywords: "robot trading iphone stockity, auto trade stockity ios, bot trading stockity iphone",
 };

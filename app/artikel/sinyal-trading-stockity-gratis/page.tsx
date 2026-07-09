@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     publishedTime: "2025-06-01T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Sinyal Trading Stockity Gratis — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Sinyal%20Trading%20Stockity%20Gratis%3A%20CTC%2C%20AI%20Signal%20%26%20Bot%202026&l=id", width: 1200, height: 630, alt: "Sinyal Trading Stockity Gratis — STC AutoTrade" }],
   },
 };
 
@@ -60,7 +60,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2025-06-01",
   dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Sinyal%20Trading%20Stockity%20Gratis%3A%20CTC%2C%20AI%20Signal%20%26%20Bot%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/sinyal-trading-stockity-gratis" },
   keywords: "sinyal trading stockity gratis, ctc copy trading stockity, sinyal ai stockity",
 };

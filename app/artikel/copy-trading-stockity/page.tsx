@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Copy%20Trading%20Stockity%3A%20Mode%20Fastrade%20CTC%20di%20STC%20AutoTrade%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Copy Trading Stockity — Mode Fastrade CTC",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Copy Trading Stockity: Mode Fastrade CTC di STC AutoTrade 2026",
     description: "Mode Fastrade CTC — mirror order master trader real-time dan otomatis di STC AutoTrade.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Copy%20Trading%20Stockity%3A%20Mode%20Fastrade%20CTC%20di%20STC%20AutoTrade%202026&l=id"],
   },
 };
 
@@ -66,7 +66,7 @@ const articleSchema = {
   headline: "Copy Trading Stockity: Mode Fastrade CTC di STC AutoTrade 2026",
   description:
     "Panduan lengkap mode Fastrade CTC di STC AutoTrade v4.4 — cara kerja copy trading otomatis, setting, dan perbandingan dengan mode lain.",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Copy%20Trading%20Stockity%3A%20Mode%20Fastrade%20CTC%20di%20STC%20AutoTrade%202026&l=id",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },

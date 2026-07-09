@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     publishedTime: "2026-07-03T00:00:00.000Z",
     modifiedTime: "2026-07-03T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Akun Demo Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Akun%20Demo%20Stockity%3A%20Cara%20Daftar%20%26%20Latihan%20Gratis%20Tanpa%20Modal%202026&l=id", width: 1200, height: 630, alt: "Akun Demo Stockity — STC AutoTrade" }],
   },
 };
 
@@ -56,7 +56,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2026-07-03",
   dateModified: "2026-07-03",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Akun%20Demo%20Stockity%3A%20Cara%20Daftar%20%26%20Latihan%20Gratis%20Tanpa%20Modal%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/akun-demo-stockity" },
   keywords: "akun demo stockity, stockity demo gratis, latihan trading tanpa modal",
 };

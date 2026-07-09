@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     publishedTime: "2025-06-01T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Strategi Martingale Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Strategi%20Martingale%20Stockity%3A%20Panduan%20Setting%20Aman%20%26%20Efektif%202026&l=id", width: 1200, height: 630, alt: "Strategi Martingale Stockity — STC AutoTrade" }],
   },
 };
 
@@ -61,7 +61,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2025-06-01",
   dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Strategi%20Martingale%20Stockity%3A%20Panduan%20Setting%20Aman%20%26%20Efektif%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/strategi-martingale-stockity" },
   keywords: "strategi martingale stockity, martingale binary option, kalkulator martingale stockity",
 };

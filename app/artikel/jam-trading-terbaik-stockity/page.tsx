@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     publishedTime: "2026-07-03T00:00:00.000Z",
     modifiedTime: "2026-07-03T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Jam Trading Terbaik Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Jam%20Trading%20Terbaik%20Stockity%3A%20Waktu%20Paling%20Profit%20(WIB)%202026&l=id", width: 1200, height: 630, alt: "Jam Trading Terbaik Stockity — STC AutoTrade" }],
   },
 };
 
@@ -56,7 +56,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2026-07-03",
   dateModified: "2026-07-03",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Jam%20Trading%20Terbaik%20Stockity%3A%20Waktu%20Paling%20Profit%20(WIB)%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/jam-trading-terbaik-stockity" },
   keywords: "jam trading terbaik stockity, waktu terbaik trading binary option, sesi pasar wib",
 };

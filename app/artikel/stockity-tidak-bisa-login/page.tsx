@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     publishedTime: "2026-07-04T00:00:00.000Z",
     modifiedTime: "2026-07-04T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Stockity Tidak Bisa Login — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Stockity%20Tidak%20Bisa%20Login%3F%207%20Penyebab%20%26%20Cara%20Mengatasinya%202026&l=id", width: 1200, height: 630, alt: "Stockity Tidak Bisa Login — STC AutoTrade" }],
   },
 };
 
@@ -55,7 +55,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2026-07-04",
   dateModified: "2026-07-04",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Stockity%20Tidak%20Bisa%20Login%3F%207%20Penyebab%20%26%20Cara%20Mengatasinya%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/stockity-tidak-bisa-login" },
   keywords: "stockity tidak bisa login, stockity error, stockity tidak bisa dibuka, lupa password stockity",
 };

@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     publishedTime: "2026-07-03T00:00:00.000Z",
     modifiedTime: "2026-07-03T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "AI Trading Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=AI%20Trading%20Stockity%3A%20Cara%20Kerja%20Robot%20AI%20untuk%20Binary%20Option%202026&l=id", width: 1200, height: 630, alt: "AI Trading Stockity — STC AutoTrade" }],
   },
 };
 
@@ -63,7 +63,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2026-07-03",
   dateModified: "2026-07-03",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=AI%20Trading%20Stockity%3A%20Cara%20Kerja%20Robot%20AI%20untuk%20Binary%20Option%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/ai-trading-stockity" },
   keywords: "ai trading stockity, ai trading indonesia, robot ai binary option, ai signal",
 };

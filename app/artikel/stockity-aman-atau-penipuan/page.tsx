@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Stockity%20Aman%20atau%20Penipuan%3F%20Review%20Jujur%20%26%20Faktual%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Stockity Aman atau Penipuan — Review Jujur 2026",
@@ -76,7 +76,7 @@ const articleSchema = {
   },
   datePublished: "2025-05-21",
   dateModified: "2026-05-21",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Stockity%20Aman%20atau%20Penipuan%3F%20Review%20Jujur%20%26%20Faktual%202026&l=id",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/stockity-aman-atau-penipuan",

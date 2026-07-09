@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Trading%20Binary%20Option%20Modal%20Kecil%3A%20Mulai%20dari%20Rp%2014.000%2FTrade%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Trading Binary Option Modal Kecil — STC AutoTrade 2026",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Trading Binary Option Modal Kecil: Mulai dari Rp 14.000/Trade 2026",
     description: "Trading modal kecil dengan STC AutoTrade — simulasi, mode tepat, dan tips aman.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Trading%20Binary%20Option%20Modal%20Kecil%3A%20Mulai%20dari%20Rp%2014.000%2FTrade%202026&l=id"],
   },
 };
 
@@ -66,7 +66,7 @@ const articleSchema = {
   headline: "Trading Binary Option Modal Kecil: Mulai dari Rp 14.000/Trade 2026",
   description:
     "Panduan trading binary option modal kecil dengan STC AutoTrade — simulasi martingale, mode yang tepat, proteksi SL, dan akun Demo gratis.",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Trading%20Binary%20Option%20Modal%20Kecil%3A%20Mulai%20dari%20Rp%2014.000%2FTrade%202026&l=id",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },

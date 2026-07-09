@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Robot%20Trading%20Stockity%3A%20Panduan%20Lengkap%20Auto%20Trade%20Stockity%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Robot Trading Stockity — STC AutoTrade",
@@ -90,7 +90,7 @@ const articleSchema = {
   },
   datePublished: "2025-05-21",
   dateModified: "2026-05-21",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Robot%20Trading%20Stockity%3A%20Panduan%20Lengkap%20Auto%20Trade%20Stockity%202026&l=id",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/robot-trading-stockity",

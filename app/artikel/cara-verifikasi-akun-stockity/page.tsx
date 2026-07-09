@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     publishedTime: "2026-07-04T00:00:00.000Z",
     modifiedTime: "2026-07-04T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Cara Verifikasi Akun Stockity — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Cara%20Verifikasi%20Akun%20Stockity%20(KYC)%3A%20Panduan%20Lengkap%20%26%20Syarat%202026&l=id", width: 1200, height: 630, alt: "Cara Verifikasi Akun Stockity — STC AutoTrade" }],
   },
 };
 
@@ -61,7 +61,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2026-07-04",
   dateModified: "2026-07-04",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Cara%20Verifikasi%20Akun%20Stockity%20(KYC)%3A%20Panduan%20Lengkap%20%26%20Syarat%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/cara-verifikasi-akun-stockity" },
   keywords: "cara verifikasi akun stockity, kyc stockity, verifikasi identitas stockity",
 };

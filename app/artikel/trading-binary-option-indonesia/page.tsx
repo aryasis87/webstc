@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     publishedTime: "2025-06-01T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Trading Binary Option Indonesia — STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Trading%20Binary%20Option%20Indonesia%3A%20Panduan%20Lengkap%20untuk%20Pemula%202026&l=id", width: 1200, height: 630, alt: "Trading Binary Option Indonesia — STC AutoTrade" }],
   },
 };
 
@@ -61,7 +61,7 @@ const articleSchema = {
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2025-06-01",
   dateModified: "2026-06-07",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Trading%20Binary%20Option%20Indonesia%3A%20Panduan%20Lengkap%20untuk%20Pemula%202026&l=id",
   mainEntityOfPage: { "@type": "WebPage", "@id": "https://stcautotrade.id/artikel/trading-binary-option-indonesia" },
   keywords: "trading binary option indonesia, binary option adalah, cara trading binary option pemula",
 };

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Stockity%20vs%20Binomo%20vs%20Olymp%20Trade%3A%20Perbandingan%20Platform%20Trading%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Stockity vs Binomo vs Olymp Trade — Perbandingan 2026",
@@ -76,7 +76,7 @@ const articleSchema = {
   },
   datePublished: "2025-05-21",
   dateModified: "2026-05-21",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Stockity%20vs%20Binomo%20vs%20Olymp%20Trade%3A%20Perbandingan%20Platform%20Trading%202026&l=id",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",

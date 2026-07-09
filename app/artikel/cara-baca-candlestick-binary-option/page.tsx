@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "4 Pola Candlestick Mode Momentum STC AutoTrade" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Cara%20Baca%20Candlestick%20Binary%20Option%20%26%204%20Pola%20Mode%20Momentum%20STC%20AutoTrade&l=id", width: 1200, height: 630, alt: "4 Pola Candlestick Mode Momentum STC AutoTrade" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "4 Pola Mode Momentum STC AutoTrade: CandleSabit, Doji, BBSARBreak",
     description:
       "Mode Momentum STC AutoTrade mendeteksi 4 pola: CandleSabit, DojiTerjepit, DojiPembatalan, BBSARBreak. Bisa enable/disable per pola.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Cara%20Baca%20Candlestick%20Binary%20Option%20%26%204%20Pola%20Mode%20Momentum%20STC%20AutoTrade&l=id"],
   },
 };
 

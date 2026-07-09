@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Aset Trading Stockity — Forex Gold Crypto" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Aset%20Terbaik%20Trading%20Stockity%20di%20STC%20AutoTrade%3A%20Forex%2C%20Gold%2C%20Crypto&l=id", width: 1200, height: 630, alt: "Aset Trading Stockity — Forex Gold Crypto" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aset Terbaik Trading Stockity: Forex, Gold & Crypto 2026",
     description:
       "Panduan memilih aset di STC AutoTrade — EUR/USD, USD/IDR, Gold, Crypto. Diambil real-time dari API Stockity, dipilih dari dropdown dashboard.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Aset%20Terbaik%20Trading%20Stockity%20di%20STC%20AutoTrade%3A%20Forex%2C%20Gold%2C%20Crypto&l=id"],
   },
 };
 

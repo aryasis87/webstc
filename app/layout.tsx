@@ -80,6 +80,9 @@ export const metadata: Metadata = {
       ru: `${BASE_URL}/ru`,
       "x-default": BASE_URL,
     },
+    // Autodiscovery RSS (halaman yang mendefinisikan alternates sendiri
+    // tidak mewarisi ini — cukup: crawler menemukan feed dari homepage)
+    types: { "application/rss+xml": `${BASE_URL}/feed.xml` },
   },
 
   robots: {

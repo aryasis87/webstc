@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Cara%20Deposit%20Stockity%3A%20Panduan%20Isi%20Saldo%20via%20Stockity.id%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Cara Deposit Stockity — Panduan 2026",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Cara Deposit Stockity: Panduan Isi Saldo via Stockity.id 2026",
     description:
       "Cara deposit di Stockity.id untuk trading dengan STC AutoTrade — saldo otomatis sinkron ke bot.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Cara%20Deposit%20Stockity%3A%20Panduan%20Isi%20Saldo%20via%20Stockity.id%202026&l=id"],
   },
 };
 
@@ -69,7 +69,7 @@ const articleSchema = {
   headline: "Cara Deposit Stockity: Panduan Isi Saldo via Stockity.id 2026",
   description:
     "Panduan lengkap cara deposit di Stockity.id untuk trading dengan bot STC AutoTrade, termasuk akses via Webview dan sinkronisasi saldo otomatis.",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Cara%20Deposit%20Stockity%3A%20Panduan%20Isi%20Saldo%20via%20Stockity.id%202026&l=id",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },

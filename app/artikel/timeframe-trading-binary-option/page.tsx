@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Timeframe STC AutoTrade — Fastrade 1m 5m 15m 30m 1h" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Timeframe%20Trading%20Binary%20Option%20di%20STC%20AutoTrade%3A%20Panduan%20Lengkap&l=id", width: 1200, height: 630, alt: "Timeframe STC AutoTrade — Fastrade 1m 5m 15m 30m 1h" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Timeframe di STC AutoTrade: Fastrade 1m-1h, Signal 60-300 detik 2026",
     description:
       "Timeframe 1m-1h hanya di mode Fastrade. Signal mode pakai duration 60-300 detik. AI Signal, Indicator, Momentum tidak ada pilihan timeframe.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Timeframe%20Trading%20Binary%20Option%20di%20STC%20AutoTrade%3A%20Panduan%20Lengkap&l=id"],
   },
 };
 

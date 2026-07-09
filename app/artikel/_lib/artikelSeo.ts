@@ -34,9 +34,15 @@ export interface ArtikelSeoDef {
   faq: ArtikelFaq[];
 }
 
+/** OG image unik per artikel — dirender endpoint app/og/route.tsx */
+export function ogImageUrl(title: string, lang: "id" | "en" | "ru" = "id"): string {
+  return `${BASE_URL}/og?t=${encodeURIComponent(title)}&l=${lang}`;
+}
+
 export function buildMetadata(def: ArtikelSeoDef): Metadata {
   const url = `${BASE_URL}/artikel/${def.slug}`;
   const mod = def.dateModified ?? def.datePublished;
+  const ogImage = ogImageUrl(def.title);
   return {
     title: def.title,
     description: def.description,
@@ -62,7 +68,7 @@ export function buildMetadata(def: ArtikelSeoDef): Metadata {
       publishedTime: `${def.datePublished}T00:00:00.000Z`,
       modifiedTime: `${mod}T00:00:00.000Z`,
       authors: ["STC AutoTrade"],
-      images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: `${def.breadcrumbName} — STC AutoTrade` }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: `${def.breadcrumbName} — STC AutoTrade` }],
     },
     twitter: { card: "summary_large_image" },
   };
@@ -82,7 +88,7 @@ export function buildSchemas(def: ArtikelSeoDef): object[] {
       publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.webp` } },
       datePublished: def.datePublished,
       dateModified: mod,
-      image: `${BASE_URL}/og-image.webp`,
+      image: ogImageUrl(def.title),
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       keywords: def.keywords.slice(0, 6).join(", "),
     },

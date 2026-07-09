@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Modal%20Trading%20Stockity%3A%20Berapa%20Minimum%20%26%20Cara%20Mulai%20dengan%20Modal%20Kecil%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Modal Trading Stockity — Panduan Kalkulasi Modal",
@@ -76,7 +76,7 @@ const articleSchema = {
   },
   datePublished: "2025-05-21",
   dateModified: "2026-05-21",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Modal%20Trading%20Stockity%3A%20Berapa%20Minimum%20%26%20Cara%20Mulai%20dengan%20Modal%20Kecil%202026&l=id",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/modal-trading-stockity",

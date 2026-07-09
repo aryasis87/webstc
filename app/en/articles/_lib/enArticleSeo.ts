@@ -5,6 +5,7 @@
  */
 
 import type { Metadata } from "next";
+import { ogImageUrl } from "@/app/artikel/_lib/artikelSeo";
 
 const BASE_URL = "https://stcautotrade.id";
 
@@ -55,7 +56,7 @@ export function buildEnMetadata(def: EnArticleSeoDef): Metadata {
       publishedTime: `${def.datePublished}T00:00:00.000Z`,
       modifiedTime: `${mod}T00:00:00.000Z`,
       authors: ["STC AutoTrade"],
-      images: [{ url: `${BASE_URL}/og-image.webp`, width: 1200, height: 630, alt: `${def.breadcrumbName} — STC AutoTrade` }],
+      images: [{ url: ogImageUrl(def.title, "en"), width: 1200, height: 630, alt: `${def.breadcrumbName} — STC AutoTrade` }],
     },
     twitter: { card: "summary_large_image" },
   };
@@ -75,7 +76,7 @@ export function buildEnSchemas(def: EnArticleSeoDef): object[] {
       publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.webp` } },
       datePublished: def.datePublished,
       dateModified: mod,
-      image: `${BASE_URL}/og-image.webp`,
+      image: ogImageUrl(def.title, "en"),
       mainEntityOfPage: { "@type": "WebPage", "@id": url },
       keywords: def.keywords.slice(0, 6).join(", "),
     },

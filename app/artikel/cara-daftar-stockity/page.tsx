@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     authors: ["STC AutoTrade"],
     images: [
       {
-        url: "https://stcautotrade.id/og-image.webp",
+        url: "https://stcautotrade.id/og?t=Cara%20Daftar%20Stockity%3A%20Panduan%20Registrasi%20Akun%20%26%20Mulai%20Trading%202026&l=id",
         width: 1200,
         height: 630,
         alt: "Cara Daftar Stockity — Panduan Registrasi Akun",
@@ -76,7 +76,7 @@ const articleSchema = {
   },
   datePublished: "2025-05-21",
   dateModified: "2026-05-21",
-  image: "https://stcautotrade.id/og-image.webp",
+  image: "https://stcautotrade.id/og?t=Cara%20Daftar%20Stockity%3A%20Panduan%20Registrasi%20Akun%20%26%20Mulai%20Trading%202026&l=id",
   mainEntityOfPage: {
     "@type": "WebPage",
     "@id": "https://stcautotrade.id/artikel/cara-daftar-stockity",

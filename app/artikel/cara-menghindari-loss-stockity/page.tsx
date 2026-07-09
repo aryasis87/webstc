@@ -28,14 +28,14 @@ export const metadata: Metadata = {
     publishedTime: "2025-05-21T00:00:00.000Z",
     modifiedTime: "2026-06-07T00:00:00.000Z",
     authors: ["STC AutoTrade"],
-    images: [{ url: "https://stcautotrade.id/og-image.webp", width: 1200, height: 630, alt: "Manajemen Risiko STC AutoTrade — Stop Loss Always Signal" }],
+    images: [{ url: "https://stcautotrade.id/og?t=Cara%20Menghindari%20Loss%20di%20Stockity%3A%20Fitur%20SL%2C%20TP%2C%20Demo%20%26%20Manajemen%20Risiko&l=id", width: 1200, height: 630, alt: "Manajemen Risiko STC AutoTrade — Stop Loss Always Signal" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Cara Menghindari Loss di STC AutoTrade: SL Harian & Always Signal 2026",
     description:
       "Stop Loss harian otomatis, Stop Profit, Always Signal recovery martingale, Demo account, dan History page di STC AutoTrade untuk kelola risiko.",
-    images: ["https://stcautotrade.id/og-image.webp"],
+    images: ["https://stcautotrade.id/og?t=Cara%20Menghindari%20Loss%20di%20Stockity%3A%20Fitur%20SL%2C%20TP%2C%20Demo%20%26%20Manajemen%20Risiko&l=id"],
   },
 };
 
