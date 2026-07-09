@@ -153,6 +153,13 @@ export const metadata: Metadata = {
    */
   manifest: "/site.webmanifest",
 
+  // Verifikasi kepemilikan mesin pencari — metode meta tag, cadangan dari
+  // file public/yandex_*.html (bot Yandex tidak mengikuti redirect saat
+  // memeriksa file; meta tag tersedia di semua halaman).
+  verification: {
+    yandex: "86e6aaa7c0992ab9",
+  },
+
   applicationName: "STC AutoTrade",
   category: "finance",
   classification: "Finance, Trading, Automation",
