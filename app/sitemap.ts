@@ -187,6 +187,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-05-21"),
       changeFrequency: "monthly",
       priority: 0.86,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-stockity-android`, en: `${BASE_URL}/en/articles/stockity-robot-apk`, ru: `${BASE_URL}/ru/articles/stockity-robot-apk`, "x-default": `${BASE_URL}/artikel/robot-stockity-android` } },
     },
     {
       url: `${BASE_URL}/artikel/cara-daftar-stockity`,
@@ -496,6 +497,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "id-ID": `${BASE_URL}/artikel/akun-demo-stockity`, en: `${BASE_URL}/en/articles/stockity-demo-account`, ru: `${BASE_URL}/ru/articles/stockity-demo-account`, "x-default": `${BASE_URL}/artikel/akun-demo-stockity` } },
     },
 
+    // ── Twin EN/RU Batch 3 — 9 Juli 2026 ─────────────────────────
+    {
+      url: `${BASE_URL}/en/articles/stockity-trading-hours`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.73,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/jam-trading-terbaik-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-hours`, ru: `${BASE_URL}/ru/articles/stockity-trading-hours`, "x-default": `${BASE_URL}/artikel/jam-trading-terbaik-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/en/articles/stockity-robot-apk`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-stockity-android`, en: `${BASE_URL}/en/articles/stockity-robot-apk`, ru: `${BASE_URL}/ru/articles/stockity-robot-apk`, "x-default": `${BASE_URL}/artikel/robot-stockity-android` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-trading-hours`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.66,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/jam-trading-terbaik-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-hours`, ru: `${BASE_URL}/ru/articles/stockity-trading-hours`, "x-default": `${BASE_URL}/artikel/jam-trading-terbaik-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-robot-apk`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.68,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-stockity-android`, en: `${BASE_URL}/en/articles/stockity-robot-apk`, ru: `${BASE_URL}/ru/articles/stockity-robot-apk`, "x-default": `${BASE_URL}/artikel/robot-stockity-android` } },
+    },
+
     // ── Batch 10 Artikel — 4 Juli 2026 ───────────────────────────
     {
       url: `${BASE_URL}/artikel/stockity-vs-quotex`,
@@ -631,6 +662,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-07-03"),
       changeFrequency: "monthly",
       priority: 0.84,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/jam-trading-terbaik-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-hours`, ru: `${BASE_URL}/ru/articles/stockity-trading-hours`, "x-default": `${BASE_URL}/artikel/jam-trading-terbaik-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/ai-trading-stockity`,

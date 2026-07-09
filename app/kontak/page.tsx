@@ -17,12 +17,12 @@ import {
 
 const BASE_URL = "https://stcautotrade.id";
 const PAGE_URL = `${BASE_URL}/kontak`;
-const EMAIL = "daftar@stcautotrade.id";
+const EMAIL = "supportstockity@gmail.com";
 
 export const metadata: Metadata = {
   title: "Kontak — Hubungi Tim STC AutoTrade",
   description:
-    "Hubungi tim STC AutoTrade untuk pertanyaan pendaftaran, kendala teknis aplikasi, atau masukan konten — email daftar@stcautotrade.id, balasan 1–2 hari kerja.",
+    "Hubungi tim STC AutoTrade untuk pertanyaan pendaftaran, kendala teknis aplikasi, atau masukan konten — email supportstockity@gmail.com, balasan 1–2 hari kerja.",
   keywords: [
     "kontak stc autotrade",
     "email stc autotrade",
@@ -130,8 +130,8 @@ export default function KontakPage() {
           </div>
           <p className="text-[12px] text-[#1a1612]/65 mt-3">
             Waspadai penipuan: kami tidak pernah menghubungi lebih dulu untuk meminta
-            password, kode OTP, atau transfer dana. Alamat di luar domain
-            @stcautotrade.id bukan milik kami.
+            password, kode OTP, atau transfer dana. Satu-satunya alamat email resmi kami adalah
+            supportstockity@gmail.com — alamat lain yang mengatasnamakan kami adalah palsu.
           </p>
         </section>
 

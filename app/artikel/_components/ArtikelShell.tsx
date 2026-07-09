@@ -76,12 +76,12 @@ export function ArtikelShell({
       {/* ── Breadcrumb ────────────────────────────────────── */}
       <div className="max-w-4xl mx-auto px-5 sm:px-8 pt-5">
         <nav aria-label="Breadcrumb">
-          <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 flex-wrap">
+          <ol className="flex items-center gap-1.5 text-[12px] text-[#1a1612]/65 min-w-0">
             <li><Link href="/" className="hover:text-[#1a1612] transition-colors no-underline">Beranda</Link></li>
             <li aria-hidden="true">›</li>
             <li><Link href="/artikel" className="hover:text-[#1a1612] transition-colors no-underline">Artikel</Link></li>
             <li aria-hidden="true">›</li>
-            <li className="text-[#1a1612]/70 font-medium">{breadcrumbName}</li>
+            <li className="text-[#1a1612]/70 font-medium truncate">{breadcrumbName}</li>
           </ol>
         </nav>
       </div>

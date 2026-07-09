@@ -39,6 +39,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/robot-stockity-android",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/robot-stockity-android",
+      en: "https://stcautotrade.id/en/articles/stockity-robot-apk",
+      ru: "https://stcautotrade.id/ru/articles/stockity-robot-apk",
+      "x-default": "https://stcautotrade.id/artikel/robot-stockity-android",
+    },
   },
   openGraph: {
     title: "Robot Stockity Android: Download APK Bot Trading Terbaik 2026",

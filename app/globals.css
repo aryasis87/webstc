@@ -182,3 +182,24 @@ body {
   h1, h2, h3 { page-break-after: avoid; }
   p, li      { orphans: 3; widows: 3; }
 }
+/* ── Breadcrumb: selalu satu baris ─────────────────────────────────
+   Markup breadcrumb bervariasi antar halaman (artikel inline vs shell);
+   aturan global ini menimpa semuanya: item statis tidak menyusut,
+   item terakhir (judul halaman) ter-ellipsis alih-alih turun baris.
+────────────────────────────────────────────────────────────────── */
+
+nav[aria-label="Breadcrumb"] ol {
+  flex-wrap: nowrap;
+  min-width: 0;
+  overflow: hidden;
+}
+nav[aria-label="Breadcrumb"] ol > li {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+nav[aria-label="Breadcrumb"] ol > li:last-child {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

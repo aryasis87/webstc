@@ -183,8 +183,8 @@ export default function SyaratKetentuanPage() {
             ketentuan ini dapat diajukan melalui{" "}
             <Link href="/kontak" className="text-[#047857] hover:underline">halaman kontak</Link>{" "}
             atau email{" "}
-            <a href="mailto:daftar@stcautotrade.id" className="text-[#047857] hover:underline">
-              daftar@stcautotrade.id
+            <a href="mailto:supportstockity@gmail.com" className="text-[#047857] hover:underline">
+              supportstockity@gmail.com
             </a>
             . Lihat juga{" "}
             <Link href="/kebijakan-privasi" className="text-[#047857] hover:underline">

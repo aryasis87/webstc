@@ -157,8 +157,8 @@ export default function KebijakanPrivasiPage() {
           <InfoP>
             Anda berhak meminta salinan, koreksi, atau penghapusan data pribadi Anda.
             Kirim permintaan ke{" "}
-            <a href="mailto:daftar@stcautotrade.id" className="text-[#047857] hover:underline">
-              daftar@stcautotrade.id
+            <a href="mailto:supportstockity@gmail.com" className="text-[#047857] hover:underline">
+              supportstockity@gmail.com
             </a>{" "}
             dan kami akan menindaklanjutinya dalam waktu wajar. Detail saluran kontak ada
             di <Link href="/kontak" className="text-[#047857] hover:underline">halaman kontak</Link>.

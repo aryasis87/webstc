@@ -46,6 +46,8 @@ const ARTICLES = [
   { slug: "stockity-minimum-deposit", badge: "Guide", title: "Stockity Minimum Deposit: The Real Numbers", desc: "The minimum vs a workable balance — with the math that separates them and safe buffer sizes.", mins: 6 },
   { slug: "stockity-martingale-strategy", badge: "Strategy", title: "Martingale on Stockity: The Math Before the Money", desc: "Step math, why 2–2.5× with max 3 steps is the baseline, and how to automate it with hard limits.", mins: 8 },
   { slug: "stockity-demo-account", badge: "Guide", title: "Stockity Demo Account: Practice Like It's Real", desc: "Free practice on real market data, a structured 7-day plan, and when you're ready to go live.", mins: 6 },
+  { slug: "stockity-trading-hours", badge: "Strategy", title: "Best Trading Hours on Stockity: The Session Map", desc: "The London–NY overlap in GMT, which hours to avoid, and scheduling a bot around the clock.", mins: 7 },
+  { slug: "stockity-robot-apk", badge: "Guide", title: "Stockity Robot APK: Download & Install It Right", desc: "Official source, safe install steps, why the bot runs with your phone off, and the web alternative.", mins: 6 },
 ];
 
 const BADGE_STYLES: Record<string, string> = {

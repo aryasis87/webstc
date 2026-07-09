@@ -142,8 +142,8 @@ export default function TentangPage() {
           <InfoP>
             Pertanyaan seputar pendaftaran, kendala teknis, atau masukan untuk konten
             situs bisa dikirim ke email{" "}
-            <a href="mailto:daftar@stcautotrade.id" className="text-[#047857] hover:underline">
-              daftar@stcautotrade.id
+            <a href="mailto:supportstockity@gmail.com" className="text-[#047857] hover:underline">
+              supportstockity@gmail.com
             </a>{" "}
             — atau lihat detail lengkapnya di{" "}
             <Link href="/kontak" className="text-[#047857] hover:underline">halaman kontak</Link>.

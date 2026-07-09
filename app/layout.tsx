@@ -264,7 +264,7 @@ const schemaOrg = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    email: "daftar@stcautotrade.id",
+    email: "supportstockity@gmail.com",
     contactType: "customer support",
     areaServed: "ID",
     availableLanguage: "Indonesian",

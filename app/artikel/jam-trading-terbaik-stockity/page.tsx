@@ -31,6 +31,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/jam-trading-terbaik-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/jam-trading-terbaik-stockity",
+      en: "https://stcautotrade.id/en/articles/stockity-trading-hours",
+      ru: "https://stcautotrade.id/ru/articles/stockity-trading-hours",
+      "x-default": "https://stcautotrade.id/artikel/jam-trading-terbaik-stockity",
+    },
   },
   openGraph: {
     title: "Jam Trading Terbaik Stockity: Waktu Paling Profit (WIB) 2026",
