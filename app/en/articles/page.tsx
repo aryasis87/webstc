@@ -48,6 +48,9 @@ const ARTICLES = [
   { slug: "stockity-demo-account", badge: "Guide", title: "Stockity Demo Account: Practice Like It's Real", desc: "Free practice on real market data, a structured 7-day plan, and when you're ready to go live.", mins: 6 },
   { slug: "stockity-trading-hours", badge: "Strategy", title: "Best Trading Hours on Stockity: The Session Map", desc: "The London–NY overlap in GMT, which hours to avoid, and scheduling a bot around the clock.", mins: 7 },
   { slug: "stockity-robot-apk", badge: "Guide", title: "Stockity Robot APK: Download & Install It Right", desc: "Official source, safe install steps, why the bot runs with your phone off, and the web alternative.", mins: 6 },
+  { slug: "how-to-deposit-stockity", badge: "Guide", title: "How to Deposit on Stockity: Methods, Steps & Timing", desc: "E-wallet, VA, and QRIS deposits step by step — plus the two mistakes behind most delays.", mins: 6 },
+  { slug: "how-to-trade-on-stockity", badge: "Guide", title: "How to Trade on Stockity: The Beginner's Guide", desc: "The UP/DOWN mechanics, the trading screen, your first demo week, and the five rules that matter.", mins: 8 },
+  { slug: "stockity-vs-binomo-vs-olymp-trade", badge: "Review", title: "Stockity vs Binomo vs Olymp Trade: An Honest Comparison", desc: "Payouts, demos, tournaments, apps, and the automation factor — with our bias disclosed up front.", mins: 8 },
 ];
 
 const BADGE_STYLES: Record<string, string> = {

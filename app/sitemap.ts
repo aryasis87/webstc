@@ -220,6 +220,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-05-21"),
       changeFrequency: "monthly",
       priority: 0.8,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade`, en: `${BASE_URL}/en/articles/stockity-vs-binomo-vs-olymp-trade`, ru: `${BASE_URL}/ru/articles/stockity-vs-binomo-vs-olymp-trade`, "x-default": `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade` } },
     },
 
     // ── Artikel: Baru Ditambahkan Jun 2026 ───────────────────────
@@ -262,6 +263,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-06-07"),
       changeFrequency: "monthly",
       priority: 0.87,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-deposit-stockity`, en: `${BASE_URL}/en/articles/how-to-deposit-stockity`, ru: `${BASE_URL}/ru/articles/how-to-deposit-stockity`, "x-default": `${BASE_URL}/artikel/cara-deposit-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/copy-trading-stockity`,
@@ -527,6 +529,50 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-stockity-android`, en: `${BASE_URL}/en/articles/stockity-robot-apk`, ru: `${BASE_URL}/ru/articles/stockity-robot-apk`, "x-default": `${BASE_URL}/artikel/robot-stockity-android` } },
     },
 
+    // ── Twin EN/RU Batch 4 (final) — 9 Juli 2026 ─────────────────
+    {
+      url: `${BASE_URL}/en/articles/how-to-deposit-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.74,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-deposit-stockity`, en: `${BASE_URL}/en/articles/how-to-deposit-stockity`, ru: `${BASE_URL}/ru/articles/how-to-deposit-stockity`, "x-default": `${BASE_URL}/artikel/cara-deposit-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/en/articles/how-to-trade-on-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.76,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-main-stockity-pemula`, en: `${BASE_URL}/en/articles/how-to-trade-on-stockity`, ru: `${BASE_URL}/ru/articles/how-to-trade-on-stockity`, "x-default": `${BASE_URL}/artikel/cara-main-stockity-pemula` } },
+    },
+    {
+      url: `${BASE_URL}/en/articles/stockity-vs-binomo-vs-olymp-trade`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.74,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade`, en: `${BASE_URL}/en/articles/stockity-vs-binomo-vs-olymp-trade`, ru: `${BASE_URL}/ru/articles/stockity-vs-binomo-vs-olymp-trade`, "x-default": `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/how-to-deposit-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.67,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-deposit-stockity`, en: `${BASE_URL}/en/articles/how-to-deposit-stockity`, ru: `${BASE_URL}/ru/articles/how-to-deposit-stockity`, "x-default": `${BASE_URL}/artikel/cara-deposit-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/how-to-trade-on-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.68,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-main-stockity-pemula`, en: `${BASE_URL}/en/articles/how-to-trade-on-stockity`, ru: `${BASE_URL}/ru/articles/how-to-trade-on-stockity`, "x-default": `${BASE_URL}/artikel/cara-main-stockity-pemula` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/stockity-vs-binomo-vs-olymp-trade`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.67,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade`, en: `${BASE_URL}/en/articles/stockity-vs-binomo-vs-olymp-trade`, ru: `${BASE_URL}/ru/articles/stockity-vs-binomo-vs-olymp-trade`, "x-default": `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade` } },
+    },
+
     // ── Batch 10 Artikel — 4 Juli 2026 ───────────────────────────
     {
       url: `${BASE_URL}/artikel/stockity-vs-quotex`,
@@ -649,6 +695,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-07-03"),
       changeFrequency: "monthly",
       priority: 0.88,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-main-stockity-pemula`, en: `${BASE_URL}/en/articles/how-to-trade-on-stockity`, ru: `${BASE_URL}/ru/articles/how-to-trade-on-stockity`, "x-default": `${BASE_URL}/artikel/cara-main-stockity-pemula` } },
     },
     {
       url: `${BASE_URL}/artikel/akun-demo-stockity`,

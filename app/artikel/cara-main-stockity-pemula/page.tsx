@@ -33,6 +33,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-main-stockity-pemula",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/cara-main-stockity-pemula",
+      en: "https://stcautotrade.id/en/articles/how-to-trade-on-stockity",
+      ru: "https://stcautotrade.id/ru/articles/how-to-trade-on-stockity",
+      "x-default": "https://stcautotrade.id/artikel/cara-main-stockity-pemula",
+    },
   },
   openGraph: {
     title: "Cara Main Stockity untuk Pemula: Panduan Lengkap dari Nol 2026",

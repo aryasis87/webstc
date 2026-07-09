@@ -48,6 +48,9 @@ const ARTICLES = [
   { slug: "stockity-demo-account", badge: "Гайд", title: "Демо-счёт Stockity: практикуйтесь как по-настоящему", desc: "Бесплатная практика на реальных данных, план на 7 дней и критерий готовности к реальному счёту.", mins: 6 },
   { slug: "stockity-trading-hours", badge: "Стратегия", title: "Лучшие часы торговли на Stockity: карта сессий", desc: "Перекрытие Лондон–НЙ в GMT и МСК, какие часы избегать и как поставить бота на расписание.", mins: 7 },
   { slug: "stockity-robot-apk", badge: "Гайд", title: "Робот Stockity (APK): установите правильно", desc: "Официальный источник, безопасная установка, работа бота с выключенным телефоном и веб-альтернатива.", mins: 6 },
+  { slug: "how-to-deposit-stockity", badge: "Гайд", title: "Пополнение Stockity: способы, шаги, сроки", desc: "Кошельки, VA и QRIS по шагам — плюс две ошибки, стоящие за большинством задержек.", mins: 6 },
+  { slug: "how-to-trade-on-stockity", badge: "Гайд", title: "Как торговать на Stockity: гайд для новичка", desc: "Механика ВВЕРХ/ВНИЗ, торговый экран, первая неделя на демо и пять решающих правил.", mins: 8 },
+  { slug: "stockity-vs-binomo-vs-olymp-trade", badge: "Обзор", title: "Stockity, Binomo или Olymp Trade: честное сравнение", desc: "Выплаты, демо, турниры, приложения и фактор автоматизации — с раскрытой предвзятостью.", mins: 8 },
 ];
 
 const BADGE_STYLES: Record<string, string> = {

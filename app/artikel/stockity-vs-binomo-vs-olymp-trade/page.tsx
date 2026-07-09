@@ -39,6 +39,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",
+      en: "https://stcautotrade.id/en/articles/stockity-vs-binomo-vs-olymp-trade",
+      ru: "https://stcautotrade.id/ru/articles/stockity-vs-binomo-vs-olymp-trade",
+      "x-default": "https://stcautotrade.id/artikel/stockity-vs-binomo-vs-olymp-trade",
+    },
   },
   openGraph: {
     title: "Stockity vs Binomo vs Olymp Trade: Perbandingan Platform Trading 2026",

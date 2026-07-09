@@ -33,6 +33,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-deposit-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/cara-deposit-stockity",
+      en: "https://stcautotrade.id/en/articles/how-to-deposit-stockity",
+      ru: "https://stcautotrade.id/ru/articles/how-to-deposit-stockity",
+      "x-default": "https://stcautotrade.id/artikel/cara-deposit-stockity",
+    },
   },
   openGraph: {
     title: "Cara Deposit Stockity: Panduan Isi Saldo via Stockity.id 2026",
