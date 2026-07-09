@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://stcautotrade.id";
 const LAST_MODIFIED = new Date("2026-07-04");
+// Halaman trust (tentang/kontak/legal) dibuat belakangan — tanggal sendiri
+const TRUST_PAGES_MODIFIED = new Date("2026-07-09");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -111,6 +113,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: LAST_MODIFIED,
       changeFrequency: "monthly",
       priority: 0.8,
+    },
+
+    // ── Halaman Trust / Perusahaan (E-E-A-T; ID saja) ─────────────
+    {
+      url: `${BASE_URL}/tentang`,
+      lastModified: TRUST_PAGES_MODIFIED,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/kontak`,
+      lastModified: TRUST_PAGES_MODIFIED,
+      changeFrequency: "yearly",
+      priority: 0.4,
+    },
+    {
+      url: `${BASE_URL}/kebijakan-privasi`,
+      lastModified: TRUST_PAGES_MODIFIED,
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${BASE_URL}/syarat-ketentuan`,
+      lastModified: TRUST_PAGES_MODIFIED,
+      changeFrequency: "yearly",
+      priority: 0.3,
     },
 
     // ── Artikel: High Priority ────────────────────────────────────

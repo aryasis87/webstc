@@ -11,12 +11,20 @@ const PAGES = [
   { href: "/kamus-trading", label: "Kamus Trading" },
 ];
 
+// Halaman trust/E-E-A-T — tautan footer memastikan Google meng-crawl-nya
+const COMPANY = [
+  { href: "/tentang", label: "Tentang Kami" },
+  { href: "/kontak", label: "Kontak" },
+  { href: "/kebijakan-privasi", label: "Kebijakan Privasi" },
+  { href: "/syarat-ketentuan", label: "Syarat & Ketentuan" },
+];
+
 /** Footer terpadu untuk semua halaman utama — brand, navigasi, platform, disclaimer. */
 export default function SiteFooter() {
   return (
     <footer className="border-t border-[rgba(23,20,15,0.1)] bg-[#f6f4ef]">
       <div className="max-w-5xl mx-auto px-5 sm:px-8 pt-14 pb-8">
-        <div className="grid gap-10 sm:grid-cols-[1.6fr_1fr_1fr] mb-12">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr] mb-12">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2.5 mb-4 no-underline w-fit">
@@ -66,6 +74,20 @@ export default function SiteFooter() {
               </li>
             </ul>
           </div>
+
+          {/* Perusahaan */}
+          <nav aria-label="Perusahaan & legal">
+            <p className="text-[11px] font-semibold tracking-[0.16em] uppercase text-[#6b6459] mb-4">Perusahaan</p>
+            <ul className="flex flex-col gap-2.5">
+              {COMPANY.map((p) => (
+                <li key={p.href}>
+                  <Link href={p.href} className="text-[13px] text-[#6b6459] hover:text-[#17140f] transition-colors no-underline">
+                    {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
 
         <div className="pt-6 border-t border-[rgba(23,20,15,0.08)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
