@@ -41,6 +41,8 @@ const ARTICLES = [
   { slug: "ai-trading-stockity", badge: "Обучение", title: "ИИ-трейдинг на Stockity: как работают AI-сигналы", desc: "ML-анализ в реальном времени, ИИ против ручного анализа, честные ограничения и запуск AI Signal.", mins: 8 },
   { slug: "stockity-account-verification", badge: "Гайд", title: "Верификация Stockity (KYC): пройдите с первого раза", desc: "Документы, шаги загрузки, сроки проверки и причины отказов — обязательна до вывода средств.", mins: 6 },
   { slug: "how-to-withdraw-from-stockity", badge: "Гайд", title: "Как вывести деньги со Stockity: шаги, сроки, проблемы", desc: "Требования, процесс выплаты, реальные сроки и лечение зависших или отклонённых заявок.", mins: 7 },
+  { slug: "how-to-register-stockity", badge: "Гайд", title: "Регистрация на Stockity: от аккаунта до первой сделки", desc: "Процесс регистрации, почему сначала демо, и безопасный первый депозит, который новички пропускают.", mins: 6 },
+  { slug: "is-stockity-legit", badge: "Обзор", title: "Stockity — развод или нет? Честный обзор по фактам", desc: "Что подтверждается (выплаты, KYC, демо), что проверить самому, и реальные риски без прикрас.", mins: 8 },
 ];
 
 const BADGE_STYLES: Record<string, string> = {

@@ -41,6 +41,8 @@ const ARTICLES = [
   { slug: "ai-trading-stockity", badge: "Education", title: "AI Trading on Stockity: How the Robot's AI Signals Work", desc: "Real-time ML analysis, AI vs manual, honest limitations, and the AI Signal mode step by step.", mins: 8 },
   { slug: "stockity-account-verification", badge: "Guide", title: "Stockity Account Verification (KYC): Pass It on the First Try", desc: "Documents, upload steps, review timing, and the rejection causes to avoid — required before withdrawals.", mins: 6 },
   { slug: "how-to-withdraw-from-stockity", badge: "Guide", title: "How to Withdraw from Stockity: Steps, Timing & Common Issues", desc: "Requirements, the payout flow, realistic timing, and fixes for pending or rejected withdrawals.", mins: 7 },
+  { slug: "how-to-register-stockity", badge: "Guide", title: "How to Register on Stockity: From Sign-Up to First Trade", desc: "The sign-up flow, why demo comes first, and the safe first deposit most beginners skip.", mins: 6 },
+  { slug: "is-stockity-legit", badge: "Review", title: "Is Stockity Legit? An Honest, Evidence-Based Review", desc: "What checks out (payouts, KYC, demo), what to verify yourself, and the risks nobody should hide.", mins: 8 },
 ];
 
 const BADGE_STYLES: Record<string, string> = {

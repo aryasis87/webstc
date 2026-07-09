@@ -179,6 +179,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-05-21"),
       changeFrequency: "monthly",
       priority: 0.85,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-daftar-stockity`, en: `${BASE_URL}/en/articles/how-to-register-stockity`, ru: `${BASE_URL}/ru/articles/how-to-register-stockity`, "x-default": `${BASE_URL}/artikel/cara-daftar-stockity` } },
     },
     {
       url: `${BASE_URL}/artikel/cara-profit-trading-stockity`,
@@ -197,6 +198,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-05-21"),
       changeFrequency: "monthly",
       priority: 0.82,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-aman-atau-penipuan`, en: `${BASE_URL}/en/articles/is-stockity-legit`, ru: `${BASE_URL}/ru/articles/is-stockity-legit`, "x-default": `${BASE_URL}/artikel/stockity-aman-atau-penipuan` } },
     },
     {
       url: `${BASE_URL}/artikel/stockity-vs-binomo-vs-olymp-trade`,
@@ -404,6 +406,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-withdraw-stockity`, en: `${BASE_URL}/en/articles/how-to-withdraw-from-stockity`, ru: `${BASE_URL}/ru/articles/how-to-withdraw-from-stockity`, "x-default": `${BASE_URL}/artikel/cara-withdraw-stockity` } },
     },
 
+    // ── Twin EN/RU Baru — 9 Juli 2026 ────────────────────────────
+    {
+      url: `${BASE_URL}/en/articles/how-to-register-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-daftar-stockity`, en: `${BASE_URL}/en/articles/how-to-register-stockity`, ru: `${BASE_URL}/ru/articles/how-to-register-stockity`, "x-default": `${BASE_URL}/artikel/cara-daftar-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/en/articles/is-stockity-legit`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.75,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-aman-atau-penipuan`, en: `${BASE_URL}/en/articles/is-stockity-legit`, ru: `${BASE_URL}/ru/articles/is-stockity-legit`, "x-default": `${BASE_URL}/artikel/stockity-aman-atau-penipuan` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/how-to-register-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.68,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/cara-daftar-stockity`, en: `${BASE_URL}/en/articles/how-to-register-stockity`, ru: `${BASE_URL}/ru/articles/how-to-register-stockity`, "x-default": `${BASE_URL}/artikel/cara-daftar-stockity` } },
+    },
+    {
+      url: `${BASE_URL}/ru/articles/is-stockity-legit`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.68,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-aman-atau-penipuan`, en: `${BASE_URL}/en/articles/is-stockity-legit`, ru: `${BASE_URL}/ru/articles/is-stockity-legit`, "x-default": `${BASE_URL}/artikel/stockity-aman-atau-penipuan` } },
+    },
+
     // ── Batch 10 Artikel — 4 Juli 2026 ───────────────────────────
     {
       url: `${BASE_URL}/artikel/stockity-vs-quotex`,
@@ -480,6 +512,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-07-04"),
       changeFrequency: "monthly",
       priority: 0.85,
+    },
+
+    // ── Batch 6 Artikel — 9 Juli 2026 ─────────────────────────────
+    {
+      url: `${BASE_URL}/artikel/pajak-trading-binary-option`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/berapa-penghasilan-trading-binary-option`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/withdraw-stockity-pending`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
+      url: `${BASE_URL}/artikel/deposit-stockity-tidak-masuk`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+    {
+      url: `${BASE_URL}/artikel/trading-gold-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.83,
+    },
+    {
+      url: `${BASE_URL}/artikel/trading-bitcoin-stockity`,
+      lastModified: D("2026-07-09"),
+      changeFrequency: "monthly",
+      priority: 0.83,
     },
 
     // ── Artikel Baru (Juli 2026) ──────────────────────────────────

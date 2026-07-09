@@ -58,7 +58,7 @@ export default function Page() {
         related={[
           { href: "/artikel/cara-menghindari-loss-stockity", title: "Cara Menghindari Loss", desc: "Fitur SL, TP & manajemen risiko di Stockity" },
           { href: "/artikel/strategi-martingale-stockity", title: "Strategi Martingale", desc: "Setting martingale aman dengan batas step" },
-          { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal minimum yang masuk akal" },
+          { href: "/artikel/pajak-trading-binary-option", title: "Pajak Trading", desc: "Profit konsisten? Ini cara lapor SPT-nya" },
         ]}
         ctaEyebrow="Disiplin Tanpa Drama"
         ctaTitle="STC AutoTrade Mematuhi Batas Risiko Anda — Setiap Order, Tanpa Emosi"

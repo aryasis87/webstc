@@ -615,7 +615,7 @@ export default function CaraDepositStockityPage() {
               <h2 className="text-[18px] font-bold text-[#1a1612] mb-4">Baca Juga</h2>
               <div className="grid gap-3 sm:grid-cols-3">
                 {[
-                  { href: "/artikel/cara-daftar-stockity", title: "Cara Daftar Stockity", desc: "Panduan registrasi akun Stockity.id untuk mulai menggunakan STC AutoTrade." },
+                  { href: "/artikel/deposit-stockity-tidak-masuk", title: "Deposit Tidak Masuk?", desc: "6 penyebab saldo belum bertambah & solusinya." },
                   { href: "/artikel/bonus-deposit-stockity", title: "Bonus Deposit Stockity", desc: "Cara klaim bonus & memahami syarat turnover" },
                   { href: "/artikel/cara-withdraw-stockity", title: "Cara Withdraw Stockity", desc: "Panduan cara menarik profit dari akun Stockity.id ke rekening atau e-wallet Anda." },
                 ].map((r) => (

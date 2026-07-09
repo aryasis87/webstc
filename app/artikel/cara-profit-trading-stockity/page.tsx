@@ -834,7 +834,7 @@ export default function CaraProfitTradingStockityPage() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/cara-setting-robot-stockity", title: "Cara Setting Robot Stockity", desc: "Konfigurasi martingale, stop loss & strategi" },
-                { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Kalkulasi modal aman per profil risiko" },
+                { href: "/artikel/berapa-penghasilan-trading-binary-option", title: "Berapa Penghasilan Trading?", desc: "Matematika realistis: payout, BEP & simulasi" },
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade 2026" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">

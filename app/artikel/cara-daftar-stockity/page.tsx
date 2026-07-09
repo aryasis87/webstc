@@ -39,6 +39,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/cara-daftar-stockity",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/cara-daftar-stockity",
+      en: "https://stcautotrade.id/en/articles/how-to-register-stockity",
+      ru: "https://stcautotrade.id/ru/articles/how-to-register-stockity",
+      "x-default": "https://stcautotrade.id/artikel/cara-daftar-stockity",
+    },
   },
   openGraph: {
     title: "Cara Daftar Stockity: Panduan Registrasi Akun & Mulai Trading 2026",

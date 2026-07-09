@@ -39,6 +39,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/stockity-aman-atau-penipuan",
+    languages: {
+      "id-ID": "https://stcautotrade.id/artikel/stockity-aman-atau-penipuan",
+      en: "https://stcautotrade.id/en/articles/is-stockity-legit",
+      ru: "https://stcautotrade.id/ru/articles/is-stockity-legit",
+      "x-default": "https://stcautotrade.id/artikel/stockity-aman-atau-penipuan",
+    },
   },
   openGraph: {
     title: "Stockity Aman atau Penipuan? Review Jujur & Faktual 2026",

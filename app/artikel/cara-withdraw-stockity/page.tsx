@@ -466,7 +466,7 @@ export default function CaraWithdrawStockityPage() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 { href: "/artikel/cara-verifikasi-akun-stockity", title: "Cara Verifikasi Akun Stockity", desc: "KYC wajib sebelum withdraw — panduan sampai lolos" },
-                { href: "/artikel/modal-trading-stockity", title: "Modal Trading Stockity", desc: "Berapa modal minimum & cara mulai modal kecil" },
+                { href: "/artikel/withdraw-stockity-pending", title: "Withdraw Pending?", desc: "7 penyebab penarikan tertahan & cara mengatasinya" },
                 { href: "/artikel/stockity-aman-atau-penipuan", title: "Stockity Aman atau Penipuan?", desc: "Review jujur & faktual platform Stockity.id" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">

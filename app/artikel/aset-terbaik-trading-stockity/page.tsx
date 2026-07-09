@@ -770,12 +770,12 @@ export default function AsetTerbaikTradingStockityPage() {
                       label: "Cara Setting Robot Stockity — Panduan Lengkap Dashboard",
                     },
                     {
-                      href: "/artikel/cara-profit-trading-stockity",
-                      label: "Cara Profit Trading Stockity dengan Bot STC AutoTrade",
+                      href: "/artikel/trading-gold-stockity",
+                      label: "Trading Gold (XAU/USD): Karakter, Jam & Strategi Khusus",
                     },
                     {
-                      href: "/artikel/modal-trading-stockity",
-                      label: "Modal Trading Stockity: Berapa yang Dibutuhkan?",
+                      href: "/artikel/trading-bitcoin-stockity",
+                      label: "Trading Bitcoin: Aset 24/7 & Cara Menjinakkannya",
                     },
                   ].map((link) => (
                     <Link
