@@ -157,7 +157,7 @@ export const metadata: Metadata = {
   // file public/yandex_*.html (bot Yandex tidak mengikuti redirect saat
   // memeriksa file; meta tag tersedia di semua halaman).
   verification: {
-    yandex: "86e6aaa7c0992ab9",
+    yandex: "e64cb3bf1797cd94",
   },
 
   applicationName: "STC AutoTrade",
