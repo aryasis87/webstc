@@ -393,11 +393,11 @@ export default function CaraVerifikasiAkunStockityPage() {
             <div>
               <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">Akun Sudah Terverifikasi?</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Otomatiskan Trading Stockity Anda dengan STC AutoTrade</p>
-              <p className="text-[13px] text-[#6b6058]">6 mode strategi, stop loss otomatis, berjalan 24 jam di server. Gratis untuk member.</p>
+              <p className="text-[13px] text-[#6b6058]">6 mode strategi, stop loss otomatis, dieksekusi dari perangkat Anda sendiri. Gratis untuk member.</p>
             </div>
             <div className="flex gap-2.5 flex-shrink-0">
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">Download APK</Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">Versi Web</a>
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">Unduh Aplikasi</a>
             </div>
           </div>
         </section>

@@ -97,7 +97,7 @@ export default function TentangPage() {
           <InfoP>
             Produk utama kami adalah <strong>STC AutoTrade</strong> — bot trading otomatis
             untuk Stockity.id yang tersedia dalam dua bentuk: aplikasi APK Android dan
-            versi web di stcautotradepro.id yang bisa diakses dari browser apa pun tanpa
+            aplikasi di stcautotradepro.id yang bisa diakses dari browser apa pun tanpa
             instalasi. Bot ini menyediakan 6 mode strategi (AI Signal, Copy Trading,
             Indikator Teknikal, Candlestick, Fastrade, dan Schedule) dengan manajemen
             risiko bawaan berupa stop loss dan stop profit otomatis.

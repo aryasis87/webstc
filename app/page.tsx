@@ -75,17 +75,17 @@ const STEPS = [
 ];
 
 const FAQS = [
-  { q: "Apa itu STC AutoTrade / StcAutoTrade?",                          a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id." },
+  { q: "Apa itu STC AutoTrade / StcAutoTrade?",                          a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun aplikasi di stcautotradepro.id." },
   { q: "Apa bedanya versi APK Android dan versi web?",                    a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (stcautotradepro.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, dan iPhone. Semua fitur tersedia di kedua versi." },
   { q: "Bagaimana cara menggunakan versi web STC AutoTrade?",             a: "Buka browser dan kunjungi stcautotradepro.id. Jika belum punya akun, daftar dulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun berhasil terbuat, login menggunakan akun Stockity.id." },
   { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan TechnoAutoTrade?",    a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'TechnoAutoTrade', dan 'Techno Auto Trade' adalah variasi penulisan brand yang sama." },
   { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia via APK Android maupun versi web." },
-  { q: "Bagaimana cara menginstal STC AutoTrade di Android?",             a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan versi web di stcautotradepro.id tanpa instalasi." },
+  { q: "Bagaimana cara menginstal STC AutoTrade di Android?",             a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan aplikasi di stcautotradepro.id tanpa instalasi." },
   { q: "Apakah perlu pengalaman trading?",                                a: "Tidak. STC AutoTrade dirancang agar bisa digunakan pemula sekalipun. Mode demo tersedia di versi APK maupun versi web untuk belajar tanpa risiko finansial." },
   { q: "Modal minimum yang disarankan?",                                  a: "Tidak ada ketentuan minimum, namun kami sarankan minimal Rp500.000 sebagai buffer aman untuk siklus martingale konservatif (nominal awal Rp14.000, multiplier 2,5x, 3 step)." },
-  { q: "Tersedia untuk iOS (iPhone)?",                                    a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui versi web di stcautotradepro.id — buka di Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android." },
+  { q: "Tersedia untuk iOS (iPhone)?",                                    a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui aplikasi di stcautotradepro.id — buka di Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android." },
   { q: "Apakah data akun Stockity saya aman?",                            a: "Keamanan data Anda sepenuhnya terlindungi. Password tidak pernah dikirim ke, atau disimpan di server manapun — termasuk server kami. Hanya token autentikasi yang tersimpan, dienkripsi secara lokal di perangkat Anda." },
-  { q: "Bot bisa jalan saat aplikasi ditutup?",                           a: "Ya. Bot berjalan di server khusus, bukan di perangkat Anda — sehingga tetap aktif 24 jam meski aplikasi ditutup, HP dimatikan, atau koneksi internet Anda terputus." },
+  { q: "Bot bisa jalan saat aplikasi ditutup?",                           a: "Tidak. Sejak versi 4, bot berjalan langsung di perangkat Anda, bukan di server kami — sehingga aplikasi perlu tetap aktif selama sesi berjalan. Perubahan ini membuat aktivitas trading berasal dari koneksi internet Anda sendiri, tidak berbagi jaringan dengan pengguna lain." },
 ];
 
 /* ── JSON-LD ──────────────────────────────────────────────────────── */
@@ -197,7 +197,7 @@ export default function Home() {
               <a href="#cara-kerja" className="hidden sm:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Panduan</a>
               <Link href="/artikel" className="hidden sm:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Artikel</Link>
               <Link href="/faq"     className="hidden sm:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">FAQ</Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Versi Web</a>
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Unduh Aplikasi</a>
               <a href={APK_PATH} download className="ml-1.5 flex items-center gap-1.5 px-4.5 sm:px-5 py-2.5 bg-[#17140f] text-[#f6f4ef] text-sm font-semibold rounded-xl hover:bg-emerald-900 transition-colors no-underline">
                 Download
               </a>
@@ -235,7 +235,7 @@ export default function Home() {
 
                   <p className={`animate-fade-up animate-delay-200 ${INK_DIM} text-base sm:text-[17px] leading-relaxed mb-9 max-w-lg`}>
                     Terhubung langsung ke akun Stockity.id Anda dan mengeksekusi strategi
-                    secara otomatis — <strong className={`${INK} font-semibold`}>24 jam non-stop, bebas emosi</strong>.
+                    secara otomatis — <strong className={`${INK} font-semibold`}>disiplin penuh, bebas emosi</strong>.
                     Gratis untuk member terdaftar.
                   </p>
 
@@ -345,7 +345,7 @@ export default function Home() {
                       <p className={`text-[12px] ${INK_DIM} font-medium`}>stcautotrade.id · Android 8.0+</p>
                     </div>
                     <ul className="flex flex-col gap-2.5">
-                      {["Berjalan di background 24 jam", "Notifikasi order real-time", "Performa optimal di perangkat Android"].map((f) => (
+                      {["Eksekusi dari perangkat Anda sendiri", "Notifikasi order real-time", "Performa optimal di perangkat Android"].map((f) => (
                         <li key={f} className={`flex items-center gap-2.5 text-[13px] ${INK_DIM}`}>
                           <CheckIcon /> {f}
                         </li>

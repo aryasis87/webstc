@@ -244,7 +244,7 @@ export default function RobotTradingIphonePage() {
                   menjamin persetujuan.
                 </p>
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Solusinya: STC AutoTrade menyediakan <strong className="text-[#1a1612]">versi web di stcautotradepro.id</strong>{" "}
+                  Solusinya: STC AutoTrade menyediakan <strong className="text-[#1a1612]">aplikasi di stcautotradepro.id</strong>{" "}
                   yang bisa diakses langsung dari browser iPhone atau iPad — tanpa instalasi, tanpa App Store,
                   dengan semua fitur yang sama persis seperti versi APK Android.
                 </p>

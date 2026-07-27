@@ -12,7 +12,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Download STC AutoTrade APK Android & Versi Web — TechnoAutoTrade",
   description:
-    "Download STC AutoTrade APK Android terbaru atau akses langsung versi web di stcautotradepro.id. Gratis untuk member. Panduan instalasi lengkap tersedia. Mendukung Android 8.0+, PC, Mac, iPhone.",
+    "Download STC AutoTrade APK Android terbaru atau akses langsung aplikasi di stcautotradepro.id. Gratis untuk member. Panduan instalasi lengkap tersedia. Mendukung Android 8.0+, PC, Mac, iPhone.",
   keywords: [
     "download stcautotrade apk",
     "download technoautotrade",
@@ -378,7 +378,7 @@ export default function DownloadPage() {
                 {
                   platform: "iPhone & iPad (iOS)",
                   req: "Safari, Chrome, atau browser modern",
-                  note: "Gunakan versi web di stcautotradepro.id. Tidak perlu App Store.",
+                  note: "Gunakan aplikasi di stcautotradepro.id. Tidak perlu App Store.",
                   badge: "Web",
                   badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
                 },

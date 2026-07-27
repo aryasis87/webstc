@@ -16,7 +16,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Robot Trading PC & Laptop: STC AutoTrade Versi Web di stcautotradepro.id 2026",
   description:
-    "Panduan lengkap cara pakai bot trading STC AutoTrade di PC dan laptop — akses versi web di stcautotradepro.id, semua 6 mode tersedia, perbandingan APK vs web, dan tips optimasi agar bot tetap jalan.",
+    "Panduan lengkap cara pakai bot trading STC AutoTrade di PC dan laptop — akses aplikasi di stcautotradepro.id, semua 6 mode tersedia, perbandingan APK vs web, dan tips optimasi agar bot tetap jalan.",
   keywords: [
     "robot trading pc laptop",
     "STC AutoTrade versi web",

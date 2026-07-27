@@ -18,7 +18,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Auto Trade Stockity Gratis: Download Robot Stockity Terbaik 2026",
   description:
-    "Cara mendapatkan robot trading Stockity gratis lewat STC AutoTrade — download APK Android atau akses versi web tanpa biaya. Panduan daftar whitelist, fitur lengkap, dan perbandingan dengan bot berbayar.",
+    "Cara mendapatkan robot trading Stockity gratis lewat STC AutoTrade — unduh APK Android tanpa biaya. Panduan daftar whitelist, fitur lengkap, dan perbandingan dengan bot berbayar.",
   keywords: [
     "auto trade stockity gratis",
     "robot stockity gratis",
@@ -109,7 +109,7 @@ const faqSchema = {
       name: "Apakah benar ada robot trading Stockity yang gratis?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. STC AutoTrade (StcAutoTrade / TechnoAutoTrade) adalah bot trading Stockity yang gratis untuk semua member terdaftar — baik versi APK Android maupun versi web di stcautotradepro.id. Tidak ada biaya langganan atau biaya tersembunyi.",
+        text: "Ya. STC AutoTrade (StcAutoTrade / TechnoAutoTrade) adalah bot trading Stockity yang gratis untuk semua member terdaftar — aplikasi APK Android yang bisa diunduh di stcautotradepro.id. Tidak ada biaya langganan atau biaya tersembunyi.",
       },
     },
     {
@@ -141,7 +141,7 @@ const faqSchema = {
       name: "Apakah robot Stockity gratis bisa dipakai di iPhone?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. Pengguna iPhone menggunakan versi web gratis di stcautotradepro.id melalui browser Safari atau Chrome. Fitur identik dengan versi APK Android — tidak ada yang dikurangi.",
+        text: "Belum. Sejak versi 4, trading dieksekusi langsung dari perangkat pengguna dan itu hanya bisa dilakukan aplikasi Android — browser tidak mengizinkan jenis koneksi yang dibutuhkan. Pengguna iPhone untuk sementara belum dapat menggunakan STC AutoTrade.",
       },
     },
   ],
@@ -250,7 +250,7 @@ export default function AutoTradeStockityGratisPage() {
                 </p>
                 <p className="text-[13px] text-[#166534] leading-relaxed">
                   6 mode strategi · Stop loss &amp; profit otomatis · Martingale terkelola ·
-                  Mode demo tanpa risiko · APK Android + versi web (PC, Mac, iPhone) ·
+                  Mode demo tanpa risiko · Aplikasi Android ·
                   Tidak ada biaya langganan, tidak ada biaya tersembunyi.
                 </p>
               </div>

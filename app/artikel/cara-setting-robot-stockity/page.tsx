@@ -877,7 +877,7 @@ export default function CaraSettingRobotStockityPage() {
                   },
                   {
                     q: "Apakah robot Stockity bisa aktif 24 jam tanpa diawasi?",
-                    a: "Ya — dengan stop loss dan stop profit aktif, bot bisa berjalan tanpa pengawasan. Stop loss memastikan bot berhenti otomatis jika kerugian melebihi batas. Untuk APK: biarkan aplikasi aktif di background. Untuk versi web: biarkan tab browser terbuka dan sambungkan ke charger.",
+                    a: "Bot bisa berjalan tanpa diawasi selama sesinya aktif — dengan stop loss dan stop profit, bot berhenti otomatis saat batas kerugian atau target tercapai. Sejak versi 4, eksekusi berjalan di perangkat Anda, jadi biarkan aplikasi tetap aktif dan sambungkan ke charger untuk sesi panjang. Trading tidak lagi tersedia lewat browser.",
                   },
                 ].map((item, i) => (
                   <div key={i} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-5 py-4">

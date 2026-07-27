@@ -183,7 +183,7 @@ export default function AiTradingStockityPage() {
             {[
               { v: "Real-time", l: "Analisis Pasar" },
               { v: "0 Emosi", l: "Keputusan Konsisten" },
-              { v: "24/7", l: "Bot di Server" },
+              { v: "6", l: "Mode Strategi" },
               { v: "Demo", l: "Uji Tanpa Risiko" },
             ].map((s, i) => (
               <div key={i} className="bg-white py-4 px-4 text-center border-r border-[rgba(26,22,18,0.07)] last:border-0">
@@ -272,7 +272,7 @@ export default function AiTradingStockityPage() {
                     {[
                       ["Kecepatan analisis", "Menit — terbatas fokus manusia", "Milidetik, ratusan data poin/detik"],
                       ["Konsistensi", "Terpengaruh emosi & kelelahan", "Identik di order ke-1 dan ke-100"],
-                      ["Jam operasional", "Terbatas waktu luang", "24 jam nonstop di server"],
+                      ["Jam operasional", "Terbatas waktu luang", "Selama sesi berjalan, tanpa jeda"],
                       ["Kurva belajar", "Berbulan-bulan", "Langsung pakai, atur risiko saja"],
                       ["Fleksibilitas intuisi", "Bisa membaca konteks berita/situasi", "Terbatas pada pola data yang dipelajari"],
                       ["Kontrol penuh", "Ya — setiap keputusan di tangan Anda", "Anda mengatur batasan, bot mengeksekusi"],
@@ -328,7 +328,7 @@ export default function AiTradingStockityPage() {
               </h2>
               <div className="space-y-3 max-w-2xl">
                 {[
-                  { n: "1", title: "Download & login", desc: "Instal STC AutoTrade (APK Android) atau buka versi web di stcautotradepro.id, lalu login dengan akun Stockity Anda." },
+                  { n: "1", title: "Download & login", desc: "Unduh STC AutoTrade (APK Android) di stcautotradepro.id, pasang, lalu login dengan akun Stockity Anda." },
                   { n: "2", title: "Pilih mode AI Signal", desc: "Dari daftar 6 mode strategi, pilih AI Signal. Tidak ada parameter analisis yang perlu diatur — model bekerja otomatis." },
                   { n: "3", title: "Atur nominal & manajemen risiko", desc: "Set nominal order (mulai kecil), martingale bila diinginkan (maks 3 step untuk pemula), lalu stop loss & stop profit harian." },
                   { n: "4", title: "Mulai di akun demo", desc: "Jalankan minimal 7 hari di demo. Amati win rate dan perilaku bot di berbagai kondisi pasar." },
@@ -344,9 +344,9 @@ export default function AiTradingStockityPage() {
                 ))}
               </div>
               <div className="mt-4">
-                <InfoBox icon="🤖" title="Bot berjalan di server, bukan di HP Anda">
-                  Setelah diaktifkan, AI Signal tetap bekerja meski aplikasi ditutup atau HP mati — bot
-                  berjalan di server khusus 24 jam. Detail teknisnya ada di halaman{" "}
+                <InfoBox icon="📱" title="Bot berjalan di perangkat Anda sendiri">
+                  Sejak versi 4, AI Signal dieksekusi langsung dari aplikasi di HP Anda, bukan dari server
+                  kami — jadi aplikasi perlu tetap aktif selama sesi berjalan. Detail teknisnya ada di halaman{" "}
                   <Link href="/cara-kerja" className="text-[#047857] underline">cara kerja</Link>.
                 </InfoBox>
               </div>
@@ -403,7 +403,7 @@ export default function AiTradingStockityPage() {
             </div>
             <div className="flex gap-2.5 flex-shrink-0">
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">Download APK</Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">Versi Web</a>
+              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline">Unduh Aplikasi</a>
             </div>
           </div>
         </section>

@@ -101,7 +101,7 @@ const faqSchema = {
       name: "Apakah aplikasi STC AutoTrade harus tetap terbuka saat CTC berjalan?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Bot STC AutoTrade perlu tetap aktif (tidak di-force close) agar dapat menerima dan mengeksekusi sinyal real-time dari master trader. Untuk penggunaan lebih stabil di PC/laptop, gunakan versi web di stcautotradepro.id dan jangan tutup tab browser.",
+        text: "Bot STC AutoTrade perlu tetap aktif (tidak di-force close) agar dapat menerima dan mengeksekusi sinyal real-time dari master trader. Untuk penggunaan lebih stabil di PC/laptop, gunakan aplikasi di stcautotradepro.id dan jangan tutup tab browser.",
       },
     },
     {
@@ -612,7 +612,7 @@ export default function CopyTradingStockityPage() {
                   },
                   {
                     q: "Apakah aplikasi STC AutoTrade harus tetap terbuka saat CTC berjalan?",
-                    a: "Bot STC AutoTrade perlu tetap aktif (tidak di-force close) agar dapat menerima dan mengeksekusi sinyal real-time dari master trader. Untuk penggunaan lebih stabil di PC/laptop, gunakan versi web di stcautotradepro.id dan jangan tutup tab browser.",
+                    a: "Bot STC AutoTrade perlu tetap aktif (tidak di-force close) agar dapat menerima dan mengeksekusi sinyal real-time dari master trader. Untuk penggunaan lebih stabil di PC/laptop, gunakan aplikasi di stcautotradepro.id dan jangan tutup tab browser.",
                   },
                   {
                     q: "Bisa gabungkan mode CTC dengan martingale?",

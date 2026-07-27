@@ -769,7 +769,7 @@ export default function RobotStockityAndroidPage() {
                 {[
                   {
                     q: "Versi Android berapa yang dibutuhkan untuk robot Stockity?",
-                    a: "Minimal Android 8.0 (Oreo) ke atas. HP Android rilisan 2018 ke atas umumnya sudah memenuhi syarat ini. Jika HP Anda masih Android 7 ke bawah, gunakan versi web di stcautotradepro.id sebagai alternatif.",
+                    a: "Minimal Android 8.0 (Oreo) ke atas. HP Android rilisan 2018 ke atas umumnya sudah memenuhi syarat ini. Jika HP Anda masih Android 7 ke bawah, gunakan aplikasi di stcautotradepro.id sebagai alternatif.",
                   },
                   {
                     q: "Apakah robot Stockity APK aman untuk HP saya?",

@@ -67,7 +67,7 @@ const FAQ_CATEGORIES = [
     items: [
       {
         q: "Apa itu STC AutoTrade / StcAutoTrade?",
-        a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun versi web di stcautotradepro.id yang bisa diakses dari browser tanpa instalasi.",
+        a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun aplikasi di stcautotradepro.id yang bisa diakses dari browser tanpa instalasi.",
       },
       {
         q: "Apa perbedaan STC AutoTrade, StcAutoTrade, dan TechnoAutoTrade?",
@@ -101,11 +101,11 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Apakah STC AutoTrade tersedia untuk iPhone / iOS?",
-        a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui versi web di stcautotradepro.id — cukup buka di browser Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android.",
+        a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui aplikasi di stcautotradepro.id — cukup buka di browser Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android.",
       },
       {
         q: "Apakah bisa digunakan di PC atau laptop?",
-        a: "Bisa. Gunakan versi web di stcautotradepro.id — buka di Chrome, Edge, Firefox, atau browser lainnya di PC/laptop Windows, Mac, atau Linux. Tidak ada perbedaan fitur dengan versi mobile.",
+        a: "Bisa. Gunakan aplikasi di stcautotradepro.id — buka di Chrome, Edge, Firefox, atau browser lainnya di PC/laptop Windows, Mac, atau Linux. Tidak ada perbedaan fitur dengan versi mobile.",
       },
       {
         q: "Versi Android minimum yang diperlukan?",
@@ -249,7 +249,7 @@ export default function FAQPage() {
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
             Jawaban lengkap seputar STC AutoTrade (StcAutoTrade / TechnoAutoTrade) —
             robot trading otomatis untuk Stockity.id, tersedia sebagai APK Android dan
-            versi web di stcautotradepro.id.
+            aplikasi di stcautotradepro.id.
           </p>
 
           {/* Kategori shortcut */}

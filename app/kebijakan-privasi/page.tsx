@@ -94,7 +94,7 @@ export default function KebijakanPrivasiPage() {
         <InfoSection title="Ruang lingkup">
           <InfoP>
             Kebijakan ini berlaku untuk situs informasi stcautotrade.id serta layanan
-            STC AutoTrade (aplikasi APK Android dan versi web di stcautotradepro.id).
+            STC AutoTrade (aplikasi APK Android dan aplikasi di stcautotradepro.id).
             Platform trading Stockity.id dimiliki dan dioperasikan pihak lain dan
             memiliki kebijakan privasinya sendiri.
           </InfoP>
