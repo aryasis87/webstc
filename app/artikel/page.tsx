@@ -383,7 +383,7 @@ export default function ArtikelPage() {
               </h2>
               <p className="text-[#e0f2fe]/45 text-base leading-relaxed mb-8">
                 Download <strong className="text-[#e0f2fe]/70">STC AutoTrade</strong> (TechnoAutoTrade)
-                atau buka versi web — mulai dari mode demo tanpa risiko.
+                — mulai dari mode demo tanpa risiko.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <a

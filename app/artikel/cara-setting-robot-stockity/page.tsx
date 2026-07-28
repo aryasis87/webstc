@@ -897,7 +897,7 @@ export default function CaraSettingRobotStockityPage() {
               {[
                 { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Panduan lengkap auto trade Stockity 2026" },
                 { href: "/cara-kerja", title: "Cara Kerja STC AutoTrade", desc: "Penjelasan teknis 6 strategi & manajemen risiko" },
-                { href: "/download", title: "Download STC AutoTrade", desc: "APK Android & panduan instalasi lengkap" },
+                { href: "/download", title: "Download STC AutoTrade", desc: "Aplikasi Android — panduan instalasi lengkap" },
               ].map((l) => (
                 <Link key={l.href} href={l.href} className="group block bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-4 hover:border-[#10b981]/30 hover:shadow-sm transition-all no-underline">
                   <p className="text-[13px] font-semibold text-[#1a1612] mb-1 group-hover:text-[#047857] transition-colors">{l.title} →</p>
@@ -914,7 +914,7 @@ export default function CaraSettingRobotStockityPage() {
             <div>
               <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-1.5">Mulai Gratis Sekarang</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Praktikkan Panduan Setting Ini Langsung</p>
-              <p className="text-[13px] text-[#6b6058]">Download APK atau buka versi web — mulai dari mode demo gratis tanpa risiko finansial.</p>
+              <p className="text-[13px] text-[#6b6058]">Unduh aplikasi Android — mulai dari mode demo gratis tanpa risiko finansial.</p>
             </div>
             <div className="flex gap-2.5 flex-shrink-0">
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">

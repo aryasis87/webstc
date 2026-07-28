@@ -88,7 +88,7 @@ export default function SyaratKetentuanPage() {
         breadcrumbName="Syarat & Ketentuan"
         eyebrow="Legal"
         title="Syarat & Ketentuan"
-        intro="Dengan menggunakan situs stcautotrade.id atau layanan STC AutoTrade (APK Android maupun versi web), Anda menyetujui ketentuan di bawah ini. Bacalah terutama bagian peringatan risiko."
+        intro="Dengan menggunakan situs stcautotrade.id atau layanan STC AutoTrade (aplikasi Android), Anda menyetujui ketentuan di bawah ini. Bacalah terutama bagian peringatan risiko."
         updated={UPDATED_LABEL}
       >
         <InfoWarning>

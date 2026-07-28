@@ -644,7 +644,7 @@ export default function CaraDepositStockityPage() {
               <p className="text-[11px] font-semibold tracking-widest uppercase text-white/40 mb-4">Mulai Sekarang</p>
               <h2 className="text-[24px] sm:text-[28px] font-bold text-white mb-3">Coba STC AutoTrade Gratis</h2>
               <p className="text-[14px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">
-                Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install. Mode Demo tersedia gratis — tanpa deposit.
+                Unduh aplikasinya dan jalankan trading otomatis langsung dari HP Android Anda. Mode Demo tersedia gratis — tanpa deposit.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline">Download APK Android</a>

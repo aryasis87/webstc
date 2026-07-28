@@ -420,7 +420,7 @@ export default function CaraKerjaPage() {
             <div>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Siap memulai?</p>
               <p className="text-[13px] text-[#6b6058]">
-                Download APK Android atau langsung buka versi web — mulai dari mode demo gratis.
+                Unduh aplikasi Android — mulai dari mode demo gratis.
               </p>
             </div>
             <div className="flex gap-2.5 flex-shrink-0">

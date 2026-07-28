@@ -76,8 +76,8 @@ const STEPS = [
 
 const FAQS = [
   { q: "Apa itu STC AutoTrade / StcAutoTrade?",                          a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun aplikasi di stcautotradepro.id." },
-  { q: "Apa bedanya versi APK Android dan versi web?",                    a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (stcautotradepro.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, dan iPhone. Semua fitur tersedia di kedua versi." },
-  { q: "Bagaimana cara menggunakan versi web STC AutoTrade?",             a: "Buka browser dan kunjungi stcautotradepro.id. Jika belum punya akun, daftar dulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun berhasil terbuat, login menggunakan akun Stockity.id." },
+  { q: "Di perangkat apa STC AutoTrade bisa dipakai?",                   a: "Aplikasi Android saja. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan hal itu hanya bisa dilakukan aplikasi — bukan browser." },
+  { q: "Apakah masih ada versi browser?",                                a: "Tidak. Alamat stcautotradepro.id kini berfungsi sebagai halaman unduh aplikasi." },
   { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan TechnoAutoTrade?",    a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'TechnoAutoTrade', dan 'Techno Auto Trade' adalah variasi penulisan brand yang sama." },
   { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia via APK Android maupun versi web." },
   { q: "Bagaimana cara menginstal STC AutoTrade di Android?",             a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan aplikasi di stcautotradepro.id tanpa instalasi." },
@@ -118,7 +118,7 @@ const schemaSoftwareApp = {
   "@id": `${BASE_URL}/#app`,
   name: "STC AutoTrade",
   alternateName: ["StcAutoTrade", "TechnoAutoTrade", "Robot Stockity", "Auto Stockity"],
-  description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android dan versi web. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
+  description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai aplikasi Android. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
   url: BASE_URL,
   applicationCategory: "FinanceApplication",
   operatingSystem: "Android, Web",
@@ -369,7 +369,7 @@ export default function Home() {
                       <span className="text-[10px] font-bold tracking-[0.16em] uppercase px-2.5 py-1 rounded-full border border-white/15 text-emerald-200">Web</span>
                     </div>
                     <div className="relative">
-                      <h3 className={`${SERIF} text-2xl text-white mb-1`}>Versi Web</h3>
+                      <h3 className={`${SERIF} text-2xl text-white mb-1`}>Aplikasi Android</h3>
                       <p className="text-[12px] text-emerald-200/70 font-medium">stcautotradepro.id · tanpa instalasi</p>
                     </div>
                     <ul className="relative flex flex-col gap-2.5">
@@ -696,7 +696,7 @@ export default function Home() {
                   Mulai Trading <em className="text-emerald-300">Otomatis</em> Hari Ini
                 </h2>
                 <p className="text-emerald-50/60 text-base sm:text-lg leading-relaxed max-w-md mx-auto mb-11">
-                  Download STC AutoTrade atau buka versi web — mulai dari mode demo tanpa
+                  Unduh STC AutoTrade — mulai dari mode demo tanpa
                   risiko, dan rasakan perbedaannya.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
@@ -704,7 +704,7 @@ export default function Home() {
                     Download APK Android
                   </a>
                 </div>
-                <p className="mt-6 text-[12px] text-emerald-100/50">Android 8.0+ · Versi Web semua perangkat · Gratis untuk member</p>
+                <p className="mt-6 text-[12px] text-emerald-100/50">Android 8.0+ · Gratis untuk member</p>
               </FadeUp>
             </div>
           </section>

@@ -929,7 +929,7 @@ export default function RobotTradingStockityPage() {
                 {
                   href: "/download",
                   title: "Download STC AutoTrade",
-                  desc: "APK Android & panduan instalasi lengkap",
+                  desc: "Aplikasi Android — panduan instalasi lengkap",
                   arrow: true,
                 },
                 {

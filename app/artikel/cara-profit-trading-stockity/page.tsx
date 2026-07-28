@@ -690,7 +690,7 @@ export default function CaraProfitTradingStockityPage() {
                     badge: "Setup",
                     badgeColor: "bg-emerald-50 text-emerald-700",
                     tasks: [
-                      "Download STC AutoTrade APK atau buka versi web",
+                      "Unduh aplikasi STC AutoTrade",
                       "Daftar akun Stockity.id melalui aplikasi (gratis)",
                       "Pelajari cara kerja 6 strategi di halaman Cara Kerja",
                       "Setup: pilih strategi CTC atau AI Signal untuk demo",

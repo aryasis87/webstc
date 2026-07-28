@@ -561,7 +561,7 @@ export default function StockityAmanAtauPenipuanPage() {
                 <InfoBox icon="🔒" title="Cara verifikasi keaslian STC AutoTrade">
                   Satu-satunya sumber resmi STC AutoTrade: domain{" "}
                   <strong>stcautotrade.id</strong> (APK Android) dan{" "}
-                  <strong>stcautotradepro.id</strong> (versi web). Tidak ada channel Telegram
+                  <strong>stcautotradepro.id</strong> (halaman unduh). Tidak ada channel Telegram
                   berbayar, tidak ada grup WhatsApp resmi yang meminta pembayaran, tidak ada
                   admin yang menghubungi Anda secara proaktif.
                 </InfoBox>

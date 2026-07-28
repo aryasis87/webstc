@@ -81,7 +81,7 @@ const TOPICS = [
   },
   {
     title: "Kendala teknis aplikasi",
-    desc: "Masalah instalasi APK, login versi web, atau bot yang tidak berjalan sesuai pengaturan. Sertakan tangkapan layar bila memungkinkan.",
+    desc: "Masalah instalasi APK, login, atau bot yang tidak berjalan sesuai pengaturan. Sertakan tangkapan layar bila memungkinkan.",
   },
   {
     title: "Masukan konten & media",

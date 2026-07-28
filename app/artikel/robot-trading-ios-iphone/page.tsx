@@ -330,7 +330,7 @@ export default function RobotTradingIphonePage() {
                     {
                       platform: "Android",
                       icon: "🤖",
-                      cara: "APK dari stcautotrade.id atau versi web",
+                      cara: "APK dari stcautotrade.id",
                       features: [
                         "APK berjalan di background (lebih stabil)",
                         "Semua 6 mode strategi tersedia",

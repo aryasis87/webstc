@@ -88,7 +88,7 @@ const FAQ_CATEGORIES = [
     title: "Platform & Instalasi",
     items: [
       {
-        q: "Apa perbedaan versi APK Android dan versi web?",
+        q: "Di perangkat apa STC AutoTrade bisa dipakai?",
         a: "Versi APK diinstal di perangkat Android dan bisa berjalan di background. Versi web (stcautotradepro.id) tidak perlu instalasi — langsung buka di browser, cocok untuk PC, laptop, Mac, dan iPhone. Semua 6 fitur strategi tersedia di kedua versi, tidak ada yang dikurangi.",
       },
       {
@@ -96,7 +96,7 @@ const FAQ_CATEGORIES = [
         a: "1) Download file APK dari tombol di halaman download. 2) Aktifkan izin 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan / Privasi Android. 3) Buka file APK yang diunduh dan ikuti instruksi instalasi. 4) Setelah terpasang, buka aplikasi dan daftar akun baru melalui aplikasi. Atau, gunakan versi web langsung di stcautotradepro.id tanpa instalasi.",
       },
       {
-        q: "Bagaimana cara menggunakan versi web STC AutoTrade?",
+        q: "Apakah STC AutoTrade masih punya versi browser?",
         a: "Buka browser (Chrome, Safari, Firefox, atau browser lainnya) dan kunjungi stcautotradepro.id. Jika belum punya akun Stockity.id, daftar terlebih dahulu melalui web tersebut — prosesnya cepat dan gratis. Setelah akun dibuat, login menggunakan akun Stockity.id. Tidak perlu unduh atau instalasi.",
       },
       {
@@ -109,7 +109,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Versi Android minimum yang diperlukan?",
-        a: "STC AutoTrade APK memerlukan Android 8.0 (Oreo) ke atas. Untuk versi web, bisa diakses di browser modern apapun tanpa batasan versi sistem operasi.",
+        a: "STC AutoTrade APK memerlukan Android 8.0 (Oreo) ke atas. Aplikasi berjalan langsung di perangkat apun tanpa batasan versi sistem operasi.",
       },
     ],
   },
@@ -123,7 +123,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Bagaimana cara daftar akun baru di Stockity.id melalui STC AutoTrade?",
-        a: "Buka aplikasi STC AutoTrade (APK atau versi web), kemudian pilih opsi daftar akun baru. Proses pendaftaran dilakukan langsung melalui aplikasi — cepat, gratis, dan tidak perlu berpindah ke aplikasi atau website lain.",
+        a: "Buka aplikasi STC AutoTrade, kemudian pilih opsi daftar akun baru. Proses pendaftaran dilakukan langsung melalui aplikasi — cepat, gratis, dan tidak perlu berpindah ke aplikasi atau website lain.",
       },
       {
         q: "Apa yang terjadi jika saya lupa password Stockity?",
@@ -161,7 +161,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Apakah ada mode demo untuk latihan tanpa risiko?",
-        a: "Ya. Mode demo tersedia di versi APK maupun versi web. Sangat disarankan untuk menggunakan mode demo minimal 7 hari sebelum beralih ke mode real — untuk memvalidasi strategi dan memahami cara kerja bot tanpa risiko finansial.",
+        a: "Ya. Mode demo tersedia di aplikasi. Sangat disarankan untuk menggunakan mode demo minimal 7 hari sebelum beralih ke mode real — untuk memvalidasi strategi dan memahami cara kerja bot tanpa risiko finansial.",
       },
       {
         q: "Apakah perlu pengalaman trading untuk menggunakan STC AutoTrade?",

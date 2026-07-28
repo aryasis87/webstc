@@ -209,7 +209,7 @@ export default function DownloadPage() {
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
             STC AutoTrade (TechnoAutoTrade) tersedia sebagai aplikasi Android. Mulai versi 4,
             trading dijalankan langsung dari HP Anda — bukan dari server kami — sehingga
-            aplikasinya perlu dipasang dan versi web tidak lagi tersedia.
+            aplikasinya perlu dipasang dan versi browser tidak lagi tersedia.
           </p>
         </header>
 

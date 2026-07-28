@@ -746,7 +746,7 @@ export default function ModalTradingStockityPage() {
             <div>
               <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#15803d] mb-1.5">Mulai dari Modal Rp 300.000</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Coba Robot Stockity — Mulai dari Mode Demo Gratis</p>
-              <p className="text-[13px] text-[#6b6058]">Download APK atau buka versi web — validasi strategi di demo sebelum gunakan modal nyata.</p>
+              <p className="text-[13px] text-[#6b6058]">Unduh aplikasi Android — validasi strategi di demo sebelum gunakan modal nyata.</p>
             </div>
             <div className="flex gap-2.5 flex-shrink-0">
               <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">
