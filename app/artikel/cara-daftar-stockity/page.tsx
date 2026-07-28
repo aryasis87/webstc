@@ -350,7 +350,7 @@ export default function CaraDaftarStockityPage() {
                   <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5">
                     <div className="flex items-center gap-2.5 mb-4">
                       <div className="w-8 h-8 rounded-xl bg-[#ecfdf5] flex items-center justify-center text-sm">🌐</div>
-                      <h3 className="text-[14px] font-semibold text-[#1a1612]">Via Versi Web (PC, Mac, iPhone)</h3>
+                      <h3 className="text-[14px] font-semibold text-[#1a1612]">Lewat Situs Stockity (PC, Mac, iPhone)</h3>
                     </div>
                     <div className="space-y-2.5">
                       {[

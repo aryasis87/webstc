@@ -374,7 +374,7 @@ export default function RobotTradingIphonePage() {
                     { icon: "🔌", tip: "Selalu sambungkan ke charger saat bot aktif", detail: "Menjalankan browser aktif menguras baterai lebih cepat. Sambungkan charger agar iPhone tidak masuk mode hemat daya yang bisa mematikan background apps." },
                     { icon: "📱", tip: "Nonaktifkan Auto-Lock layar", detail: "Buka Settings → Display & Brightness → Auto-Lock → pilih 'Never'. Ini mencegah layar mati yang bisa menyebabkan Safari di-suspend." },
                     { icon: "🔕", tip: "Nonaktifkan Low Power Mode selama bot aktif", detail: "Settings → Battery → Low Power Mode → OFF. Mode ini secara agresif membatasi background activity termasuk aktivitas browser." },
-                    { icon: "🌐", tip: "Gunakan Safari untuk stabilitas terbaik", detail: "Safari adalah browser native iOS dengan akses terdalam ke sistem. Gunakan Safari (bukan Chrome) untuk hasil paling stabil saat menjalankan versi web STC AutoTrade." },
+                    { icon: "📱", tip: "Pakai HP Android untuk menjalankan bot", detail: "Aplikasinya ringan dan berjalan baik di perangkat lama. iPhone tetap bisa dipakai memantau chart lewat aplikasi Stockity." },
                     { icon: "📶", tip: "Pastikan koneksi internet stabil", detail: "Bot memerlukan koneksi internet yang stabil untuk menerima sinyal dan mengeksekusi order. Gunakan WiFi yang stabil atau koneksi 4G/5G yang kuat." },
                   ].map((item) => (
                     <div key={item.tip} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl p-5 flex gap-3">
@@ -403,10 +403,10 @@ export default function RobotTradingIphonePage() {
               </h2>
               <div className="space-y-3">
                 {[
-                  { q: "Apakah ada robot trading Stockity untuk iPhone?", a: "Ya. Melalui versi web STC AutoTrade di stcautotradepro.id, pengguna iPhone dan iPad bisa mengakses semua fitur robot trading Stockity langsung di browser Safari atau Chrome — tanpa instalasi." },
-                  { q: "Apakah STC AutoTrade versi web berbeda dari APK Android?", a: "Secara fitur, keduanya identik: 6 mode strategi, martingale, stop loss/profit, dan riwayat trading semuanya tersedia. Perbedaan utama adalah cara menjalankannya — APK Android bisa berjalan lebih stabil di background, sementara versi web di iOS memerlukan browser tetap di foreground." },
-                  { q: "Bisakah menggunakan iPad untuk trading dengan STC AutoTrade?", a: "Ya. iPad bisa menggunakan versi web STC AutoTrade dengan pengalaman yang lebih baik karena layar lebih besar dan baterai lebih besar. Semua langkah sama dengan iPhone — buka stcautotradepro.id di Safari." },
-                  { q: "Berapa versi iOS minimum untuk menggunakan STC AutoTrade web?", a: "STC AutoTrade versi web kompatibel dengan iOS 14 ke atas (Safari dan Chrome terbaru). Pastikan iOS Anda selalu diperbarui untuk pengalaman terbaik." },
+                  { q: "Apakah ada robot trading Stockity untuk iPhone?", a: "Belum. STC AutoTrade hanya berjalan di aplikasi Android sejak versi 4, karena trading dieksekusi langsung dari perangkat dan browser tidak mengizinkan koneksi yang dibutuhkan." },
+                  { q: "Apakah STC AutoTrade masih punya versi browser?", a: "Tidak. Alamat stcautotradepro.id kini berfungsi sebagai halaman unduh aplikasi Android." },
+                  { q: "Bisakah menggunakan iPad untuk trading dengan STC AutoTrade?", a: "Belum, sama seperti iPhone. iPad tetap bisa dipakai untuk memantau chart di aplikasi Stockity, sementara bot dijalankan dari HP Android." },
+                  { q: "Apakah dukungan iOS akan ditambahkan?", a: "Belum ada jadwal yang bisa kami janjikan. Kendalanya bukan tampilan, melainkan izin koneksi di iOS untuk menjalankan eksekusi dari perangkat." },
                 ].map((item, i) => (
                   <div key={i} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-5 py-4">
                     <h3 className="text-[13px] sm:text-[14px] font-semibold text-[#1a1612] mb-2 leading-snug">{item.q}</h3>

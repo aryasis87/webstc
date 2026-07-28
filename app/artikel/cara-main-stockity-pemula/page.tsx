@@ -383,7 +383,7 @@ export default function CaraMainStockityPemulaPage() {
                   otomatis. Semua fitur juga berjalan penuh di mode demo, jadi Anda bisa mengujinya tanpa risiko.
                 </p>
                 <InfoBox icon="🤖" title="Gratis untuk member">
-                  STC AutoTrade tersedia sebagai APK Android maupun versi web (untuk iPhone, PC, dan Mac) dan
+                  STC AutoTrade tersedia sebagai aplikasi Android (dulu juga ada versi browser untuk iPhone, PC, dan Mac) dan
                   gratis untuk member terdaftar. Mulai dari{" "}
                   <Link href="/download" className="text-[#047857] underline">halaman download</Link>.
                 </InfoBox>

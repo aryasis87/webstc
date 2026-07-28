@@ -295,13 +295,13 @@ export default function RobotStockityAndroidPage() {
             <section>
               <SectionLabel>01 · Mengapa Android?</SectionLabel>
               <h2 className="font-[family-name:var(--font-dm-serif)] text-2xl sm:text-3xl font-normal text-[#1a1612] mb-4 leading-snug">
-                Kenapa Versi Android APK Lebih Unggul dari Versi Web?
+                Kenapa Bot Dijalankan lewat Aplikasi Android?
               </h2>
               <div className="space-y-4">
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  STC AutoTrade tersedia dalam dua versi: APK Android dan versi web. Keduanya
-                  memiliki fitur yang sama — namun untuk pengguna Android, versi APK memiliki
-                  keunggulan signifikan dalam hal stabilitas dan performa.
+                  Sampai versi 3, STC AutoTrade juga punya versi browser. Sejak versi 4 trading
+                  dieksekusi langsung dari perangkat pengguna — dan hanya aplikasi yang dapat
+                  membuka koneksi yang dibutuhkan, sehingga Android menjadi satu-satunya jalur.
                 </p>
 
                 <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-2xl overflow-hidden">

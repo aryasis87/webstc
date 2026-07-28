@@ -388,7 +388,7 @@ export default function CaraSettingRobotStockityPage() {
                     },
                     {
                       icon: "🌐",
-                      title: "Versi Web (PC, Mac, iPhone)",
+                      title: "Perangkat selain Android",
                       steps: [
                         "Buka stcautotradepro.id di browser",
                         "Tidak perlu instal apapun",
