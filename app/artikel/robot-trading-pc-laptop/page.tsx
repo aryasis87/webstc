@@ -3,7 +3,7 @@
  *
  * Target keyword:
  *   Primary  : robot trading pc laptop
- *   Secondary: STC AutoTrade versi web, bot trading stockity pc,
+ *   Secondary: STC AutoTrade android, bot trading stockity pc,
  *              cara pakai stockity di laptop, stcautotradepro.id,
  *              robot trading browser
  */
@@ -249,307 +249,48 @@ export default function RobotTradingPcLaptopPage() {
           {/* SECTION 1 — Tersedia di Browser */}
           <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
             <div className="max-w-3xl mx-auto px-5">
-              <SectionLabel>Versi Web</SectionLabel>
-              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">STC AutoTrade Tersedia Penuh di Browser</h2>
+              <SectionLabel>Status Dukungan</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kenapa Bot Tidak Berjalan di Browser</h2>
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
                 STC AutoTrade dibangun menggunakan <strong className="text-[#1a1612]">Capacitor</strong>, sehingga satu basis kode bisa berjalan di Android maupun browser. Namun sejak versi 4, yang menentukan bukan lagi tampilannya melainkan <em>siapa yang mengeksekusi trading</em>: eksekusi kini berjalan di perangkat pengguna, dan browser tidak mengizinkan koneksi yang dibutuhkan untuk itu.
               </p>
-              <InfoBox icon="🌐" title="Akses Versi Web di stcautotradepro.id">
-                Buka browser apapun di PC atau laptop Anda, ketik <strong>stcautotradepro.id</strong>, dan login dengan email serta password akun Stockity.id Anda. Bot langsung siap dijalankan — tidak perlu download, install, atau konfigurasi apapun.
-              </InfoBox>
-              <div className="mt-5 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
-                <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Informasi Versi Web:</p>
-                <div className="space-y-2">
-                  {[
-                    { label: "URL", value: "stcautotradepro.id" },
-                    { label: "Platform", value: "Web Browser (semua OS)" },
-                    { label: "Browser yang didukung", value: "Chrome, Firefox, Edge, Opera, Safari" },
-                    { label: "Instalasi diperlukan", value: "Tidak" },
-                    { label: "Login", value: "Email + password Stockity.id (sama dengan APK)" },
-                    { label: "Jumlah mode trading", value: "6 mode (sama dengan APK)" },
-                  ].map((item) => (
-                    <div key={item.label} className="flex justify-between gap-2 py-1.5 border-b border-[rgba(26,22,18,0.05)] last:border-0">
-                      <span className="text-[12px] text-[#6b6058]">{item.label}</span>
-                      <span className="text-[12px] font-semibold text-[#1a1612] text-right">{item.value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* SECTION 2 — Cara Akses */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-            <div className="max-w-3xl mx-auto px-5">
-              <SectionLabel>Panduan Akses</SectionLabel>
-              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Akses STC AutoTrade di PC/Laptop</h2>
-              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                Prosesnya sangat sederhana — cukup 3 langkah utama untuk mulai trading dengan bot di PC atau laptop:
-              </p>
-              <div className="space-y-3">
-                <StepCard
-                  n="1"
-                  title="Buka Browser di PC/Laptop"
-                  desc="Gunakan Google Chrome, Mozilla Firefox, Microsoft Edge, atau browser modern lainnya. Pastikan menggunakan versi browser terbaru untuk performa terbaik."
-                  sub="Chrome direkomendasikan untuk stabilitas terbaik"
-                />
-                <StepCard
-                  n="2"
-                  title="Buka stcautotradepro.id"
-                  desc="Ketik stcautotradepro.id di address bar browser dan tekan Enter. Halaman login STC AutoTrade akan tampil — tampilan web-responsive yang sama seperti di HP."
-                  sub="Bookmark halaman ini untuk akses lebih cepat"
-                />
-                <StepCard
-                  n="3"
-                  title="Login dengan Akun Stockity.id"
-                  desc="Masukkan email dan password akun Stockity.id Anda — akun yang sama dipakai di semua perangkat, tidak ada akun terpisah."
-                  sub="Whitelist berlaku sama — akun harus sudah didaftarkan admin/reseller"
-                />
-                <StepCard
-                  n="4"
-                  title="Dashboard Terbuka"
-                  desc="Setelah login, dashboard STC AutoTrade tampil lengkap di browser. Saldo real/demo tersinkronisasi langsung, semua mode tersedia."
-                />
-                <StepCard
-                  n="5"
-                  title="Pilih Mode dan Mulai Bot"
-                  desc="Pilih salah satu dari 6 mode trading, atur parameter (base amount, SL, TP, martingale), pilih akun Real atau Demo, lalu aktifkan bot."
-                  sub="Semua cara setting sama persis dengan versi APK"
-                />
-              </div>
-            </div>
-          </section>
-
-          {/* SECTION 3 — Fitur di Versi Web */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
-            <div className="max-w-3xl mx-auto px-5">
-              <SectionLabel>Fitur Lengkap</SectionLabel>
-              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Semua Fitur Tersedia di Versi Web</h2>
-              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                Tidak ada fitur yang &ldquo;dikurangi&rdquo; di versi web. Berikut konfirmasi fitur yang tersedia:
-              </p>
-              <div className="space-y-3 mb-5">
-                <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
-                  <p className="text-[12px] font-semibold text-[#1a1612] mb-3">6 Mode Trading (semua tersedia):</p>
-                  <div className="grid sm:grid-cols-2 gap-2">
-                    {[
-                      { mode: "Signal Mode", kode: "schedule", desc: "Input sinyal manual + jadwal eksekusi" },
-                      { mode: "Fastrade FTT", kode: "fastrade", desc: "Analisis otomatis real-time" },
-                      { mode: "Fastrade CTC", kode: "ctc", desc: "Copy trading dari master real-time" },
-                      { mode: "AI Signal", kode: "aisignal", desc: "Sinyal dari sistem AI analyzer" },
-                      { mode: "Indicator", kode: "indicator", desc: "Analisis SMA, EMA, RSI" },
-                      { mode: "Momentum", kode: "momentum", desc: "Deteksi 4 pola candlestick" },
-                    ].map((item) => (
-                      <div key={item.mode} className="flex items-start gap-2 py-1">
-                        <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
-                        <div>
-                          <span className="text-[12px] font-semibold text-[#1a1612]">{item.mode}</span>
-                          <span className="text-[11px] text-[#6b6058] ml-1">({item.kode})</span>
-                          <p className="text-[11px] text-[#6b6058]">{item.desc}</p>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl p-4">
-                  <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Fitur Lainnya (semua tersedia):</p>
-                  <div className="grid sm:grid-cols-2 gap-1.5">
-                    {[
-                      "Martingale (on/off, 1-7 step, multiplier)",
-                      "Stop Loss harian otomatis",
-                      "Stop Profit harian otomatis",
-                      "Always Signal (recovery otomatis)",
-                      "Switch Real / Demo account",
-                      "Halaman History (filter, detail order)",
-                      "Timeframe 1m/5m/15m/30m/1h (Fastrade)",
-                      "Quick Amount buttons (14K-2,8jt)",
-                      "Webview untuk buka Stockity.id",
-                      "Real-time saldo dari Stockity API",
-                    ].map((item) => (
-                      <div key={item} className="flex items-start gap-2">
-                        <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
-                        <p className="text-[12px] text-[#6b6058]">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <TipBox>
-                Satu-satunya perbedaan nyata versi web vs APK adalah notifikasi push — versi web tidak punya notifikasi push seperti aplikasi Android. Namun semua fungsi bot berjalan identik.
-              </TipBox>
-            </div>
-          </section>
-
-          {/* SECTION 4 — Perbandingan APK vs Web */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-            <div className="max-w-3xl mx-auto px-5">
-              <SectionLabel>Perbandingan</SectionLabel>
-              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Perbandingan APK Android vs Versi Web</h2>
-              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                Pilih platform sesuai kebutuhan dan kenyamanan Anda:
-              </p>
-              <div className="grid sm:grid-cols-2 gap-4 mb-5">
-                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#dcfce7] flex items-center justify-center text-base">📱</div>
-                    <p className="text-[13px] font-bold text-[#1a1612]">APK Android</p>
-                  </div>
-                  <div className="space-y-2 mb-3">
-                    <p className="text-[11px] font-semibold text-[#14532d]">Kelebihan:</p>
-                    {[
-                      "Berjalan di background (tidak perlu buka terus)",
-                      "Notifikasi push tersedia",
-                      "Responsif untuk layar mobile",
-                      "Performa optimal di Android",
-                    ].map((item) => (
-                      <div key={item} className="flex gap-2 items-start">
-                        <span className="text-green-500 text-xs flex-shrink-0">+</span>
-                        <p className="text-[12px] text-[#6b6058]">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-[11px] font-semibold text-[#dc2626]">Kekurangan:</p>
-                    {[
-                      "Hanya untuk Android (tidak iOS native)",
-                      "Perlu download dan install APK",
-                      "Layar HP lebih kecil untuk monitoring",
-                    ].map((item) => (
-                      <div key={item} className="flex gap-2 items-start">
-                        <span className="text-red-500 text-xs flex-shrink-0">-</span>
-                        <p className="text-[12px] text-[#6b6058]">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-                <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4">
-                  <div className="flex items-center gap-2 mb-3">
-                    <div className="w-8 h-8 rounded-lg bg-[#d1fae5] flex items-center justify-center text-base">💻</div>
-                    <p className="text-[13px] font-bold text-[#1a1612]">Versi Web (stcautotradepro.id)</p>
-                  </div>
-                  <div className="space-y-2 mb-3">
-                    <p className="text-[11px] font-semibold text-[#14532d]">Kelebihan:</p>
-                    {[
-                      "Berjalan di semua OS (Windows, Mac, Linux)",
-                      "Tidak perlu install — langsung akses",
-                      "Layar besar untuk monitoring lebih nyaman",
-                      "Mudah multitasking dengan tab lain",
-                    ].map((item) => (
-                      <div key={item} className="flex gap-2 items-start">
-                        <span className="text-green-500 text-xs flex-shrink-0">+</span>
-                        <p className="text-[12px] text-[#6b6058]">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="space-y-2">
-                    <p className="text-[11px] font-semibold text-[#dc2626]">Kekurangan:</p>
-                    {[
-                      "Tab harus tetap terbuka (tidak background)",
-                      "Tidak ada notifikasi push",
-                      "PC/laptop harus tetap menyala",
-                    ].map((item) => (
-                      <div key={item} className="flex gap-2 items-start">
-                        <span className="text-red-500 text-xs flex-shrink-0">-</span>
-                        <p className="text-[12px] text-[#6b6058]">{item}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <InfoBox icon="💡" title="Rekomendasi Penggunaan">
-                Jika Anda lebih banyak di depan PC/laptop saat trading, gunakan versi web. Jika lebih mobile dan ingin bot jalan di background, gunakan APK Android. Keduanya bisa digunakan sesuai situasi — cukup tidak jalankan bot di dua perangkat sekaligus.
+              <InfoBox icon="ℹ️" title="Apa yang berubah di versi 4">
+                Sampai versi 3, bot bisa dijalankan dari browser komputer lewat stcautotradepro.id.
+                Sejak versi 4, alamat itu menjadi halaman unduh: trading dijalankan langsung dari
+                perangkat pengguna, dan browser tidak mengizinkan koneksi yang dibutuhkan untuk itu.
               </InfoBox>
             </div>
           </section>
 
-          {/* SECTION 5 — Tips Optimasi */}
+          {/* SECTION 2 — Pilihan bagi pengguna PC */}
           <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
             <div className="max-w-3xl mx-auto px-5">
-              <SectionLabel>Tips Optimasi</SectionLabel>
-              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Tips Optimasi Saat Pakai di PC/Laptop</h2>
+              <SectionLabel>Pilihan Anda</SectionLabel>
+              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Apa yang Bisa Dilakukan Pengguna PC</h2>
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                Untuk memastikan bot berjalan stabil dan tidak terputus di versi web, terapkan tips berikut:
+                Bot memang hanya berjalan di aplikasi Android, tetapi bukan berarti tidak ada jalan.
+                Berikut pilihan yang realistis, diurutkan dari yang paling andal:
               </p>
-              <div className="space-y-3 mb-5">
+              <div className="max-w-2xl space-y-3 mb-6">
                 {[
-                  {
-                    tip: "Nonaktifkan Sleep Mode PC",
-                    desc: "Masuk ke Settings → Power & Sleep → set 'Never' untuk screen off dan sleep saat PC sedang dicolokin. Jika PC tidur, browser menutup koneksi dan bot berhenti.",
-                    icon: "🔋",
-                  },
-                  {
-                    tip: "Jangan Tutup Tab STC AutoTrade",
-                    desc: "Dedikasikan satu tab browser khusus untuk STC AutoTrade. Jangan tutup atau refresh tab tersebut saat bot sedang aktif. Gunakan tab lain untuk kegiatan lain.",
-                    icon: "🗂️",
-                  },
-                  {
-                    tip: "Gunakan Koneksi Internet Stabil",
-                    desc: "Bot STC AutoTrade membutuhkan koneksi internet yang stabil — terutama untuk mode CTC dan Fastrade FTT yang bergantung pada sinyal real-time. Gunakan WiFi atau koneksi kabel yang andal.",
-                    icon: "📶",
-                  },
-                  {
-                    tip: "Matikan Tab Throttling di Browser",
-                    desc: "Beberapa browser membatasi aktivitas tab yang tidak aktif (background throttling). Di Chrome: buka chrome://flags, cari 'throttle background', nonaktifkan untuk performa lebih stabil.",
-                    icon: "⚡",
-                  },
-                  {
-                    tip: "Install Ekstensi Keep Awake (Opsional)",
-                    desc: "Ekstensi seperti 'Keep Awake' atau 'Caffeine' di Chrome/Firefox bisa mencegah PC sleep secara paksa melalui browser tanpa harus mengubah pengaturan sistem.",
-                    icon: "☕",
-                  },
-                  {
-                    tip: "Bookmark stcautotradepro.id",
-                    desc: "Bookmark URL stcautotradepro.id di browser untuk akses cepat tanpa perlu mengetik setiap kali. Bisa juga pin tab-nya agar selalu ada di browser.",
-                    icon: "🔖",
-                  },
-                ].map((item) => (
-                  <div key={item.tip} className="flex gap-3 bg-[#f6f4ef] border border-[rgba(26,22,18,0.06)] rounded-xl px-4 py-3.5">
-                    <span className="text-lg flex-shrink-0">{item.icon}</span>
+                  { n: "1", title: "Gunakan HP Android sebagai perangkat bot", desc: "Aplikasinya ringan dan berjalan baik di HP lama sekalipun. Banyak pengguna memakai HP cadangan khusus untuk menjalankan bot, sementara analisis chart tetap dilakukan di layar PC." },
+                  { n: "2", title: "Pantau chart di PC, jalankan bot di HP", desc: "Buka chart Stockity di browser komputer untuk membaca pergerakan harga, lalu atur dan jalankan strateginya lewat aplikasi di HP. Keduanya terhubung ke akun Stockity yang sama." },
+                  { n: "3", title: "Emulator Android — tidak disarankan", desc: "Secara teknis APK bisa dipasang di emulator, tetapi koneksi dan kestabilannya berbeda dari perangkat asli dan masalah yang muncul sulit ditelusuri. Cara ini tidak kami dukung." },
+                ].map((s) => (
+                  <div key={s.n} className="flex gap-3.5">
+                    <div className="flex-shrink-0 w-7 h-7 rounded-full bg-[#ecfdf5] border border-[#10b981]/25 flex items-center justify-center text-[12px] font-bold text-[#047857]">{s.n}</div>
                     <div>
-                      <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{item.tip}</p>
-                      <p className="text-[12px] text-[#6b6058] leading-relaxed">{item.desc}</p>
+                      <p className="text-[14px] font-semibold text-[#1a1612] mb-1">{s.title}</p>
+                      <p className="text-[13px] text-[#6b6058] leading-relaxed">{s.desc}</p>
                     </div>
                   </div>
                 ))}
               </div>
-            </div>
-          </section>
-
-          {/* SECTION 6 — Cara Setting Bot di PC */}
-          <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-            <div className="max-w-3xl mx-auto px-5">
-              <SectionLabel>Setting Bot</SectionLabel>
-              <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Cara Setting Bot di PC agar Tetap Jalan</h2>
-              <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                Berikut checklist lengkap sebelum dan saat menjalankan bot di PC/laptop versi web:
-              </p>
-              <div className="bg-white border border-[rgba(26,22,18,0.07)] rounded-xl p-4 mb-5">
-                <p className="text-[12px] font-semibold text-[#1a1612] mb-3">Checklist Sebelum Aktifkan Bot:</p>
-                <div className="space-y-2">
-                  {[
-                    { done: true, item: "Browser sudah dibuka di stcautotradepro.id" },
-                    { done: true, item: "Login berhasil — saldo tampil di dashboard" },
-                    { done: true, item: "Mode trading sudah dipilih (6 opsi tersedia)" },
-                    { done: true, item: "Base Amount sudah diset (min. Rp 14.000)" },
-                    { done: true, item: "Stop Loss harian sudah diaktifkan" },
-                    { done: true, item: "Stop Profit harian sudah diset" },
-                    { done: true, item: "Martingale dikonfigurasi (atau dinonaktifkan)" },
-                    { done: true, item: "Akun Real/Demo sudah dipilih di header" },
-                    { done: true, item: "Sleep mode PC sudah dinonaktifkan" },
-                    { done: true, item: "Koneksi internet stabil" },
-                  ].map((c) => (
-                    <div key={c.item} className="flex items-start gap-2">
-                      <div className="w-4 h-4 rounded border border-[rgba(26,22,18,0.15)] flex items-center justify-center flex-shrink-0 mt-0.5">
-                        {c.done && <span className="text-[#047857] text-[10px] font-bold">✓</span>}
-                      </div>
-                      <p className="text-[12px] text-[#6b6058]">{c.item}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <WarningBox>
-                Jangan refresh halaman saat bot sedang aktif trading — ini akan memutus koneksi bot dan menghentikan semua proses yang sedang berjalan. Jika perlu reload, matikan bot dulu dari dashboard, baru refresh.
-              </WarningBox>
+              <InfoBox icon="ℹ️" title="Kenapa tidak dibuatkan versi desktop?">
+                Bukan soal tampilan, melainkan soal koneksi. Trading dijalankan langsung dari perangkat
+                Anda agar tidak berbagi jaringan dengan pengguna lain, dan jenis koneksi itu hanya bisa
+                dibuka aplikasi — bukan browser, baik di ponsel maupun di komputer.
+              </InfoBox>
             </div>
           </section>
 
@@ -559,16 +300,16 @@ export default function RobotTradingPcLaptopPage() {
               <SectionLabel>Ringkasan</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Kesimpulan</h2>
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                STC AutoTrade versi web adalah pilihan yang sepenuhnya valid untuk trading dari PC atau laptop:
+                Ringkasan untuk pengguna PC dan laptop:
               </p>
               <div className="space-y-3">
                 {[
-                  "Akses di stcautotradepro.id — tidak perlu download atau install apapun.",
-                  "Semua 6 mode trading tersedia identik dengan versi APK Android.",
-                  "Login menggunakan email dan password Stockity.id yang sama.",
-                  "Pastikan tab tidak ditutup dan PC tidak sleep saat bot aktif.",
-                  "Gunakan koneksi internet stabil untuk mode real-time seperti CTC dan Fastrade FTT.",
-                  "Cocok untuk trader yang lebih nyaman monitoring di layar besar.",
+                  "Bot hanya berjalan di aplikasi Android sejak versi 4 — belum ada versi desktop.",
+                  "Alamat stcautotradepro.id kini berfungsi sebagai halaman unduh aplikasi.",
+                  "Cara paling andal: jalankan bot di HP Android, pantau chart di layar PC.",
+                  "Akun Stockity yang dipakai sama, tidak perlu akun terpisah.",
+                  "Emulator Android bisa memasang APK, tetapi tidak kami sarankan maupun dukung.",
+                  "HP Android lama sudah cukup — aplikasinya ringan.",
                 ].map((point) => (
                   <div key={point} className="flex gap-3 items-start">
                     <span className="text-[#047857] font-bold text-sm flex-shrink-0">✓</span>
@@ -587,8 +328,8 @@ export default function RobotTradingPcLaptopPage() {
               <div className="divide-y divide-[rgba(26,22,18,0.06)] border border-[rgba(26,22,18,0.06)] rounded-xl overflow-hidden">
                 {[
                   {
-                    q: "Apakah versi web STC AutoTrade sama lengkap dengan versi APK Android?",
-                    a: "Ya. Versi web di stcautotradepro.id menggunakan codebase yang sama dengan APK Android — dibangun dengan Capacitor. Semua 6 mode trading (Signal, Fastrade FTT, Fastrade CTC, AI Signal, Indicator, Momentum), martingale, SL/TP, history, dan semua fitur tersedia di versi web.",
+                    q: "Apakah STC AutoTrade bisa dipakai di PC atau laptop?",
+                    a: "Belum. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan hal itu hanya bisa dilakukan aplikasi Android. Browser di komputer tidak mengizinkan jenis koneksi yang dibutuhkan, sehingga bot tidak dapat berjalan dari sana.",
                   },
                   {
                     q: "Apakah perlu download atau install aplikasi untuk pakai di PC?",
@@ -603,8 +344,8 @@ export default function RobotTradingPcLaptopPage() {
                     a: "Disarankan untuk tidak menjalankan bot di dua perangkat sekaligus dengan mode yang sama, karena bisa menyebabkan eksekusi order ganda. Pilih satu perangkat utama untuk menjalankan bot — PC/laptop via web atau Android via APK.",
                   },
                   {
-                    q: "Browser apa yang direkomendasikan untuk STC AutoTrade versi web?",
-                    a: "STC AutoTrade versi web kompatibel dengan semua browser modern: Google Chrome (direkomendasikan), Mozilla Firefox, Microsoft Edge, dan Opera. Gunakan versi browser terbaru untuk performa dan stabilitas terbaik.",
+                    q: "Bisakah APK dijalankan di PC lewat emulator Android?",
+                    a: "Secara teknis bisa, tetapi tidak kami sarankan maupun dukung. Koneksi dan kestabilan emulator berbeda dari perangkat asli, dan masalah yang muncul sulit ditelusuri. Menjalankannya di HP Android jauh lebih andal.",
                   },
                 ].map((faq) => (
                   <div key={faq.q} className="px-5 py-4">
@@ -646,7 +387,7 @@ export default function RobotTradingPcLaptopPage() {
               <p className="text-[11px] font-semibold tracking-widest uppercase text-white/40 mb-4">Mulai Sekarang</p>
               <h2 className="text-[24px] sm:text-[28px] font-bold text-white mb-3">Coba STC AutoTrade Gratis</h2>
               <p className="text-[14px] text-white/60 mb-8 max-w-md mx-auto leading-relaxed">
-                Download aplikasinya dan trading otomatis langsung dari Android. Atau akses versi web tanpa install.
+                Unduh aplikasinya dan jalankan trading otomatis langsung dari HP Android Anda.
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline">Download APK Android</a>
