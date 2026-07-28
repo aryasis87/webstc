@@ -222,6 +222,13 @@ export default function Home() {
                     Android &amp; Web · Stockity.id
                   </div>
 
+                  <div className="animate-fade-up inline-flex items-center gap-2 mb-6 px-3.5 py-1.5 rounded-full bg-[#ecfdf5] border border-[#10b981]/30">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" aria-hidden="true" />
+                    <span className="text-[12px] sm:text-[13px] font-semibold text-[#047857]">
+                      Versi 4 sudah rilis — kini berjalan langsung di HP Anda
+                    </span>
+                  </div>
+
                   <h1 className={`animate-fade-up animate-delay-100 ${SERIF} text-[44px] sm:text-[64px] lg:text-[74px] font-normal tracking-tight leading-[1.02] mb-7`}>
                     <span className="block font-[family-name:var(--font-dm-sans)] text-[12px] sm:text-[13px] font-semibold tracking-[0.24em] uppercase text-emerald-700 mb-5">
                       STC AutoTrade · TechnoAutoTrade
@@ -235,6 +242,7 @@ export default function Home() {
                   <p className={`animate-fade-up animate-delay-200 ${INK_DIM} text-base sm:text-[17px] leading-relaxed mb-9 max-w-lg`}>
                     Terhubung langsung ke akun Stockity.id Anda dan mengeksekusi strategi
                     secara otomatis — <strong className={`${INK} font-semibold`}>disiplin penuh, bebas emosi</strong>.
+                    Mulai versi 4, trading dijalankan dari aplikasi di HP Anda sendiri.
                     Gratis untuk member terdaftar.
                   </p>
 
