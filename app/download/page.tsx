@@ -10,7 +10,7 @@ import Image from "next/image";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Download STC AutoTrade APK Android & Versi Web — TechnoAutoTrade",
+  title: "Download STC AutoTrade APK Android — TechnoAutoTrade",
   description:
     "Download STC AutoTrade APK Android terbaru atau akses langsung aplikasi di stcautotradepro.id. Gratis untuk member. Panduan instalasi lengkap tersedia. Mendukung Android 8.0+, PC, Mac, iPhone.",
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "cara instal stcautotrade android",
     "stcautotrade apk terbaru",
     "technoautotrade apk download gratis",
-    "stcautotrade versi web",
+    "stcautotrade android",
     "robot stockity download",
     "cara download bot stockity",
     "stcautotrade iphone ios web",
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Download STC AutoTrade APK & Versi Web — Robot Trading Stockity Gratis",
+    title: "Download STC AutoTrade APK — Robot Trading Stockity Gratis",
     description:
-      "Download STC AutoTrade APK Android atau buka versi web langsung di browser. Gratis. Panduan instalasi tersedia.",
+      "Download STC AutoTrade APK Android untuk robot trading Stockity. Gratis. Panduan instalasi tersedia.",
     url: "https://stcautotrade.id/download",
     type: "website",
     images: [
@@ -47,15 +47,15 @@ export const metadata: Metadata = {
         url: "https://stcautotrade.id/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Download STC AutoTrade — APK Android & Versi Web Robot Trading Stockity",
+        alt: "Download STC AutoTrade — APK Android Robot Trading Stockity",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Download STC AutoTrade APK & Versi Web — Robot Trading Stockity Gratis",
+    title: "Download STC AutoTrade APK — Robot Trading Stockity Gratis",
     description:
-      "Download STC AutoTrade APK Android atau buka versi web di browser. Gratis untuk member.",
+      "Download STC AutoTrade APK Android. Gratis untuk member terdaftar.",
     images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
@@ -90,7 +90,7 @@ const softwareDownloadSchema = {
   installUrl: "https://stcautotrade.id/StcAutoTrade.apk",
   inLanguage: "id",
   description:
-    "Robot trading otomatis untuk Stockity.id — 6 mode strategi, stop loss otomatis, AI signal, CTC copy trading. APK Android & versi web. Gratis untuk member.",
+    "Robot trading otomatis untuk Stockity.id — 6 mode strategi, stop loss otomatis, AI signal, CTC copy trading. Aplikasi Android. Gratis untuk member.",
   offers: {
     "@type": "Offer",
     price: "0",
@@ -110,7 +110,7 @@ const softwareDownloadSchema = {
     {
       "@type": "ViewAction",
       target: "https://stcautotradepro.id",
-      name: "Buka Versi Web",
+      name: "Unduh Aplikasi",
     },
   ],
   screenshot: {
@@ -267,44 +267,6 @@ export default function DownloadPage() {
               </p>
             </div>
 
-            {/* Versi Web */}
-            <div className="bg-white rounded-2xl border border-[rgba(26,22,18,0.08)] p-7 flex flex-col">
-              <div className="flex items-center gap-2.5 mb-5">
-                <div className="w-10 h-10 rounded-xl bg-[#ecfdf5] flex items-center justify-center text-lg">
-                  🌐
-                </div>
-                <div>
-                  <p className="text-[13px] font-semibold text-[#1a1612]">Versi Web</p>
-                  <p className="text-[11px] text-[#6b6058]">Tanpa instalasi · Semua perangkat</p>
-                </div>
-              </div>
-              <h2 className="text-xl font-semibold text-[#1a1612] mb-2 tracking-tight">
-                Buka STC AutoTrade di Browser
-              </h2>
-              <p className="text-[13px] text-[#6b6058] leading-relaxed mb-5 flex-1">
-                Tidak perlu download. Buka langsung di browser — cocok untuk PC, Mac,
-                iPhone, iPad, dan semua perangkat lainnya.
-              </p>
-              <div className="space-y-2 mb-6">
-                {[
-                  "Tidak perlu instalasi apapun",
-                  "PC, Mac, iPhone, iPad, Android",
-                  "Fitur identik dengan APK Android",
-                  "Buka di Chrome, Safari, Firefox",
-                ].map((f) => (
-                  <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/65">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="flex-shrink-0">
-                      <circle cx="7" cy="7" r="6.5" stroke="#10b981" strokeOpacity="0.3" />
-                      <path d="M4.5 7L6.5 9L9.5 5.5" stroke="#10b981" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-                    </svg>
-                    {f}
-                  </div>
-                ))}
-              </div>
-              <p className="text-center text-[11px] text-[#1a1612]/65 mt-2.5">
-                stcautotradepro.id · Gratis
-              </p>
-            </div>
           </div>
 
           {/* ── Panduan Instalasi APK ─────────────────────── */}
@@ -378,17 +340,17 @@ export default function DownloadPage() {
                 },
                 {
                   platform: "PC & Laptop (Windows / Mac)",
-                  req: "Chrome, Firefox, Edge, Safari",
-                  note: "Buka versi web di browser. Tidak ada batasan OS.",
-                  badge: "Web",
-                  badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
+                  req: "—",
+                  note: "Belum didukung — bot hanya berjalan di aplikasi Android.",
+                  badge: "Belum",
+                  badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
                 },
                 {
-                  platform: "Android via Browser",
-                  req: "Chrome atau browser Android modern",
-                  note: "Bisa juga akses versi web di Android jika tidak ingin menginstal APK.",
-                  badge: "Web",
-                  badgeColor: "bg-violet-50 text-violet-700 border-violet-200",
+                  platform: "Android (HP & Tablet)",
+                  req: "Android 7.0 ke atas",
+                  note: "Unduh APK-nya, lalu izinkan pemasangan saat diminta.",
+                  badge: "Didukung",
+                  badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
                 },
               ].map((p) => (
                 <div key={p.platform} className="bg-white rounded-xl border border-[rgba(26,22,18,0.08)] p-5">
@@ -415,7 +377,7 @@ export default function DownloadPage() {
               {[
                 {
                   q: "Apakah STC AutoTrade gratis?",
-                  a: "Ya. STC AutoTrade gratis untuk member terdaftar — baik versi APK maupun versi web. Akses diberikan melalui sistem whitelist.",
+                  a: "Ya. STC AutoTrade gratis untuk member terdaftar — aplikasinya gratis diunduh. Akses diberikan melalui sistem whitelist.",
                 },
                 {
                   q: "Kenapa harus aktifkan 'instal dari sumber tidak dikenal'?",
@@ -426,8 +388,8 @@ export default function DownloadPage() {
                   a: "Ya. File APK hanya berasal dari domain resmi stcautotrade.id. Password akun Stockity.id Anda tidak pernah dikirim ke server manapun — hanya token autentikasi yang tersimpan secara lokal dan terenkripsi di perangkat Anda.",
                 },
                 {
-                  q: "Apakah versi APK dan versi web memiliki fitur yang sama?",
-                  a: "Ya, semua 6 mode strategi (AI Signal, CTC Copy Trading, Indicator, Momentum, Schedule, Fastrade), stop loss/profit otomatis, sistem martingale, dan riwayat trading tersedia di kedua platform.",
+                  q: "Apakah STC AutoTrade masih punya versi web?",
+                  a: "Tidak lagi. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan browser tidak mengizinkan koneksi yang dibutuhkan untuk itu. Semua fitur — 6 mode strategi, stop loss/profit, martingale, dan riwayat — kini hanya tersedia di aplikasi Android.",
                 },
               ].map((item) => (
                 <div key={item.q} className="px-6 py-5">

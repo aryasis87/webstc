@@ -108,7 +108,7 @@ export const metadata: Metadata = {
      * Sebelumnya 193 karakter; dipotong oleh platform sosial.
      */
     description:
-      "STC AutoTrade (TechnoAutoTrade) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. APK Android & versi web. Gratis untuk member.",
+      "STC AutoTrade (TechnoAutoTrade) — 6 mode strategi, stop loss otomatis, AI signal & copy trading. Aplikasi Android. Gratis untuk member.",
     images: [
       {
         url: `${BASE_URL}/og-image.webp`,

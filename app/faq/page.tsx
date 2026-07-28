@@ -13,7 +13,7 @@ import SiteFooter from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
   description:
-    "Jawaban lengkap: cara instal STC AutoTrade APK Android, versi web, keamanan akun, modal minimum, strategi, dan cara kerja martingale.",
+    "Jawaban lengkap: cara instal STC AutoTrade APK Android, keamanan akun, modal minimum, strategi, dan cara kerja martingale.",
   keywords: [
     "faq stcautotrade",
     "pertanyaan stc autotrade",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
     description:
-      "Jawaban lengkap: cara instal, versi web, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
+      "Jawaban lengkap: cara instal, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
     url: "https://stcautotrade.id/faq",
     type: "website",
     images: [
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FAQ STC AutoTrade — Pertanyaan Umum Robot Trading Stockity",
     description:
-      "Jawaban lengkap: cara instal, versi web, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
+      "Jawaban lengkap: cara instal, keamanan akun, modal minimum, dan cara kerja STC AutoTrade.",
     images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
@@ -75,7 +75,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?",
-        a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia via APK Android (stcautotrade.id) maupun versi web (stcautotradepro.id).",
+        a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia sebagai aplikasi Android yang bisa diunduh di stcautotradepro.id.",
       },
       {
         q: "Apakah STC AutoTrade gratis?",

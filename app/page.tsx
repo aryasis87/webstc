@@ -225,7 +225,7 @@ export default function Home() {
                   <div className="animate-fade-up inline-flex items-center gap-2 mb-6 px-3.5 py-1.5 rounded-full bg-[#ecfdf5] border border-[#10b981]/30">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" aria-hidden="true" />
                     <span className="text-[12px] sm:text-[13px] font-semibold text-[#047857]">
-                      Versi 4 sudah rilis — kini berjalan langsung di HP Anda
+                      Versi 4 sudah rilis — eksekusi kini di perangkat Anda
                     </span>
                   </div>
 

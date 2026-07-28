@@ -14,12 +14,12 @@ import Link from "next/link";
 /* ── SEO Metadata ─────────────────────────────────────────────── */
 
 export const metadata: Metadata = {
-  title: "Robot Trading PC & Laptop: STC AutoTrade Versi Web di stcautotradepro.id 2026",
+  title: "Robot Trading PC & Laptop: Apakah STC AutoTrade Bisa Dipakai di Komputer? 2026",
   description:
     "Panduan lengkap cara pakai bot trading STC AutoTrade di PC dan laptop — akses aplikasi di stcautotradepro.id, semua 6 mode tersedia, perbandingan APK vs web, dan tips optimasi agar bot tetap jalan.",
   keywords: [
     "robot trading pc laptop",
-    "STC AutoTrade versi web",
+    "STC AutoTrade android",
     "bot trading stockity pc",
     "cara pakai stockity di laptop",
     "stcautotradepro.id",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     canonical: "https://stcautotrade.id/artikel/robot-trading-pc-laptop",
   },
   openGraph: {
-    title: "Robot Trading PC & Laptop: STC AutoTrade Versi Web 2026",
+    title: "Robot Trading PC & Laptop: Status Dukungan STC AutoTrade 2026",
     description:
       "Akses STC AutoTrade di PC/laptop via stcautotradepro.id — semua fitur, tanpa instal, semua browser.",
     url: "https://stcautotrade.id/artikel/robot-trading-pc-laptop",
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
         url: "https://stcautotrade.id/og?t=Robot%20Trading%20PC%20%26%20Laptop%3A%20STC%20AutoTrade%20Versi%20Web%20di%20stcautotradepro.id%202026&l=id",
         width: 1200,
         height: 630,
-        alt: "Robot Trading PC Laptop — STC AutoTrade Versi Web",
+        alt: "Robot Trading PC Laptop — STC AutoTrade",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Robot Trading PC & Laptop: STC AutoTrade Versi Web 2026",
+    title: "Robot Trading PC & Laptop: Status Dukungan STC AutoTrade 2026",
     description: "Akses bot trading STC AutoTrade di PC/laptop via stcautotradepro.id — tanpa install.",
     images: ["https://stcautotrade.id/og?t=Robot%20Trading%20PC%20%26%20Laptop%3A%20STC%20AutoTrade%20Versi%20Web%20di%20stcautotradepro.id%202026&l=id"],
   },
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Robot Trading PC & Laptop: STC AutoTrade Versi Web di stcautotradepro.id 2026",
+  headline: "Robot Trading PC & Laptop: Apakah STC AutoTrade Bisa Dipakai di Komputer? 2026",
   description:
-    "Panduan menggunakan bot trading STC AutoTrade di PC dan laptop melalui versi web — fitur lengkap, semua browser, tanpa install.",
+    "Penjelasan terbuka soal dukungan PC dan laptop untuk bot trading STC AutoTrade — apa yang berubah sejak versi 4 dan pilihan yang tersedia.",
   image: "https://stcautotrade.id/og?t=Robot%20Trading%20PC%20%26%20Laptop%3A%20STC%20AutoTrade%20Versi%20Web%20di%20stcautotradepro.id%202026&l=id",
   datePublished: "2025-05-21",
   dateModified: "2026-06-07",
@@ -92,10 +92,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Apakah versi web STC AutoTrade sama lengkap dengan versi APK Android?",
+      name: "Apakah STC AutoTrade bisa dipakai di PC atau laptop?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ya. Versi web di stcautotradepro.id menggunakan codebase yang sama dengan APK Android — dibangun dengan Capacitor. Semua 6 mode trading (Signal, Fastrade FTT, Fastrade CTC, AI Signal, Indicator, Momentum), martingale, SL/TP, history, dan semua fitur tersedia di versi web.",
+        text: "Belum. Sampai versi 3, STC AutoTrade punya versi web yang bisa dibuka dari browser komputer. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan hal itu hanya bisa dilakukan aplikasi Android — browser tidak mengizinkan jenis koneksi yang dibutuhkan. Untuk sekarang, bot hanya berjalan di HP Android.",
       },
     },
     {
@@ -124,10 +124,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Browser apa yang direkomendasikan untuk STC AutoTrade versi web?",
+      name: "Bisakah aplikasi Android dijalankan di PC lewat emulator?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "STC AutoTrade versi web kompatibel dengan semua browser modern: Google Chrome (direkomendasikan), Mozilla Firefox, Microsoft Edge, dan Opera. Gunakan versi browser terbaru untuk performa dan stabilitas terbaik.",
+        text: "Secara teknis emulator Android di PC bisa memasang APK-nya, tetapi cara ini tidak kami sarankan maupun kami dukung: koneksi dan kestabilannya berbeda dari perangkat asli, dan masalah yang muncul sulit ditelusuri. Menggunakan HP Android langsung jauh lebih andal.",
       },
     },
   ],
@@ -228,11 +228,11 @@ export default function RobotTradingPcLaptopPage() {
                 Robot Trading PC &amp; Laptop: Pakai STC AutoTrade via Browser di stcautotradepro.id
               </h1>
               <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
-                Tidak punya Android atau lebih nyaman di PC? STC AutoTrade tersedia dalam versi web yang bisa diakses dari browser manapun. Semua fitur sama persis dengan versi APK — tanpa instalasi, langsung jalan.
+                Lebih nyaman bekerja di PC? Sayangnya, sejak versi 4 STC AutoTrade hanya berjalan di aplikasi Android. Halaman ini menjelaskan alasannya secara terbuka dan apa pilihan yang tersedia bagi pengguna komputer.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
-                  { v: "stcautotradepro.id", l: "Versi Web" },
+                  { v: "Android", l: "Perangkat Didukung" },
                   { v: "Semua Browser", l: "Chrome/Firefox/Edge" },
                   { v: "Fitur Sama", l: "6 Mode Trading" },
                   { v: "Tanpa Install", l: "Langsung Akses" },
@@ -252,7 +252,7 @@ export default function RobotTradingPcLaptopPage() {
               <SectionLabel>Versi Web</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">STC AutoTrade Tersedia Penuh di Browser</h2>
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                STC AutoTrade dibangun menggunakan <strong className="text-[#1a1612]">Capacitor</strong> — framework yang memungkinkan satu codebase berjalan di Android, iOS, <em>dan</em> web browser sekaligus. Artinya versi web bukan versi terbatas — ini aplikasi yang sama, dijalankan di browser.
+                STC AutoTrade dibangun menggunakan <strong className="text-[#1a1612]">Capacitor</strong>, sehingga satu basis kode bisa berjalan di Android maupun browser. Namun sejak versi 4, yang menentukan bukan lagi tampilannya melainkan <em>siapa yang mengeksekusi trading</em>: eksekusi kini berjalan di perangkat pengguna, dan browser tidak mengizinkan koneksi yang dibutuhkan untuk itu.
               </p>
               <InfoBox icon="🌐" title="Akses Versi Web di stcautotradepro.id">
                 Buka browser apapun di PC atau laptop Anda, ketik <strong>stcautotradepro.id</strong>, dan login dengan email serta password akun Stockity.id Anda. Bot langsung siap dijalankan — tidak perlu download, install, atau konfigurasi apapun.
@@ -302,7 +302,7 @@ export default function RobotTradingPcLaptopPage() {
                 <StepCard
                   n="3"
                   title="Login dengan Akun Stockity.id"
-                  desc="Masukkan email dan password akun Stockity.id Anda. Ini adalah akun yang sama yang Anda gunakan di APK Android — tidak ada akun terpisah untuk versi web."
+                  desc="Masukkan email dan password akun Stockity.id Anda — akun yang sama dipakai di semua perangkat, tidak ada akun terpisah."
                   sub="Whitelist berlaku sama — akun harus sudah didaftarkan admin/reseller"
                 />
                 <StepCard
