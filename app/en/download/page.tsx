@@ -73,7 +73,6 @@ export default function EnDownloadPage() {
           </p>
           <div className="flex flex-wrap gap-3 mt-7">
             <a href="/StcAutoTrade.apk" className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">⬇ Download APK (Android)</a>
-            <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/80 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.3)] transition-all no-underline">🌐 Open Web Version</a>
           </div>
         </header>
 

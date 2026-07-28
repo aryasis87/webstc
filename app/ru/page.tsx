@@ -74,7 +74,6 @@ export default function RuHomePage() {
           </p>
           <div className="flex flex-wrap gap-3">
             <Link href="/ru/download" className="inline-flex items-center gap-2 px-6 py-3 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">Скачать APK для Android</Link>
-            <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/80 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.3)] transition-all no-underline">Открыть веб-версию</a>
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-12 border border-[rgba(26,22,18,0.09)] rounded-2xl overflow-hidden">

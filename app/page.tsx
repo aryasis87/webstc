@@ -197,7 +197,6 @@ export default function Home() {
               <a href="#cara-kerja" className="hidden sm:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Panduan</a>
               <Link href="/artikel" className="hidden sm:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Artikel</Link>
               <Link href="/faq"     className="hidden sm:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">FAQ</Link>
-              <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="hidden md:flex items-center px-3 py-2 text-sm text-[#17140f]/60 hover:text-[#17140f] transition-colors no-underline rounded-lg">Unduh Aplikasi</a>
               <a href={APK_PATH} download className="ml-1.5 flex items-center gap-1.5 px-4.5 sm:px-5 py-2.5 bg-[#17140f] text-[#f6f4ef] text-sm font-semibold rounded-xl hover:bg-emerald-900 transition-colors no-underline">
                 Download
               </a>
@@ -244,10 +243,6 @@ export default function Home() {
                       <a href={APK_PATH} download className={BTN_PRIMARY}>
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8M5 7l3 3 3-3M3 12.5h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                         Download APK — Gratis
-                      </a>
-                      <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className={BTN_GHOST}>
-                        Buka Versi Web
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 9l6-6M4.5 3H9v4.5" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
                       </a>
                     </div>
                     <a href="#cara-kerja" className={`inline-flex items-center gap-1.5 text-sm ${INK_DIM} hover:text-[#17140f] transition-colors no-underline group w-fit`}>
@@ -376,9 +371,6 @@ export default function Home() {
                         </li>
                       ))}
                     </ul>
-                    <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="relative mt-auto inline-flex items-center justify-center gap-2 w-full px-7 py-3.5 rounded-full bg-emerald-400 text-emerald-950 text-sm font-bold hover:bg-emerald-300 transition-colors no-underline">
-                      Buka Versi Web
-                    </a>
                   </div>
                 </FadeItem>
               </StaggerView>
@@ -595,9 +587,6 @@ export default function Home() {
                       <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 rounded-full bg-emerald-400 text-emerald-950 text-sm font-bold hover:bg-emerald-300 transition-colors no-underline">
                         Download APK Android
                       </a>
-                      <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-8 py-3.5 rounded-full bg-white/[0.07] border border-white/[0.14] text-white text-sm font-bold hover:bg-white/[0.14] transition-all no-underline">
-                        Coba Versi Web
-                      </a>
                     </div>
                   </FadeUp>
 
@@ -705,9 +694,6 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center">
                   <a href={APK_PATH} download className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-10 py-4 rounded-full bg-emerald-400 text-emerald-950 text-sm font-bold hover:bg-emerald-300 transition-colors no-underline shadow-2xl shadow-emerald-500/25">
                     Download APK Android
-                  </a>
-                  <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 w-full sm:w-auto px-10 py-4 rounded-full bg-white/[0.07] border border-white/[0.14] text-white text-sm font-bold hover:bg-white/[0.14] transition-all no-underline">
-                    Buka Versi Web
                   </a>
                 </div>
                 <p className="mt-6 text-[12px] text-emerald-100/50">Android 8.0+ · Versi Web semua perangkat · Gratis untuk member</p>

@@ -294,19 +294,6 @@ export default function DownloadPage() {
                   </div>
                 ))}
               </div>
-              <a
-                href="https://stcautotradepro.id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2.5 w-full px-5 py-3.5 bg-[#047857] text-white text-sm font-bold rounded-xl hover:bg-[#065f46] active:scale-[0.98] transition-all no-underline shadow-sm shadow-emerald-200"
-              >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                  <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.4" />
-                  <path d="M5.5 8c0-2.5 1.1-4.5 2.5-4.5S10.5 5.5 10.5 8 9.4 12.5 8 12.5 5.5 10.5 5.5 8Z" stroke="currentColor" strokeWidth="1.3" />
-                  <path d="M2 8h12" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" />
-                </svg>
-                Buka Versi Web
-              </a>
               <p className="text-center text-[11px] text-[#1a1612]/65 mt-2.5">
                 stcautotradepro.id · Gratis
               </p>

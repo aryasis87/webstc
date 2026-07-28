@@ -648,7 +648,6 @@ export default function CaraDepositStockityPage() {
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 <a href="/StcAutoTrade.apk" download className="px-7 py-3.5 bg-white text-[#1a1612] text-sm font-bold rounded-xl no-underline">Download APK Android</a>
-                <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className="px-7 py-3.5 border border-white/20 text-white text-sm font-semibold rounded-xl no-underline">Buka Versi Web</a>
               </div>
             </div>
           </section>

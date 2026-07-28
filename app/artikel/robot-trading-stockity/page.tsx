@@ -975,14 +975,6 @@ export default function RobotTradingStockityPage() {
               >
                 Download APK
               </Link>
-              <a
-                href="https://stcautotradepro.id"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-5 py-2.5 border border-[rgba(26,22,18,0.16)] text-[#1a1612]/70 text-sm font-medium rounded-xl hover:border-[rgba(26,22,18,0.28)] hover:text-[#1a1612] transition-all no-underline"
-              >
-                Versi Web
-              </a>
             </div>
           </div>
         </section>
