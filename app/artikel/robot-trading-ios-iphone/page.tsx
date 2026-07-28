@@ -17,7 +17,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Robot Trading iPhone Stockity: Auto Trade di iOS Tanpa Instalasi 2026",
   description:
-    "Panduan lengkap menggunakan robot trading Stockity di iPhone dan iPad — cara akses STC AutoTrade versi web di iOS, setting bot, tips agar berjalan optimal tanpa instalasi APK.",
+    "Apakah robot trading Stockity bisa dipakai di iPhone dan iPad? Penjelasan jujur soal dukungan iOS untuk STC AutoTrade, alasan teknisnya, dan pilihan yang tersedia untuk pengguna Apple.",
   keywords: [
     "robot trading iphone stockity",
     "auto trade stockity ios",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Robot Trading iPhone Stockity: Auto Trade di iOS 2026",
-    description: "Cara menggunakan robot trading Stockity di iPhone & iPad tanpa instalasi APK — via versi web STC AutoTrade yang kompatibel penuh dengan iOS Safari.",
+    description: "Robot trading Stockity di iPhone & iPad: dukungan iOS untuk STC AutoTrade, alasan teknisnya, dan pilihan bagi pengguna Apple.",
     url: "https://stcautotrade.id/artikel/robot-trading-ios-iphone",
     type: "article",
     publishedTime: "2025-06-01T00:00:00.000Z",
@@ -55,7 +55,7 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline: "Robot Trading iPhone Stockity: Auto Trade di iOS Tanpa Instalasi 2026",
-  description: "Panduan menggunakan robot trading Stockity di iPhone dan iPad via versi web STC AutoTrade — tanpa instalasi, fitur lengkap, kompatibel Safari.",
+  description: "Dukungan iPhone dan iPad untuk robot trading Stockity STC AutoTrade — status terkini, alasan teknis, dan pilihan bagi pengguna Apple.",
   author: { "@type": "Organization", name: "STC AutoTrade", url: "https://stcautotrade.id" },
   publisher: { "@type": "Organization", name: "STC AutoTrade", logo: { "@type": "ImageObject", url: "https://stcautotrade.id/logo.webp" } },
   datePublished: "2025-06-01",
@@ -82,17 +82,17 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "Apakah ada robot trading Stockity untuk iPhone?",
-      acceptedAnswer: { "@type": "Answer", text: "Ya. Pengguna iPhone dan iPad bisa menggunakan robot trading Stockity melalui versi web STC AutoTrade di stcautotradepro.id — langsung di browser Safari atau Chrome tanpa instalasi apapun. Semua fitur identik dengan versi APK Android." },
+      acceptedAnswer: { "@type": "Answer", text: "Belum. Sejak versi 4, STC AutoTrade menjalankan trading langsung dari perangkat pengguna, dan itu hanya bisa dilakukan aplikasi Android. Browser — termasuk Safari dan Chrome di iPhone — tidak mengizinkan jenis koneksi yang dibutuhkan, sehingga pengguna iOS untuk sementara belum dapat menggunakannya." },
     },
     {
       "@type": "Question",
       name: "Apakah STC AutoTrade tersedia di App Store?",
-      acceptedAnswer: { "@type": "Answer", text: "Tidak. STC AutoTrade tidak tersedia di App Store karena keterbatasan kebijakan Apple untuk aplikasi binary option. Sebagai gantinya, versi web (stcautotradepro.id) menyediakan semua fitur yang sama dan dapat diakses langsung di Safari tanpa instalasi." },
+      acceptedAnswer: { "@type": "Answer", text: "Tidak. STC AutoTrade tidak tersedia di App Store karena kebijakan Apple membatasi aplikasi binary option. Versi web pun tidak lagi bisa menjadi penggantinya sejak versi 4, karena trading kini dijalankan langsung dari perangkat dan browser tidak mengizinkan koneksi yang dibutuhkan." },
     },
     {
       "@type": "Question",
-      name: "Apakah bot Stockity bisa berjalan di background Safari iPhone?",
-      acceptedAnswer: { "@type": "Answer", text: "Safari di iPhone membatasi aktivitas background. Untuk trading otomatis jangka panjang di iPhone, disarankan: (1) biarkan Safari tetap di foreground dengan layar menyala, (2) sambungkan ke charger, (3) nonaktifkan fitur hemat daya, dan (4) atur pengaturan Auto-Lock ke 'Never' selama bot aktif." },
+      name: "Adakah cara lain untuk pengguna iPhone?",
+      acceptedAnswer: { "@type": "Answer", text: "Untuk saat ini pilihannya adalah menggunakan HP Android — termasuk perangkat lama atau pinjaman — karena aplikasinya ringan. Pengguna iPhone tetap bisa mendaftar akun Stockity dan berlatih di mode demo lewat aplikasi Stockity sendiri, lalu memakai STC AutoTrade saat perangkat Android tersedia." },
     },
     {
       "@type": "Question",
@@ -102,7 +102,7 @@ const faqSchema = {
     {
       "@type": "Question",
       name: "Bisakah install STC AutoTrade sebagai app di iPhone (PWA)?",
-      acceptedAnswer: { "@type": "Answer", text: "Ya! Di Safari, buka stcautotradepro.id, tap ikon Share, lalu pilih 'Add to Home Screen'. STC AutoTrade akan terpasang sebagai ikon di layar utama iPhone Anda dan bisa dibuka seperti aplikasi biasa — meskipun tetap berjalan di lingkungan browser." },
+      acceptedAnswer: { "@type": "Answer", text: "Tidak lagi. Cara itu dulu berlaku ketika STC AutoTrade punya versi web, tetapi sejak versi 4 trading tidak dapat dijalankan dari browser sehingga menambahkannya ke layar utama tidak membuatnya berfungsi." },
     },
   ],
 };
@@ -204,11 +204,11 @@ export default function RobotTradingIphonePage() {
           </h1>
 
           <p className="text-[#6b6058] text-base sm:text-lg leading-relaxed max-w-2xl">
-            Pengguna iPhone dan iPad tidak perlu khawatir — meskipun{" "}
-            <strong className="font-semibold text-[#1a1612]">STC AutoTrade</strong> tidak tersedia di App Store,
-            Anda tetap bisa menggunakan <strong className="font-semibold text-[#1a1612]">robot trading Stockity di iPhone</strong>{" "}
-            melalui versi web yang kompatibel penuh dengan Safari dan Chrome iOS.
-            Panduan ini menjelaskan cara mengaksesnya dan tips optimasi untuk iOS.
+            Jawaban jujurnya: untuk saat ini{" "}
+            <strong className="font-semibold text-[#1a1612]">STC AutoTrade belum bisa digunakan di iPhone maupun iPad</strong>.
+            Halaman ini menjelaskan alasan teknisnya secara terbuka, apa yang berubah sejak versi 4,
+            dan pilihan apa saja yang tersedia bagi pengguna Apple yang ingin memakai{" "}
+            <strong className="font-semibold text-[#1a1612]">robot trading Stockity</strong>.
           </p>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-8 border border-[rgba(26,22,18,0.09)] rounded-2xl overflow-hidden">
@@ -244,14 +244,14 @@ export default function RobotTradingIphonePage() {
                   menjamin persetujuan.
                 </p>
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
-                  Solusinya: STC AutoTrade menyediakan <strong className="text-[#1a1612]">aplikasi di stcautotradepro.id</strong>{" "}
-                  yang bisa diakses langsung dari browser iPhone atau iPad — tanpa instalasi, tanpa App Store,
-                  dengan semua fitur yang sama persis seperti versi APK Android.
+                  Dulu keterbatasan itu diakali dengan versi web yang bisa dibuka dari browser iPhone. Sejak versi 4,
+                  cara itu tidak lagi memungkinkan: trading kini dijalankan langsung dari perangkat pengguna, dan browser
+                  tidak mengizinkan jenis koneksi yang dibutuhkan untuk itu.
                 </p>
-                <InfoBox icon="📱" title="Versi Web = Fitur Lengkap untuk iPhone">
-                  Versi web STC AutoTrade bukan versi terbatas — ini adalah platform yang sama dengan
-                  fitur identik: 6 mode strategi, martingale otomatis, stop loss/profit, riwayat trading,
-                  dan koneksi ke akun Stockity.id. Perbedaannya hanya pada cara mengaksesnya.
+                <InfoBox icon="ℹ️" title="Kenapa justru dijalankan dari perangkat?">
+                  Agar aktivitas trading berasal dari koneksi internet pengguna sendiri, bukan dari satu server
+                  yang dipakai bersama banyak orang. Ini lebih aman untuk akun Anda — tetapi konsekuensinya,
+                  eksekusi hanya bisa dilakukan aplikasi Android, bukan browser.
                 </InfoBox>
               </div>
             </section>
@@ -264,12 +264,11 @@ export default function RobotTradingIphonePage() {
               </h2>
               <div className="max-w-2xl space-y-3 mb-6">
                 {[
-                  { n: "1", title: "Buka Safari atau Chrome di iPhone/iPad", desc: "Tidak perlu download apapun. Cukup buka browser bawaan iPhone (Safari) atau Chrome yang sudah terinstal." },
-                  { n: "2", title: "Kunjungi stcautotradepro.id", desc: "Ketik alamat stcautotradepro.id di address bar browser. Ini adalah alamat resmi versi web STC AutoTrade yang dioptimalkan untuk semua perangkat termasuk iOS." },
-                  { n: "3", title: "Login atau daftar member", desc: "Login jika sudah punya akun, atau daftar sebagai member baru. Proses pendaftaran bisa dilakukan langsung dari versi web." },
-                  { n: "4", title: "Hubungkan ke akun Stockity.id", desc: "Masukkan kredensial Stockity.id untuk menghubungkan akun. Bot akan terhubung ke akun Stockity.id Anda menggunakan token autentikasi yang aman." },
-                  { n: "5", title: "Set strategi dan manajemen risiko", desc: "Pilih mode strategi (AI Signal, CTC, dll.), set stop loss dan stop profit, konfigurasikan martingale jika diperlukan." },
-                  { n: "6", title: "Aktifkan bot dan biarkan berjalan", desc: "Klik START. Pastikan tab browser tetap aktif di foreground dan iPhone tersambung ke charger untuk performa optimal." },
+                  { n: "1", title: "Daftar akun Stockity lebih dulu", desc: "Pendaftaran akun bisa dilakukan dari perangkat apa pun, termasuk iPhone, lewat situs Stockity. Akun ini nantinya dipakai saat bot dijalankan." },
+                  { n: "2", title: "Berlatih di mode demo", desc: "Aplikasi Stockity sendiri tersedia untuk iOS dan punya akun demo. Gunakan untuk memahami cara kerja binary option sebelum memakai bot." },
+                  { n: "3", title: "Siapkan perangkat Android", desc: "Aplikasi STC AutoTrade ringan dan berjalan baik di HP Android lama sekalipun — termasuk perangkat cadangan atau pinjaman." },
+                  { n: "4", title: "Unduh dan pasang aplikasinya", desc: "Unduh APK dari halaman resmi, izinkan pemasangan, lalu masuk memakai akun Stockity yang tadi dibuat." },
+                  { n: "5", title: "Mulai dari mode demo", desc: "Jalankan bot dengan akun demo lebih dulu untuk menguji strategi tanpa risiko, sebelum beralih ke dana nyata." },
                 ].map((s) => (
                   <div key={s.n} className="flex gap-4 bg-white border border-[rgba(26,22,18,0.07)] rounded-xl px-5 py-4">
                     <div className="w-8 h-8 min-w-[32px] rounded-full border border-[rgba(26,22,18,0.12)] bg-[#ecfdf5] flex items-center justify-center text-[12px] font-bold text-[#047857]">{s.n}</div>
