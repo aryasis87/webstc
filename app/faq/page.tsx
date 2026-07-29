@@ -75,7 +75,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?",
-        a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia sebagai aplikasi Android yang bisa diunduh di stcautotradepro.id.",
+        a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia sebagai aplikasi Android dan versi browser yang bisa diunduh di stcautotradepro.id.",
       },
       {
         q: "Apakah STC AutoTrade gratis?",

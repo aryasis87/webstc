@@ -123,7 +123,7 @@ const faqSchema = {
       name: "Apa itu robot trading Stockity?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Robot trading Stockity adalah perangkat lunak otomatis yang mengeksekusi order beli/jual di platform Stockity.id berdasarkan algoritma tertentu — tanpa perlu analisis manual dari trader. STC AutoTrade adalah salah satu robot trading Stockity yang paling banyak digunakan, tersedia sebagai aplikasi Android.",
+        text: "Robot trading Stockity adalah perangkat lunak otomatis yang mengeksekusi order beli/jual di platform Stockity.id berdasarkan algoritma tertentu — tanpa perlu analisis manual dari trader. STC AutoTrade adalah salah satu robot trading Stockity yang paling banyak digunakan, tersedia sebagai aplikasi Android dan versi browser.",
       },
     },
     {

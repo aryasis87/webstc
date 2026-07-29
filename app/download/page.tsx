@@ -207,7 +207,7 @@ export default function DownloadPage() {
             Download STC AutoTrade
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
-            STC AutoTrade tersedia sebagai aplikasi Android maupun lewat browser di
+            STC AutoTrade tersedia sebagai aplikasi Android dan versi browser maupun lewat browser di
             stcautotradepro.id. Aplikasi menjalankan trading langsung dari HP Anda,
             sedangkan versi browser dijalankan dari server kami. Pendaftaran akun baru
             hanya dapat dilakukan lewat aplikasi.

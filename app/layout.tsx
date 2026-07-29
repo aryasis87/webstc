@@ -306,7 +306,7 @@ const schemaWebSite = {
   ],
   url: BASE_URL,
   /** FIX #8d — URL web app diperbarui */
-  description: `Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (TechnoAutoTrade) tersedia sebagai aplikasi Android`,
+  description: `Bot & robot trading otomatis untuk Stockity.id — STC AutoTrade (TechnoAutoTrade) tersedia sebagai aplikasi Android dan versi browser`,
   inLanguage: "id-ID",
   publisher: {
     "@id": `${BASE_URL}/#organization`,

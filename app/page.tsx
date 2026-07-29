@@ -76,14 +76,14 @@ const STEPS = [
 
 const FAQS = [
   { q: "Apa itu STC AutoTrade / StcAutoTrade?",                          a: "STC AutoTrade — juga dikenal sebagai StcAutoTrade, TechnoAutoTrade, Robot Stockity, atau Auto Stockity — adalah bot trading otomatis untuk platform Stockity.id. Tersedia sebagai APK Android maupun aplikasi di stcautotradepro.id." },
-  { q: "Di perangkat apa STC AutoTrade bisa dipakai?",                   a: "Aplikasi Android saja. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan hal itu hanya bisa dilakukan aplikasi — bukan browser." },
-  { q: "Apakah masih ada versi browser?",                                a: "Tidak. Alamat stcautotradepro.id kini berfungsi sebagai halaman unduh aplikasi." },
+  { q: "Di perangkat apa STC AutoTrade bisa dipakai?",                   a: "Dua-duanya: aplikasi Android, atau lewat browser di stcautotradepro.id. Aplikasi menjalankan trading langsung dari HP Anda, sedangkan versi browser dijalankan dari server kami. Pendaftaran akun baru hanya lewat aplikasi." },
+  { q: "Apakah masih ada versi browser?",                                a: "Ada. Buka stcautotradepro.id di browser mana pun — bisa dipakai di komputer, Mac, maupun iPhone tanpa instalasi." },
   { q: "Apa bedanya STC AutoTrade, StcAutoTrade, dan TechnoAutoTrade?",    a: "Ketiganya adalah nama yang merujuk produk yang sama. 'STC AutoTrade', 'Stc Auto Trade', 'StcAutoTrade', 'TechnoAutoTrade', dan 'Techno Auto Trade' adalah variasi penulisan brand yang sama." },
   { q: "Apakah Robot Stockity / Auto Stockity sama dengan STC AutoTrade?", a: "Ya. 'Robot Stockity', 'Auto Stockity', 'Stockity Auto Trade', dan 'Bot Stockity Otomatis' adalah sebutan populer untuk bot yang sama — STC AutoTrade (TechnoAutoTrade), tersedia via APK Android maupun versi web." },
   { q: "Bagaimana cara menginstal STC AutoTrade di Android?",             a: "Download file APK dari tombol di halaman ini. Aktifkan 'Instal dari sumber tidak dikenal' di Pengaturan → Keamanan. Buka file APK dan ikuti instruksi. Atau gunakan aplikasi di stcautotradepro.id tanpa instalasi." },
   { q: "Apakah perlu pengalaman trading?",                                a: "Tidak. STC AutoTrade dirancang agar bisa digunakan pemula sekalipun. Mode demo tersedia di versi APK maupun versi web untuk belajar tanpa risiko finansial." },
   { q: "Modal minimum yang disarankan?",                                  a: "Tidak ada ketentuan minimum, namun kami sarankan minimal Rp500.000 sebagai buffer aman untuk siklus martingale konservatif (nominal awal Rp14.000, multiplier 2,5x, 3 step)." },
-  { q: "Tersedia untuk iOS (iPhone)?",                                    a: "Ya! Pengguna iPhone dan iPad bisa menggunakan STC AutoTrade langsung melalui aplikasi di stcautotradepro.id — buka di Safari atau Chrome tanpa instalasi. Versi APK hanya tersedia untuk Android." },
+  { q: "Tersedia untuk iOS (iPhone)?",                                    a: "Ya, lewat versi browser di stcautotradepro.id — buka di Safari atau Chrome tanpa instalasi. Aplikasi APK memang hanya tersedia untuk Android. Perlu dicatat, pendaftaran akun baru hanya bisa lewat aplikasi Android." },
   { q: "Apakah data akun Stockity saya aman?",                            a: "Keamanan data Anda sepenuhnya terlindungi. Password tidak pernah dikirim ke, atau disimpan di server manapun — termasuk server kami. Hanya token autentikasi yang tersimpan, dienkripsi secara lokal di perangkat Anda." },
   { q: "Bot bisa jalan saat aplikasi ditutup?",                           a: "Tidak. Sejak versi 4, bot berjalan langsung di perangkat Anda, bukan di server kami — sehingga aplikasi perlu tetap aktif selama sesi berjalan. Perubahan ini membuat aktivitas trading berasal dari koneksi internet Anda sendiri, tidak berbagi jaringan dengan pengguna lain." },
 ];
@@ -118,7 +118,7 @@ const schemaSoftwareApp = {
   "@id": `${BASE_URL}/#app`,
   name: "STC AutoTrade",
   alternateName: ["StcAutoTrade", "TechnoAutoTrade", "Robot Stockity", "Auto Stockity"],
-  description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai aplikasi Android. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
+  description: "Bot trading otomatis untuk platform Stockity.id. Tersedia sebagai aplikasi Android dan versi browser. Fitur: 6 mode strategi, stop loss & stop profit otomatis, martingale terkelola, riwayat trading lengkap.",
   url: BASE_URL,
   applicationCategory: "FinanceApplication",
   operatingSystem: "Android, Web",
