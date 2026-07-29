@@ -207,9 +207,10 @@ export default function DownloadPage() {
             Download STC AutoTrade
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
-            STC AutoTrade (TechnoAutoTrade) tersedia sebagai aplikasi Android. Mulai versi 4,
-            trading dijalankan langsung dari HP Anda — bukan dari server kami — sehingga
-            aplikasinya perlu dipasang dan versi browser tidak lagi tersedia.
+            STC AutoTrade tersedia sebagai aplikasi Android maupun lewat browser di
+            stcautotradepro.id. Aplikasi menjalankan trading langsung dari HP Anda,
+            sedangkan versi browser dijalankan dari server kami. Pendaftaran akun baru
+            hanya dapat dilakukan lewat aplikasi.
           </p>
         </header>
 
@@ -341,7 +342,7 @@ export default function DownloadPage() {
                 {
                   platform: "PC & Laptop (Windows / Mac)",
                   req: "—",
-                  note: "Belum didukung — bot hanya berjalan di aplikasi Android.",
+                  note: "Lewat browser di stcautotradepro.id.",
                   badge: "Belum",
                   badgeColor: "bg-amber-50 text-amber-700 border-amber-200",
                 },
@@ -389,7 +390,7 @@ export default function DownloadPage() {
                 },
                 {
                   q: "Apakah STC AutoTrade masih punya versi web?",
-                  a: "Tidak lagi. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan browser tidak mengizinkan koneksi yang dibutuhkan untuk itu. Semua fitur — 6 mode strategi, stop loss/profit, martingale, dan riwayat — kini hanya tersedia di aplikasi Android.",
+                  a: "Ya. Versi browser dapat dibuka di stcautotradepro.id dan dijalankan dari server kami, sehingga bisa dipakai di komputer maupun iPhone. Bedanya, aplikasi Android menjalankan trading langsung dari perangkat Anda sendiri. Pendaftaran akun baru hanya bisa lewat aplikasi.",
                 },
               ].map((item) => (
                 <div key={item.q} className="px-6 py-5">

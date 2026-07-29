@@ -339,7 +339,7 @@ export default function AutoTradeStockityGratisPage() {
                       "APK Android — instal native, berjalan di background (Android 8.0+)",
                       "Aplikasi Android — unduh di stcautotradepro.id, gratis",
                       "PC & Laptop — Windows, Mac, Linux via Chrome/Firefox/Safari",
-                      "iPhone & iPad — belum didukung sejak versi 4",
+                      "iPhone & iPad — lewat browser di stcautotradepro.id",
                       "Riwayat trading lengkap per order untuk analisis performa",
                     ],
                   },
@@ -613,7 +613,7 @@ export default function AutoTradeStockityGratisPage() {
                   },
                   {
                     q: "Bisakah download robot Stockity gratis untuk iPhone?",
-                    a: "Belum. Sejak versi 4, bot hanya berjalan di aplikasi Android karena trading dieksekusi langsung dari perangkat, dan browser tidak mengizinkan koneksi yang dibutuhkan.",
+                    a: "Bisa lewat versi browser di stcautotradepro.id yang dijalankan dari server kami. Yang hanya tersedia di Android adalah aplikasinya, yang menjalankan trading langsung dari perangkat Anda.",
                   },
                   {
                     q: "Apakah robot Stockity gratis sudah termasuk mode demo?",

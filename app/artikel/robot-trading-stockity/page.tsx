@@ -845,7 +845,7 @@ export default function RobotTradingStockityPage() {
                   },
                   {
                     q: "Apakah ada robot trading Stockity untuk iPhone?",
-                    a: "Belum. Sejak versi 4, bot hanya berjalan di aplikasi Android karena trading dieksekusi langsung dari perangkat, dan browser tidak mengizinkan koneksi yang dibutuhkan.",
+                    a: "Bisa lewat versi browser di stcautotradepro.id yang dijalankan dari server kami. Yang hanya tersedia di Android adalah aplikasinya, yang menjalankan trading langsung dari perangkat Anda.",
                   },
                   {
                     q: "Bagaimana cara setting bot Stockity untuk pemula?",

@@ -329,7 +329,7 @@ export default function RobotTradingPcLaptopPage() {
                 {[
                   {
                     q: "Apakah STC AutoTrade bisa dipakai di PC atau laptop?",
-                    a: "Belum. Sejak versi 4, trading dijalankan langsung dari perangkat pengguna dan hal itu hanya bisa dilakukan aplikasi Android. Browser di komputer tidak mengizinkan jenis koneksi yang dibutuhkan, sehingga bot tidak dapat berjalan dari sana.",
+                    a: "Bisa, lewat versi browser di stcautotradepro.id yang dijalankan dari server kami. Yang tidak tersedia di komputer adalah aplikasinya, karena eksekusi dari perangkat sendiri hanya bisa dilakukan aplikasi Android.",
                   },
                   {
                     q: "Apakah perlu download atau install aplikasi untuk pakai di PC?",
