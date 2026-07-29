@@ -266,6 +266,17 @@ export default function DownloadPage() {
               <p className="text-center text-[11px] text-[#1a1612]/65 mt-2.5">
                 Gratis · Perlu izin "sumber tidak dikenal"
               </p>
+              <a
+                href="https://stcautotradepro.id"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-flex w-full items-center justify-center gap-2 rounded-xl border border-[rgba(26,22,18,0.16)] px-5 py-3 text-sm font-semibold text-[#1a1612] no-underline transition-all hover:border-[rgba(26,22,18,0.28)] hover:bg-white"
+              >
+                Buka Versi Web
+              </a>
+              <p className="mt-2 text-center text-[11px] text-[#1a1612]/65">
+                Tanpa instalasi · Bisa di komputer & iPhone
+              </p>
             </div>
 
           </div>

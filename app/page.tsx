@@ -252,6 +252,9 @@ export default function Home() {
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v8M5 7l3 3 3-3M3 12.5h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
                         Download APK — Gratis
                       </a>
+                      <a href="https://stcautotradepro.id" target="_blank" rel="noopener noreferrer" className={BTN_GHOST}>
+                        Buka Versi Web
+                      </a>
                     </div>
                     <a href="#cara-kerja" className={`inline-flex items-center gap-1.5 text-sm ${INK_DIM} hover:text-[#17140f] transition-colors no-underline group w-fit`}>
                       Pelajari cara kerja
