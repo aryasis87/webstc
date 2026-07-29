@@ -403,7 +403,7 @@ export default function RobotTradingIphonePage() {
               </h2>
               <div className="space-y-3">
                 {[
-                  { q: "Apakah ada robot trading Stockity untuk iPhone?", a: "Belum. STC AutoTrade hanya berjalan di aplikasi Android sejak versi 4, karena trading dieksekusi langsung dari perangkat dan browser tidak mengizinkan koneksi yang dibutuhkan." },
+                  { q: "Apakah ada robot trading Stockity untuk iPhone?", a: "Ada, lewat versi browser di stcautotradepro.id yang dijalankan dari server kami — bisa dibuka di Safari maupun Chrome. Yang belum tersedia untuk iOS hanyalah aplikasinya. Pendaftaran akun baru tetap harus lewat aplikasi Android." },
                   { q: "Apakah STC AutoTrade masih punya versi browser?", a: "Tidak. Alamat stcautotradepro.id kini berfungsi sebagai halaman unduh aplikasi Android." },
                   { q: "Bisakah menggunakan iPad untuk trading dengan STC AutoTrade?", a: "Belum, sama seperti iPhone. iPad tetap bisa dipakai untuk memantau chart di aplikasi Stockity, sementara bot dijalankan dari HP Android." },
                   { q: "Apakah dukungan iOS akan ditambahkan?", a: "Belum ada jadwal yang bisa kami janjikan. Kendalanya bukan tampilan, melainkan izin koneksi di iOS untuk menjalankan eksekusi dari perangkat." },

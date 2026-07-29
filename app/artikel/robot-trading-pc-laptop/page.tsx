@@ -228,7 +228,7 @@ export default function RobotTradingPcLaptopPage() {
                 Robot Trading PC &amp; Laptop: Pakai STC AutoTrade via Browser di stcautotradepro.id
               </h1>
               <p className="text-[15px] text-[#6b6058] leading-relaxed mb-6">
-                Lebih nyaman bekerja di PC? Sayangnya, sejak versi 4 STC AutoTrade hanya berjalan di aplikasi Android. Halaman ini menjelaskan alasannya secara terbuka dan apa pilihan yang tersedia bagi pengguna komputer.
+                Lebih nyaman bekerja di PC? Bisa — lewat versi browser di stcautotradepro.id. Halaman ini menjelaskan bedanya dengan aplikasi dan alasannya secara terbuka dan apa pilihan yang tersedia bagi pengguna komputer.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
                 {[
@@ -268,7 +268,7 @@ export default function RobotTradingPcLaptopPage() {
               <SectionLabel>Pilihan Anda</SectionLabel>
               <h2 className="text-[20px] sm:text-[22px] font-bold text-[#1a1612] mb-4">Apa yang Bisa Dilakukan Pengguna PC</h2>
               <p className="text-[14px] text-[#6b6058] leading-relaxed mb-5">
-                Bot memang hanya berjalan di aplikasi Android, tetapi bukan berarti tidak ada jalan.
+                Ada dua jalan, dan keduanya sah dipakai — berikut urutannya dari yang paling andal.
                 Berikut pilihan yang realistis, diurutkan dari yang paling andal:
               </p>
               <div className="max-w-2xl space-y-3 mb-6">
@@ -304,9 +304,9 @@ export default function RobotTradingPcLaptopPage() {
               </p>
               <div className="space-y-3">
                 {[
-                  "Bot hanya berjalan di aplikasi Android sejak versi 4 — belum ada versi desktop.",
-                  "Alamat stcautotradepro.id kini berfungsi sebagai halaman unduh aplikasi.",
-                  "Cara paling andal: jalankan bot di HP Android, pantau chart di layar PC.",
+                  "Versi browser di stcautotradepro.id bisa dibuka dari komputer mana pun.",
+                  "Aplikasi Android menjalankan trading dari perangkat Anda sendiri; versi browser dijalankan dari server kami.",
+                  "Pendaftaran akun baru hanya bisa lewat aplikasi Android.",
                   "Akun Stockity yang dipakai sama, tidak perlu akun terpisah.",
                   "Emulator Android bisa memasang APK, tetapi tidak kami sarankan maupun dukung.",
                   "HP Android lama sudah cukup — aplikasinya ringan.",
