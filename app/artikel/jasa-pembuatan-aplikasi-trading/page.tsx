@@ -75,6 +75,51 @@ function Tangkapan({
   );
 }
 
+/**
+ * Ubin logo metode pembayaran.
+ *
+ * Berkas SVG disimpan lokal di /public/bayar — CSP situs hanya mengizinkan
+ * img-src 'self', jadi menaut langsung ke sumber luar akan diblokir. Seluruh
+ * berkas berlisensi Public Domain/CC0 dari Wikimedia Commons; merek dagangnya
+ * tetap milik masing-masing penyedia dan hanya dipakai sebagai penanda
+ * metode pembayaran yang diterima.
+ *
+ * unoptimized: SVG sengaja tidak melewati pengoptimal gambar Next (yang
+ * menolak SVG kecuali dangerouslyAllowSVG dinyalakan) — berkasnya sudah kecil.
+ */
+function LogoBayar({ src, nama }: { src: string; nama: string }) {
+  return (
+    <div className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl py-3.5 px-2 flex flex-col items-center gap-2.5 hover:border-[#10b981]/30 transition-colors">
+      <span className="h-[26px] flex items-center justify-center">
+        <Image
+          src={src}
+          alt={`Logo ${nama}`}
+          width={104}
+          height={26}
+          unoptimized
+          className="max-h-[26px] w-auto max-w-[104px] object-contain"
+        />
+      </span>
+      <span className="text-[10.5px] font-medium text-[#6b6058] text-center leading-tight">{nama}</span>
+    </div>
+  );
+}
+
+const BANK = [
+  { src: "/bayar/bca.svg", nama: "BCA" },
+  { src: "/bayar/bri.svg", nama: "BRI" },
+  { src: "/bayar/mandiri.svg", nama: "Mandiri" },
+  { src: "/bayar/bni.svg", nama: "BNI" },
+];
+
+const DOMPET = [
+  { src: "/bayar/dana.svg", nama: "DANA" },
+  { src: "/bayar/ovo.svg", nama: "OVO" },
+  { src: "/bayar/gopay.svg", nama: "GoPay" },
+  { src: "/bayar/shopeepay.svg", nama: "ShopeePay" },
+  { src: "/bayar/qris.svg", nama: "QRIS" },
+];
+
 /** Kartu harga. */
 function KartuHarga({
   eyebrow, harga, satuan, catatan, isi, utama = false,
@@ -525,24 +570,29 @@ export default function Page() {
               Kami menerima hampir semua metode pembayaran yang umum di Indonesia, jadi Anda
               tidak perlu membuka rekening atau dompet digital baru hanya untuk ini.
             </P>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-              {[
-                { i: "🏦", t: "Transfer Bank", d: "BCA · BRI · Mandiri · BNI" },
-                { i: "🔵", t: "DANA", d: "Dompet digital" },
-                { i: "🟣", t: "OVO", d: "Dompet digital" },
-                { i: "🟢", t: "GoPay", d: "Dompet digital" },
-                { i: "🟠", t: "ShopeePay", d: "Dompet digital" },
-                { i: "📷", t: "QRIS", d: "Pindai dari aplikasi apa pun" },
-              ].map((m) => (
-                <div
-                  key={m.t}
-                  className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-4 py-4 hover:border-[#10b981]/30 transition-colors"
-                >
-                  <div className="text-lg mb-1.5">{m.i}</div>
-                  <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{m.t}</p>
-                  <p className="text-[11px] text-[#6b6058] leading-snug">{m.d}</p>
+            <div className="space-y-5">
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#1a1612]/50 mb-2.5">
+                  Transfer Bank
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                  {BANK.map((m) => <LogoBayar key={m.nama} {...m} />)}
                 </div>
-              ))}
+              </div>
+
+              <div>
+                <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#1a1612]/50 mb-2.5">
+                  Dompet Digital &amp; QRIS
+                </p>
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+                  {DOMPET.map((m) => <LogoBayar key={m.nama} {...m} />)}
+                </div>
+              </div>
+
+              <p className="text-[11px] text-[#1a1612]/45 leading-relaxed">
+                Logo di atas adalah merek dagang milik masing-masing penyedia layanan,
+                ditampilkan semata sebagai penanda metode pembayaran yang kami terima.
+              </p>
             </div>
             <InfoBox icon="🧾" title="Bisa dibayar dua tahap">
               Untuk paket beli putus, pembayaran dapat dibagi: sebagian sebagai tanda jadi di
