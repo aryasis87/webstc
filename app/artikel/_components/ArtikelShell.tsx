@@ -41,6 +41,8 @@ export function ArtikelShell({
   ctaEyebrow,
   ctaTitle,
   ctaDesc,
+  ctaHref = "/download",
+  ctaLabel = "Download APK",
   children,
 }: {
   badge: keyof typeof BADGE_STYLES | string;
@@ -54,8 +56,13 @@ export function ArtikelShell({
   ctaEyebrow: string;
   ctaTitle: string;
   ctaDesc: string;
+  /** Tujuan tombol CTA. Default halaman unduh; halaman jasa mengarahkannya
+   *  ke Telegram. Alamat berawalan http dibuka di tab baru. */
+  ctaHref?: string;
+  ctaLabel?: string;
   children: React.ReactNode;
 }) {
+  const ctaExternal = ctaHref.startsWith("http");
   return (
     <div className="min-h-screen bg-[#f6f4ef]">
       {/* ── Nav ───────────────────────────────────────────── */}
@@ -138,7 +145,11 @@ export function ArtikelShell({
             <p className="text-[13px] text-[#6b6058]">{ctaDesc}</p>
           </div>
           <div className="flex gap-2.5 flex-shrink-0">
-            <Link href="/download" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">Download APK</Link>
+            {ctaExternal ? (
+              <a href={ctaHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">{ctaLabel}</a>
+            ) : (
+              <Link href={ctaHref} className="inline-flex items-center justify-center px-5 py-2.5 bg-[#1a1612] text-white text-sm font-semibold rounded-xl hover:bg-[#1a1612]/85 transition-all no-underline">{ctaLabel}</Link>
+            )}
           </div>
         </div>
       </section>

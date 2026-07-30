@@ -16,30 +16,9 @@ import {
   ArtikelShell, SectionLabel, H2, P, InfoBox, WarningBox,
   Steps, DataTable, FaqList, CardGrid,
 } from "../_components/ArtikelShell";
-
-const TELEGRAM = "https://t.me/Szin_yui";
+import { TELEGRAM, TombolTelegram, BlokOrder } from "../_components/TombolTelegram";
 
 /* ── Bagian visual khusus halaman ini ───────────────────────────── */
-
-/** Tombol order — dipakai beberapa kali di sepanjang halaman. */
-function TombolOrder({
-  label = "Hubungi & Order via Telegram",
-  block = false,
-}: { label?: string; block?: boolean }) {
-  return (
-    <a
-      href={TELEGRAM}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`${block ? "flex w-full" : "inline-flex"} items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#229ED9] text-white text-sm font-semibold no-underline shadow-lg shadow-[#229ED9]/25 hover:bg-[#1c86b8] hover:shadow-[#229ED9]/35 transition-all`}
-    >
-      <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M11.94 2.4a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2Zm4.46 6.57-1.49 7.03c-.11.5-.41.62-.83.39l-2.29-1.69-1.11 1.06c-.12.13-.23.23-.47.23l.17-2.37 4.32-3.9c.19-.17-.04-.26-.29-.09l-5.34 3.36-2.3-.72c-.5-.16-.51-.5.1-.74l8.99-3.47c.42-.15.78.1.64.73Z" />
-      </svg>
-      {label}
-    </a>
-  );
-}
 
 /** Satu tangkapan layar dalam bingkai ponsel — dipakai di panggung gelap. */
 function Tangkapan({
@@ -281,13 +260,15 @@ export default function Page() {
           { v: "Tim", l: "Divisi Developer" },
         ]}
         related={[
-          { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Contoh nyata sistem yang kami bangun." },
-          { href: "/download", title: "Coba Produknya", desc: "Unduh STC AutoTrade untuk melihat hasilnya." },
-          { href: "/kontak", title: "Hubungi Kami", desc: "Diskusikan kebutuhan Anda." },
+          { href: "/artikel/sewa-aplikasi-trading", title: "Sewa Bulanan", desc: "Rp 1,8 juta tanpa biaya pembuatan." },
+          { href: "/artikel/white-label-aplikasi-trading", title: "White Label", desc: "Aplikasi dengan nama dan logo Anda." },
+          { href: "/artikel/biaya-pembuatan-aplikasi", title: "Biaya Pembuatan Aplikasi", desc: "Apa yang sebenarnya menentukan harga." },
         ]}
         ctaEyebrow="Konsultasi Gratis"
         ctaTitle="Ceritakan kebutuhan Anda"
         ctaDesc="Kami bantu memetakan lingkup dan memastikan biayanya sebelum Anda memutuskan."
+        ctaHref={TELEGRAM}
+        ctaLabel="Tanya via Telegram"
       >
         {/* ── 01 · Bukti ─────────────────────────────────────── */}
         <section>
@@ -395,7 +376,7 @@ export default function Page() {
             </InfoBox>
 
             <div className="pt-1">
-              <TombolOrder />
+              <TombolTelegram />
             </div>
           </div>
         </section>
@@ -639,23 +620,7 @@ export default function Page() {
               platform tujuan, mode strategi yang diinginkan, dan apakah perlu panel admin —
               lalu Anda akan menerima penawaran beserta angka pastinya.
             </P>
-            <div className="relative rounded-2xl overflow-hidden bg-[#08130e] px-6 py-9 sm:px-10 text-center">
-              <div
-                className="absolute -top-24 left-1/2 -translate-x-1/2 w-[360px] h-[220px] bg-[#229ED9]/25 blur-[80px] rounded-full pointer-events-none"
-                aria-hidden="true"
-              />
-              <div className="relative">
-                <p className="text-[11px] tracking-[0.14em] uppercase text-white/45 mb-2">Admin STC AutoTrade</p>
-                <p className="font-[family-name:var(--font-dm-serif)] text-3xl text-white mb-6">@Szin_yui</p>
-                <div className="flex justify-center">
-                  <TombolOrder />
-                </div>
-                <p className="text-[11.5px] text-white/45 mt-5 max-w-sm mx-auto leading-relaxed">
-                  Konsultasi tidak dipungut biaya, termasuk bila akhirnya Anda memutuskan
-                  tidak jadi.
-                </p>
-              </div>
-            </div>
+            <BlokOrder />
           </div>
         </section>
 

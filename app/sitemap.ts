@@ -169,6 +169,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/artikel/biaya-pembuatan-aplikasi`,
+      lastModified: D("2026-07-30"),
+      changeFrequency: "monthly",
+      priority: 0.88,
+    },
+    {
+      url: `${BASE_URL}/artikel/sewa-aplikasi-trading`,
+      lastModified: D("2026-07-30"),
+      changeFrequency: "monthly",
+      priority: 0.87,
+    },
+    {
+      url: `${BASE_URL}/artikel/white-label-aplikasi-trading`,
+      lastModified: D("2026-07-30"),
+      changeFrequency: "monthly",
+      priority: 0.86,
+    },
+    {
+      url: `${BASE_URL}/artikel/jasa-pembuatan-bot-telegram`,
+      lastModified: D("2026-07-30"),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
+      url: `${BASE_URL}/artikel/cara-membuat-bot-trading-sendiri`,
+      lastModified: D("2026-07-30"),
+      changeFrequency: "monthly",
+      priority: 0.84,
+    },
+    {
       url: `${BASE_URL}/artikel/robot-trading-stockity`,
       lastModified: D("2026-05-21"),
       changeFrequency: "monthly",

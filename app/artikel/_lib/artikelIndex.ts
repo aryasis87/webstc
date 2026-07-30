@@ -19,6 +19,46 @@ export interface Artikel {
 
 export const ARTIKEL: Artikel[] = [
   {
+    slug:      "white-label-aplikasi-trading",
+    judul:     "White Label Aplikasi Trading: Bot dengan Nama & Logo Anda Sendiri",
+    ringkasan: "Punya aplikasi trading otomatis bermerek sendiri tanpa membangun dari nol: nama, logo, warna, domain, basis data terpisah, dan kode afiliasi milik Anda. Selesai 1–3 hari.",
+    kategori:  "Panduan",
+    tanggal:   "30 Juli 2026",
+    menit:     6,
+  },
+  {
+    slug:      "cara-membuat-bot-trading-sendiri",
+    judul:     "Cara Membuat Bot Trading Sendiri: Langkah & Bagian Tersulitnya",
+    ringkasan: "Panduan jujur dari yang sudah membangunnya: bekal yang dibutuhkan, urutan pengerjaan yang masuk akal, lima persoalan yang tak pernah muncul di tutorial, dan perkiraan waktu sebenarnya.",
+    kategori:  "Edukasi",
+    tanggal:   "30 Juli 2026",
+    menit:     9,
+  },
+  {
+    slug:      "sewa-aplikasi-trading",
+    judul:     "Sewa Aplikasi Trading Otomatis: Rp 1,8 Juta/Bulan Tanpa Biaya Pembuatan",
+    ringkasan: "Pakai aplikasi lengkap tanpa modal awal besar. Termasuk server, pembaruan, dan perbaikan. Hitungan balik modal dibanding beli putus — termasuk kapan menyewa justru lebih mahal.",
+    kategori:  "Panduan",
+    tanggal:   "30 Juli 2026",
+    menit:     6,
+  },
+  {
+    slug:      "jasa-pembuatan-bot-telegram",
+    judul:     "Jasa Pembuatan Bot Telegram: Notifikasi, Panel Admin & Otomasi 2026",
+    ringkasan: "Bot Telegram untuk usaha: notifikasi otomatis, panel admin dalam obrolan, asisten pelanggan, dan pencatatan data. Mulai Rp 1,5 juta, selesai dalam hitungan hari.",
+    kategori:  "Panduan",
+    tanggal:   "30 Juli 2026",
+    menit:     6,
+  },
+  {
+    slug:      "biaya-pembuatan-aplikasi",
+    judul:     "Biaya Pembuatan Aplikasi Android 2026: Rincian Harga & Faktor Penentunya",
+    ringkasan: "Kenapa dua penawaran untuk aplikasi yang sama bisa berbeda sepuluh kali lipat? Kisaran harga per jenis aplikasi, lima faktor penentu, biaya lanjutan yang jarang disebut, dan cara membandingkan penawaran dengan adil.",
+    kategori:  "Edukasi",
+    tanggal:   "30 Juli 2026",
+    menit:     8,
+  },
+  {
     slug:      "jasa-pembuatan-aplikasi-trading",
     judul:     "Jasa Pembuatan Aplikasi Trading: Rp 12–18 Juta, Selesai 1–3 Hari",
     ringkasan: "Aplikasi bot trading otomatis seperti STC AutoTrade — Android, web, panel admin, bot Telegram. Beli putus Rp 12–18 juta atau sewa Rp 1,8 juta per bulan. Dikerjakan tim divisi developer sekaligus, selesai 1–3 hari.",
