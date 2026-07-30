@@ -19,6 +19,14 @@ export interface Artikel {
 
 export const ARTIKEL: Artikel[] = [
   {
+    slug:      "jasa-pembuatan-aplikasi-trading",
+    judul:     "Jasa Pembuatan & Sewa Aplikasi Trading Otomatis 2026",
+    ringkasan: "Kami membangun STC AutoTrade dari nol — aplikasi Android, versi web, panel admin, hingga bot Telegram. Sistem serupa bisa dibuatkan untuk Anda, atau disewa bulanan tanpa biaya pembuatan.",
+    kategori:  "Panduan",
+    tanggal:   "30 Juli 2026",
+    menit:     7,
+  },
+  {
     slug:      "pajak-trading-binary-option",
     judul:     "Pajak Trading Binary Option di Indonesia: Panduan Lapor SPT 2026",
     ringkasan: "Profit trading adalah objek pajak penghasilan. Status pajaknya, tarif PPh progresif 5–35%, contoh hitungan, data yang perlu dicatat, dan langkah lapor SPT Tahunan — dijelaskan sederhana.",

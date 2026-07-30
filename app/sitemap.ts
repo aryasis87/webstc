@@ -163,6 +163,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // ── Artikel: High Priority ────────────────────────────────────
     {
+      url: `${BASE_URL}/artikel/jasa-pembuatan-aplikasi-trading`,
+      lastModified: D("2026-07-30"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/artikel/robot-trading-stockity`,
       lastModified: D("2026-05-21"),
       changeFrequency: "monthly",
