@@ -65,6 +65,11 @@ function Tangkapan({
  *
  * unoptimized: SVG sengaja tidak melewati pengoptimal gambar Next (yang
  * menolak SVG kecuali dangerouslyAllowSVG dinyalakan) — berkasnya sudah kecil.
+ *
+ * Kotaknya dipatok 104x26 dengan object-contain, BUKAN w-auto. Sebagian SVG
+ * hanya membawa viewBox tanpa width/height, sehingga ukuran bawaannya tidak
+ * terbaca dan gambar mengempis saat lebarnya dibiarkan otomatis. Kotak tetap
+ * membuat semua logo tampil seragam apa pun isi berkasnya.
  */
 function LogoBayar({ src, nama }: { src: string; nama: string }) {
   return (
@@ -76,7 +81,7 @@ function LogoBayar({ src, nama }: { src: string; nama: string }) {
           width={104}
           height={26}
           unoptimized
-          className="max-h-[26px] w-auto max-w-[104px] object-contain"
+          className="h-[26px] w-[104px] object-contain"
         />
       </span>
       <span className="text-[10.5px] font-medium text-[#6b6058] text-center leading-tight">{nama}</span>
