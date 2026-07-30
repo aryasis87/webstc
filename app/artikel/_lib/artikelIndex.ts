@@ -21,7 +21,7 @@ export const ARTIKEL: Artikel[] = [
   {
     slug:      "jasa-pembuatan-aplikasi-trading",
     judul:     "Jasa Pembuatan Aplikasi Trading: Rp 12–18 Juta, Selesai 1–3 Hari",
-    ringkasan: "Aplikasi bot trading otomatis seperti STC AutoTrade — Android, web, panel admin, bot Telegram. Beli putus Rp 12–18 juta atau sewa Rp 1,8 juta per bulan. Dikerjakan satu tim divisi developer sekaligus, selesai 1–3 hari.",
+    ringkasan: "Aplikasi bot trading otomatis seperti STC AutoTrade — Android, web, panel admin, bot Telegram. Beli putus Rp 12–18 juta atau sewa Rp 1,8 juta per bulan. Dikerjakan tim divisi developer sekaligus, selesai 1–3 hari.",
     kategori:  "Panduan",
     tanggal:   "30 Juli 2026",
     menit:     7,

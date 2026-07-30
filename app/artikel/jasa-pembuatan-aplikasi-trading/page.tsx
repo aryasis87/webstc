@@ -63,7 +63,7 @@ const seo: ArtikelSeoDef = {
     },
     {
       q: "Kenapa pengerjaannya hanya 1–3 hari?",
-      a: "Karena dikerjakan satu tim divisi developer sekaligus, bukan satu orang bergantian. Bagian aplikasi, backend, panel admin, dan pengujian berjalan berbarengan. Selain itu fondasinya sudah matang — STC AutoTrade yang berjalan setiap hari menjadi dasarnya, sehingga pekerjaan tersisa hanya penyesuaian, bukan membangun ulang dari nol.",
+      a: "Karena dikerjakan tim divisi developer sekaligus, bukan perorangan yang menggarap semuanya bergantian. Bagian aplikasi, backend, panel admin, dan pengujian berjalan berbarengan. Selain itu fondasinya sudah matang — STC AutoTrade yang berjalan setiap hari menjadi dasarnya, sehingga pekerjaan tersisa hanya penyesuaian, bukan membangun ulang dari nol.",
     },
     {
       q: "Apa bedanya beli putus dan sewa?",
@@ -149,7 +149,7 @@ export default function Page() {
           { v: "Rp 12–18 jt", l: "Beli Putus" },
           { v: "Rp 1,8 jt", l: "Sewa / Bulan" },
           { v: "1–3 hari", l: "Pengerjaan" },
-          { v: "Satu Tim", l: "Divisi Developer" },
+          { v: "Tim", l: "Divisi Developer" },
         ]}
         related={[
           { href: "/artikel/robot-trading-stockity", title: "Robot Trading Stockity", desc: "Contoh nyata sistem yang kami bangun." },
@@ -233,8 +233,8 @@ export default function Page() {
                 items={[
                   {
                     icon: "👥",
-                    title: "Dikerjakan satu tim sekaligus",
-                    desc: "Bukan satu orang yang mengerjakan semuanya bergantian. Divisi developer kami membagi pekerjaan berbarengan — aplikasi, backend, panel admin, dan pengujian berjalan pada waktu yang sama, bukan antre.",
+                    title: "Dikerjakan tim divisi developer",
+                    desc: "Bukan perorangan yang menggarap semuanya bergantian. Tim divisi developer kami membagi pekerjaan berbarengan — aplikasi, backend, panel admin, dan pengujian berjalan pada waktu yang sama, bukan antre.",
                   },
                   {
                     icon: "🧱",
