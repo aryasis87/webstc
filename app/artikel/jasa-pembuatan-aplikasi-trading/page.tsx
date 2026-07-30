@@ -9,23 +9,29 @@
  * Harga dipasang terbuka — menyaring penanya sejak awal.
  */
 
+import Image from "next/image";
+import Link from "next/link";
 import { buildMetadata, buildSchemas, type ArtikelSeoDef } from "../_lib/artikelSeo";
 import {
   ArtikelShell, SectionLabel, H2, P, InfoBox, WarningBox,
   Steps, DataTable, FaqList, CardGrid,
 } from "../_components/ArtikelShell";
-import Link from "next/link";
 
 const TELEGRAM = "https://t.me/Szin_yui";
 
+/* ── Bagian visual khusus halaman ini ───────────────────────────── */
+
 /** Tombol order — dipakai beberapa kali di sepanjang halaman. */
-function TombolOrder({ label = "Order via Telegram" }: { label?: string }) {
+function TombolOrder({
+  label = "Hubungi & Order via Telegram",
+  block = false,
+}: { label?: string; block?: boolean }) {
   return (
     <a
       href={TELEGRAM}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-[#229ED9] text-white text-sm font-semibold no-underline hover:bg-[#1c86b8] transition-colors"
+      className={`${block ? "flex w-full" : "inline-flex"} items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#229ED9] text-white text-sm font-semibold no-underline shadow-lg shadow-[#229ED9]/25 hover:bg-[#1c86b8] hover:shadow-[#229ED9]/35 transition-all`}
     >
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
         <path d="M11.94 2.4a9.6 9.6 0 1 0 0 19.2 9.6 9.6 0 0 0 0-19.2Zm4.46 6.57-1.49 7.03c-.11.5-.41.62-.83.39l-2.29-1.69-1.11 1.06c-.12.13-.23.23-.47.23l.17-2.37 4.32-3.9c.19-.17-.04-.26-.29-.09l-5.34 3.36-2.3-.72c-.5-.16-.51-.5.1-.74l8.99-3.47c.42-.15.78.1.64.73Z" />
@@ -34,6 +40,82 @@ function TombolOrder({ label = "Order via Telegram" }: { label?: string }) {
     </a>
   );
 }
+
+/** Satu tangkapan layar dalam bingkai ponsel — dipakai di panggung gelap. */
+function Tangkapan({
+  src, alt, judul, ket, priority = false,
+}: { src: string; alt: string; judul: string; ket: string; priority?: boolean }) {
+  return (
+    <figure className="m-0 w-full flex flex-col items-center">
+      {/* Lebar fluid: tiga ponsel berdampingan tetap muat di layar tablet. */}
+      <div className="relative w-full max-w-[228px] aspect-[228/480]">
+        <div className="absolute inset-6 rounded-[30px] bg-emerald-400/25 blur-2xl" aria-hidden="true" />
+        <div className="relative h-full rounded-[32px] border-[6px] border-white/[0.12] bg-zinc-950 overflow-hidden shadow-2xl shadow-black/50">
+          <div className="absolute top-2.5 inset-x-0 z-10 flex justify-center pointer-events-none">
+            <div className="w-[32%] h-[3.5%] bg-zinc-950 rounded-full" />
+          </div>
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            sizes="(min-width: 640px) 25vw, 228px"
+            priority={priority}
+            className="object-cover object-top"
+          />
+          <div className="absolute bottom-1.5 inset-x-0 z-10 flex justify-center pointer-events-none">
+            <div className="w-16 h-[3px] bg-white/25 rounded-full" />
+          </div>
+        </div>
+      </div>
+      <figcaption className="mt-5 text-center max-w-[228px]">
+        <p className="text-[12.5px] font-semibold text-white mb-1">{judul}</p>
+        <p className="text-[11.5px] text-white/55 leading-snug">{ket}</p>
+      </figcaption>
+    </figure>
+  );
+}
+
+/** Kartu harga. */
+function KartuHarga({
+  eyebrow, harga, satuan, catatan, isi, utama = false,
+}: {
+  eyebrow: string; harga: string; satuan?: string; catatan: string;
+  isi: string[]; utama?: boolean;
+}) {
+  return (
+    <div
+      className={`relative rounded-2xl p-6 flex flex-col ${
+        utama
+          ? "bg-white border-2 border-[#10b981] shadow-lg shadow-emerald-600/[0.08]"
+          : "bg-white border border-[rgba(26,22,18,0.12)]"
+      }`}
+    >
+      {utama && (
+        <span className="absolute -top-2.5 left-6 inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#10b981] text-white text-[10px] font-bold tracking-wide">
+          SEKALI BAYAR
+        </span>
+      )}
+      <p className={`text-[11px] font-semibold tracking-[0.12em] uppercase mb-2 ${utama ? "text-[#047857]" : "text-[#1a1612]/65"}`}>
+        {eyebrow}
+      </p>
+      <p className="font-[family-name:var(--font-dm-serif)] text-[34px] text-[#1a1612] leading-none mb-1.5">
+        {harga}
+        {satuan && <span className="text-base text-[#6b6058]">{satuan}</span>}
+      </p>
+      <p className="text-[12px] text-[#6b6058] mb-5">{catatan}</p>
+      <ul className="space-y-2 text-[12.5px] text-[#6b6058] list-none p-0 m-0">
+        {isi.map((t) => (
+          <li key={t} className="flex gap-2.5">
+            <span className="text-[#10b981] font-bold flex-shrink-0" aria-hidden="true">✓</span>
+            <span>{t}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+/* ── SEO ────────────────────────────────────────────────────────── */
 
 const seo: ArtikelSeoDef = {
   slug: "jasa-pembuatan-aplikasi-trading",
@@ -124,6 +206,8 @@ const serviceSchema = {
   ],
 };
 
+/* ── Halaman ────────────────────────────────────────────────────── */
+
 export default function Page() {
   return (
     <>
@@ -160,106 +244,195 @@ export default function Page() {
         ctaTitle="Ceritakan kebutuhan Anda"
         ctaDesc="Kami bantu memetakan lingkup dan memastikan biayanya sebelum Anda memutuskan."
       >
-        {/* ── Harga ─────────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Harga</SectionLabel>
-            <H2>Dua Pilihan, Angkanya Terbuka</H2>
+        {/* ── 01 · Bukti ─────────────────────────────────────── */}
+        <section>
+          <SectionLabel>01 · Hasil Kerja</SectionLabel>
+          <H2>Inilah yang Sudah Kami Bangun</H2>
+          <div className="space-y-6">
+            <P>
+              Tiga tangkapan layar di bawah bukan mockup atau rancangan. Ini aplikasi STC
+              AutoTrade yang berjalan setiap hari di perangkat ratusan pengguna. Aplikasi
+              yang kami buatkan untuk Anda berdiri di atas fondasi yang sama.
+            </P>
+
+            <div className="relative rounded-3xl bg-[#08130e] overflow-hidden px-4 py-11 sm:px-6 lg:px-10">
+              <div
+                className="absolute inset-0 [background-image:radial-gradient(circle,rgba(255,255,255,0.05)_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"
+                aria-hidden="true"
+              />
+              <div
+                className="absolute -top-28 left-1/2 -translate-x-1/2 w-[440px] h-[260px] bg-emerald-400/20 blur-[90px] rounded-full pointer-events-none"
+                aria-hidden="true"
+              />
+
+              <div className="relative">
+                <p className="text-[10px] font-semibold tracking-[0.16em] uppercase text-emerald-300/80 text-center mb-8">
+                  Aplikasi Android · Berjalan Nyata
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-4 lg:gap-6 justify-items-center">
+                  <Tangkapan
+                    src="/gambar1.webp"
+                    alt="Dashboard aplikasi trading otomatis: profit harian, jam server, grafik harga realtime, pemilih mode, dan tombol start"
+                    judul="Dashboard utama"
+                    ket="Profit harian, grafik realtime, pemilih mode, dan kendali start/stop dalam satu layar."
+                    priority
+                  />
+                  <Tangkapan
+                    src="/gambar2.webp"
+                    alt="Panel pengaturan trading: pilihan akun demo, durasi order, nominal per trade, martingale, stop loss, dan target profit"
+                    judul="Pengaturan & manajemen risiko"
+                    ket="Nominal per order, martingale bertingkat, stop loss dan target profit otomatis."
+                  />
+                  <Tangkapan
+                    src="/gambar3.webp"
+                    alt="Riwayat order aplikasi trading otomatis menampilkan arah buy/sell, nominal, status profit atau loss, dan penanda martingale"
+                    judul="Riwayat order"
+                    ket="Setiap order tercatat — arah, nominal, hasil, dan langkah martingale-nya."
+                  />
+                </div>
+              </div>
+            </div>
+
+            <InfoBox icon="🔍" title="Silakan periksa sendiri sebelum memutuskan">
+              Aplikasinya bisa Anda{" "}
+              <Link href="/download" className="underline">unduh dan pakai langsung</Link>{" "}
+              hari ini juga, gratis, termasuk mode demo. Itu cara paling jujur menilai
+              kualitas kerja kami — Anda melihat produknya bekerja, bukan membaca janji.
+            </InfoBox>
+          </div>
+        </section>
+
+        {/* ── 02 · Harga ─────────────────────────────────────── */}
+        <section>
+          <SectionLabel>02 · Harga</SectionLabel>
+          <H2>Dua Pilihan, Angkanya Terbuka</H2>
+          <div className="space-y-6">
             <P>
               Kami memasang harga di halaman ini supaya Anda bisa menilai sejak awal tanpa
               perlu bertanya lebih dulu. Tidak ada biaya tersembunyi dan tidak ada tambahan
               di tengah pengerjaan selama lingkupnya tidak berubah.
             </P>
 
-            <div className="grid sm:grid-cols-2 gap-4 mt-6">
-              <div className="bg-white border-2 border-[#10b981] rounded-2xl p-6">
-                <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#047857] mb-2">Beli Putus</p>
-                <p className="font-[family-name:var(--font-dm-serif)] text-3xl text-[#1a1612] leading-none mb-1">
-                  Rp 12–18 jt
-                </p>
-                <p className="text-[12px] text-[#6b6058] mb-4">bayar sekali, aplikasi jadi milik Anda</p>
-                <ul className="space-y-1.5 text-[12px] text-[#6b6058] list-none p-0 m-0">
-                  <li>✓ Aplikasi Android siap pasang</li>
-                  <li>✓ Versi web bila diperlukan</li>
-                  <li>✓ Panel admin &amp; pengelolaan pengguna</li>
-                  <li>✓ Kode sumber &amp; dokumentasi diserahkan</li>
-                  <li>✓ Pendampingan setelah serah terima</li>
-                </ul>
-              </div>
-
-              <div className="bg-white border border-[rgba(26,22,18,0.12)] rounded-2xl p-6">
-                <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-2">Sewa Bulanan</p>
-                <p className="font-[family-name:var(--font-dm-serif)] text-3xl text-[#1a1612] leading-none mb-1">
-                  Rp 1,8 jt<span className="text-base text-[#6b6058]">/bulan</span>
-                </p>
-                <p className="text-[12px] text-[#6b6058] mb-4">tanpa biaya pembuatan di awal</p>
-                <ul className="space-y-1.5 text-[12px] text-[#6b6058] list-none p-0 m-0">
-                  <li>✓ Sistem yang sama, siap pakai</li>
-                  <li>✓ Server ditanggung kami</li>
-                  <li>✓ Pembaruan &amp; perbaikan termasuk</li>
-                  <li>✓ Berhenti kapan saja</li>
-                  <li>✓ Bisa dialihkan ke beli putus</li>
-                </ul>
-              </div>
+            <div className="grid sm:grid-cols-2 gap-4 pt-1.5">
+              <KartuHarga
+                utama
+                eyebrow="Beli Putus"
+                harga="Rp 12–18 jt"
+                catatan="bayar sekali, aplikasi jadi milik Anda"
+                isi={[
+                  "Aplikasi Android siap pasang",
+                  "Versi web bila diperlukan",
+                  "Panel admin & pengelolaan pengguna",
+                  "Kode sumber & dokumentasi diserahkan",
+                  "Pendampingan setelah serah terima",
+                ]}
+              />
+              <KartuHarga
+                eyebrow="Sewa Bulanan"
+                harga="Rp 1,8 jt"
+                satuan="/bulan"
+                catatan="tanpa biaya pembuatan di awal"
+                isi={[
+                  "Sistem yang sama, siap pakai",
+                  "Server ditanggung kami",
+                  "Pembaruan & perbaikan termasuk",
+                  "Berhenti kapan saja",
+                  "Bisa dialihkan ke beli putus",
+                ]}
+              />
             </div>
 
-            <div className="mt-6">
-              <InfoBox icon="🧮" title="Mana yang lebih hemat">
-                Sewa lebih ringan bila Anda ingin mulai cepat atau masih menguji pasar. Beli
-                putus jadi lebih murah setelah kira-kira sepuluh bulan pemakaian — dan
-                setelah itu tidak ada biaya bulanan sama sekali. Biaya sewa yang sudah
-                berjalan dapat diperhitungkan bila Anda memutuskan beralih.
-              </InfoBox>
-            </div>
+            <InfoBox icon="🧮" title="Mana yang lebih hemat">
+              Sewa lebih ringan bila Anda ingin mulai cepat atau masih menguji pasar. Beli
+              putus jadi lebih murah setelah kira-kira sepuluh bulan pemakaian — dan setelah
+              itu tidak ada biaya bulanan sama sekali. Biaya sewa yang sudah berjalan dapat
+              diperhitungkan bila Anda memutuskan beralih.
+            </InfoBox>
 
-            <div className="mt-7">
+            <div className="pt-1">
               <TombolOrder />
             </div>
           </div>
         </section>
 
-        {/* ── Kecepatan ─────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Waktu Pengerjaan</SectionLabel>
-            <H2>Selesai 1–3 Hari — Ini Alasannya</H2>
+        {/* ── 03 · Waktu pengerjaan ──────────────────────────── */}
+        <section>
+          <SectionLabel>03 · Waktu Pengerjaan</SectionLabel>
+          <H2>Selesai 1–3 Hari — Ini Alasannya</H2>
+          <div className="space-y-4">
             <P>
               Angka itu sering membuat orang curiga, jadi kami jelaskan apa adanya. Ada dua
               hal yang membuatnya mungkin, dan keduanya tidak berkaitan dengan memotong
               kualitas.
             </P>
-            <div className="mt-5">
-              <CardGrid
-                items={[
-                  {
-                    icon: "👥",
-                    title: "Dikerjakan tim divisi developer",
-                    desc: "Bukan perorangan yang menggarap semuanya bergantian. Tim divisi developer kami membagi pekerjaan berbarengan — aplikasi, backend, panel admin, dan pengujian berjalan pada waktu yang sama, bukan antre.",
-                  },
-                  {
-                    icon: "🧱",
-                    title: "Fondasinya sudah matang",
-                    desc: "Kami tidak membangun dari nol. STC AutoTrade sudah berjalan setiap hari dan dipakai ratusan orang. Yang tersisa hanya penyesuaian sesuai kebutuhan Anda — bagian tersulitnya sudah selesai bertahun-tahun lalu.",
-                  },
-                ]}
-              />
-            </div>
-            <div className="mt-5">
-              <P>
-                Yang perlu jujur disampaikan: 1–3 hari berlaku bila kebutuhan Anda masih
-                dalam lingkup yang kami kuasai. Bila Anda meminta platform yang belum pernah
-                kami tangani, kami sampaikan estimasi berbeda sejak awal — bukan setelah
-                Anda membayar.
-              </P>
-            </div>
+            <CardGrid
+              items={[
+                {
+                  icon: "👥",
+                  title: "Dikerjakan tim divisi developer",
+                  desc: "Bukan perorangan yang menggarap semuanya bergantian. Tim divisi developer kami membagi pekerjaan berbarengan — aplikasi, backend, panel admin, dan pengujian berjalan pada waktu yang sama, bukan antre.",
+                },
+                {
+                  icon: "🧱",
+                  title: "Fondasinya sudah matang",
+                  desc: "Kami tidak membangun dari nol. STC AutoTrade sudah berjalan setiap hari dan dipakai ratusan orang. Yang tersisa hanya penyesuaian sesuai kebutuhan Anda — bagian tersulitnya sudah selesai bertahun-tahun lalu.",
+                },
+              ]}
+            />
+            <P>
+              Yang perlu jujur disampaikan: 1–3 hari berlaku bila kebutuhan Anda masih dalam
+              lingkup yang kami kuasai. Bila Anda meminta platform yang belum pernah kami
+              tangani, kami sampaikan estimasi berbeda sejak awal — bukan setelah Anda
+              membayar.
+            </P>
           </div>
         </section>
 
-        {/* ── Kenapa kami ───────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Kenapa Kami</SectionLabel>
-            <H2>Dibangun dari Pengalaman, Bukan dari Teori</H2>
+        {/* ── 04 · Layanan ───────────────────────────────────── */}
+        <section>
+          <SectionLabel>04 · Layanan</SectionLabel>
+          <H2>Yang Bisa Kami Kerjakan</H2>
+          <CardGrid
+            items={[
+              {
+                icon: "🤖",
+                title: "Bot trading otomatis",
+                desc: "Eksekusi order otomatis mengikuti aturan Anda — jadwal, indikator teknikal, pola candle, atau strategi khusus yang Anda tentukan sendiri.",
+              },
+              {
+                icon: "📱",
+                title: "Aplikasi Android",
+                desc: "Aplikasi yang dipasang di perangkat pengguna, lengkap dengan koneksi realtime, notifikasi, dan penyimpanan sesi.",
+              },
+              {
+                icon: "🖥️",
+                title: "Versi web & backend",
+                desc: "Dashboard berbasis peramban dengan server yang menjalankan eksekusi, sehingga bisa dipakai dari komputer maupun ponsel.",
+              },
+              {
+                icon: "🛡️",
+                title: "Panel admin & whitelist",
+                desc: "Pengelolaan pengguna, pembatasan akses, statistik pemakaian, dan tingkatan admin.",
+              },
+              {
+                icon: "💬",
+                title: "Bot Telegram",
+                desc: "Notifikasi otomatis, asisten untuk pengguna, atau panel admin lewat Telegram.",
+              },
+              {
+                icon: "🌐",
+                title: "Situs & SEO",
+                desc: "Halaman produk yang cepat, terstruktur rapi, dan disiapkan agar mudah ditemukan mesin pencari.",
+              },
+            ]}
+          />
+        </section>
+
+        {/* ── 05 · Kenapa kami ───────────────────────────────── */}
+        <section>
+          <SectionLabel>05 · Kenapa Kami</SectionLabel>
+          <H2>Dibangun dari Pengalaman, Bukan dari Teori</H2>
+          <div className="space-y-4">
             <P>
               STC AutoTrade bukan contoh yang dibuat untuk portofolio. Ia berjalan setiap
               hari, dipakai ratusan pengguna, dan sudah melewati hal-hal yang hanya muncul
@@ -271,10 +444,6 @@ export default function Page() {
               database, sampai memindahkan seluruh eksekusi dari server ke perangkat
               pengguna. Pengalaman semacam itu tidak didapat dari membaca dokumentasi.
             </P>
-            <InfoBox icon="🔍" title="Silakan periksa sendiri">
-              Sebelum memutuskan, unduh dan pakai STC AutoTrade. Itu cara paling jujur
-              menilai kualitas kerja kami — Anda melihat produknya langsung, bukan janji.
-            </InfoBox>
             <WarningBox>
               Yang patut Anda curigai dari penyedia jasa mana pun adalah ketiadaan produk
               yang bisa dicoba. Bila calon pembuat aplikasi Anda hanya menunjukkan tangkapan
@@ -284,53 +453,11 @@ export default function Page() {
           </div>
         </section>
 
-        {/* ── Layanan ───────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Layanan</SectionLabel>
-            <H2>Yang Bisa Kami Kerjakan</H2>
-            <CardGrid
-              items={[
-                {
-                  icon: "🤖",
-                  title: "Bot trading otomatis",
-                  desc: "Eksekusi order otomatis mengikuti aturan Anda — jadwal, indikator teknikal, pola candle, atau strategi khusus yang Anda tentukan sendiri.",
-                },
-                {
-                  icon: "📱",
-                  title: "Aplikasi Android",
-                  desc: "Aplikasi yang dipasang di perangkat pengguna, lengkap dengan koneksi realtime, notifikasi, dan penyimpanan sesi.",
-                },
-                {
-                  icon: "🖥️",
-                  title: "Versi web & backend",
-                  desc: "Dashboard berbasis peramban dengan server yang menjalankan eksekusi, sehingga bisa dipakai dari komputer maupun ponsel.",
-                },
-                {
-                  icon: "🛡️",
-                  title: "Panel admin & whitelist",
-                  desc: "Pengelolaan pengguna, pembatasan akses, statistik pemakaian, dan tingkatan admin.",
-                },
-                {
-                  icon: "💬",
-                  title: "Bot Telegram",
-                  desc: "Notifikasi otomatis, asisten untuk pengguna, atau panel admin lewat Telegram.",
-                },
-                {
-                  icon: "🌐",
-                  title: "Situs & SEO",
-                  desc: "Halaman produk yang cepat, terstruktur rapi, dan disiapkan agar mudah ditemukan mesin pencari.",
-                },
-              ]}
-            />
-          </div>
-        </section>
-
-        {/* ── Beli vs sewa ──────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Perbandingan</SectionLabel>
-            <H2>Beli Putus atau Sewa</H2>
+        {/* ── 06 · Beli vs sewa ──────────────────────────────── */}
+        <section>
+          <SectionLabel>06 · Perbandingan</SectionLabel>
+          <H2>Beli Putus atau Sewa</H2>
+          <div className="space-y-4">
             <P>
               Dua jalur dengan pertimbangan berbeda. Yang tepat bergantung pada seberapa
               cepat Anda ingin mulai dan seberapa besar kendali yang Anda inginkan.
@@ -355,52 +482,50 @@ export default function Page() {
           </div>
         </section>
 
-        {/* ── Alur kerja ────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Alur Kerja</SectionLabel>
-            <H2>Dari Obrolan Awal sampai Berjalan</H2>
-            <Steps
-              items={[
-                {
-                  title: "Konsultasi lewat Telegram — gratis",
-                  desc: "Ceritakan kebutuhan Anda. Kami bantu memetakan mana yang benar-benar perlu dan mana yang bisa ditunda, agar biayanya tidak membengkak tanpa alasan.",
-                },
-                {
-                  title: "Penawaran & lingkup tertulis",
-                  desc: "Anda menerima rincian apa saja yang dikerjakan beserta angka pastinya di dalam rentang Rp 12–18 juta. Yang tidak tertulis tidak dihitung sebagai bagian pekerjaan.",
-                },
-                {
-                  title: "Pembayaran & pengerjaan dimulai",
-                  desc: "Untuk beli putus, pembayaran dapat dibagi dua tahap: sebagian di awal, sisanya setelah aplikasi diserahkan. Pengerjaan dimulai hari itu juga.",
-                },
-                {
-                  title: "Pengerjaan paralel — 1 sampai 3 hari",
-                  desc: "Divisi developer mengerjakan bagian aplikasi, backend, dan panel admin secara berbarengan. Anda menerima kabar perkembangannya, bukan didiamkan sampai selesai.",
-                },
-                {
-                  title: "Uji coba & serah terima",
-                  desc: "Sistem diuji pada keadaan sungguhan sebelum dipakai pengguna. Untuk bot trading, pengujian selalu dimulai dari akun demo. Setelah Anda setuju, semuanya diserahkan.",
-                },
-                {
-                  title: "Pendampingan setelah rilis",
-                  desc: "Masa pendampingan disertakan. Sesudahnya, tersedia pemeliharaan berkala bila Anda membutuhkan — atau otomatis termasuk bila Anda memilih paket sewa.",
-                },
-              ]}
-            />
-          </div>
+        {/* ── 07 · Alur kerja ────────────────────────────────── */}
+        <section>
+          <SectionLabel>07 · Alur Kerja</SectionLabel>
+          <H2>Dari Obrolan Awal sampai Berjalan</H2>
+          <Steps
+            items={[
+              {
+                title: "Konsultasi lewat Telegram — gratis",
+                desc: "Ceritakan kebutuhan Anda. Kami bantu memetakan mana yang benar-benar perlu dan mana yang bisa ditunda, agar biayanya tidak membengkak tanpa alasan.",
+              },
+              {
+                title: "Penawaran & lingkup tertulis",
+                desc: "Anda menerima rincian apa saja yang dikerjakan beserta angka pastinya di dalam rentang Rp 12–18 juta. Yang tidak tertulis tidak dihitung sebagai bagian pekerjaan.",
+              },
+              {
+                title: "Pembayaran & pengerjaan dimulai",
+                desc: "Untuk beli putus, pembayaran dapat dibagi dua tahap: sebagian di awal, sisanya setelah aplikasi diserahkan. Pengerjaan dimulai hari itu juga.",
+              },
+              {
+                title: "Pengerjaan paralel — 1 sampai 3 hari",
+                desc: "Tim divisi developer mengerjakan bagian aplikasi, backend, dan panel admin secara berbarengan. Anda menerima kabar perkembangannya, bukan didiamkan sampai selesai.",
+              },
+              {
+                title: "Uji coba & serah terima",
+                desc: "Sistem diuji pada keadaan sungguhan sebelum dipakai pengguna. Untuk bot trading, pengujian selalu dimulai dari akun demo. Setelah Anda setuju, semuanya diserahkan.",
+              },
+              {
+                title: "Pendampingan setelah rilis",
+                desc: "Masa pendampingan disertakan. Sesudahnya, tersedia pemeliharaan berkala bila Anda membutuhkan — atau otomatis termasuk bila Anda memilih paket sewa.",
+              },
+            ]}
+          />
         </section>
 
-        {/* ── Pembayaran ────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Pembayaran</SectionLabel>
-            <H2>Bayar dengan Cara yang Anda Biasa Pakai</H2>
+        {/* ── 08 · Pembayaran ────────────────────────────────── */}
+        <section>
+          <SectionLabel>08 · Pembayaran</SectionLabel>
+          <H2>Bayar dengan Cara yang Anda Biasa Pakai</H2>
+          <div className="space-y-4">
             <P>
-              Kami menerima hampir semua metode pembayaran yang umum di Indonesia, jadi
-              Anda tidak perlu membuka rekening atau dompet digital baru hanya untuk ini.
+              Kami menerima hampir semua metode pembayaran yang umum di Indonesia, jadi Anda
+              tidak perlu membuka rekening atau dompet digital baru hanya untuk ini.
             </P>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {[
                 { i: "🏦", t: "Transfer Bank", d: "BCA · BRI · Mandiri · BNI" },
                 { i: "🔵", t: "DANA", d: "Dompet digital" },
@@ -409,81 +534,86 @@ export default function Page() {
                 { i: "🟠", t: "ShopeePay", d: "Dompet digital" },
                 { i: "📷", t: "QRIS", d: "Pindai dari aplikasi apa pun" },
               ].map((m) => (
-                <div key={m.t} className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-4 py-4">
+                <div
+                  key={m.t}
+                  className="bg-white border border-[rgba(26,22,18,0.08)] rounded-xl px-4 py-4 hover:border-[#10b981]/30 transition-colors"
+                >
                   <div className="text-lg mb-1.5">{m.i}</div>
                   <p className="text-[13px] font-semibold text-[#1a1612] mb-0.5">{m.t}</p>
                   <p className="text-[11px] text-[#6b6058] leading-snug">{m.d}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-5">
-              <InfoBox icon="🧾" title="Bisa dibayar dua tahap">
-                Untuk paket beli putus, pembayaran dapat dibagi: sebagian sebagai tanda jadi
-                di awal, sisanya setelah aplikasi selesai dan Anda sudah mencobanya sendiri.
-                Rinciannya disepakati saat konsultasi.
-              </InfoBox>
-            </div>
+            <InfoBox icon="🧾" title="Bisa dibayar dua tahap">
+              Untuk paket beli putus, pembayaran dapat dibagi: sebagian sebagai tanda jadi di
+              awal, sisanya setelah aplikasi selesai dan Anda sudah mencobanya sendiri.
+              Rinciannya disepakati saat konsultasi.
+            </InfoBox>
           </div>
         </section>
 
-        {/* ── Kejujuran ─────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Kejujuran</SectionLabel>
-            <H2>Yang Tidak Kami Janjikan</H2>
+        {/* ── 09 · Kejujuran ─────────────────────────────────── */}
+        <section>
+          <SectionLabel>09 · Kejujuran</SectionLabel>
+          <H2>Yang Tidak Kami Janjikan</H2>
+          <div className="space-y-4">
             <P>
               Kami membuat perangkat lunak, bukan mesin uang. Bot menjalankan aturan Anda
               lebih cepat dan lebih konsisten — tetapi ia tidak memperbaiki aturan yang
               keliru. Aturan yang salah akan diulang dengan rapi.
             </P>
             <P>
-              Kami juga tidak menjanjikan keuntungan, tidak menjual strategi ajaib, dan
-              tidak menyarankan Anda memakai dana yang tidak siap Anda kehilangan.
-              Perhitungan jujur mengenai risikonya ada di{" "}
+              Kami juga tidak menjanjikan keuntungan, tidak menjual strategi ajaib, dan tidak
+              menyarankan Anda memakai dana yang tidak siap Anda kehilangan. Perhitungan
+              jujur mengenai risikonya ada di{" "}
               <Link href="/artikel/berapa-penghasilan-trading-binary-option" className="text-[#047857] underline">
                 artikel penghasilan trading
               </Link>
               .
             </P>
             <P>
-              Bila yang Anda cari adalah penyedia jasa yang mengiyakan semua permintaan,
-              kami bukan pilihan yang tepat. Kami akan mengatakan bila sebuah permintaan
-              tidak masuk akal secara teknis — sejak awal, bukan setelah dibayar.
+              Bila yang Anda cari adalah penyedia jasa yang mengiyakan semua permintaan, kami
+              bukan pilihan yang tepat. Kami akan mengatakan bila sebuah permintaan tidak
+              masuk akal secara teknis — sejak awal, bukan setelah dibayar.
             </P>
           </div>
         </section>
 
-        {/* ── Order ─────────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-white">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>Cara Order</SectionLabel>
-            <H2>Langsung Hubungi Kami di Telegram</H2>
+        {/* ── 10 · Order ─────────────────────────────────────── */}
+        <section>
+          <SectionLabel>10 · Cara Order</SectionLabel>
+          <H2>Langsung Hubungi Kami di Telegram</H2>
+          <div className="space-y-5">
             <P>
               Pemesanan dan konsultasi dilakukan lewat Telegram. Sampaikan kebutuhan Anda —
               platform tujuan, mode strategi yang diinginkan, dan apakah perlu panel admin —
               lalu Anda akan menerima penawaran beserta angka pastinya.
             </P>
-            <div className="mt-6 bg-[#f6f4ef] border border-[rgba(26,22,18,0.09)] rounded-2xl px-6 py-7 text-center">
-              <p className="text-[12px] text-[#6b6058] mb-1">Admin STC AutoTrade</p>
-              <p className="font-[family-name:var(--font-dm-serif)] text-2xl text-[#1a1612] mb-5">
-                @Szin_yui
-              </p>
-              <TombolOrder label="Order Sekarang via Telegram" />
-              <p className="text-[11px] text-[#1a1612]/55 mt-4">
-                Konsultasi tidak dipungut biaya, termasuk bila akhirnya Anda memutuskan
-                tidak jadi.
-              </p>
+            <div className="relative rounded-2xl overflow-hidden bg-[#08130e] px-6 py-9 sm:px-10 text-center">
+              <div
+                className="absolute -top-24 left-1/2 -translate-x-1/2 w-[360px] h-[220px] bg-[#229ED9]/25 blur-[80px] rounded-full pointer-events-none"
+                aria-hidden="true"
+              />
+              <div className="relative">
+                <p className="text-[11px] tracking-[0.14em] uppercase text-white/45 mb-2">Admin STC AutoTrade</p>
+                <p className="font-[family-name:var(--font-dm-serif)] text-3xl text-white mb-6">@Szin_yui</p>
+                <div className="flex justify-center">
+                  <TombolOrder />
+                </div>
+                <p className="text-[11.5px] text-white/45 mt-5 max-w-sm mx-auto leading-relaxed">
+                  Konsultasi tidak dipungut biaya, termasuk bila akhirnya Anda memutuskan
+                  tidak jadi.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* ── FAQ ───────────────────────────────────────────── */}
-        <section className="py-8 border-b border-[rgba(26,22,18,0.06)] bg-[#f6f4ef]">
-          <div className="max-w-3xl mx-auto px-5">
-            <SectionLabel>FAQ</SectionLabel>
-            <H2>Pertanyaan yang Sering Muncul</H2>
-            <FaqList items={seo.faq} />
-          </div>
+        {/* ── 11 · FAQ ───────────────────────────────────────── */}
+        <section>
+          <SectionLabel>11 · FAQ</SectionLabel>
+          <H2>Pertanyaan yang Sering Muncul</H2>
+          <FaqList items={seo.faq} />
         </section>
       </ArtikelShell>
     </>
