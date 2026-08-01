@@ -19,6 +19,14 @@ export interface Artikel {
 
 export const ARTIKEL: Artikel[] = [
   {
+    slug:      "sinyal-schedule-harian-gratis",
+    judul:     "Sinyal Trading Harian Gratis untuk Stockity: Jadwal Signal Tiap Hari",
+    ringkasan: "Jadwal sinyal 'jam arah' gratis yang diperbarui setiap hari, siap ditempel ke mode Signal STC AutoTrade. Dua interval (3 & 5 menit) via bot Telegram, plus penjelasan jujur soal cara pakai dan risikonya.",
+    kategori:  "Strategi",
+    tanggal:   "1 Agustus 2026",
+    menit:     6,
+  },
+  {
     slug:      "white-label-aplikasi-trading",
     judul:     "White Label Aplikasi Trading: Bot dengan Nama & Logo Anda Sendiri",
     ringkasan: "Punya aplikasi trading otomatis bermerek sendiri tanpa membangun dari nol: nama, logo, warna, domain, basis data terpisah, dan kode afiliasi milik Anda. Selesai 1–3 hari.",
