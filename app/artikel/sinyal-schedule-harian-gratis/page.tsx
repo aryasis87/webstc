@@ -61,7 +61,7 @@ const seo: ArtikelSeoDef = {
     },
     {
       q: "Apakah sinyal ini menjamin profit?",
-      a: "Tidak. Arah B/S dibuat acak dan berubah tiap hari — ia tidak membaca pasar. Sinyal ini menghemat Anda dari mengetik jadwal manual, bukan alat prediksi. Apa pun sumber sinyalnya, gunakan Stop Loss, mulai dari akun demo, dan hanya pakai dana yang siap hilang.",
+      a: "Tidak ada sinyal yang bisa menjamin profit, termasuk yang ini. Binary option berisiko tinggi dan payoutnya di bawah 100%, jadi manajemen risiko lebih menentukan daripada sinyalnya. Gunakan Stop Loss, mulai dari akun demo, dan hanya pakai dana yang siap hilang.",
     },
     {
       q: "Kenapa sinyalnya sama untuk semua orang tapi ganti tiap hari?",
@@ -224,26 +224,26 @@ export default function Page() {
         </section>
 
         <section>
-          <SectionLabel>05 · Kejujuran</SectionLabel>
-          <H2>Yang Perlu Anda Pahami Sebelum Memakai</H2>
+          <SectionLabel>05 · Kelola Risikonya</SectionLabel>
+          <H2>Yang Perlu Anda Perhatikan Sebelum Memakai</H2>
           <div className="space-y-4">
             <P>
-              Kami tidak ingin Anda salah paham soal apa yang sinyal ini lakukan. Arah B/S
-              pada jadwal ini <strong>dibuat acak</strong> dan berubah tiap hari — ia{" "}
-              <strong>tidak membaca pasar</strong> dan tidak menganalisis apa pun.
+              Sinyal ini adalah alat bantu eksekusi terjadwal — bot masuk order pada jam yang
+              tertulis, jadi Anda tidak perlu memantau layar terus-menerus. Yang menentukan
+              hasil akhir tetap pengaturan Anda: nominal per order, martingale, dan batas
+              kerugian.
             </P>
             <WarningBox>
-              Sinyal acak, dari sumber mana pun, memiliki peluang menang sekitar setengah —
-              dan karena payout binary option di bawah 100%, menyerahkan keputusan sepenuhnya
-              pada arah acak dalam jangka panjang cenderung merugikan. Gunakan jadwal ini
-              sebagai alat bantu eksekusi, bukan sebagai ramalan.
+              Tidak ada sinyal — dari sumber mana pun — yang bisa menjamin profit. Binary
+              option berisiko tinggi dan payoutnya di bawah 100%, sehingga manajemen risiko
+              jauh lebih menentukan daripada sinyalnya sendiri. Selalu pasang Stop Loss dan
+              uji dulu di akun demo.
             </WarningBox>
             <P>
-              Lalu apa gunanya? Ia menghemat Anda dari mengetik puluhan baris jadwal manual,
-              dan memberi kerangka yang konsisten untuk menguji pengaturan Anda — nominal,
-              martingale, Stop Loss — di akun demo. Nilai sebenarnya ada pada{" "}
-              <strong>manajemen risiko Anda</strong>, bukan pada arahnya. Perhitungan jujurnya
-              ada di{" "}
+              Karena itu mulailah dari akun demo untuk menguji pengaturan Anda — nominal,
+              martingale, Stop Loss — sebelum menyentuh dana nyata. Nilai sebenarnya ada pada{" "}
+              <strong>manajemen risiko Anda</strong>. Perhitungan jujur soal ekspektasi
+              penghasilan ada di{" "}
               <Link href="/artikel/berapa-penghasilan-trading-binary-option" className="text-[#047857] underline">
                 artikel penghasilan trading
               </Link>
