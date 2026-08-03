@@ -128,6 +128,13 @@ const schemaSoftwareApp = {
     priceCurrency: "IDR",
     availability: "https://schema.org/InStock",
   },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    ratingCount: "1200",
+    bestRating: "5",
+    worstRating: "1",
+  },
   author: { "@type": "Organization", name: "STC AutoTrade", url: BASE_URL },
   downloadUrl: `${BASE_URL}/StcAutoTrade.apk`,
   softwareVersion: "4.0",
