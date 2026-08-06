@@ -303,6 +303,17 @@ export default function Home() {
           </section>
 
           {/* ── ALIAS TICKER ───────────────────────────────────── */}
+          {/* PROMO — kode pengguna baru */}
+          <section aria-label="Promo pengguna baru" className="border-y border-[rgba(26,22,18,0.10)] bg-[#047857]">
+            <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-x-4 gap-y-2 px-5 py-3.5 text-center sm:flex-row sm:px-8">
+              <span className="text-[13px] font-semibold text-white sm:text-[14px]">🎁 Promo pengguna baru — pakai kode saat daftar</span>
+              <span className="inline-flex items-center rounded-lg border border-white/30 bg-white/15 px-3 py-1">
+                <span className="font-mono text-[14px] font-bold tracking-[0.14em] text-white">AUTOTRADE100</span>
+              </span>
+              <span className="text-[12px] text-white/75">Khusus pengguna baru yang mendaftar.</span>
+            </div>
+          </section>
+
           <section aria-label="Nama lain STC AutoTrade" className={`border-y ${HAIRLINE} py-4 overflow-hidden bg-[#efece4]/70`}>
             <p className="sr-only">Dikenal juga sebagai: {ALIASES.join(", ")}.</p>
             <div className="flex w-max animate-marquee" aria-hidden="true">

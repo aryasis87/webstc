@@ -139,6 +139,14 @@ export const ARTIKEL: Artikel[] = [
     menit:     8,
   },
   {
+    slug:      "kode-promo-autotrade100",
+    judul:     "Kode Promo Pengguna Baru: AUTOTRADE100 (STC AutoTrade 2026)",
+    ringkasan: "Kode promo khusus pengguna baru STC AutoTrade: AUTOTRADE100. Cara memakainya saat mendaftar & ketentuannya.",
+    kategori:  "Panduan",
+    tanggal:   "6 Agustus 2026",
+    menit:     4,
+  },
+  {
     slug:      "bonus-deposit-stockity",
     judul:     "Bonus Deposit Stockity: Cara Klaim, Syarat & Jebakannya 2026",
     ringkasan: "Jenis bonus & kode promo Stockity, cara klaim saat deposit, memahami syarat turnover sebelum withdraw, dan kapan bonus justru sebaiknya dilewati.",

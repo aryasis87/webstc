@@ -624,6 +624,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "id-ID": `${BASE_URL}/artikel/stockity-vs-quotex`, en: `${BASE_URL}/en/articles/stockity-vs-quotex`, ru: `${BASE_URL}/ru/articles/stockity-vs-quotex`, "x-default": `${BASE_URL}/artikel/stockity-vs-quotex` } },
     },
     {
+      url: `${BASE_URL}/artikel/kode-promo-autotrade100`,
+      lastModified: D("2026-08-06"),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${BASE_URL}/artikel/bonus-deposit-stockity`,
       lastModified: D("2026-07-04"),
       changeFrequency: "monthly",
