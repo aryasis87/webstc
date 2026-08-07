@@ -654,6 +654,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.84,
     },
     {
+      url: `${BASE_URL}/artikel/bot-trading-stockity-terbaik`,
+      lastModified: D("2026-08-08"),
+      changeFrequency: "monthly",
+      priority: 0.86,
+    },
+    {
       url: `${BASE_URL}/artikel/manajemen-modal-trading-binary-option`,
       lastModified: D("2026-07-04"),
       changeFrequency: "monthly",

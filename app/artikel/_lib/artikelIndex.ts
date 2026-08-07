@@ -19,6 +19,14 @@ export interface Artikel {
 
 export const ARTIKEL: Artikel[] = [
   {
+    slug:      "bot-trading-stockity-terbaik",
+    judul:     "Bot Trading Stockity Terbaik 2026: Cara Memilih & Perbandingan",
+    ringkasan: "7 kriteria memilih bot trading Stockity yang benar-benar penting, tanda bahaya yang harus dihindari, dan perbandingan jujur STC AutoTrade dengan alternatif yang sering dicari seperti Visioner dan Stockity Matix.",
+    kategori:  "Review",
+    tanggal:   "8 Agustus 2026",
+    menit:     8,
+  },
+  {
     slug:      "sinyal-schedule-harian-gratis",
     judul:     "Sinyal Trading Harian Gratis untuk Stockity: Jadwal Signal Tiap Hari",
     ringkasan: "Jadwal sinyal 'jam arah' gratis yang diperbarui setiap hari, siap ditempel ke mode Signal STC AutoTrade. Dua interval (3 & 5 menit) via bot Telegram, plus penjelasan jujur soal cara pakai dan risikonya.",

@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     "sinyal binary option gratis",
     "sinyal trading otomatis stockity",
     "ai signal stockity cara kerja",
+    "signal bot stockity",
+    "bot signal stockity",
+    "stockity signal",
+    "signal stockity",
+    "signal trading stockity",
   ],
   alternates: {
     canonical: "https://stcautotrade.id/artikel/sinyal-trading-stockity-gratis",
