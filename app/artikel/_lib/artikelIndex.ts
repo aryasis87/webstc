@@ -140,8 +140,8 @@ export const ARTIKEL: Artikel[] = [
   },
   {
     slug:      "kode-promo-autotrade100",
-    judul:     "Kode Promo Pengguna Baru: AUTOTRADE100 (STC AutoTrade 2026)",
-    ringkasan: "Kode promo khusus pengguna baru STC AutoTrade: AUTOTRADE100. Cara memakainya saat mendaftar & ketentuannya.",
+    judul:     "Promo Kode Pengguna Baru STC AutoTrade - Segera Hadir 17 Agustus",
+    ringkasan: "Promo kode pengguna baru STC AutoTrade dibuka 17 Agustus 2026. Kodenya diumumkan saat promo dibuka - siapkan akun dari sekarang.",
     kategori:  "Panduan",
     tanggal:   "6 Agustus 2026",
     menit:     4,

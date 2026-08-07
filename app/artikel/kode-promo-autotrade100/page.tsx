@@ -10,9 +10,9 @@ import Link from "next/link";
 
 const seo: ArtikelSeoDef = {
   slug: "kode-promo-autotrade100",
-  title: "Kode Promo Pengguna Baru: AUTOTRADE100 (STC AutoTrade 2026)",
+  title: "Kode Promo Pengguna Baru STC AutoTrade — Segera Hadir 17 Agustus 2026",
   description:
-    "Kode promo pengguna baru STC AutoTrade: AUTOTRADE100. Berlaku khusus untuk pengguna yang baru mendaftar. Simak cara memakainya saat pendaftaran dan ketentuannya.",
+    "Promo kode pengguna baru STC AutoTrade dibuka 17 Agustus 2026. Kodenya diumumkan saat promo dibuka — siapkan akun Anda dari sekarang.",
   keywords: [
     "kode promo autotrade100",
     "kode promo stc autotrade",
@@ -25,10 +25,10 @@ const seo: ArtikelSeoDef = {
   breadcrumbName: "Kode Promo AUTOTRADE100",
   datePublished: "2026-08-06",
   faq: [
-    { q: "Apa kode promo pengguna baru STC AutoTrade?", a: "Kodenya AUTOTRADE100. Gunakan kode ini saat mendaftar akun baru melalui STC AutoTrade. Kode berlaku khusus untuk pengguna baru yang mendaftar." },
-    { q: "Siapa yang bisa memakai kode AUTOTRADE100?", a: "Hanya pengguna baru yang baru mendaftar. Kode ini tidak berlaku untuk akun yang sudah terdaftar sebelumnya." },
-    { q: "Di mana memasukkan kode promonya?", a: "Masukkan kode saat proses pendaftaran akun baru lewat aplikasi STC AutoTrade. Setelah terdaftar, Anda bisa memakai aplikasi maupun versi webnya." },
-    { q: "Apakah kode ini gratis?", a: "Ya. STC AutoTrade gratis untuk member terdaftar, dan kode promo pengguna baru ini juga tanpa biaya. Ikuti ketentuan promo yang berlaku saat pendaftaran." },
+    { q: "Kapan promo kode pengguna baru STC AutoTrade dibuka?", a: "Promo dibuka pada 17 Agustus 2026. Kodenya diumumkan tepat saat promo dibuka, baik di halaman ini maupun di dalam aplikasi STC AutoTrade." },
+    { q: "Siapa yang bisa memakai kode promonya?", a: "Hanya pengguna baru yang mendaftar. Kode tidak berlaku untuk akun yang sudah terdaftar sebelumnya." },
+    { q: "Di mana kodenya nanti dimasukkan?", a: "Pada kolom kode saat proses pendaftaran akun baru lewat aplikasi STC AutoTrade. Setelah terdaftar, Anda bisa memakai aplikasi maupun versi webnya." },
+    { q: "Apakah promo ini gratis?", a: "Ya. STC AutoTrade gratis untuk member terdaftar, dan promo pengguna baru ini juga tanpa biaya. Ketentuan lengkap mengikuti aturan promo saat dibuka." },
   ],
 };
 
@@ -46,12 +46,12 @@ export default function Page() {
         date="6 Agustus 2026"
         readMins={4}
         breadcrumbName={seo.breadcrumbName}
-        title={<>Kode Promo Pengguna Baru:<br className="hidden sm:block" /> AUTOTRADE100</>}
-        lede={<><strong className="font-semibold text-[#1a1612]">STC AutoTrade</strong> punya kode promo khusus untuk pengguna baru. Simpan kodenya, lalu pakai saat mendaftar akun baru — cepat dan gratis untuk member.</>}
+        title={<>Promo Kode Pengguna Baru:<br className="hidden sm:block" /> Segera Hadir</>}
+        lede={<><strong className="font-semibold text-[#1a1612]">STC AutoTrade</strong> menyiapkan promo kode khusus pengguna baru yang dibuka <strong className="font-semibold text-[#1a1612]">17 Agustus 2026</strong>. Kodenya diumumkan tepat saat promo dibuka — siapkan akun Anda dari sekarang.</>}
         stats={[
-          { v: "AUTOTRADE100", l: "Kode Promo" },
+          { v: "17 Agt", l: "Promo Dibuka" },
           { v: "Baru", l: "Khusus Pengguna" },
-          { v: "Saat Daftar", l: "Waktu Pakai" },
+          { v: "Segera", l: "Kode Diumumkan" },
           { v: "Gratis", l: "Untuk Member" },
         ]}
         related={[
@@ -60,32 +60,32 @@ export default function Page() {
           { href: "/artikel/auto-trade-stockity-gratis", title: "Auto Trade Gratis", desc: "Semua fitur, tanpa biaya untuk member" },
         ]}
         ctaEyebrow="Pengguna Baru"
-        ctaTitle="Daftar & Pakai Kode AUTOTRADE100"
+        ctaTitle="Siapkan Akun Sebelum Promo Dibuka"
         ctaDesc="Cepat, gratis untuk member — langsung jalankan STC AutoTrade setelah terdaftar."
       >
         <section>
-          <SectionLabel>01 · Kode Promo</SectionLabel>
-          <H2>Kodenya: AUTOTRADE100</H2>
+          <SectionLabel>01 · Jadwal</SectionLabel>
+          <H2>Dibuka 17 Agustus 2026</H2>
           <div className="space-y-4">
-            <P>STC AutoTrade menyediakan kode promo khusus bagi Anda yang <strong className="text-[#1a1612]">baru mendaftar</strong>. Kodenya sederhana untuk diingat:</P>
+            <P>Promo kode untuk Anda yang <strong className="text-[#1a1612]">baru mendaftar</strong> akan dibuka pada <strong className="text-[#1a1612]">17 Agustus 2026</strong>. Kodenya belum diumumkan:</P>
             <div className="rounded-2xl border border-[#047857]/25 bg-[rgba(4,120,87,0.06)] px-6 py-6 text-center">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#047857]/70">Kode Promo Pengguna Baru</p>
-              <p className="mt-2 font-mono text-[30px] font-bold tracking-[0.14em] text-[#047857] sm:text-[38px]">AUTOTRADE100</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#047857]/70">Promo Pengguna Baru</p>
+              <p className="mt-2 font-mono text-[30px] font-bold tracking-[0.14em] text-[#047857] sm:text-[38px]">SEGERA HADIR</p>
             </div>
             <InfoBox icon="🎁" title="Untuk siapa">
-              Kode ini berlaku khusus untuk pengguna baru yang baru mendaftar. Akun yang sudah ada sebelumnya tidak termasuk.
+              Promo ini khusus pengguna baru yang mendaftar. Akun yang sudah ada sebelumnya tidak termasuk.
             </InfoBox>
           </div>
         </section>
 
         <section>
-          <SectionLabel>02 · Cara Pakai</SectionLabel>
-          <H2>Cara Memakai Kodenya</H2>
+          <SectionLabel>02 · Persiapan</SectionLabel>
+          <H2>Cara Bersiap Sekarang</H2>
           <Steps
             items={[
               { title: "Buka pendaftaran STC AutoTrade", desc: <>Mulai proses <Link href="/artikel/cara-daftar-stockity" className="text-[#047857] underline">daftar akun baru</Link> lewat aplikasi STC AutoTrade. Belum punya aplikasinya? Unduh dulu dari halaman resmi.</> },
-              { title: "Masukkan kode AUTOTRADE100", desc: "Saat mendaftar, masukkan kode promo AUTOTRADE100 pada kolom yang tersedia." },
-              { title: "Selesaikan pendaftaran", desc: "Ikuti langkah pendaftaran hingga selesai. Kode berlaku sesuai ketentuan promo yang berlaku saat itu." },
+              { title: "Tunggu kode diumumkan", desc: "Kode promo diumumkan pada 17 Agustus 2026 di halaman ini dan di dalam aplikasi." },
+              { title: "Selesaikan pendaftaran", desc: "Ikuti langkah pendaftaran hingga selesai. Akun yang sudah siap memudahkan Anda saat promo dibuka." },
               { title: "Mulai pakai — app atau web", desc: "Setelah terdaftar, jalankan STC AutoTrade di aplikasi Android atau langsung di browser lewat versi webnya." },
             ]}
           />
@@ -95,9 +95,9 @@ export default function Page() {
           <SectionLabel>03 · Ketentuan</SectionLabel>
           <H2>Yang Perlu Diperhatikan</H2>
           <div className="space-y-4">
-            <P>Agar tidak salah paham, ingat poin-poin berikut sebelum memakai kodenya.</P>
+            <P>Agar tidak salah paham, ingat poin-poin berikut sebelum promo dibuka.</P>
             <WarningBox>
-              Kode <strong className="text-[#1a1612]">AUTOTRADE100</strong> hanya berlaku untuk <strong className="text-[#1a1612]">pengguna baru yang mendaftar</strong> dan digunakan <strong className="text-[#1a1612]">saat pendaftaran</strong>. Rincian keuntungan mengikuti ketentuan promo yang berlaku. Gunakan hanya melalui saluran resmi STC AutoTrade — waspadai pihak yang mengatasnamakan promo ini di luar saluran resmi.
+              Promo ini <strong className="text-[#1a1612]">belum dibuka</strong> — kodenya diumumkan pada <strong className="text-[#1a1612]">17 Agustus 2026</strong> dan hanya berlaku untuk <strong className="text-[#1a1612]">pengguna baru yang mendaftar</strong>. Rincian keuntungan mengikuti ketentuan promo saat dibuka. Ikuti hanya saluran resmi STC AutoTrade — waspadai pihak yang membagikan kode mengatasnamakan kami sebelum tanggal tersebut.
             </WarningBox>
             <P>Ingin tahu soal bonus di sisi platform trading? Baca <Link href="/artikel/bonus-deposit-stockity" className="text-[#047857] underline">bonus deposit Stockity</Link> — itu topik terpisah dari kode promo pendaftaran ini.</P>
           </div>
