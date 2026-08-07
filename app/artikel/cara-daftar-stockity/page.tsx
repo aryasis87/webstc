@@ -575,7 +575,7 @@ export default function CaraDaftarStockityPage() {
                   <StepCard
                     n="1"
                     title="Login ke Stockity.id"
-                    desc="Buka stockity.id di browser atau lewat app. Login dengan email dan password yang sudah didaftarkan."
+                    desc="Buka stockity1.id di browser atau lewat app. Login dengan email dan password yang sudah didaftarkan."
                   />
                   <StepCard
                     n="2"

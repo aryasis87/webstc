@@ -319,7 +319,7 @@ export default function CaraWithdrawStockityPage() {
 
                 <div className="max-w-2xl space-y-3">
                   {[
-                    { n: "1", title: "Login ke akun Stockity.id", desc: "Buka stockity.id di browser atau aplikasi, kemudian login menggunakan email dan password Anda." },
+                    { n: "1", title: "Login ke akun Stockity", desc: "Buka stockity1.id di browser atau aplikasi, kemudian login menggunakan email dan password Anda." },
                     { n: "2", title: "Buka menu Keuangan / Kasir", desc: "Temukan menu 'Kasir', 'Keuangan', atau 'Withdraw' — biasanya ada di pojok kanan atas atau di profil akun." },
                     { n: "3", title: "Pilih tab 'Penarikan' atau 'Withdraw'", desc: "Pastikan Anda memilih tab penarikan, bukan deposit. Periksa saldo real yang tersedia sebelum melanjutkan." },
                     { n: "4", title: "Pilih metode penarikan", desc: "Pilih metode yang sudah terdaftar — transfer bank lokal (BCA, Mandiri, BNI, BRI, dll.) atau dompet digital (OVO, GoPay, DANA, dll.)." },
