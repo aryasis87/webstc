@@ -921,6 +921,12 @@ export default function RobotTradingStockityPage() {
             <div className="grid sm:grid-cols-3 gap-3">
               {[
                 {
+                  href: "/artikel/bot-trading-stockity-terbaik",
+                  title: "Bot Stockity Terbaik: Cara Memilih",
+                  desc: "7 kriteria + perbandingan dengan Visioner & Stockity Matix",
+                  arrow: true,
+                },
+                {
                   href: "/cara-kerja",
                   title: "Cara Kerja STC AutoTrade",
                   desc: "Penjelasan teknis 6 strategi & manajemen risiko",
