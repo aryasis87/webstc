@@ -141,6 +141,28 @@ const schemaSoftwareApp = {
   screenshot: `${BASE_URL}/og-image.webp`,
 };
 
+/**
+ * WebPage + Speakable — memperkuat graf entitas (menghubungkan halaman ke
+ * #website & #app) sekaligus menandai bagian yang ramah dibacakan mesin suara
+ * / answer engine (AEO). speakable menunjuk heading utama yang selalu ada.
+ */
+const schemaWebPage = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${BASE_URL}/#webpage`,
+  url: BASE_URL,
+  name: "STC AutoTrade — Robot Trading Otomatis Gratis untuk Stockity",
+  isPartOf: { "@id": `${BASE_URL}/#website` },
+  about: { "@id": `${BASE_URL}/#app` },
+  mainEntity: { "@id": `${BASE_URL}/#app` },
+  primaryImageOfPage: { "@type": "ImageObject", url: `${BASE_URL}/og-image.webp` },
+  inLanguage: "id-ID",
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["h1", "h2"],
+  },
+};
+
 /* ── Sub-komponen presentasional ──────────────────────────────────── */
 
 function Eyebrow({ n, children }: { n?: string; children: React.ReactNode }) {
@@ -174,6 +196,7 @@ export default function Home() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQPage) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaSoftwareApp) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaWebPage) }} />
 
       <div className={`bg-[#f6f4ef] ${INK} font-[family-name:var(--font-dm-sans)]`}>
 
