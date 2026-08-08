@@ -432,6 +432,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: { languages: { "id-ID": `${BASE_URL}/artikel/robot-trading-stockity`, en: `${BASE_URL}/en/articles/stockity-trading-robot`, ru: `${BASE_URL}/ru/articles/stockity-trading-robot`, "x-default": `${BASE_URL}/artikel/robot-trading-stockity` } },
     },
     {
+      url: `${BASE_URL}/en/articles/best-stockity-trading-bot`,
+      lastModified: D("2026-08-08"),
+      changeFrequency: "monthly",
+      priority: 0.8,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/bot-trading-stockity-terbaik`, en: `${BASE_URL}/en/articles/best-stockity-trading-bot`, "x-default": `${BASE_URL}/artikel/bot-trading-stockity-terbaik` } },
+    },
+    {
       url: `${BASE_URL}/en/articles/how-to-set-up-stockity-robot`,
       lastModified: D("2026-07-04"),
       changeFrequency: "monthly",
@@ -658,6 +665,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: D("2026-08-08"),
       changeFrequency: "monthly",
       priority: 0.86,
+      alternates: { languages: { "id-ID": `${BASE_URL}/artikel/bot-trading-stockity-terbaik`, en: `${BASE_URL}/en/articles/best-stockity-trading-bot`, "x-default": `${BASE_URL}/artikel/bot-trading-stockity-terbaik` } },
     },
     {
       url: `${BASE_URL}/artikel/manajemen-modal-trading-binary-option`,

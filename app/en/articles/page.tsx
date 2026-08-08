@@ -35,6 +35,7 @@ export const metadata: Metadata = {
 };
 
 const ARTICLES = [
+  { slug: "best-stockity-trading-bot", badge: "Review", title: "Best Stockity Trading Bot 2026: How to Choose (Honest Guide)", desc: "The 7 criteria that actually matter, the red flags to avoid, and an honest comparison with alternatives people search for like Visioner and Stockity Matix.", mins: 8 },
   { slug: "stockity-trading-robot", badge: "Guide", title: "Stockity Trading Robot: The Complete Guide to Auto Trading", desc: "How a trading robot works, the 6 strategy modes, risk controls, and how to start safely on demo.", mins: 9 },
   { slug: "how-to-set-up-stockity-robot", badge: "Guide", title: "How to Set Up Your Stockity Robot: Every Setting Explained", desc: "Mode choice, order size (1–5% rule), managed martingale math, daily stop loss & take profit — with beginner values.", mins: 8 },
   { slug: "stockity-vs-quotex", badge: "Review", title: "Stockity vs Quotex: An Honest Comparison", desc: "8 aspects compared: deposits, payouts, assets, payments, withdrawals, and automation support.", mins: 8 },

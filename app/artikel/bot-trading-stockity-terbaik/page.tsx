@@ -34,6 +34,7 @@ const seo: ArtikelSeoDef = {
   ],
   breadcrumbName: "Bot Stockity Terbaik",
   datePublished: "2026-08-08",
+  enSlug: "best-stockity-trading-bot",
   faq: [
     { q: "Apa bot trading Stockity terbaik saat ini?", a: "Tidak ada satu jawaban untuk semua orang — 'terbaik' bergantung kebutuhan Anda: jumlah mode strategi, batas risiko otomatis (stop loss/profit), keamanan kata sandi, dan apakah tersedia versi Android maupun web. STC AutoTrade memenuhi keempatnya: 6 mode strategi, martingale terkelola, stop loss & stop profit otomatis, dan tersedia sebagai APK Android serta aplikasi web. Selalu uji dulu di akun demo sebelum menyimpulkan." },
     { q: "Apakah bot Stockity aman dipakai?", a: "Aman jika bot tidak pernah mengirim kata sandi Anda ke server pihak mana pun dan hanya menyimpan token autentikasi secara lokal di perangkat. STC AutoTrade dirancang seperti itu — kata sandi tidak disimpan di server. Tanda bahaya: bot yang meminta deposit ke rekening pribadi, menjanjikan profit pasti, atau menyimpan kredensial di server tak jelas." },
