@@ -147,14 +147,6 @@ export const ARTIKEL: Artikel[] = [
     menit:     8,
   },
   {
-    slug:      "kode-promo-autotrade100",
-    judul:     "Promo Kode Pengguna Baru STC AutoTrade - Segera Hadir 17 Agustus",
-    ringkasan: "Promo kode pengguna baru STC AutoTrade dibuka 17 Agustus 2026. Kodenya diumumkan saat promo dibuka - siapkan akun dari sekarang.",
-    kategori:  "Panduan",
-    tanggal:   "6 Agustus 2026",
-    menit:     4,
-  },
-  {
     slug:      "bonus-deposit-stockity",
     judul:     "Bonus Deposit Stockity: Cara Klaim, Syarat & Jebakannya 2026",
     ringkasan: "Jenis bonus & kode promo Stockity, cara klaim saat deposit, memahami syarat turnover sebelum withdraw, dan kapan bonus justru sebaiknya dilewati.",
