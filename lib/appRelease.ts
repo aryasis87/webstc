@@ -28,6 +28,17 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '4.4',
+    versionCode: 14,
+    tanggal: '2026-08-13',
+    tanggalTampil: '13 Agustus 2026',
+    ukuranByte: 14389261,
+    perubahan: [
+      'Tampilan kode promo dihapus dari dashboard — programnya sudah tidak berjalan, jadi tidak ada lagi kode yang ditawarkan tapi tak bisa dipakai.',
+      'Admin biasa kini benar-benar mendapat seluruh fitur pengelolaan, kecuali panel whitelist yang tetap khusus super admin.',
+    ],
+  },
+  {
     versi: '4.3',
     versionCode: 13,
     tanggal: '2026-08-12',
