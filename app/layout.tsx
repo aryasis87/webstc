@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
+import { RILIS_TERBARU } from "@/lib/appRelease";
 
 /*
  * display:"optional" — font dipakai jika tiba dalam ~100ms (selalu terjadi
@@ -228,10 +229,8 @@ const schemaApp = {
     caption: "Layar utama STC AutoTrade — mode AI Signal aktif di Stockity.id",
   },
   datePublished: "2025-05-21",
-  // Disamakan dengan tanggal rilis APK yang sedang beredar. Dipatok mati karena
-  // STC belum punya daftar rilis seperti koala (lib/appRelease.ts) — WAJIB
-  // diperbarui tiap rilis, kalau tidak mesin pencari mengira halaman ini basi.
-  dateModified: "2026-08-12",
+  // Diturunkan dari daftar rilis — tak bisa basi lagi. Lihat lib/appRelease.ts.
+  dateModified: RILIS_TERBARU.tanggal,
   offers: {
     "@type": "Offer",
     price: "0",
