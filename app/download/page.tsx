@@ -200,14 +200,14 @@ export default function DownloadPage() {
           <div className="inline-flex items-center gap-2 mb-5 px-3.5 py-1.5 rounded-full bg-[#ecfdf5] border border-[#10b981]/30">
             <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" aria-hidden="true" />
             <span className="text-[12px] sm:text-[13px] font-semibold text-[#047857]">
-              Versi 4 sudah rilis · diperbarui 3 Agustus 2026
+              Versi 4.3 sudah rilis · diperbarui 12 Agustus 2026
             </span>
           </div>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-4">
             Download STC AutoTrade
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-xl">
-            STC AutoTrade tersedia sebagai aplikasi Android dan versi browser maupun lewat browser di
+            STC AutoTrade tersedia sebagai aplikasi Android dan versi browser di
             stcautotradepro.id. Aplikasi menjalankan trading langsung dari HP Anda,
             sedangkan versi browser dijalankan dari server kami. Pendaftaran akun baru
             hanya dapat dilakukan lewat aplikasi.
