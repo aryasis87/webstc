@@ -217,7 +217,7 @@ const schemaApp = {
     "Sistem Martingale Terkelola (MAX STEP + MULTIPLIER kustom)",
     "Mode Demo Tanpa Risiko dengan data pasar nyata",
     "Riwayat Trading Lengkap per order",
-    "100% Gratis untuk member terdaftar",
+    "Aplikasi, demo & mode dasar gratis untuk member terdaftar",
     "Kompatibel: Android, iPhone, PC, Mac, iPad",
   ],
   screenshot: {
@@ -228,7 +228,10 @@ const schemaApp = {
     caption: "Layar utama STC AutoTrade — mode AI Signal aktif di Stockity.id",
   },
   datePublished: "2025-05-21",
-  dateModified: "2026-06-07",
+  // Disamakan dengan tanggal rilis APK yang sedang beredar. Dipatok mati karena
+  // STC belum punya daftar rilis seperti koala (lib/appRelease.ts) — WAJIB
+  // diperbarui tiap rilis, kalau tidak mesin pencari mengira halaman ini basi.
+  dateModified: "2026-08-12",
   offers: {
     "@type": "Offer",
     price: "0",

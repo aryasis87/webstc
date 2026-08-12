@@ -125,7 +125,7 @@ const faqSchema = {
       name: "Apakah ada biaya tersembunyi di robot Stockity gratis STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tidak ada biaya tersembunyi. STC AutoTrade gratis sepenuhnya untuk member terdaftar. Yang dibutuhkan hanya akun Stockity.id (gratis dibuat melalui aplikasi) dan modal trading di akun Stockity.id Anda sendiri.",
+        text: "Tidak ada biaya tersembunyi. Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar. Berbayar dan opsional: membuka mode REAL (Rp 150.000, sekali bayar) dan langganan AI Signal (Rp 50.000/bulan) — keduanya disebutkan di muka, bukan biaya tersembunyi. Yang dibutuhkan hanya akun Stockity.id (gratis dibuat melalui aplikasi) dan modal trading di akun Anda sendiri.",
       },
     },
     {
@@ -246,7 +246,7 @@ export default function AutoTradeStockityGratisPage() {
               <span className="text-2xl flex-shrink-0">🎁</span>
               <div>
                 <p className="text-[14px] font-semibold text-[#14532d] mb-1">
-                  STC AutoTrade: Robot Stockity 100% Gratis untuk Member
+                  STC AutoTrade: Aplikasi, Demo &amp; Mode Dasar Gratis
                 </p>
                 <p className="text-[13px] text-[#166534] leading-relaxed">
                   6 mode strategi · Stop loss &amp; profit otomatis · Martingale terkelola ·
@@ -596,8 +596,8 @@ export default function AutoTradeStockityGratisPage() {
               <div className="space-y-3">
                 {[
                   {
-                    q: "Apakah benar ada robot trading Stockity yang 100% gratis?",
-                    a: "Ya. STC AutoTrade adalah robot trading Stockity yang gratis sepenuhnya untuk member terdaftar — tidak ada biaya langganan, tidak ada komisi dari profit, tidak ada fitur yang dikunci. Akses penuh ke semua 6 strategi dan fitur manajemen risiko.",
+                    q: "Apakah benar ada robot trading Stockity yang gratis?",
+                    a: "Ya, dengan batas yang jelas. Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar — tidak ada komisi dari profit dan tidak ada langganan wajib. Dua hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 150.000, sekali bayar) untuk trading memakai dana sungguhan, dan langganan AI Signal (Rp 50.000/bulan). Tanpa keduanya, bot tetap berjalan penuh di mode demo dan strategi dasar.",
                   },
                   {
                     q: "Apa bedanya robot Stockity gratis dengan yang berbayar?",
@@ -649,7 +649,7 @@ export default function AutoTradeStockityGratisPage() {
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
                   <strong className="text-[#1a1612]">STC AutoTrade adalah pilihan terbaik</strong> bagi
                   trader yang mencari robot trading Stockity gratis dengan fitur lengkap. Tidak ada bot
-                  trading Stockity lain yang menawarkan kombinasi: gratis sepenuhnya, 6 mode strategi,
+                  trading Stockity lain yang menawarkan kombinasi: demo &amp; mode dasar gratis, 6 mode strategi,
                   manajemen risiko otomatis, mode demo, dan ketersediaan di semua platform termasuk iPhone dan PC.
                 </p>
                 <p className="text-[14px] sm:text-[15px] text-[#6b6058] leading-relaxed">
@@ -688,7 +688,7 @@ export default function AutoTradeStockityGratisPage() {
         <section className="border-t border-[rgba(26,22,18,0.08)] bg-white py-14">
           <div className="max-w-4xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
-              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#15803d] mb-1.5">100% Gratis untuk Member</p>
+              <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#15803d] mb-1.5">Demo &amp; Mode Dasar Gratis</p>
               <p className="text-base font-semibold text-[#1a1612] mb-1">Mulai Auto Trade Stockity Gratis Sekarang</p>
               <p className="text-[13px] text-[#6b6058]">Unduh aplikasi Android — daftar gratis, mulai dari mode demo.</p>
             </div>

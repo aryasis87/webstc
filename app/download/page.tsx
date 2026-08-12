@@ -389,7 +389,7 @@ export default function DownloadPage() {
               {[
                 {
                   q: "Apakah STC AutoTrade gratis?",
-                  a: "Ya. STC AutoTrade gratis untuk member terdaftar — aplikasinya gratis diunduh. Akses diberikan melalui sistem whitelist.",
+                  a: "Aplikasi, mode demo, dan mode strategi dasar gratis — bot berjalan penuh tanpa biaya. Berbayar dan opsional: membuka mode REAL (Rp 150.000, sekali bayar) dan langganan AI Signal (Rp 50.000/bulan). Tidak ada langganan wajib.",
                 },
                 {
                   q: "Kenapa harus aktifkan 'instal dari sumber tidak dikenal'?",

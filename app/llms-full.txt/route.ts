@@ -59,7 +59,10 @@ risiko otomatis.
 
 ## Fakta & Spesifikasi
 
-- Harga: 100% gratis untuk member terdaftar (IDR 0). Tidak ada langganan wajib.
+- Harga: aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar.
+  Dua hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 150.000, sekali
+  bayar) dan langganan AI Signal (Rp 50.000/bulan). Tidak ada langganan wajib —
+  bot tetap berjalan penuh tanpa keduanya.
 - Platform target: Stockity.id (broker binary option).
 - Distribusi: APK Android di ${BASE_URL}/download; versi web di ${WEB_APP}.
 - Kompatibilitas: Android 8.0+ (APK); iPhone/iPad/PC/Mac via versi web (browser).
