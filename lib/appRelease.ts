@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '4.5',
+    versionCode: 15,
+    tanggal: '2026-08-13',
+    tanggalTampil: '13 Agustus 2026',
+    ukuranByte: 14389137,
+    perubahan: [
+      'Perbaikan harga aktivasi pada tampilan berbahasa Inggris, Rusia, dan Melayu — sebelumnya masih menampilkan harga lama; kini seragam Rp 150.000 (mode REAL) dan Rp 50.000/bulan (AI Signal) di semua bahasa.',
+    ],
+  },
+  {
     versi: '4.4',
     versionCode: 14,
     tanggal: '2026-08-13',
