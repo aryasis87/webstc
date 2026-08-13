@@ -326,16 +326,11 @@ export default function Home() {
           </section>
 
           {/* ── ALIAS TICKER ───────────────────────────────────── */}
-          {/* PROMO — kode pengguna baru */}
-          <section aria-label="Promo pengguna baru" className="border-y border-[rgba(26,22,18,0.10)] bg-[#047857]">
-            <div className="mx-auto flex max-w-4xl flex-col items-center justify-center gap-x-4 gap-y-2 px-5 py-3.5 text-center sm:flex-row sm:px-8">
-              <span className="text-[13px] font-semibold text-white sm:text-[14px]">🎁 Promo pengguna baru — segera hadir</span>
-              <span className="inline-flex items-center rounded-lg border border-white/30 bg-white/15 px-3 py-1">
-                <span className="font-mono text-[14px] font-bold tracking-[0.14em] text-white">17 AGUSTUS</span>
-              </span>
-              <span className="text-[12px] text-white/75">Kodenya diumumkan saat promo dibuka.</span>
-            </div>
-          </section>
+          {/* Spanduk promo pengguna baru ("segera hadir · 17 Agustus") DIHAPUS
+              2026-08-13 bersama seluruh kode promo: programnya dihentikan, jadi
+              kodenya tidak akan pernah diumumkan. Membiarkannya berarti membuat
+              pengunjung menunggu sesuatu yang tak akan datang — dan pada tanggal
+              itu spanduknya berubah jadi janji yang jelas-jelas meleset. */}
 
           <section aria-label="Nama lain STC AutoTrade" className={`border-y ${HAIRLINE} py-4 overflow-hidden bg-[#efece4]/70`}>
             <p className="sr-only">Dikenal juga sebagai: {ALIASES.join(", ")}.</p>
