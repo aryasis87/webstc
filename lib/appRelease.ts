@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '4.7',
+    versionCode: 17,
+    tanggal: '2026-08-14',
+    tanggalTampil: '14 Agustus 2026',
+    ukuranByte: 14390541,
+    perubahan: [
+      'Dashboard disegarkan — kartu keuntungan hari ini dan kartu aset/saldo kini bertint sudut lembut (hijau saat untung, merah saat rugi), tampil lebih rapi dan konsisten.',
+    ],
+  },
+  {
     versi: '4.6',
     versionCode: 16,
     tanggal: '2026-08-14',
