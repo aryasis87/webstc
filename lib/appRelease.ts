@@ -28,6 +28,17 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '4.6',
+    versionCode: 16,
+    tanggal: '2026-08-14',
+    tanggalTampil: '14 Agustus 2026',
+    ukuranByte: 14390429,
+    perubahan: [
+      'Tampilan halaman profil disegarkan — avatar, kartu saldo, dan judul dibuat lebih rapi dan konsisten dengan gaya aplikasi.',
+      'Panel admin di profil dilengkapi (khusus admin): aktivasi mode REAL kini bisa dinonaktifkan dan menempel ID dari papan klip, serta pengelolaan AI Signal dapat difilter dan diproses sekaligus.',
+    ],
+  },
+  {
     versi: '4.5',
     versionCode: 15,
     tanggal: '2026-08-13',
