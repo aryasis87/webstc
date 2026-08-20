@@ -28,6 +28,17 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '4.9',
+    versionCode: 19,
+    tanggal: '2026-08-21',
+    tanggalTampil: '21 Agustus 2026',
+    ukuranByte: 13180469,
+    perubahan: [
+      'Panduan diperbarui: mode Fast Reversal dan 5st (blitz 5 detik) kini dijelaskan lengkap, plus seksi baru Akses & aktivasi.',
+      'Seksi Akses & aktivasi mencantumkan cara membuka akun REAL (Rp 150.000, sekali bayar), langganan AI Signal (Rp 50.000/bulan), dan add-on 5st (Rp 85.000/bulan).',
+    ],
+  },
+  {
     versi: '4.7',
     versionCode: 17,
     tanggal: '2026-08-14',
