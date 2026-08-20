@@ -49,6 +49,8 @@ const MODES = [
   { tag: "Momentum",  featured: false, chip: "text-orange-700 bg-orange-50 border-orange-100",                  title: "Pola Candlestick",         desc: "Bot mengenali Candle Sabit, Doji Terjepit, dan BB SAR Break yang sering mendahului pergerakan harga signifikan.", for: "Trader yang memahami price action" },
   { tag: "Schedule",  featured: false, chip: "text-emerald-700 bg-emerald-50 border-emerald-100",               title: "Trading Terjadwal",        desc: "Jadwalkan order berdasarkan pola historis. Bot eksekusi tepat waktu — bahkan saat Anda tidur.", for: "Trader dengan data historis teratur" },
   { tag: "Fastrade",  featured: false, chip: "text-emerald-700 bg-emerald-50 border-emerald-100",               title: "Trading Cepat",            desc: "Bot membaca momentum pasar pada timeframe 1m–1h dan mengeksekusi order mengikuti arah yang terdeteksi.", for: "Trader aktif yang suka banyak order" },
+  { tag: "Fast Reversal", featured: false, chip: "text-rose-700 bg-rose-50 border-rose-100",                    title: "Balik Arah Terukur",      desc: "Membaca pasar seperti Fastrade FTT, tetapi membalik arah order hanya pada candle (K) tertentu yang Anda pilih — untuk pasar yang cenderung berbalik di titik tertentu.", for: "Trader yang membaca titik pembalikan" },
+  { tag: "5st",       featured: false, chip: "text-sky-700 bg-sky-50 border-sky-100",                          title: "Blitz 5 Detik",           desc: "Order blitz yang hasilnya keluar hanya dalam 5 detik. Sinyal tetap dibaca seperti FTT — hanya durasinya yang dipercepat menjadi 5 detik.", for: "Trader yang mengejar putaran super cepat" },
 ];
 
 const HAMBATAN = [

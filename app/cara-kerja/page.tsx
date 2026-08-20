@@ -11,9 +11,9 @@ import Image from "next/image";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Cara Kerja STC AutoTrade — 6 Strategi & Manajemen Risiko Stockity",
+  title: "Cara Kerja STC AutoTrade — 7 Strategi & Manajemen Risiko Stockity",
   description:
-    "Pelajari cara kerja STC AutoTrade secara lengkap: 6 mode strategi (AI Signal, Copy Trading, Martingale, Indicator, Candlestick, Schedule), stop loss otomatis, stop profit, dan cara memulai dari mode demo.",
+    "Pelajari cara kerja STC AutoTrade secara lengkap: 7 mode strategi (AI Signal, Copy Trading, Indikator, Candlestick, Schedule, Fastrade, Fast Reversal), plus add-on 5st blitz 5 detik, stop loss otomatis, stop profit, dan cara memulai dari mode demo.",
   keywords: [
     "cara kerja stcautotrade",
     "cara kerja robot stockity",
@@ -39,9 +39,9 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Cara Kerja STC AutoTrade — 6 Strategi & Manajemen Risiko Stockity",
+    title: "Cara Kerja STC AutoTrade — 7 Strategi & Manajemen Risiko Stockity",
     description:
-      "Penjelasan lengkap 6 mode strategi, sistem martingale, stop loss/profit otomatis, dan panduan memulai STC AutoTrade.",
+      "Penjelasan lengkap 7 mode strategi, sistem martingale, stop loss/profit otomatis, dan panduan memulai STC AutoTrade.",
     url: "https://stcautotrade.id/cara-kerja",
     type: "website",
     images: [
@@ -49,15 +49,15 @@ export const metadata: Metadata = {
         url: "https://stcautotrade.id/og-image.webp",
         width: 1200,
         height: 630,
-        alt: "Cara Kerja STC AutoTrade — 6 Strategi Trading Otomatis Stockity",
+        alt: "Cara Kerja STC AutoTrade — 7 Strategi Trading Otomatis Stockity",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cara Kerja STC AutoTrade — 6 Strategi & Manajemen Risiko Stockity",
+    title: "Cara Kerja STC AutoTrade — 7 Strategi & Manajemen Risiko Stockity",
     description:
-      "Penjelasan lengkap 6 mode strategi, sistem martingale, stop loss/profit otomatis, dan panduan memulai STC AutoTrade.",
+      "Penjelasan lengkap 7 mode strategi, sistem martingale, stop loss/profit otomatis, dan panduan memulai STC AutoTrade.",
     images: ["https://stcautotrade.id/og-image.webp"],
   },
 };
@@ -160,6 +160,38 @@ const STRATEGIES = [
     ],
     bestFor: "Trader aktif yang nyaman dengan volume order tinggi",
     risk: "Menengah–Tinggi",
+  },
+  {
+    tag: "Fast Reversal",
+    tagColor: "bg-rose-50 text-rose-700 border-rose-200",
+    dotColor: "bg-rose-500",
+    title: "Balik Arah Terukur",
+    subtitle: "Fastrade FTT dengan pembalikan arah di titik terpilih",
+    desc: "Mode Fast Reversal membaca pasar seperti Fastrade FTT, tetapi membalik arah order hanya pada candle (K) tertentu yang Anda tentukan. Cocok untuk pasar yang cenderung berbalik di titik-titik tertentu, sehingga Anda bisa menangkap pembalikan tanpa mengubah cara bot membaca sinyal.",
+    howItWorks: [
+      "Bot membaca dua candle untuk menentukan arah dasar (seperti FTT)",
+      "Anda memilih candle (K) mana yang arah ordernya dibalik",
+      "Pada candle terpilih, order masuk berlawanan arah baca",
+      "Fitur premium — akses berbayar aktif selama 30 hari",
+    ],
+    bestFor: "Trader yang membaca titik pembalikan pasar",
+    risk: "Menengah–Tinggi",
+  },
+  {
+    tag: "5st",
+    tagColor: "bg-sky-50 text-sky-700 border-sky-200",
+    dotColor: "bg-sky-500",
+    title: "Blitz 5 Detik",
+    subtitle: "Order kilat dengan hasil hanya dalam 5 detik",
+    desc: "Mode 5st (Blitz) menjalankan order blitz yang hasilnya keluar hanya dalam 5 detik. Sinyal tetap dibaca seperti Fastrade FTT — dua candle untuk menentukan arah — tetapi durasi ordernya dipercepat menjadi 5 detik, memberi putaran yang jauh lebih cepat.",
+    howItWorks: [
+      "Sinyal dibaca seperti FTT (dua candle penentu arah)",
+      "Order dieksekusi dengan durasi kilat 5 detik",
+      "Hasil menang/kalah keluar hampir seketika",
+      "Fitur premium — langganan bulanan (diaktifkan di aplikasi)",
+    ],
+    bestFor: "Trader yang mengejar putaran super cepat",
+    risk: "Tinggi",
   },
 ];
 
@@ -303,16 +335,16 @@ export default function CaraKerjaPage() {
             Panduan Lengkap
           </p>
           <h1 className="font-[family-name:var(--font-dm-serif)] text-4xl sm:text-5xl font-normal tracking-tight leading-[1.1] text-[#1a1612] mb-5 max-w-2xl">
-            Cara Kerja STC AutoTrade — 6 Strategi Trading Otomatis
+            Cara Kerja STC AutoTrade — 7 Strategi Trading Otomatis
           </h1>
           <p className="text-[#6b6058] text-base leading-relaxed max-w-2xl mb-6">
             STC AutoTrade (StcAutoTrade / TechnoAutoTrade) adalah robot trading otomatis untuk Stockity.id
-            yang dilengkapi 6 mode strategi, manajemen risiko otomatis, dan sistem martingale terkelola.
+            yang dilengkapi 7 mode strategi, manajemen risiko otomatis, dan sistem martingale terkelola.
             Halaman ini menjelaskan cara kerja setiap fitur secara detail.
           </p>
           {/* TOC */}
           <div className="flex flex-wrap gap-2">
-            {["6 Strategi", "Manajemen Risiko", "Cara Mulai"].map((item, i) => (
+            {["7 Strategi", "Manajemen Risiko", "Cara Mulai"].map((item, i) => (
               <a
                 key={i}
                 href={`#${["strategi", "risiko", "mulai"][i]}`}
@@ -326,7 +358,7 @@ export default function CaraKerjaPage() {
 
         <main className="max-w-5xl mx-auto px-5 sm:px-8 pb-24 space-y-20">
 
-          {/* ── Section: 6 Strategi ───────────────────────── */}
+          {/* ── Section: 7 Strategi ───────────────────────── */}
           <section id="strategi">
             <h2 className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#1a1612]/65 mb-8 flex items-center gap-3">
               6 Mode Strategi Trading

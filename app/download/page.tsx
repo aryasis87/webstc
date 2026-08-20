@@ -91,7 +91,7 @@ const softwareDownloadSchema = {
   installUrl: "https://stcautotrade.id/StcAutoTrade.apk",
   inLanguage: "id",
   description:
-    "Robot trading otomatis untuk Stockity.id — 6 mode strategi, stop loss otomatis, AI signal, CTC copy trading. Aplikasi Android. Gratis untuk member.",
+    "Robot trading otomatis untuk Stockity.id — 7 mode strategi, stop loss otomatis, AI signal, CTC copy trading. Aplikasi Android. Gratis untuk member.",
   offers: {
     "@type": "Offer",
     price: "0",
@@ -242,7 +242,7 @@ export default function DownloadPage() {
                 {[
                   "Android 8.0 (Oreo) ke atas",
                   "Berjalan di background 24 jam",
-                  "Semua 6 strategi tersedia",
+                  "Semua 7 strategi tersedia",
                   "Update otomatis notifikasi in-app",
                 ].map((f) => (
                   <div key={f} className="flex items-center gap-2 text-[12px] text-[#1a1612]/65">

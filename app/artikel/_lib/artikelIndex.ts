@@ -261,7 +261,7 @@ export const ARTIKEL: Artikel[] = [
   {
     slug:      "robot-trading-stockity",
     judul:     "Robot Trading Stockity: Panduan Lengkap Auto Trade 2026",
-    ringkasan: "Panduan lengkap cara kerja robot trading Stockity, 6 mode strategi yang tersedia, manajemen risiko otomatis, dan cara mengaktifkan bot di akun Stockity.id.",
+    ringkasan: "Panduan lengkap cara kerja robot trading Stockity, 7 mode strategi yang tersedia, manajemen risiko otomatis, dan cara mengaktifkan bot di akun Stockity.id.",
     kategori:  "Panduan",
     tanggal:   "21 Mei 2025",
     menit:     8,
@@ -400,7 +400,7 @@ export const ARTIKEL: Artikel[] = [
   {
     slug:      "robot-trading-pc-laptop",
     judul:     "STC AutoTrade di PC & Laptop: Akses Versi Web via stcautotradepro.id 2026",
-    ringkasan: "STC AutoTrade bisa diakses di PC dan laptop via browser di stcautotradepro.id — tanpa install, semua 6 mode tersedia, fitur identik dengan APK Android.",
+    ringkasan: "STC AutoTrade bisa diakses di PC dan laptop via browser di stcautotradepro.id — tanpa install, semua 7 mode tersedia, fitur identik dengan APK Android.",
     kategori:  "Panduan",
     tanggal:   "7 Jun 2026",
     menit:     6,
