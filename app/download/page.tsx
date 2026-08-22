@@ -390,7 +390,7 @@ export default function DownloadPage() {
               {[
                 {
                   q: "Apakah STC AutoTrade gratis?",
-                  a: "Aplikasi, mode demo, dan mode strategi dasar gratis — bot berjalan penuh tanpa biaya. Berbayar dan opsional: membuka mode REAL (Rp 150.000, sekali bayar) dan langganan AI Signal (Rp 50.000/bulan). Tidak ada langganan wajib.",
+                  a: "Aplikasi, mode demo, dan mode strategi dasar gratis — bot berjalan penuh tanpa biaya. Berbayar dan opsional: membuka mode REAL (Rp 150.000, sekali bayar), langganan AI Signal (Rp 50.000/bulan), dan mode 5st Blitz (Rp 85.000/30 hari). Tidak ada langganan wajib.",
                 },
                 {
                   q: "Kenapa harus aktifkan 'instal dari sumber tidak dikenal'?",
