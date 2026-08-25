@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.2',
+    versionCode: 22,
+    tanggal: '2026-08-25',
+    tanggalTampil: '25 Agustus 2026',
+    ukuranByte: 14980670,
+    perubahan: [
+      'Pesan "Manajemen Modal" saat masuk kini tampil sebagai gambar poster yang lebih jelas, cukup ditutup dengan tombol X.',
+    ],
+  },
+  {
     versi: '5.1',
     versionCode: 21,
     tanggal: '2026-08-25',
