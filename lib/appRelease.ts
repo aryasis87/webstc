@@ -28,6 +28,17 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.1',
+    versionCode: 21,
+    tanggal: '2026-08-25',
+    tanggalTampil: '25 Agustus 2026',
+    ukuranByte: 13186433,
+    perubahan: [
+      'Panduan diperbarui: langkah "Mendaftar akun" yang sudah tidak berlaku diganti "Masuk ke akun" (login dengan akun Stockity yang sudah ada).',
+      'Keterangan aplikasi vs web disesuaikan: bot kini berjalan di server untuk keduanya, dan mode REAL berlaku di web maupun aplikasi setelah aktivasi.',
+    ],
+  },
+  {
     versi: '5.0',
     versionCode: 20,
     tanggal: '2026-08-25',
