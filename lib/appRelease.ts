@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.6',
+    versionCode: 26,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14977422,
+    perubahan: [
+      'Saat entry KALAH dan lanjut martingale, kartu hasil kini menampilkan langkah martingale-nya (mis. "Lanjut Martingale · langkah 2" + lencana MG) — bukan cuma menang/kalah.',
+    ],
+  },
+  {
     versi: '5.5',
     versionCode: 25,
     tanggal: '2026-08-26',
