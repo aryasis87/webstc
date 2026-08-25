@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.7',
+    versionCode: 27,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14977338,
+    perubahan: [
+      'Mode Fast Reversal kini eksklusif: hanya tampil dan bisa dipilih oleh akun yang sudah teraktivasi — tidak lagi terlihat untuk pengguna umum.',
+    ],
+  },
+  {
     versi: '5.6',
     versionCode: 26,
     tanggal: '2026-08-26',
