@@ -28,6 +28,18 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.0',
+    versionCode: 20,
+    tanggal: '2026-08-25',
+    tanggalTampil: '25 Agustus 2026',
+    ukuranByte: 13187081,
+    perubahan: [
+      'Tombol daftar akun dihapus dari halaman masuk — pendaftaran akun mandiri sudah tidak berlaku.',
+      'QRIS pembayaran kini bisa langsung diunduh atau dibagikan dari halaman aktivasi (termasuk di aplikasi Android).',
+      'Popup mode REAL dirapikan: pembukaan REAL hanya lewat aktivasi berbayar.',
+    ],
+  },
+  {
     versi: '4.9',
     versionCode: 19,
     tanggal: '2026-08-21',
