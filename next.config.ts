@@ -124,12 +124,24 @@ const nextConfig: NextConfig = {
         headers: securityHeaders,
       },
       {
-        // Cache agresif untuk aset statis (gambar, font, APK)
-        source: "/(.*)\\.(jpg|jpeg|png|gif|svg|ico|woff|woff2|ttf|otf|apk)",
+        // Cache agresif untuk aset statis ber-konten-tetap (gambar, font, ikon).
+        // APK SENGAJA TIDAK di sini: /StcAutoTrade.apk ditimpa tiap rilis di path
+        // yang sama, jadi `immutable` menyajikan APK LAMA ke pengguna.
+        source: "/(.*)\\.(jpg|jpeg|png|gif|webp|avif|svg|ico|woff|woff2|ttf|otf)",
         headers: [
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        // APK: cache pendek + wajib revalidasi supaya rilis baru langsung terunduh.
+        source: "/(.*)\\.apk",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=3600, must-revalidate",
           },
         ],
       },
