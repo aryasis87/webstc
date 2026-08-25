@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.3',
+    versionCode: 23,
+    tanggal: '2026-08-25',
+    tanggalTampil: '25 Agustus 2026',
+    ukuranByte: 14976922,
+    perubahan: [
+      'Panduan dirapikan: tabel perbandingan Aplikasi vs Web dihapus — diganti catatan singkat bahwa bot berjalan di server (aplikasi boleh ditutup saat sesi jalan).',
+    ],
+  },
+  {
     versi: '5.2',
     versionCode: 22,
     tanggal: '2026-08-25',
