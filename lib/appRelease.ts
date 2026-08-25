@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.5',
+    versionCode: 25,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14977070,
+    perubahan: [
+      'Mode 5st (Blitz 5 detik): hasil menang/kalah kini muncul sub-detik tepat saat order tutup — sebelumnya sedikit tertunda karena siklusnya yang pendek.',
+    ],
+  },
+  {
     versi: '5.4',
     versionCode: 24,
     tanggal: '2026-08-26',
