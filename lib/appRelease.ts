@@ -28,6 +28,17 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.4',
+    versionCode: 24,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14977134,
+    perubahan: [
+      'Dashboard jauh lebih responsif saat mode berjalan: hasil menang/kalah entry kini muncul hampir instan begitu hitung mundur selesai (tak lagi telat & balapan dengan entry berikutnya).',
+      'Today profit / PnL mode ikut diperbarui secara instan setelah hasil keluar.',
+    ],
+  },
+  {
     versi: '5.3',
     versionCode: 23,
     tanggal: '2026-08-25',
