@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.8',
+    versionCode: 28,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14970762,
+    perubahan: [
+      'Halaman aktivasi (REAL / AI Signal / 5st) didesain ulang lebih premium: kartu ringkasan pesanan (harga + manfaat), indikator langkah, dan tata letak yang lebih rapi.',
+    ],
+  },
+  {
     versi: '5.7',
     versionCode: 27,
     tanggal: '2026-08-26',
