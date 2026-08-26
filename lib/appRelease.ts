@@ -28,6 +28,17 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.9',
+    versionCode: 29,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14971666,
+    perubahan: [
+      'Ikon di header halaman aktivasi diganti dengan ikon kustom yang lebih premium (bukan ikon template).',
+      'Perbaikan: halaman Aktivasi 5st kini bisa dibuka langsung tanpa harus login dulu, sama seperti aktivasi REAL & AI Signal.',
+    ],
+  },
+  {
     versi: '5.8',
     versionCode: 28,
     tanggal: '2026-08-26',
