@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.11',
+    versionCode: 31,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14971358,
+    perubahan: [
+      'Header halaman aktivasi dirapikan menjadi teks saja (ikon di judul dihapus) agar tampil lebih premium.',
+    ],
+  },
+  {
     versi: '5.10',
     versionCode: 30,
     tanggal: '2026-08-26',
