@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.10',
+    versionCode: 30,
+    tanggal: '2026-08-26',
+    tanggalTampil: '26 Agustus 2026',
+    ukuranByte: 14972286,
+    perubahan: [
+      'Halaman aktivasi kini memeriksa ID akun secara langsung: begitu 9 angka terisi, muncul tanda centang bila ID ditemukan, atau pemberitahuan bila tidak ada.',
+    ],
+  },
+  {
     versi: '5.9',
     versionCode: 29,
     tanggal: '2026-08-26',
