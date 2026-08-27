@@ -62,7 +62,7 @@ risiko otomatis.
 - Harga: aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar.
   Beberapa hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 150.000 / 30
   hari), langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari),
-  dan mode Agent Alpha (Rp 850.000/30 hari, peluang WR hingga 85%). Tidak ada
+  dan mode Agent Alpha (Rp 850.000/30 hari, peluang WR hingga 90%). Tidak ada
   langganan wajib — bot tetap berjalan penuh tanpa itu semua.
 - Platform target: Stockity.id (broker binary option).
 - Distribusi: APK Android di ${BASE_URL}/download; versi web di ${WEB_APP}.
