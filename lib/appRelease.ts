@@ -160,7 +160,7 @@ export const RILIS: Rilis[] = [
     ukuranByte: 13180469,
     perubahan: [
       'Panduan diperbarui: mode Fast Reversal dan 5st (blitz 5 detik) kini dijelaskan lengkap, plus seksi baru Akses & aktivasi.',
-      'Seksi Akses & aktivasi mencantumkan cara membuka akun REAL (Rp 150.000, sekali bayar), langganan AI Signal (Rp 50.000/bulan), dan add-on 5st (Rp 85.000/bulan).',
+      'Seksi Akses & aktivasi mencantumkan cara membuka akun REAL (Rp 150.000 / 30 hari), langganan AI Signal (Rp 50.000/bulan), add-on 5st (Rp 85.000/bulan), dan Agent Alpha (Rp 850.000 / 30 hari).',
     ],
   },
   {
