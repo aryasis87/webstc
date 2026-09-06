@@ -28,6 +28,18 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.12',
+    versionCode: 32,
+    tanggal: '2026-09-06',
+    tanggalTampil: '6 September 2026',
+    ukuranByte: 16460246,
+    perubahan: [
+      'Stop Loss & Target Profit kini berlaku HARIAN (lintas-sesi) di semua mode — tetap aktif walau bot dihentikan lalu dijalankan lagi di hari yang sama.',
+      'Fitur baru: Trailing Profit (kunci keuntungan saat turun dari puncak) dan Stop Loss Ketat (bot berhenti sebelum menembus batas rugi).',
+      'Harga aktivasi diperbarui: Mode REAL Rp 180.000, AI Signal Rp 100.000/bulan.',
+    ],
+  },
+  {
     versi: '5.11',
     versionCode: 31,
     tanggal: '2026-08-26',
