@@ -32,7 +32,7 @@ export const RILIS: Rilis[] = [
     versionCode: 32,
     tanggal: '2026-09-06',
     tanggalTampil: '6 September 2026',
-    ukuranByte: 16460246,
+    ukuranByte: 16460238,
     perubahan: [
       'Stop Loss & Target Profit kini berlaku HARIAN (lintas-sesi) di semua mode — tetap aktif walau bot dihentikan lalu dijalankan lagi di hari yang sama.',
       'Fitur baru: Trailing Profit (kunci keuntungan saat turun dari puncak) dan Stop Loss Ketat (bot berhenti sebelum menembus batas rugi).',
