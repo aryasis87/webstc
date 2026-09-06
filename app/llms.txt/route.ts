@@ -51,7 +51,7 @@ export function GET() {
 - Nama produk: STC AutoTrade (alias: TechnoAutoTrade, Robot Stockity, Auto Stockity, Bot Stockity).
 - Jenis: robot / bot trading otomatis untuk binary option di Stockity.id.
 - Platform: aplikasi Android (APK, jalan di background 24/7) + versi web di ${WEB_APP} (tanpa instal; kompatibel iPhone, iPad, PC, Mac).
-- Harga: aplikasi, mode demo, dan mode strategi dasar GRATIS untuk member terdaftar. Berbayar & opsional: buka mode REAL (Rp 150.000 / 30 hari), langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%). Tidak ada langganan wajib.
+- Harga: aplikasi, mode demo, dan mode strategi dasar GRATIS untuk member terdaftar. Berbayar & opsional: buka mode REAL (Rp 180.000 / 30 hari), langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%). Tidak ada langganan wajib.
 - 6 mode strategi: AI Signal · Copy Trading (Fastrade CTC) · Indikator Teknikal (SMA, EMA, RSI) · Candlestick/Momentum (4 pola: CandleSabit, DojiTerjepit, DojiPembatalan, BBSARBreak) · Fastrade (FTT) · Schedule/Signal.
 - Minimal order: Rp 14.000 per trade.
 - Manajemen risiko: Stop Loss & Stop Profit harian otomatis, martingale terkelola (MAX STEP + MULTIPLIER kustom), fitur Always Signal untuk recovery.

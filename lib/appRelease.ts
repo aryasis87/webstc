@@ -160,7 +160,7 @@ export const RILIS: Rilis[] = [
     ukuranByte: 13180469,
     perubahan: [
       'Panduan diperbarui: mode Fast Reversal dan 5st (blitz 5 detik) kini dijelaskan lengkap, plus seksi baru Akses & aktivasi.',
-      'Seksi Akses & aktivasi mencantumkan cara membuka akun REAL (Rp 150.000 / 30 hari), langganan AI Signal (Rp 50.000/bulan), add-on 5st (Rp 85.000/bulan), dan Agent Alpha (Rp 850.000 / 30 hari).',
+      'Seksi Akses & aktivasi mencantumkan cara membuka akun REAL (Rp 180.000 / 30 hari), langganan AI Signal (Rp 50.000/bulan), add-on 5st (Rp 85.000/bulan), dan Agent Alpha (Rp 850.000 / 30 hari).',
     ],
   },
   {
@@ -191,7 +191,7 @@ export const RILIS: Rilis[] = [
     tanggalTampil: '13 Agustus 2026',
     ukuranByte: 14389137,
     perubahan: [
-      'Perbaikan harga aktivasi pada tampilan berbahasa Inggris, Rusia, dan Melayu — sebelumnya masih menampilkan harga lama; kini seragam Rp 150.000 (mode REAL) dan Rp 50.000/bulan (AI Signal) di semua bahasa.',
+      'Perbaikan harga aktivasi pada tampilan berbahasa Inggris, Rusia, dan Melayu — sebelumnya masih menampilkan harga lama; kini seragam Rp 180.000 (mode REAL) dan Rp 50.000/bulan (AI Signal) di semua bahasa.',
     ],
   },
   {

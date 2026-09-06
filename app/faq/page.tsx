@@ -79,7 +79,7 @@ const FAQ_CATEGORIES = [
       },
       {
         q: "Apakah STC AutoTrade gratis?",
-        a: "Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar — bot berjalan penuh tanpa biaya apa pun. Beberapa hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 150.000 / 30 hari) untuk trading memakai dana sungguhan, langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), dan mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%). Tidak ada langganan wajib. Daftar akun lewat aplikasi STC AutoTrade.",
+        a: "Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar — bot berjalan penuh tanpa biaya apa pun. Beberapa hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 180.000 / 30 hari) untuk trading memakai dana sungguhan, langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), dan mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%). Tidak ada langganan wajib. Daftar akun lewat aplikasi STC AutoTrade.",
       },
     ],
   },
