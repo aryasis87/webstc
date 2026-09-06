@@ -125,7 +125,7 @@ const faqSchema = {
       name: "Apakah ada biaya tersembunyi di robot Stockity gratis STC AutoTrade?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Tidak ada biaya tersembunyi. Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar. Berbayar dan opsional: membuka mode REAL (Rp 180.000 / 30 hari), langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), dan mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%) — semuanya disebutkan di muka, bukan biaya tersembunyi. Yang dibutuhkan hanya akun Stockity.id (gratis dibuat melalui aplikasi) dan modal trading di akun Anda sendiri.",
+        text: "Tidak ada biaya tersembunyi. Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar. Berbayar dan opsional: membuka mode REAL (Rp 180.000 / 30 hari), langganan AI Signal (Rp 100.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), dan mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%) — semuanya disebutkan di muka, bukan biaya tersembunyi. Yang dibutuhkan hanya akun Stockity.id (gratis dibuat melalui aplikasi) dan modal trading di akun Anda sendiri.",
       },
     },
     {
@@ -597,7 +597,7 @@ export default function AutoTradeStockityGratisPage() {
                 {[
                   {
                     q: "Apakah benar ada robot trading Stockity yang gratis?",
-                    a: "Ya, dengan batas yang jelas. Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar — tidak ada komisi dari profit dan tidak ada langganan wajib. Beberapa hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 180.000 / 30 hari) untuk trading memakai dana sungguhan, langganan AI Signal (Rp 50.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), dan mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%). Tanpa itu, bot tetap berjalan penuh di mode demo dan strategi dasar.",
+                    a: "Ya, dengan batas yang jelas. Aplikasi, mode demo, dan mode strategi dasar gratis untuk member terdaftar — tidak ada komisi dari profit dan tidak ada langganan wajib. Beberapa hal berbayar dan sepenuhnya opsional: membuka mode REAL (Rp 180.000 / 30 hari) untuk trading memakai dana sungguhan, langganan AI Signal (Rp 100.000/bulan), mode 5st Blitz (Rp 85.000/30 hari), dan mode Agent Alpha (Rp 850.000/30 hari, WR hingga 90%). Tanpa itu, bot tetap berjalan penuh di mode demo dan strategi dasar.",
                   },
                   {
                     q: "Apa bedanya robot Stockity gratis dengan yang berbayar?",
