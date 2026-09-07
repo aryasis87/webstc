@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.15',
+    versionCode: 35,
+    tanggal: '2026-09-06',
+    tanggalTampil: '6 September 2026',
+    ukuranByte: 16461118,
+    perubahan: [
+      "Tampilan pemberitahuan 'pembayaran tidak valid' di dashboard dirapikan agar lebih bersih dan minimalis.",
+    ],
+  },
+  {
     versi: '5.14',
     versionCode: 34,
     tanggal: '2026-09-06',
