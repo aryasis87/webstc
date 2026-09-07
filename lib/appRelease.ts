@@ -28,6 +28,16 @@ export interface Rilis {
 
 export const RILIS: Rilis[] = [
   {
+    versi: '5.14',
+    versionCode: 34,
+    tanggal: '2026-09-06',
+    tanggalTampil: '6 September 2026',
+    ukuranByte: 16460834,
+    perubahan: [
+      'Martingale kini AKTIF secara default di pengaturan trading (tetap bisa dimatikan kapan saja).',
+    ],
+  },
+  {
     versi: '5.13',
     versionCode: 33,
     tanggal: '2026-09-06',
